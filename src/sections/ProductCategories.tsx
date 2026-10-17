@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { productCategories } from '../data/categories';
 import { useLanguage } from '../hooks/useLanguage';
 import { CategoryCard } from '../components/CategoryCard';
@@ -13,7 +13,7 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
 }) => {
   const { t } = useLanguage();
 
-  const handleEnquire = (categoryTitle: string) => {
+  const handleEnquire = useCallback((categoryTitle: string) => {
     if (onSelectCategoryForEnquiry) {
       onSelectCategoryForEnquiry(categoryTitle);
     }
@@ -21,7 +21,7 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }, [onSelectCategoryForEnquiry]);
 
   return (
     <section id="products" className="section-pad categories-section">

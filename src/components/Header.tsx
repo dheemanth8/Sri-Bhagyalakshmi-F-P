@@ -3,6 +3,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import { businessData } from '../data/business';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import logoImg from '../assets/images/sri_bhagyalakshmi_logo.png';
+import logoImgWebp128 from '../assets/images/sri_bhagyalakshmi_logo-128.webp';
 import { Menu, X, MapPin } from 'lucide-react';
 
 export const Header: React.FC = () => {
@@ -76,13 +77,18 @@ export const Header: React.FC = () => {
             aria-label={`${businessData.name[language]} Home`}
           >
             <div className="logo-box">
-              <img
-                src={logoImg}
-                alt={`${businessData.name[language]} Seal`}
-                className="logo-img"
-                width={54}
-                height={54}
-              />
+              <picture>
+                <source type="image/webp" srcSet={logoImgWebp128} />
+                <img
+                  src={logoImg}
+                  alt={`${businessData.name[language]} Seal`}
+                  className="logo-img"
+                  width={54}
+                  height={54}
+                  decoding="async"
+                  fetchPriority="high"
+                />
+              </picture>
             </div>
             <div className="brand-text">
               <span className={`brand-name-main ${language === 'te' ? 'brand-name-te telugu-preserve' : 'brand-name-en'}`}>
@@ -156,7 +162,17 @@ export const Header: React.FC = () => {
         <div className="mobile-drawer__content">
           <div className="mobile-drawer__header">
             <div className="mobile-brand">
-              <img src={logoImg} alt="Logo" className="mobile-logo" width={42} height={42} />
+              <picture>
+                <source type="image/webp" srcSet={logoImgWebp128} />
+                <img
+                  src={logoImg}
+                  alt="Logo"
+                  className="mobile-logo"
+                  width={42}
+                  height={42}
+                  decoding="async"
+                />
+              </picture>
               <div>
                 <div className={`mobile-brand-title ${language === 'te' ? 'telugu-preserve' : ''}`}>
                   {businessData.name[language]}

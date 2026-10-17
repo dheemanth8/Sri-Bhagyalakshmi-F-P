@@ -7,7 +7,6 @@ export interface Translations {
     brands: string;
     products: string;
     about: string;
-    whyUs: string;
     location: string;
     contact: string;
     getDirections: string;
@@ -83,20 +82,6 @@ export interface Translations {
     commitment2: string;
     commitment3: string;
   };
-  // Why Choose Us
-  whyChooseUs: {
-    badge: string;
-    title: string;
-    subtitle: string;
-    card1Title: string;
-    card1Desc: string;
-    card2Title: string;
-    card2Desc: string;
-    card3Title: string;
-    card3Desc: string;
-    card4Title: string;
-    card4Desc: string;
-  };
   // Location
   locationSection: {
     badge: string;
@@ -163,7 +148,6 @@ export const translations: Record<Language, Translations> = {
       brands: 'Brands',
       products: 'Products',
       about: 'About Us',
-      whyUs: 'Why Us',
       location: 'Location',
       contact: 'Contact',
       getDirections: 'Get Directions',
@@ -234,19 +218,6 @@ export const translations: Record<Language, Translations> = {
       commitment2: 'Helpful and practical advice for local crops and pest problems',
       commitment3: 'Fair, transparent prices and friendly customer support',
     },
-    whyChooseUs: {
-      badge: 'The Bhagyalakshmi Advantage',
-      title: 'Why Farmers Rely On Us',
-      subtitle: 'Long-standing experience, genuine products, and deep local roots make us your dependable agricultural partner.',
-      card1Title: 'Experience Since 1995',
-      card1Desc: 'Three decades of specialized retail knowledge in regional farming patterns, soil requirements, and seasonal crop care.',
-      card2Title: 'Recognized Brands Only',
-      card2Desc: 'We stock products from premier agricultural innovators like Bayer, Tata, FMC, Corteva, Adama, Nova, and Prism.',
-      card3Title: 'Convenient Input Access',
-      card3Desc: 'A comprehensive one-stop destination for fertilizers, crop protection, insecticides, fungicides, and herbicides.',
-      card4Title: 'Dedicated Local Service',
-      card4Desc: 'Friendly, personalized customer attention tailored to the unique practical needs of local cultivators and farmers.',
-    },
     locationSection: {
       badge: 'Visit Our Shop',
       title: 'Store Location & Directions',
@@ -307,7 +278,6 @@ export const translations: Record<Language, Translations> = {
       brands: 'బ్రాండ్లు',
       products: 'ఉత్పత్తులు',
       about: 'మా గురించి',
-      whyUs: 'మా ప్రత్యేకత',
       location: 'స్థానం & రూట్',
       contact: 'సంప్రదించండి',
       getDirections: 'రూట్ మ్యాప్',
@@ -377,19 +347,6 @@ export const translations: Record<Language, Translations> = {
       commitment1: 'ప్రముఖ కంపెనీల అసలైన సీల్డ్ ఉత్పత్తులు మాత్రమే',
       commitment2: 'పంటలు మరియు చీడపీడల నివారణకు సరైన సలహాలు',
       commitment3: 'సరసమైన ధరలు మరియు ఆత్మీయ రైతు సేవ',
-    },
-    whyChooseUs: {
-      badge: 'భాగ్యలక్ష్మి విశిష్టత',
-      title: 'రైతులు మమ్మల్ని ఎందుకు ఎంచుకుంటారు?',
-      subtitle: 'సుదీర్ఘ అనుభవం, అసలైన కంపెనీ ఉత్పత్తులు మరియు అన్నదాతలకు అనుకూలమైన సేవలు మా ప్రత్యేకత.',
-      card1Title: '1995 నుండి అపార అనుభవం',
-      card1Desc: 'మూడు దశాబ్దాలుగా స్థానిక ప్రాంతీయ పంటలు, నేల స్వభావం మరియు క్రిమిసంహారకాల వినియోగంలో రైతులకు అనుభవపూర్వక సేవలు.',
-      card2Title: 'ప్రముఖ బ్రాండ్ల ఉత్పత్తులు మాత్రమే',
-      card2Desc: 'బేయర్, టాటా, ఎఫ్.ఎం.సి, కోర్టెవా, అడామా, నోవా మరియు ప్రిజమ్ వంటి అగ్రశ్రేణి కంపెనీల అసలైన ఉత్పత్తులు.',
-      card3Title: 'అన్ని వ్యవసాయ ఉత్పత్తులు ఒకేచోట',
-      card3Desc: 'రసాయన ఎరువులు, సమగ్ర పంట రక్షణ, పురుగుమందులు, తెగుళ్ల మందులు మరియు కలుపు మందులు సులభంగా అందుబాటులో.',
-      card4Title: 'స్థానిక ఆత్మీయ రైతు సేవ',
-      card4Desc: 'ప్రతి రైతు అవసరాన్ని అర్థం చేసుకుని సరైన సలహాలు మరియు సహకారాన్ని అందించే స్థానిక సిబ్బంది.',
     },
     locationSection: {
       badge: 'మా చిరునామా',

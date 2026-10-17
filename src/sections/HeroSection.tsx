@@ -2,7 +2,11 @@ import React from 'react';
 import { useLanguage } from '../hooks/useLanguage';
 import { businessData } from '../data/business';
 import heroBg from '../assets/images/agricultural_hero.jpg';
+import heroBgWebp1600 from '../assets/images/agricultural_hero-1600.webp';
+import heroBgWebp1024 from '../assets/images/agricultural_hero-1024.webp';
+import heroBgWebp640 from '../assets/images/agricultural_hero-640.webp';
 import logoImg from '../assets/images/sri_bhagyalakshmi_logo.png';
+import logoImgWebp320 from '../assets/images/sri_bhagyalakshmi_logo-320.webp';
 import { Award, Compass, MapPin, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
@@ -19,12 +23,23 @@ export const HeroSection: React.FC = () => {
     <section id="home" className="hero-section">
       {/* Background with Dark Forest Green gradient overlay for text legibility */}
       <div className="hero-bg-wrapper">
-        <img
-          src={heroBg}
-          alt="Lush green agricultural fields at sunrise"
-          className="hero-bg-img"
-          fetchPriority="high"
-        />
+        <picture className="hero-bg-picture">
+          <source
+            type="image/webp"
+            srcSet={`${heroBgWebp640} 640w, ${heroBgWebp1024} 1024w, ${heroBgWebp1600} 1376w`}
+            sizes="100vw"
+          />
+          <img
+            src={heroBg}
+            alt="Lush green agricultural fields at sunrise"
+            className="hero-bg-img"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1376}
+            height={768}
+          />
+        </picture>
         <div className="hero-overlay" />
       </div>
 
@@ -100,13 +115,17 @@ export const HeroSection: React.FC = () => {
         {/* Decorative Heritage Crest Badge */}
         <div className="hero-seal-badge-wrapper">
           <div className="hero-seal-card">
-            <img
-              src={logoImg}
-              alt="Sri Bhagyalakshmi Seal"
-              className="hero-seal-img"
-              width={160}
-              height={160}
-            />
+            <picture className="hero-seal-picture">
+              <source type="image/webp" srcSet={logoImgWebp320} />
+              <img
+                src={logoImg}
+                alt="Sri Bhagyalakshmi Seal"
+                className="hero-seal-img"
+                width={160}
+                height={160}
+                decoding="async"
+              />
+            </picture>
             <div className="hero-seal-text">
               <h3 className={`hero-seal-title ${language === 'te' ? 'telugu-preserve' : ''}`}>
                 {language === 'te' ? 'శ్రీ భాగ్యలక్ష్మి' : 'SRI BHAGYALAKSHMI'}
@@ -142,6 +161,11 @@ export const HeroSection: React.FC = () => {
           right: 0;
           bottom: 0;
           z-index: 1;
+        }
+        .hero-bg-picture {
+          display: block;
+          width: 100%;
+          height: 100%;
         }
         .hero-bg-img {
           width: 100%;
@@ -347,9 +371,14 @@ export const HeroSection: React.FC = () => {
           box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
           max-width: 320px;
         }
+        .hero-seal-picture {
+          display: flex;
+          justify-content: center;
+        }
         .hero-seal-img {
           width: 160px;
           height: 160px;
+          aspect-ratio: 1 / 1;
           border-radius: 50%;
           border: 3px solid var(--color-golden-yellow);
           box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);

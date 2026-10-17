@@ -2,6 +2,7 @@ import React from 'react';
 import { businessData } from '../data/business';
 import { useLanguage } from '../hooks/useLanguage';
 import logoImg from '../assets/images/sri_bhagyalakshmi_logo.png';
+import logoImgWebp128 from '../assets/images/sri_bhagyalakshmi_logo-128.webp';
 import { MapPin, Clock } from 'lucide-react';
 
 const currentYear = new Date().getFullYear();
@@ -15,13 +16,18 @@ export const Footer: React.FC = () => {
         {/* Compact Single-Row Brand & Action Header */}
         <div className="footer-main-row">
           <div className="footer-brand-header">
-            <img
-              src={logoImg}
-              alt={`${businessData.name[language]} Seal`}
-              className="footer-logo"
-              width={42}
-              height={42}
-            />
+            <picture>
+              <source type="image/webp" srcSet={logoImgWebp128} />
+              <img
+                src={logoImg}
+                alt={`${businessData.name[language]} Seal`}
+                className="footer-logo"
+                width={42}
+                height={42}
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
             <div className="footer-brand-info">
               <div className={`footer-brand-title ${language === 'te' ? 'telugu-preserve' : ''}`}>
                 {businessData.name[language]}

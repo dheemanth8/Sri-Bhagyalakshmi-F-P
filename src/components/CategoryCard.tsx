@@ -1,18 +1,19 @@
 import React from 'react';
 import type { ProductCategory } from '../data/categories';
 import { useLanguage } from '../hooks/useLanguage';
-import { Check, ArrowRight, Sprout, ShieldCheck, Bug, Sparkles, Scissors, Layers } from 'lucide-react';
+import { Check, ArrowRight, Sprout, ShieldCheck, Bug, Sparkles, Scissors, Layers, Leaf } from 'lucide-react';
 
 interface CategoryCardProps {
   category: ProductCategory;
   onEnquire: (categoryTitle: string) => void;
 }
 
-export const CategoryCard: React.FC<CategoryCardProps> = ({ category, onEnquire }) => {
+export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category, onEnquire }) => {
   const { language, t } = useLanguage();
 
   const getIcon = (name: string) => {
     switch (name) {
+      case 'Leaf': return <Leaf size={20} />;
       case 'Sprout': return <Sprout size={20} />;
       case 'ShieldCheck': return <ShieldCheck size={20} />;
       case 'Bug': return <Bug size={20} />;
@@ -26,12 +27,18 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, onEnquire 
     <article className="category-card card-surface" aria-labelledby={`cat-${category.id}`}>
       {/* Visual Image Banner */}
       <div className="category-card__image-box">
-        <img
-          src={category.image}
-          alt={category.title[language]}
-          className="category-card__img"
-          loading="lazy"
-        />
+        <picture className="category-card__picture">
+          <source type="image/webp" srcSet={category.imageWebp} />
+          <img
+            src={category.image}
+            alt={category.title[language]}
+            className="category-card__img"
+            loading="lazy"
+            decoding="async"
+            width={category.width}
+            height={category.height}
+          />
+        </picture>
         <div className="category-card__badge-pill">
           {getIcon(category.iconName)}
           <span>{category.subtitle[language]}</span>
@@ -94,6 +101,11 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, onEnquire 
           height: 200px;
           overflow: hidden;
           background-color: var(--color-forest-green);
+        }
+        .category-card__picture {
+          display: block;
+          width: 100%;
+          height: 100%;
         }
         .category-card__img {
           width: 100%;
@@ -189,4 +201,4 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category, onEnquire 
       `}</style>
     </article>
   );
-};
+});

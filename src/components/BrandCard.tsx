@@ -7,7 +7,7 @@ interface BrandCardProps {
   brand: Brand;
 }
 
-export const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
+export const BrandCard: React.FC<BrandCardProps> = React.memo(({ brand }) => {
   const { language } = useLanguage();
   const [imageError, setImageError] = useState(false);
 
@@ -21,6 +21,9 @@ export const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
             alt={brand.altText}
             className="brand-card__logo-img"
             loading="lazy"
+            decoding="async"
+            width={200}
+            height={85}
             onError={() => setImageError(true)}
           />
         ) : (
@@ -166,4 +169,4 @@ export const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
       `}</style>
     </article>
   );
-};
+});
