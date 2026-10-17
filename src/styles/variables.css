@@ -1,0 +1,68 @@
+:root {
+  /* Brand Primary Colors */
+  --color-forest-green: #14532D;
+  --color-forest-green-dark: #0F3D21;
+  --color-forest-green-light: #1A6337;
+  --color-agricultural-green: #2E7D32;
+  --color-agricultural-green-light: #388E3C;
+  --color-agricultural-green-subtle: #E8F5E9;
+  
+  /* Brand Accent Colors */
+  --color-golden-yellow: #F4B942;
+  --color-golden-yellow-dark: #D49B24;
+  --color-golden-yellow-light: #FBE6B3;
+  --color-golden-yellow-subtle: #FFF8E7;
+
+  /* Neutrals & Backgrounds */
+  --color-warm-cream: #FFF9E8;
+  --color-warm-cream-alt: #FBF6E9;
+  --color-white: #FFFFFF;
+  --color-bg-alt: #F8FAF6;
+  --color-dark-charcoal: #1F2937;
+  --color-charcoal-muted: #4B5563;
+  --color-charcoal-light: #6B7280;
+  --color-border-subtle: #E5E7EB;
+  --color-border-accent: rgba(244, 185, 66, 0.35);
+
+  /* Semantic Feedback */
+  --color-success: #15803D;
+  --color-warning: #B45309;
+  --color-info: #1D4ED8;
+
+  /* Typography */
+  --font-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-te: 'Noto Sans Telugu', 'Inter', -apple-system, sans-serif;
+
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.09), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 20px rgba(20, 83, 45, 0.06);
+  --shadow-gold: 0 4px 14px rgba(244, 185, 66, 0.25);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Container width - expanded to make full use of widescreen displays */
+  --max-width: 1520px;
+  --header-height: 80px;
+}
