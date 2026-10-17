@@ -3,7 +3,6 @@ import { businessData } from '../data/business';
 import { productCategories } from '../data/categories';
 import { useLanguage } from '../hooks/useLanguage';
 import {
-  MessageCircle,
   MapPin,
   Clock,
   Send,
@@ -56,15 +55,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ selectedCategory
     }
   };
 
-  const hasWhatsapp = Boolean(businessData.contact.whatsapp);
-
   return (
     <section id="contact" className="section-pad contact-section">
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
           <div className="section-badge">
-            <MessageCircle size={16} />
+            <Send size={16} />
             <span>{t.contactSection.badge}</span>
           </div>
           <h2 className="section-title">
@@ -78,34 +75,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ selectedCategory
         <div className="contact-grid">
           {/* Left Column: Configurable Contact Channels */}
           <div className="contact-cards-col">
-
-            {/* WhatsApp Card */}
-            <div className="contact-channel-card card-surface">
-              <div className="channel-icon-box channel-icon-box--wa">
-                <MessageCircle size={24} />
-              </div>
-              <div className="channel-info">
-                <h3 className="channel-title">{t.contactSection.whatsappCardTitle}</h3>
-                <p className="channel-desc">{t.contactSection.whatsappCardDesc}</p>
-                {hasWhatsapp ? (
-                  <a
-                    href={`https://wa.me/${businessData.contact.whatsapp}?text=Hello%20Sri%20Bhagyalakshmi%20Fertilizers,%20I%20would%20like%20to%20enquire%20about%20products`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary btn-sm channel-btn"
-                  >
-                    <MessageCircle size={15} />
-                    <span>{t.contactSection.whatsappAction}</span>
-                  </a>
-                ) : (
-                  <div className="pending-badge">
-                    <AlertCircle size={14} />
-                    <span>{t.common.pendingConfiguration}</span>
-                  </div>
-                )}
-              </div>
-            </div>
-
             {/* Address & Store Card */}
             <div className="contact-channel-card card-surface">
               <div className="channel-icon-box">
@@ -296,11 +265,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ selectedCategory
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
-        }
-        .channel-icon-box--wa {
-          background: #DCFCE7;
-          border-color: #86EFAC;
-          color: #15803D;
         }
 
         .channel-info {
