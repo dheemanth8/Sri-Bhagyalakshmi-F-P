@@ -115,8 +115,8 @@ export const AboutSection: React.FC = () => {
                         src={founder1Img}
                         alt={t.aboutSection.founder1Name}
                         className="leader-avatar-img"
-                        width={82}
-                        height={82}
+                        width={132}
+                        height={132}
                         loading="lazy"
                         decoding="async"
                       />
@@ -138,8 +138,8 @@ export const AboutSection: React.FC = () => {
                         src={founder2Img}
                         alt={t.aboutSection.founder2Name}
                         className="leader-avatar-img"
-                        width={82}
-                        height={82}
+                        width={132}
+                        height={132}
                         loading="lazy"
                         decoding="async"
                       />
@@ -205,7 +205,7 @@ export const AboutSection: React.FC = () => {
 
         @media (min-width: 1024px) {
           .about-grid {
-            grid-template-columns: 1.15fr 0.85fr;
+            grid-template-columns: 1fr 1fr;
             gap: 3.5rem;
             align-items: start;
           }
@@ -363,38 +363,72 @@ export const AboutSection: React.FC = () => {
         .leader-card {
           background: #FFFFFF;
           border: 1.5px solid var(--color-border-subtle);
-          border-radius: var(--radius-md);
-          padding: 1.25rem;
+          border-radius: var(--radius-lg);
+          padding: 1.35rem;
           display: flex;
-          align-items: flex-start;
-          gap: 1.15rem;
+          align-items: center;
+          gap: 1.35rem;
           transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
         }
+        @media (min-width: 768px) {
+          .leader-card {
+            padding: 1.6rem 1.5rem;
+            gap: 1.5rem;
+          }
+        }
         .leader-card:hover {
-          transform: translateY(-2px);
+          transform: translateY(-3px);
           border-color: var(--color-golden-yellow);
-          box-shadow: 0 8px 24px rgba(20, 83, 45, 0.1);
+          box-shadow: 0 10px 28px rgba(20, 83, 45, 0.12);
         }
 
         .leader-card__avatar {
-          width: 76px;
-          height: 76px;
-          min-width: 76px;
+          width: 100px;
+          height: 100px;
+          min-width: 100px;
           border-radius: 50%;
           background: var(--color-warm-cream);
-          border: 3px solid var(--color-golden-yellow);
-          box-shadow: 0 4px 14px rgba(20, 83, 45, 0.12);
+          border: 3.5px solid var(--color-golden-yellow);
+          box-shadow: 0 6px 18px rgba(20, 83, 45, 0.14);
           overflow: hidden;
           flex-shrink: 0;
           display: flex;
           align-items: center;
           justify-content: center;
         }
-        @media (min-width: 640px) {
+        @media (min-width: 480px) {
           .leader-card__avatar {
-            width: 82px;
-            height: 82px;
-            min-width: 82px;
+            width: 118px;
+            height: 118px;
+            min-width: 118px;
+          }
+        }
+        @media (min-width: 768px) {
+          .leader-card__avatar {
+            width: 136px;
+            height: 136px;
+            min-width: 136px;
+            border-width: 4px;
+          }
+        }
+        @media (max-width: 440px) {
+          .leader-card {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            gap: 1rem;
+          }
+          .leader-card__avatar {
+            width: 118px;
+            height: 118px;
+            min-width: 118px;
+          }
+          .leader-role-row {
+            justify-content: center;
+          }
+          .leader-desc {
+            text-align: center !important;
           }
         }
         .leader-card__avatar picture {
@@ -408,7 +442,7 @@ export const AboutSection: React.FC = () => {
           object-fit: cover;
           object-position: center 15%;
           display: block;
-          transition: transform 0.35s ease;
+          transition: transform 0.4s ease;
         }
         .leader-card:hover .leader-avatar-img {
           transform: scale(1.08);
