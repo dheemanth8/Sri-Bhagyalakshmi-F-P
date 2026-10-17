@@ -37,11 +37,13 @@ export interface BusinessInfo {
     founder1: {
       name: { en: string; te: string };
       role: { en: string; te: string };
+      image?: string;
     };
     founder2: {
       name: { en: string; te: string };
       role: { en: string; te: string };
       relation: { en: string; te: string };
+      image?: string;
     };
   };
   contact: ContactConfig;
@@ -64,6 +66,7 @@ export const businessData: BusinessInfo = {
         en: 'Founder & Owner',
         te: 'వ్యవస్థాపకులు & యజమాని',
       },
+      image: '/images/annem_balarama_subba_reddy.webp',
     },
     founder2: {
       name: {
@@ -78,6 +81,7 @@ export const businessData: BusinessInfo = {
         en: 'Son of Annem Balarama Subba Reddy',
         te: 'అన్నెం బలరామ సుబ్బారెడ్డి గారి కుమారుడు',
       },
+      image: '/images/annem_chandra_sekhar_reddy.webp',
     },
   },
   industry: {

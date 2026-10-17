@@ -4,10 +4,13 @@ import {
   Calendar,
   CheckCircle2,
   Users,
-  UserCheck,
   Building2,
   ShieldCheck,
 } from 'lucide-react';
+import founder1Img from '../assets/images/annem_balarama_subba_reddy.jpg';
+import founder1Webp from '../assets/images/annem_balarama_subba_reddy.webp';
+import founder2Img from '../assets/images/annem_chandra_sekhar_reddy.jpg';
+import founder2Webp from '../assets/images/annem_chandra_sekhar_reddy.webp';
 
 export const AboutSection: React.FC = () => {
   const { language, t } = useLanguage();
@@ -103,10 +106,21 @@ export const AboutSection: React.FC = () => {
                   </p>
                 </div>
 
-                {/* Co-Founder: Annem Balarama Subba Reddy */}
+                {/* Founder & Owner: Annem Balarama Subba Reddy */}
                 <div className="leader-card">
                   <div className="leader-card__avatar">
-                    <UserCheck size={24} className="leader-avatar-icon" />
+                    <picture>
+                      <source type="image/webp" srcSet={founder1Webp} />
+                      <img
+                        src={founder1Img}
+                        alt={t.aboutSection.founder1Name}
+                        className="leader-avatar-img"
+                        width={82}
+                        height={82}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                   <div className="leader-card__details">
                     <span className="leader-role">{t.aboutSection.founder1Role}</span>
@@ -115,10 +129,21 @@ export const AboutSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Co-Founder: Annem Chandra Sekhar Reddy */}
+                {/* Founder & Owner: Annem Chandra Sekhar Reddy */}
                 <div className="leader-card">
                   <div className="leader-card__avatar">
-                    <UserCheck size={24} className="leader-avatar-icon" />
+                    <picture>
+                      <source type="image/webp" srcSet={founder2Webp} />
+                      <img
+                        src={founder2Img}
+                        alt={t.aboutSection.founder2Name}
+                        className="leader-avatar-img"
+                        width={82}
+                        height={82}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                   <div className="leader-card__details">
                     <div className="leader-role-row">
@@ -341,28 +366,52 @@ export const AboutSection: React.FC = () => {
           border-radius: var(--radius-md);
           padding: 1.25rem;
           display: flex;
-          gap: 1rem;
-          transition: transform var(--transition-fast), border-color var(--transition-fast);
+          align-items: flex-start;
+          gap: 1.15rem;
+          transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
         }
         .leader-card:hover {
           transform: translateY(-2px);
           border-color: var(--color-golden-yellow);
-          box-shadow: 0 6px 18px rgba(20, 83, 45, 0.08);
+          box-shadow: 0 8px 24px rgba(20, 83, 45, 0.1);
         }
 
         .leader-card__avatar {
-          width: 48px;
-          height: 48px;
+          width: 76px;
+          height: 76px;
+          min-width: 76px;
           border-radius: 50%;
           background: var(--color-warm-cream);
-          border: 2px solid var(--color-golden-yellow);
+          border: 3px solid var(--color-golden-yellow);
+          box-shadow: 0 4px 14px rgba(20, 83, 45, 0.12);
+          overflow: hidden;
+          flex-shrink: 0;
           display: flex;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
         }
-        .leader-avatar-icon {
-          color: var(--color-forest-green);
+        @media (min-width: 640px) {
+          .leader-card__avatar {
+            width: 82px;
+            height: 82px;
+            min-width: 82px;
+          }
+        }
+        .leader-card__avatar picture {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        .leader-avatar-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 15%;
+          display: block;
+          transition: transform 0.35s ease;
+        }
+        .leader-card:hover .leader-avatar-img {
+          transform: scale(1.08);
         }
 
         .leader-card__details {
