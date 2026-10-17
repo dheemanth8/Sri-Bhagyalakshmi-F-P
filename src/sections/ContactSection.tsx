@@ -13,16 +13,24 @@ import {
 
 interface ContactSectionProps {
   selectedCategory?: string;
+  selectedProduct?: string;
 }
 
-export const ContactSection: React.FC<ContactSectionProps> = ({ selectedCategory = '' }) => {
+export const ContactSection: React.FC<ContactSectionProps> = ({
+  selectedCategory = '',
+  selectedProduct = '',
+}) => {
   const { language, t } = useLanguage();
 
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     category: selectedCategory,
-    message: '',
+    message: selectedProduct
+      ? (language === 'te'
+          ? `నేను ${selectedProduct} లభ్యత మరియు ధర గురించి తెలుసుకోవాలనుకుంటున్నాను.`
+          : `I would like to enquire about the availability and details of ${selectedProduct}.`)
+      : '',
   });
 
   const [submitted, setSubmitted] = useState(false);

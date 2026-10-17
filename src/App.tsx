@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import { Header } from './components/Header';
 import { HeroSection } from './sections/HeroSection';
-import { BrandSection } from './sections/BrandSection';
-import { ProductCategories } from './sections/ProductCategories';
 import { AboutSection } from './sections/AboutSection';
+import { ProductsSection } from './sections/ProductsSection';
+import { ProductCategories } from './sections/ProductCategories';
+import { BrandSection } from './sections/BrandSection';
 import { LocationSection } from './sections/LocationSection';
 import { ContactSection } from './sections/ContactSection';
 import { Footer } from './components/Footer';
 
 export const AppContent: React.FC = () => {
   const [selectedCategoryForEnquiry, setSelectedCategoryForEnquiry] = useState<string>('');
+  const [selectedProductForEnquiry, setSelectedProductForEnquiry] = useState<string>('');
 
   return (
     <div className="app-layout">
@@ -26,12 +28,14 @@ export const AppContent: React.FC = () => {
       <main id="main-content">
         <HeroSection />
         <AboutSection />
-        <BrandSection />
+        <ProductsSection onSelectProductForEnquiry={setSelectedProductForEnquiry} />
         <ProductCategories onSelectCategoryForEnquiry={setSelectedCategoryForEnquiry} />
+        <BrandSection />
         <LocationSection />
         <ContactSection
-          key={selectedCategoryForEnquiry || 'default'}
+          key={`${selectedCategoryForEnquiry}-${selectedProductForEnquiry}`}
           selectedCategory={selectedCategoryForEnquiry}
+          selectedProduct={selectedProductForEnquiry}
         />
       </main>
 
