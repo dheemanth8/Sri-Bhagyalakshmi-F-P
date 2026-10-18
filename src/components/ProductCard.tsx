@@ -191,8 +191,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
       <style>{`
         .product-card {
-          background: var(--color-cream-surface);
-          border: 1.5px solid var(--color-border-subtle);
+          background: #FFFEFC;
+          border: 1px solid var(--color-border-subtle);
           border-radius: var(--radius-lg);
           display: flex;
           flex-direction: column;
@@ -200,17 +200,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
           cursor: pointer;
           position: relative;
-          box-shadow: 0 4px 16px rgba(13, 59, 31, 0.05);
+          box-shadow: 0 4px 18px rgba(5, 27, 18, 0.05), 0 0 0 1px rgba(212, 175, 55, 0.08);
         }
 
         .product-card:hover {
           transform: translateY(-5px);
-          border-color: var(--color-golden-yellow);
-          box-shadow: 0 16px 32px -4px rgba(13, 59, 31, 0.18), 0 0 0 1px rgba(245, 158, 11, 0.25);
+          border-color: var(--color-gold-metallic);
+          box-shadow: 0 18px 36px -6px rgba(5, 27, 18, 0.16), 0 0 0 1.5px var(--color-gold-metallic);
         }
 
         .product-card:focus-visible {
-          outline: 2px solid var(--color-agricultural-green);
+          outline: 2px solid var(--color-gold-metallic);
           outline-offset: 2px;
         }
 
@@ -220,8 +220,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           align-items: center;
           justify-content: space-between;
           padding: 0.85rem 1rem;
-          background: linear-gradient(180deg, #FFFEFB 0%, #FAF6EE 100%);
-          border-bottom: 1.5px solid var(--color-border-subtle);
+          background: linear-gradient(180deg, #FFFFFF 0%, #FAF7F0 100%);
+          border-top: 3px solid var(--color-gold-metallic);
+          border-bottom: 1px solid var(--color-border-subtle);
           gap: 0.5rem;
         }
 
@@ -474,18 +475,18 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         }
 
         .pack-pill--active {
-          background: linear-gradient(135deg, #059669 0%, #047857 100%);
-          border-color: #064E3B;
-          color: #FFFFFF;
-          box-shadow: 0 2px 6px rgba(5, 150, 105, 0.35);
+          background: var(--color-obsidian);
+          border-color: var(--color-gold-metallic);
+          color: #FAF2D6;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
         }
 
         /* Footer */
         .product-card__footer {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          border-top: 1.5px solid var(--color-border-subtle);
-          background: #FAF6EE;
+          border-top: 1px solid var(--color-border-subtle);
+          background: #FAF7F0;
         }
 
         .btn-card-action {
@@ -503,26 +504,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         }
 
         .btn-card-details {
-          color: var(--color-forest-dark);
-          border-right: 1.5px solid var(--color-border-subtle);
-          font-weight: 800;
+          color: var(--color-obsidian);
+          border-right: 1px solid var(--color-border-subtle);
+          font-weight: 700;
         }
 
         .btn-card-details:hover {
-          background: #EFE7D3;
-          color: var(--color-forest-deep);
+          background: #F3ECE0;
+          color: var(--color-obsidian);
         }
 
         .btn-card-enquire {
-          background: var(--gradient-forest-vibrant);
-          color: #FAF6EE;
-          font-weight: 800;
+          background: linear-gradient(135deg, #051B12 0%, #0A2E20 50%, #0E3D2B 100%);
+          color: #FAF7F0;
+          font-weight: 700;
+          letter-spacing: 0.02em;
         }
 
         .btn-card-enquire:hover {
-          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
-          color: #FAF6EE;
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+          background: linear-gradient(135deg, #E5C578 0%, #D4AF37 50%, #B38738 100%);
+          color: #051B12;
         }
       `}</style>
     </div>

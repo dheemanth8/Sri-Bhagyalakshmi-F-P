@@ -60,11 +60,11 @@ export const Footer: React.FC = () => {
 
       <style>{`
         .footer-wrapper {
-          background: linear-gradient(135deg, #072714 0%, #0D3B1F 50%, #051A0D 100%);
-          color: #FAF6EE;
-          padding: 2.25rem 0 1.25rem 0;
-          border-top: 4px solid var(--color-golden-yellow);
-          box-shadow: 0 -8px 30px rgba(7, 39, 20, 0.35);
+          background: linear-gradient(180deg, #051B12 0%, #03120C 100%);
+          color: #FAF7F0;
+          padding: 2.5rem 0 1.5rem 0;
+          border-top: 2.5px solid var(--color-gold-metallic);
+          box-shadow: 0 -8px 30px rgba(5, 27, 18, 0.45);
         }
 
         .footer-container {
@@ -78,9 +78,9 @@ export const Footer: React.FC = () => {
           flex-direction: column;
           align-items: flex-start;
           justify-content: space-between;
-          gap: 1rem;
-          padding-bottom: 1rem;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          gap: 1.25rem;
+          padding-bottom: 1.25rem;
+          border-bottom: 1px solid var(--color-gold-hairline);
         }
 
         @media (min-width: 640px) {
@@ -93,36 +93,45 @@ export const Footer: React.FC = () => {
         .footer-brand-header {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 0.85rem;
         }
 
         .footer-logo {
           border-radius: 50%;
-          border: 2px solid var(--color-golden-yellow);
-          background: #fff;
+          border: 1.5px solid var(--color-gold-metallic);
+          background: #FAF7F0;
           flex-shrink: 0;
           object-fit: cover;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
         }
 
         .footer-brand-title {
-          font-size: 1.05rem;
+          font-family: var(--font-serif);
+          font-size: 1.12rem;
           font-weight: 700;
-          color: var(--color-golden-yellow);
+          color: #FAF2D6;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
           line-height: 1.2;
+        }
+        html[lang="te"] .footer-brand-title {
+          font-family: var(--font-te);
+          font-weight: 800;
+          letter-spacing: 0;
         }
 
         .footer-brand-sub {
           font-size: 0.78rem;
-          color: #CBD5E1;
-          margin-top: 0.15rem;
+          color: #C8BA9E;
+          margin-top: 0.2rem;
         }
 
         .footer-contact-summary {
           display: flex;
           flex-direction: column;
-          gap: 0.35rem;
-          font-size: 0.8rem;
-          color: #E2E8F0;
+          gap: 0.4rem;
+          font-size: 0.82rem;
+          color: #EADDC9;
         }
 
         @media (min-width: 640px) {
@@ -136,11 +145,11 @@ export const Footer: React.FC = () => {
         .footer-store-hours {
           display: flex;
           align-items: center;
-          gap: 0.45rem;
+          gap: 0.5rem;
         }
 
         .footer-meta-icon {
-          color: var(--color-golden-yellow);
+          color: var(--color-gold-metallic);
           flex-shrink: 0;
         }
 
@@ -150,7 +159,7 @@ export const Footer: React.FC = () => {
           justify-content: space-between;
           gap: 1rem;
           font-size: 0.78rem;
-          color: #94A3B8;
+          color: #A3967C;
         }
 
         .footer-copyright {

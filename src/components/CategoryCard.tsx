@@ -5,23 +5,28 @@ import { Check, ArrowRight, Sprout, ShieldCheck, Bug, Sparkles, Scissors, Layers
 
 interface CategoryCardProps {
   category: ProductCategory;
+  folioIndex?: number;
   onEnquire: (categoryTitle: string) => void;
 }
 
-export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category, onEnquire }) => {
+const ROMAN_NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI'];
+
+export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category, folioIndex, onEnquire }) => {
   const { language, t } = useLanguage();
 
   const getIcon = (name: string) => {
     switch (name) {
-      case 'Leaf': return <Leaf size={20} />;
-      case 'Sprout': return <Sprout size={20} />;
-      case 'ShieldCheck': return <ShieldCheck size={20} />;
-      case 'Bug': return <Bug size={20} />;
-      case 'Sparkles': return <Sparkles size={20} />;
-      case 'Scissors': return <Scissors size={20} />;
-      default: return <Layers size={20} />;
+      case 'Leaf': return <Leaf size={18} />;
+      case 'Sprout': return <Sprout size={18} />;
+      case 'ShieldCheck': return <ShieldCheck size={18} />;
+      case 'Bug': return <Bug size={18} />;
+      case 'Sparkles': return <Sparkles size={18} />;
+      case 'Scissors': return <Scissors size={18} />;
+      default: return <Layers size={18} />;
     }
   };
+
+  const romanNumeral = folioIndex && folioIndex <= 6 ? ROMAN_NUMERALS[folioIndex - 1] : '';
 
   return (
     <article className="category-card card-surface" aria-labelledby={`cat-${category.id}`}>
@@ -43,6 +48,11 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           {getIcon(category.iconName)}
           <span>{category.subtitle[language]}</span>
         </div>
+        {romanNumeral && (
+          <div className="category-card__folio-tag" title={`Agronomic Folio ${romanNumeral}`}>
+            FOLIO {romanNumeral}
+          </div>
+        )}
       </div>
 
       {/* Content */}
@@ -71,11 +81,11 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
         {/* Working Enquire Action -> Scrolls to contact */}
         <button
           type="button"
-          className="btn btn-outline category-card__btn"
+          className="btn category-card__btn"
           onClick={() => onEnquire(category.title[language])}
         >
           <span>{t.categoriesSection.enquireBtn}</span>
-          <ArrowRight size={16} />
+          <ArrowRight size={15} />
         </button>
       </div>
 
@@ -84,24 +94,25 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           display: flex;
           flex-direction: column;
           background: var(--color-cream-surface);
-          border: 1.5px solid var(--color-border-subtle);
+          border: 1px solid var(--color-border-subtle);
           border-radius: var(--radius-lg);
           overflow: hidden;
           transition: all var(--transition-normal);
           height: 100%;
-          box-shadow: 0 4px 20px -2px rgba(13, 59, 31, 0.06);
+          box-shadow: 0 4px 18px rgba(5, 27, 18, 0.05), 0 0 0 1px rgba(212, 175, 55, 0.1);
         }
         .category-card:hover {
-          border-color: var(--color-golden-yellow);
+          border-color: var(--color-gold-metallic);
           transform: translateY(-6px);
-          box-shadow: 0 20px 35px -8px rgba(13, 59, 31, 0.2), 0 8px 18px -4px rgba(245, 158, 11, 0.16);
+          box-shadow: 0 20px 40px -10px rgba(5, 27, 18, 0.2), 0 0 0 1.5px var(--color-gold-metallic);
         }
 
         .category-card__image-box {
           position: relative;
-          height: 200px;
+          height: 205px;
           overflow: hidden;
-          background-color: #072714;
+          background-color: var(--color-obsidian);
+          border-bottom: 1px solid var(--color-border-subtle);
         }
         .category-card__picture {
           display: block;
@@ -115,7 +126,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           transition: transform var(--transition-slow);
         }
         .category-card:hover .category-card__img {
-          transform: scale(1.08);
+          transform: scale(1.07);
         }
 
         .category-card__badge-pill {
@@ -125,93 +136,121 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           display: inline-flex;
           align-items: center;
           gap: 0.45rem;
-          background: rgba(7, 39, 20, 0.94);
-          color: #FDE68A;
-          padding: 0.4rem 0.85rem;
+          background: rgba(5, 27, 18, 0.92);
+          color: #FAF2D6;
+          padding: 0.35rem 0.85rem;
           border-radius: var(--radius-full);
-          font-size: 0.78rem;
+          font-size: 0.76rem;
           font-weight: 800;
-          backdrop-filter: blur(10px);
-          border: 1.5px solid rgba(245, 158, 11, 0.65);
-          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+          letter-spacing: 0.03em;
+          backdrop-filter: blur(12px);
+          border: 1px solid var(--color-gold-hairline);
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+        }
+
+        .category-card__folio-tag {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          background: rgba(5, 27, 18, 0.85);
+          color: var(--color-gold-metallic);
+          font-size: 0.68rem;
+          font-weight: 800;
+          letter-spacing: 0.1em;
+          padding: 0.25rem 0.65rem;
+          border-radius: var(--radius-sm);
+          border: 1px solid var(--color-gold-hairline);
+          backdrop-filter: blur(8px);
         }
 
         .category-card__body {
-          padding: 1.5rem;
+          padding: 1.6rem;
           display: flex;
           flex-direction: column;
           flex-grow: 1;
+          background: #FFFEFC;
         }
 
         .category-card__title {
-          font-size: 1.4rem;
-          font-weight: 800;
-          color: var(--color-forest-dark);
+          font-family: var(--font-serif);
+          font-size: 1.35rem;
+          font-weight: 700;
+          color: var(--color-obsidian);
           margin-bottom: 0.75rem;
           line-height: 1.3;
-          letter-spacing: -0.01em;
+          letter-spacing: 0.01em;
+        }
+        html[lang="te"] .category-card__title {
+          font-family: var(--font-te);
+          font-weight: 800;
+          letter-spacing: 0;
         }
 
         .category-card__desc {
-          font-size: 0.92rem;
+          font-size: 0.9rem;
           color: var(--color-charcoal-muted);
-          line-height: 1.6;
-          margin-bottom: 1.25rem;
+          line-height: 1.65;
+          margin-bottom: 1.35rem;
         }
 
         .category-card__benefits {
-          background: linear-gradient(135deg, #F4EEDF 0%, #FEF3C7 100%);
-          border: 1.5px solid #E5DAC1;
+          background: linear-gradient(180deg, #FDFBF7 0%, #F8F4EA 100%);
+          border: 1px solid var(--color-border-subtle);
+          border-left: 3px solid var(--color-gold-metallic);
           border-radius: var(--radius-md);
-          padding: 0.95rem 1.15rem;
+          padding: 1rem 1.25rem;
           margin-bottom: 1.5rem;
           margin-top: auto;
         }
         .benefits-label {
-          font-size: 0.74rem;
+          font-size: 0.72rem;
           font-weight: 800;
           text-transform: uppercase;
-          letter-spacing: 0.06em;
+          letter-spacing: 0.08em;
           color: var(--color-forest-dark);
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.6rem;
         }
         .benefits-list {
           list-style: none;
           display: flex;
           flex-direction: column;
-          gap: 0.4rem;
+          gap: 0.45rem;
         }
         .benefit-item {
           display: flex;
           align-items: center;
-          gap: 0.5rem;
+          gap: 0.55rem;
           font-size: 0.84rem;
           color: var(--color-dark-charcoal);
           font-weight: 600;
         }
         .benefit-check {
-          color: var(--color-forest-green);
+          color: var(--color-gold-metallic);
           flex-shrink: 0;
         }
 
         .category-card__btn {
           width: 100%;
+          display: flex;
+          align-items: center;
           justify-content: center;
-          font-weight: 800;
-          font-size: 0.92rem;
-          padding: 0.75rem 1rem;
-          background: var(--gradient-forest-vibrant);
-          color: #FAF6EE;
-          border: 1px solid rgba(245, 158, 11, 0.35);
-          border-radius: var(--radius-md);
+          gap: 0.5rem;
+          font-weight: 700;
+          font-size: 0.9rem;
+          padding: 0.72rem 1rem;
+          background: linear-gradient(135deg, #051B12 0%, #0A2E20 50%, #0E3D2B 100%);
+          color: #FAF7F0;
+          border: 1px solid var(--color-gold-hairline);
+          border-radius: var(--radius-full);
           transition: all var(--transition-fast);
-          box-shadow: 0 2px 8px rgba(13, 59, 31, 0.25);
+          box-shadow: 0 2px 8px rgba(5, 27, 18, 0.25);
+          letter-spacing: 0.02em;
         }
         .category-card__btn:hover {
-          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
-          color: #FAF6EE;
-          border-color: var(--color-golden-yellow);
-          box-shadow: 0 6px 18px rgba(13, 59, 31, 0.4);
+          background: linear-gradient(135deg, #E5C578 0%, #D4AF37 50%, #B38738 100%);
+          color: #051B12;
+          border-color: var(--color-gold-metallic);
+          box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
           transform: translateY(-2px);
         }
       `}</style>

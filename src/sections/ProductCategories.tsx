@@ -35,6 +35,11 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
           <h2 className="section-title">
             {t.categoriesSection.title}
           </h2>
+          <div className="heritage-divider">
+            <span className="heritage-divider__line" />
+            <span className="heritage-divider__diamond">◆</span>
+            <span className="heritage-divider__line" />
+          </div>
           <p className="section-subtitle">
             {t.categoriesSection.subtitle}
           </p>
@@ -42,10 +47,11 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
 
         {/* Categories Grid (3 cols on desktop, 2 on tablet, 1 on mobile) */}
         <div className="categories-grid">
-          {productCategories.map((cat) => (
+          {productCategories.map((cat, index) => (
             <CategoryCard
               key={cat.id}
               category={cat}
+              folioIndex={index + 1}
               onEnquire={handleEnquire}
             />
           ))}
@@ -61,18 +67,18 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
       <style>{`
         .categories-section {
           background: 
-            radial-gradient(ellipse at 15% 20%, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
-            radial-gradient(ellipse at 85% 80%, rgba(20, 83, 45, 0.07) 0%, transparent 60%),
+            radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+            radial-gradient(ellipse at 85% 80%, rgba(5, 27, 18, 0.06) 0%, transparent 60%),
             var(--color-cream-base);
-          border-top: 1.5px solid var(--color-border-subtle);
-          border-bottom: 1.5px solid var(--color-border-subtle);
+          border-top: 1px solid var(--color-gold-hairline);
+          border-bottom: 1px solid var(--color-gold-hairline);
         }
 
         .categories-grid {
           display: grid;
           grid-template-columns: 1fr;
           gap: 1.5rem;
-          margin-bottom: 2.5rem;
+          margin-bottom: 3rem;
         }
 
         @media (min-width: 640px) {
@@ -92,21 +98,22 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 0.5rem;
+          gap: 0.65rem;
           font-size: 0.88rem;
           font-weight: 600;
-          color: #92400E;
+          color: #785811;
           text-align: center;
-          max-width: 760px;
+          max-width: 820px;
           margin: 0 auto;
-          padding: 0.85rem 1.35rem;
-          background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+          padding: 1rem 1.6rem;
+          background: #FFFEFC;
           border-radius: var(--radius-md);
-          border: 1.5px solid #F59E0B;
-          box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
+          border: 1px solid var(--color-gold-hairline);
+          border-left: 3.5px solid var(--color-gold-metallic);
+          box-shadow: 0 4px 16px rgba(5, 27, 18, 0.04);
         }
         .disclaimer-icon {
-          color: #D97706;
+          color: var(--color-gold-metallic);
           flex-shrink: 0;
         }
       `}</style>

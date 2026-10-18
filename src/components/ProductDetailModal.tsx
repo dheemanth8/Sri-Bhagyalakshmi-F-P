@@ -349,10 +349,11 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .product-modal-dialog {
-          background: var(--color-cream-surface);
+          background: #FFFEFC;
           border-radius: var(--radius-xl);
-          border: 2px solid var(--color-border-subtle);
-          box-shadow: 0 25px 60px -12px rgba(7, 39, 20, 0.45);
+          border: 1px solid var(--color-gold-hairline);
+          border-top: 3.5px solid var(--color-gold-metallic);
+          box-shadow: 0 25px 60px -12px rgba(5, 27, 18, 0.45), 0 0 0 1px rgba(212, 175, 55, 0.15);
           width: 100%;
           max-width: 820px;
           max-height: 90vh;
@@ -373,8 +374,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: center;
           justify-content: space-between;
           padding: 1.25rem 1.5rem;
-          background: linear-gradient(180deg, #FFFEFB 0%, #FAF6EE 100%);
-          border-bottom: 1.5px solid var(--color-border-subtle);
+          background: linear-gradient(180deg, #FFFFFF 0%, #FAF7F0 100%);
+          border-bottom: 1px solid var(--color-border-subtle);
           gap: 1rem;
         }
 
@@ -393,8 +394,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           background: #FFFFFF;
           padding: 4px;
           border-radius: var(--radius-sm);
-          border: 1.5px solid rgba(16, 185, 129, 0.2);
-          box-shadow: 0 2px 6px rgba(6, 78, 59, 0.05);
+          border: 1px solid var(--color-gold-hairline);
+          box-shadow: 0 2px 6px rgba(5, 27, 18, 0.05);
         }
 
         .modal-header-titles {
@@ -402,20 +403,25 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .modal-company-name {
-          font-size: 0.8rem;
+          font-size: 0.78rem;
           font-weight: 800;
-          color: var(--color-agricultural-green);
+          color: #8C6A18;
           display: block;
           text-transform: uppercase;
-          letter-spacing: 0.05em;
+          letter-spacing: 0.06em;
         }
 
         .modal-product-name {
+          font-family: var(--font-serif);
           font-size: 1.35rem;
-          font-weight: 800;
-          color: var(--color-forest-green-dark);
+          font-weight: 700;
+          color: var(--color-obsidian);
           line-height: 1.2;
           margin: 0.15rem 0 0 0;
+        }
+        html[lang="te"] .modal-product-name {
+          font-family: var(--font-te);
+          font-weight: 800;
         }
 
         .modal-close-btn {

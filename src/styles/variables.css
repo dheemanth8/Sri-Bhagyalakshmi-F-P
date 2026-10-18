@@ -1,62 +1,71 @@
 :root {
-  /* Brand Primary Colors - Deep Earthy Forest Greens */
-  --color-forest-deep: #072714;
-  --color-forest-dark: #0D3B1F;
-  --color-forest-green: #14532D;
-  --color-forest-green-dark: #0A2E18;
-  --color-forest-green-light: #166534;
-  --color-agricultural-green: #15803D;
-  --color-agricultural-green-light: #22C55E;
-  --color-agricultural-green-subtle: #F0FDF4;
+  /* Gilded Botanical Atelier - Unique Luxury Agronomy System */
+  
+  /* Deep Obsidian Pine & Forest Palette */
+  --color-obsidian: #051B12;
+  --color-forest-deep: #072217;
+  --color-forest-dark: #0A2E20;
+  --color-forest-green: #0E3D2B;
+  --color-forest-green-dark: #072419;
+  --color-forest-green-light: #16533A;
+  --color-agricultural-green: #127A52;
+  --color-agricultural-green-light: #10B981;
+  --color-agricultural-green-subtle: #E6F7ED;
   --color-emerald-vivid: #10B981;
   --color-lime-accent: #84CC16;
   
-  /* Brand Accent Colors - Sunlit Harvest Gold & Amber */
-  --color-golden-yellow: #F59E0B;
-  --color-golden-yellow-dark: #D97706;
-  --color-golden-yellow-light: #FDE68A;
-  --color-golden-yellow-subtle: #FEF3C7;
-  --color-gold-glow: #FBBF24;
+  /* Antique Burnished Gold & Champagne Metals */
+  --color-gold-metallic: #D4AF37;
+  --color-gold-burnished: #C59B4E;
+  --color-gold-amber: #DFBA73;
+  --color-golden-yellow: #C59B4E;
+  --color-golden-yellow-dark: #B38738;
+  --color-golden-yellow-light: #F3E5AB;
+  --color-golden-yellow-subtle: #FAF2D6;
+  --color-gold-glow: #E5C578;
+  --color-gold-hairline: rgba(212, 175, 55, 0.38);
 
-  /* Cream & Organic Linen System */
-  --color-cream-base: #FAF6EE;
-  --color-cream-surface: #FFFEFB;
-  --color-cream-alt: #F4EEDF;
-  --color-cream-dark: #EFE7D3;
-  --color-warm-cream: #FAF6EE;
-  --color-warm-cream-alt: #F5EFEB;
+  /* Organic Linen, Champagne & Warm Parchment */
+  --color-cream-base: #FAF7F0;
+  --color-cream-surface: #FFFEFC;
+  --color-cream-alt: #F3ECE0;
+  --color-cream-dark: #EADDC9;
+  --color-warm-cream: #FAF7F0;
+  --color-warm-cream-alt: #F5EFE3;
   --color-white: #FFFFFF;
-  --color-bg-alt: #F5EFEB;
-  --color-bg-mesh: #FAF6EE;
+  --color-bg-alt: #F3ECE0;
+  --color-bg-mesh: #FAF7F0;
   
   /* Text & Border Neutrals with Warm Tone */
-  --color-dark-charcoal: #111E16;
-  --color-charcoal-muted: #3B4B40;
-  --color-charcoal-light: #607266;
-  --color-border-subtle: #E5DAC1;
-  --color-border-accent: rgba(245, 158, 11, 0.45);
-  --color-border-forest: rgba(13, 59, 31, 0.22);
-  --color-border-emerald: rgba(21, 128, 61, 0.25);
+  --color-dark-charcoal: #121E18;
+  --color-charcoal-muted: #384C42;
+  --color-charcoal-light: #5E7268;
+  --color-border-subtle: #E4D8BA;
+  --color-border-accent: rgba(212, 175, 55, 0.45);
+  --color-border-forest: rgba(14, 61, 43, 0.22);
+  --color-border-emerald: rgba(16, 185, 129, 0.25);
 
   /* Semantic Feedback */
-  --color-success: #15803D;
-  --color-warning: #D97706;
+  --color-success: #127A52;
+  --color-warning: #B38738;
   --color-info: #2563EB;
 
-  /* Multi-stop Gradients */
-  --gradient-forest-header: linear-gradient(135deg, #072714 0%, #0D3B1F 55%, #14532D 100%);
-  --gradient-forest-vibrant: linear-gradient(135deg, #0D3B1F 0%, #14532D 50%, #166534 100%);
-  --gradient-emerald-vibrant: linear-gradient(135deg, #166534 0%, #15803D 50%, #0D3B1F 100%);
-  --gradient-gold-vibrant: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
-  --gradient-badge-glow: linear-gradient(135deg, rgba(20, 83, 45, 0.12) 0%, rgba(245, 158, 11, 0.15) 100%);
-  --gradient-card-cream: linear-gradient(180deg, #FFFEFB 0%, #FAF6EE 100%);
-  --gradient-cream-mesh: radial-gradient(circle at 10% 15%, rgba(245, 158, 11, 0.08) 0%, transparent 45%),
-                         radial-gradient(circle at 90% 85%, rgba(20, 83, 45, 0.09) 0%, transparent 45%),
-                         #FAF6EE;
+  /* Curated Multi-stop Gradients */
+  --gradient-obsidian-header: linear-gradient(135deg, #051B12 0%, #0A2E20 50%, #0E3D2B 100%);
+  --gradient-forest-header: linear-gradient(135deg, #051B12 0%, #0A2E20 50%, #0E3D2B 100%);
+  --gradient-forest-vibrant: linear-gradient(135deg, #0A2E20 0%, #0E3D2B 55%, #16533A 100%);
+  --gradient-emerald-vibrant: linear-gradient(135deg, #127A52 0%, #0E3D2B 100%);
+  --gradient-gold-vibrant: linear-gradient(135deg, #E5C578 0%, #D4AF37 50%, #B38738 100%);
+  --gradient-badge-glow: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(14, 61, 43, 0.12) 100%);
+  --gradient-card-cream: linear-gradient(180deg, #FFFEFC 0%, #FAF7F0 100%);
+  --gradient-cream-mesh: radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 45%),
+                         radial-gradient(circle at 90% 85%, rgba(14, 61, 43, 0.08) 0%, transparent 45%),
+                         #FAF7F0;
 
   /* Typography */
-  --font-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-te: 'Noto Sans Telugu', 'Inter', -apple-system, sans-serif;
+  --font-serif: 'Cinzel', Georgia, 'Times New Roman', serif;
+  --font-en: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  --font-te: 'Noto Sans Telugu', 'Plus Jakarta Sans', sans-serif;
 
   /* Spacing Scale */
   --space-xs: 0.25rem;
@@ -69,27 +78,43 @@
 
   /* Border Radii */
   --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
   --radius-full: 9999px;
 
-  /* Dynamic Glowing Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(13, 59, 31, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(13, 59, 31, 0.08), 0 2px 4px -2px rgba(13, 59, 31, 0.04);
-  --shadow-lg: 0 10px 18px -3px rgba(13, 59, 31, 0.11), 0 4px 6px -4px rgba(13, 59, 31, 0.04);
-  --shadow-xl: 0 20px 25px -5px rgba(13, 59, 31, 0.14), 0 8px 10px -6px rgba(13, 59, 31, 0.05);
-  --shadow-card: 0 4px 20px -2px rgba(13, 59, 31, 0.08), 0 2px 6px -1px rgba(245, 158, 11, 0.05);
-  --shadow-card-hover: 0 20px 35px -8px rgba(13, 59, 31, 0.2), 0 8px 16px -4px rgba(245, 158, 11, 0.15);
-  --shadow-gold: 0 6px 20px rgba(245, 158, 11, 0.38);
-  --shadow-forest: 0 6px 20px rgba(13, 59, 31, 0.35);
+  /* Gilded Delicate Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(5, 27, 18, 0.06);
+  --shadow-md: 0 4px 10px -2px rgba(5, 27, 18, 0.08), 0 2px 4px -2px rgba(5, 27, 18, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(5, 27, 18, 0.12), 0 4px 8px -4px rgba(5, 27, 18, 0.04);
+  --shadow-xl: 0 24px 36px -6px rgba(5, 27, 18, 0.16), 0 8px 12px -6px rgba(5, 27, 18, 0.06);
+  --shadow-card: 0 6px 24px -2px rgba(5, 27, 18, 0.07), 0 0 0 1px rgba(212, 175, 55, 0.16);
+  --shadow-card-hover: 0 22px 42px -10px rgba(5, 27, 18, 0.22), 0 0 0 1.5px rgba(212, 175, 55, 0.45);
+  --shadow-gold: 0 6px 20px rgba(212, 175, 55, 0.4);
+  --shadow-forest: 0 6px 20px rgba(10, 46, 32, 0.38);
 
   /* Transitions */
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
 
   /* Container width */
   --max-width: 1520px;
-  --header-height: 80px;
+  --header-height: 84px;
+}
+
+/* Keyframes for unique luxury micro-interactions */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes slowOrbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
 }

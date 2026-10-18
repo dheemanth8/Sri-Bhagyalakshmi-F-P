@@ -233,20 +233,20 @@ export const Header: React.FC = () => {
           width: 100%;
         }
 
-        /* Main Nav - Regal Forest Green & Warm Cream */
+        /* Main Nav - Gilded Botanical Atelier */
         .main-nav {
-          background: linear-gradient(135deg, #072714 0%, #0D3B1F 55%, #14532D 100%);
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
-          border-top: 3.5px solid var(--color-golden-yellow);
-          border-bottom: 1.5px solid rgba(245, 158, 11, 0.35);
-          box-shadow: 0 4px 20px rgba(7, 39, 20, 0.35);
+          background: linear-gradient(180deg, rgba(5, 27, 18, 0.98) 0%, rgba(8, 40, 27, 0.95) 100%);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-top: 2.5px solid var(--color-gold-metallic);
+          border-bottom: 1px solid var(--color-gold-hairline);
+          box-shadow: 0 8px 30px rgba(5, 27, 18, 0.35);
           transition: all var(--transition-normal);
         }
         .main-nav--scrolled {
-          background: rgba(7, 39, 20, 0.96);
-          box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.45), 0 1px 0 rgba(245, 158, 11, 0.45);
-          border-bottom-color: var(--color-golden-yellow);
+          background: rgba(5, 27, 18, 0.98);
+          box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.5), 0 1px 0 var(--color-gold-hairline);
+          border-bottom-color: var(--color-gold-metallic);
         }
         .main-nav__inner {
           display: flex;
@@ -260,7 +260,7 @@ export const Header: React.FC = () => {
         .brand-identity {
           display: flex;
           align-items: center;
-          gap: 0.65rem;
+          gap: 0.75rem;
           text-decoration: none;
           min-width: 0;
           flex-shrink: 0;
@@ -271,7 +271,7 @@ export const Header: React.FC = () => {
         }
         @media (min-width: 640px) {
           .brand-identity {
-            gap: 0.85rem;
+            gap: 0.95rem;
           }
         }
         @media (min-width: 1024px) {
@@ -287,30 +287,30 @@ export const Header: React.FC = () => {
 
         .logo-box {
           position: relative;
-          width: 44px;
-          height: 44px;
+          width: 46px;
+          height: 46px;
           border-radius: var(--radius-full);
-          border: 2px solid var(--color-golden-yellow);
+          border: 2px solid var(--color-gold-metallic);
           overflow: hidden;
-          box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.35), 0 4px 14px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3), 0 4px 14px rgba(0, 0, 0, 0.4);
           flex-shrink: 0;
-          background: #FAF6EE;
+          background: #FAF7F0;
           transition: transform var(--transition-fast), box-shadow var(--transition-fast);
         }
         .brand-identity:hover .logo-box {
-          transform: scale(1.06);
-          box-shadow: 0 0 0 3px var(--color-golden-yellow), 0 6px 18px rgba(245, 158, 11, 0.5);
+          transform: scale(1.08) rotate(3deg);
+          box-shadow: 0 0 0 3px var(--color-gold-metallic), 0 0 20px rgba(212, 175, 55, 0.5);
         }
         @media (min-width: 640px) {
           .logo-box {
-            width: 48px;
-            height: 48px;
+            width: 50px;
+            height: 50px;
           }
         }
         @media (min-width: 1280px) {
           .logo-box {
-            width: 54px;
-            height: 54px;
+            width: 56px;
+            height: 56px;
           }
         }
         .logo-img {
@@ -335,44 +335,49 @@ export const Header: React.FC = () => {
           text-overflow: ellipsis;
         }
         .brand-name-en {
-          font-size: 1.05rem;
-          color: #FFFEFB;
-          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+          font-family: var(--font-serif);
+          font-size: 1.15rem;
+          font-weight: 800;
+          color: #FFFDF7;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
         }
         .brand-name-te {
-          font-size: 1.15rem;
-          color: #FEF3C7;
-          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+          font-size: 1.18rem;
+          font-weight: 800;
+          color: #F3E5AB;
+          text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
         }
         @media (min-width: 640px) {
           .brand-name-en {
-            font-size: 1.15rem;
+            font-size: 1.25rem;
           }
           .brand-name-te {
-            font-size: 1.25rem;
+            font-size: 1.28rem;
           }
         }
         @media (min-width: 1280px) {
           .brand-name-en {
-            font-size: 1.22rem;
+            font-size: 1.34rem;
           }
           .brand-name-te {
-            font-size: 1.34rem;
+            font-size: 1.38rem;
           }
         }
 
         .brand-meta {
-          color: #D2C8B0;
+          color: #C8BA9E;
           font-weight: 600;
           margin-top: 2px;
           white-space: nowrap;
-          letter-spacing: 0.02em;
+          letter-spacing: 0.03em;
           overflow: hidden;
           text-overflow: ellipsis;
         }
         .brand-meta-desktop {
           display: none;
-          font-size: 0.78rem;
+          font-size: 0.76rem;
         }
         .brand-meta-mobile {
           display: inline;

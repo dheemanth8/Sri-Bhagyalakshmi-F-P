@@ -53,12 +53,17 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           <h2 className="section-title">
             {t.brandsSection.title}
           </h2>
+          <div className="heritage-divider">
+            <span className="heritage-divider__line" />
+            <span className="heritage-divider__diamond">◆</span>
+            <span className="heritage-divider__line" />
+          </div>
           <p className="section-subtitle">
             {t.brandsSection.subtitle}
           </p>
         </div>
 
-        {/* Brand Filter Pill (Only All Brands, no numbers) */}
+        {/* Brand Filter Pill (All Brands - Gilded Atelier Pill) */}
         <div className="brands-toolbar">
           <div className="brands-filter-pills" role="tablist">
             <button
@@ -67,7 +72,7 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
               aria-selected="true"
               className="filter-pill-btn filter-pill-btn--active"
             >
-              <Sparkles size={14} />
+              <Sparkles size={14} className="filter-pill-sparkle" />
               <span>{t.brandsSection.allBrands}</span>
             </button>
           </div>
@@ -110,11 +115,11 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
       <style>{`
         .brands-section {
           background: 
-            radial-gradient(circle at 50% 0%, rgba(20, 83, 45, 0.08) 0%, transparent 60%),
-            radial-gradient(circle at 10% 100%, rgba(245, 158, 11, 0.09) 0%, transparent 50%),
+            radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+            radial-gradient(circle at 10% 100%, rgba(5, 27, 18, 0.05) 0%, transparent 50%),
             var(--color-cream-base);
-          border-top: 1.5px solid var(--color-border-subtle);
-          border-bottom: 1.5px solid var(--color-border-subtle);
+          border-top: 1px solid var(--color-gold-hairline);
+          border-bottom: 1px solid var(--color-gold-hairline);
         }
 
         /* Toolbar */
@@ -122,7 +127,7 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-bottom: 2.25rem;
+          margin-bottom: 2.75rem;
         }
 
         .brands-filter-pills {
@@ -134,24 +139,29 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
         .filter-pill-btn {
           display: inline-flex;
           align-items: center;
-          gap: 0.5rem;
-          padding: 0.5rem 1.35rem;
+          gap: 0.65rem;
+          padding: 0.55rem 1.65rem;
           border-radius: var(--radius-full);
-          font-size: 0.92rem;
+          font-size: 0.88rem;
           font-weight: 800;
-          background: var(--gradient-forest-vibrant);
-          color: #FAF6EE;
-          border: 1.5px solid #F59E0B;
-          box-shadow: 0 4px 16px rgba(13, 59, 31, 0.3);
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          background: var(--color-obsidian);
+          color: #FAF2D6;
+          border: 1px solid var(--color-gold-metallic);
+          box-shadow: 0 4px 18px rgba(5, 27, 18, 0.25), 0 0 14px rgba(212, 175, 55, 0.2);
           cursor: default;
+        }
+        .filter-pill-sparkle {
+          color: var(--color-gold-metallic);
         }
 
         /* 4 columns on desktop, 3 on tablet, 2 on mobile */
         .brands-grid {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          gap: 1.25rem;
-          margin-bottom: 3rem;
+          gap: 1.35rem;
+          margin-bottom: 3.25rem;
         }
 
         @media (min-width: 480px) {
@@ -163,14 +173,14 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
         @media (min-width: 768px) {
           .brands-grid {
             grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
+            gap: 1.65rem;
           }
         }
 
         @media (min-width: 1100px) {
           .brands-grid {
             grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
+            gap: 1.65rem;
           }
         }
 
@@ -201,24 +211,25 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
         .brands-footer-notice {
           display: flex;
           align-items: flex-start;
-          gap: 0.75rem;
-          max-width: 860px;
+          gap: 0.85rem;
+          max-width: 880px;
           margin: 0 auto;
-          background: linear-gradient(135deg, #FFFFFF 0%, #F0FDF4 100%);
-          border: 1.5px solid rgba(16, 185, 129, 0.25);
-          border-radius: var(--radius-lg);
-          padding: 1.15rem 1.35rem;
-          box-shadow: 0 4px 16px rgba(6, 78, 59, 0.04);
+          background: #FFFEFC;
+          border: 1px solid var(--color-gold-hairline);
+          border-left: 3.5px solid var(--color-gold-metallic);
+          border-radius: var(--radius-md);
+          padding: 1.25rem 1.5rem;
+          box-shadow: 0 4px 18px rgba(5, 27, 18, 0.04);
         }
         .notice-icon {
-          color: var(--color-agricultural-green);
+          color: var(--color-gold-metallic);
           flex-shrink: 0;
           margin-top: 0.15rem;
         }
         .notice-text {
           font-size: 0.86rem;
           color: var(--color-charcoal-muted);
-          line-height: 1.55;
+          line-height: 1.6;
           font-weight: 500;
         }
       `}</style>
