@@ -6,7 +6,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import { BrandCard } from '../components/BrandCard';
 import { BrandProductsModal } from '../components/BrandProductsModal';
 import { ShieldCheck, Info, Sparkles } from 'lucide-react';
-import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
+import realMiniPlants from '../assets/images/real-mini-plants-500.webp';
 
 interface BrandSectionProps {
   onSelectProductForEnquiry?: (productName: string) => void;
@@ -43,11 +43,12 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
   };
 
   return (
-    <section
-      id="brands"
-      className="section-pad brands-section"
-      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
-    >
+    <section id="brands" className="section-pad brands-section">
+      <div
+        className="section-plants-backdrop"
+        aria-hidden="true"
+        style={{ backgroundImage: `url(${realMiniPlants})` }}
+      />
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
@@ -120,9 +121,7 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           background-image: 
             radial-gradient(circle at 10% 15%, rgba(254, 243, 199, 0.75) 0%, transparent 42%),
             radial-gradient(circle at 90% 85%, rgba(254, 215, 170, 0.55) 0%, transparent 45%),
-            radial-gradient(circle at 50% 50%, rgba(255, 251, 235, 0.6) 0%, transparent 60%),
-            var(--mini-plants-bg);
-          background-size: auto, auto, auto, 120px 120px;
+            radial-gradient(circle at 50% 50%, rgba(255, 251, 235, 0.6) 0%, transparent 60%);
           border-top: 1.5px solid var(--color-border-subtle);
           border-bottom: 1.5px solid var(--color-border-subtle);
           overflow: hidden;

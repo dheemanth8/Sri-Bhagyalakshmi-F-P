@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { businessData } from '../data/business';
 import { useLanguage } from '../hooks/useLanguage';
 import { MapPin, Navigation, ExternalLink, Clock, Store } from 'lucide-react';
-import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
+import realMiniPlants from '../assets/images/real-mini-plants-500.webp';
 
 export const LocationSection: React.FC = () => {
   const { language, t } = useLanguage();
@@ -17,11 +17,12 @@ export const LocationSection: React.FC = () => {
     : businessData.contact.openingHoursEnglish;
 
   return (
-    <section
-      id="location"
-      className="section-pad location-section"
-      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
-    >
+    <section id="location" className="section-pad location-section">
+      <div
+        className="section-plants-backdrop"
+        aria-hidden="true"
+        style={{ backgroundImage: `url(${realMiniPlants})` }}
+      />
       <div className="container">
         {/* Header */}
         <div className="section-header">
@@ -139,9 +140,7 @@ export const LocationSection: React.FC = () => {
           background-image: 
             radial-gradient(circle at 50% 20%, rgba(254, 243, 199, 0.75) 0%, transparent 50%),
             radial-gradient(circle at 90% 90%, rgba(254, 215, 170, 0.55) 0%, transparent 45%),
-            radial-gradient(circle at 10% 80%, rgba(253, 230, 138, 0.45) 0%, transparent 40%),
-            var(--mini-plants-bg);
-          background-size: auto, auto, auto, 120px 120px;
+            radial-gradient(circle at 10% 80%, rgba(253, 230, 138, 0.45) 0%, transparent 40%);
           border-top: 1.5px solid var(--color-border-subtle);
           border-bottom: 1.5px solid var(--color-border-subtle);
           overflow: hidden;

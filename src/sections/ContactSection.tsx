@@ -12,7 +12,7 @@ import {
   MessageSquare,
   Loader2,
 } from 'lucide-react';
-import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
+import realMiniPlants from '../assets/images/real-mini-plants-500.webp';
 
 interface ContactSectionProps {
   selectedCategory?: string;
@@ -100,11 +100,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   };
 
   return (
-    <section
-      id="contact"
-      className="section-pad contact-section"
-      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
-    >
+    <section id="contact" className="section-pad contact-section">
+      <div
+        className="section-plants-backdrop"
+        aria-hidden="true"
+        style={{ backgroundImage: `url(${realMiniPlants})` }}
+      />
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
@@ -337,9 +338,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           background-image: 
             radial-gradient(circle at 82% 18%, rgba(254, 243, 199, 0.85) 0%, transparent 48%),
             radial-gradient(circle at 18% 85%, rgba(254, 215, 170, 0.6) 0%, transparent 50%),
-            radial-gradient(ellipse at 50% 100%, rgba(253, 230, 138, 0.45) 0%, transparent 55%),
-            var(--mini-plants-bg);
-          background-size: auto, auto, auto, 120px 120px;
+            radial-gradient(ellipse at 50% 100%, rgba(253, 230, 138, 0.45) 0%, transparent 55%);
           border-top: 1.5px solid var(--color-border-subtle);
           overflow: hidden;
         }

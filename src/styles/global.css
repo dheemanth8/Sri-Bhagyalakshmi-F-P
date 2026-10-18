@@ -98,8 +98,28 @@ button {
 
 /* Section Common Structure */
 .section-pad {
+  position: relative;
+  overflow: hidden;
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+}
+
+.section-pad > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-plants-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 340px 340px;
+  background-repeat: repeat;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
 }
 
 @media (min-width: 1024px) {

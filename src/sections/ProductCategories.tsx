@@ -3,7 +3,7 @@ import { productCategories } from '../data/categories';
 import { useLanguage } from '../hooks/useLanguage';
 import { CategoryCard } from '../components/CategoryCard';
 import { Sprout, AlertCircle } from 'lucide-react';
-import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
+import realMiniPlants from '../assets/images/real-mini-plants-500.webp';
 
 interface ProductCategoriesProps {
   onSelectCategoryForEnquiry?: (categoryName: string) => void;
@@ -25,11 +25,12 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
   }, [onSelectCategoryForEnquiry]);
 
   return (
-    <section
-      id="categories"
-      className="section-pad categories-section"
-      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
-    >
+    <section id="categories" className="section-pad categories-section">
+      <div
+        className="section-plants-backdrop"
+        aria-hidden="true"
+        style={{ backgroundImage: `url(${realMiniPlants})` }}
+      />
       <div className="container">
         {/* Header */}
         <div className="section-header">
@@ -72,9 +73,7 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
           background-image: 
             radial-gradient(ellipse at 50% 0%, rgba(254, 243, 199, 0.8) 0%, transparent 55%),
             radial-gradient(circle at 8% 85%, rgba(254, 215, 170, 0.5) 0%, transparent 40%),
-            radial-gradient(circle at 92% 25%, rgba(253, 230, 138, 0.45) 0%, transparent 45%),
-            var(--mini-plants-bg);
-          background-size: auto, auto, auto, 120px 120px;
+            radial-gradient(circle at 92% 25%, rgba(253, 230, 138, 0.45) 0%, transparent 45%);
           border-top: 1.5px solid var(--color-border-subtle);
           border-bottom: 1.5px solid var(--color-border-subtle);
           overflow: hidden;

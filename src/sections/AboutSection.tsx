@@ -11,17 +11,18 @@ import founder1Img from '../assets/images/annem_balarama_subba_reddy.jpg';
 import founder1Webp from '../assets/images/annem_balarama_subba_reddy.webp';
 import founder2Img from '../assets/images/annem_chandra_sekhar_reddy.jpg';
 import founder2Webp from '../assets/images/annem_chandra_sekhar_reddy.webp';
-import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
+import realMiniPlants from '../assets/images/real-mini-plants-500.webp';
 
 export const AboutSection: React.FC = () => {
   const { language, t } = useLanguage();
 
   return (
-    <section
-      id="about"
-      className="section-pad about-section"
-      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
-    >
+    <section id="about" className="section-pad about-section">
+      <div
+        className="section-plants-backdrop"
+        aria-hidden="true"
+        style={{ backgroundImage: `url(${realMiniPlants})` }}
+      />
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
@@ -181,9 +182,7 @@ export const AboutSection: React.FC = () => {
           background-image: 
             radial-gradient(circle at 85% 15%, rgba(254, 243, 199, 0.85) 0%, transparent 45%),
             radial-gradient(circle at 15% 85%, rgba(254, 215, 170, 0.6) 0%, transparent 50%),
-            radial-gradient(circle at 50% 100%, rgba(255, 237, 213, 0.5) 0%, transparent 55%),
-            var(--mini-plants-bg);
-          background-size: auto, auto, auto, 120px 120px;
+            radial-gradient(circle at 50% 100%, rgba(255, 237, 213, 0.5) 0%, transparent 55%);
           border-top: 1.5px solid var(--color-border-subtle);
           border-bottom: 1.5px solid var(--color-border-subtle);
           overflow: hidden;
