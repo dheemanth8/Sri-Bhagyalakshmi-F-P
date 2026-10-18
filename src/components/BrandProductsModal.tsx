@@ -357,7 +357,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
 
             <div className="modal-footer-actions">
               <a
-                href={`tel:${(businessData.contact.phone || '+919440261168').replace(/[^0-9+]/g, '')}`}
+                href={`tel:${(businessData.contact.phone || '+918500264499').replace(/[^0-9+]/g, '')}`}
                 className="modal-action-btn modal-action-btn--phone"
               >
                 <Phone size={16} />
@@ -365,7 +365,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
               </a>
 
               <a
-                href={`https://wa.me/91${(businessData.contact.whatsapp || businessData.contact.phone || '9440261168').replace(/[^0-9]/g, '').slice(-10)}?text=${encodeURIComponent(
+                href={`https://wa.me/91${(businessData.contact.whatsapp || businessData.contact.phone || '8500264499').replace(/[^0-9]/g, '').slice(-10)}?text=${encodeURIComponent(
                   `Hello Sri Bhagyalakshmi Fertilizers, I am inquiring about genuine products from ${brand.name}.`
                 )}`}
                 target="_blank"

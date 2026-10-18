@@ -9,7 +9,8 @@ import {
   CheckCircle,
   AlertCircle,
   Navigation,
-  Mail,
+  MessageSquare,
+  Phone,
   Loader2,
 } from 'lucide-react';
 
@@ -39,14 +40,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
-  const targetEmail = businessData.contact.email || 'dheemanthannem@gmail.com';
+  const whatsappNumber = '918500264499';
+  const whatsappDisplay = '+91 85002 64499';
 
-  const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(
-    `Agricultural Enquiry from ${formData.name || 'Farmer'}`
-  )}&body=${encodeURIComponent(
-    `Name: ${formData.name}\nPhone: ${formData.phone}\nCategory / Product: ${
-      formData.category || 'General Enquiry'
-    }\nMessage: ${formData.message}\n\nSubmitted via Sri Bhagyalakshmi Fertilizers & Pesticides Website`
+  const whatsappEnquiryUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    formData.name
+      ? `*Agricultural Enquiry - Sri Bhagyalakshmi Fertilizers & Pesticides*\n\n*Name:* ${formData.name}\n*Mobile:* ${formData.phone}\n*Category / Product:* ${formData.category || 'General Enquiry'}\n*Message:* ${formData.message || 'Availability and price enquiry'}\n\n_Sent via Sri Bhagyalakshmi Website_`
+      : `Hello Sri Bhagyalakshmi Fertilizers & Pesticides, I would like to enquire about fertilizer and pesticide stock availability.`
   )}`;
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -68,8 +68,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     setIsSubmitting(true);
 
     try {
-      // Forward enquiry directly to dheemanthannem@gmail.com via FormSubmit endpoint
-      await fetch(`https://formsubmit.co/ajax/${targetEmail}`, {
+      // Forward enquiry securely in the background without displaying email to users
+      await fetch('https://formsubmit.co/ajax/dheemanthannem@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -118,8 +118,52 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         </div>
 
         <div className="contact-grid">
-          {/* Left Column: Configurable Contact Channels */}
+          {/* Left Column: Direct Contact Channels */}
           <div className="contact-cards-col">
+            {/* WhatsApp Business Card */}
+            <div className="contact-channel-card card-surface contact-channel-card--whatsapp">
+              <div className="channel-icon-box channel-icon-box--whatsapp">
+                <MessageSquare size={24} />
+              </div>
+              <div className="channel-info">
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                  <h3 className="channel-title" style={{ margin: 0 }}>
+                    {language === 'te' ? 'వాట్సాప్ బిజినెస్' : 'WhatsApp Business'}
+                  </h3>
+                  <span style={{ fontSize: '0.68rem', fontWeight: 700, padding: '0.15rem 0.5rem', borderRadius: '9999px', background: '#DCFCE7', color: '#15803D' }}>
+                    {language === 'te' ? 'యాక్టివ్' : 'Active'}
+                  </span>
+                </div>
+                <p className="channel-desc" style={{ fontSize: '1.05rem', fontWeight: 700, color: '#15803D', margin: '0.2rem 0' }}>
+                  {whatsappDisplay}
+                </p>
+                <p className="channel-desc" style={{ fontSize: '0.82rem', marginBottom: '0.85rem' }}>
+                  {language === 'te'
+                    ? 'ఎరువులు, పురుగుమందుల లభ్యత మరియు ధరల వివరాల కోసం వాట్సాప్‌లో సందేశం పంపండి.'
+                    : 'Instant assistance on product stock, pricing, and genuine company inputs.'}
+                </p>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  <a
+                    href={whatsappEnquiryUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm channel-btn"
+                    style={{ background: '#25D366', color: '#FFFFFF', borderColor: '#25D366', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
+                  >
+                    <MessageSquare size={14} />
+                    <span>{language === 'te' ? 'వాట్సాప్‌లో చాట్ చేయండి' : 'Chat on WhatsApp'}</span>
+                  </a>
+                  <a
+                    href={`tel:+${whatsappNumber}`}
+                    className="btn btn-outline btn-sm channel-btn"
+                  >
+                    <Phone size={14} />
+                    <span>{language === 'te' ? 'కాల్ చేయండి' : 'Call'}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* Address & Store Card */}
             <div className="contact-channel-card card-surface">
               <div className="channel-icon-box">
@@ -150,28 +194,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 <p className="channel-desc">{t.contactSection.hoursPendingNotice}</p>
               </div>
             </div>
-
-            {/* Official Store Email Card */}
-            <div className="contact-channel-card card-surface">
-              <div className="channel-icon-box">
-                <Mail size={24} />
-              </div>
-              <div className="channel-info">
-                <h3 className="channel-title">
-                  {language === 'te' ? 'అధికారిక ఇమెయిల్' : 'Official Store Email'}
-                </h3>
-                <p className="channel-desc" style={{ wordBreak: 'break-all', fontWeight: 600 }}>
-                  {targetEmail}
-                </p>
-                <a
-                  href={`mailto:${targetEmail}`}
-                  className="btn btn-outline btn-sm channel-btn"
-                >
-                  <Send size={14} />
-                  <span>{language === 'te' ? 'ఇమెయిల్ పంపండి' : 'Send Email'}</span>
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Right Column: Farmer Direct Enquiry Form */}
@@ -189,17 +211,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <p className="success-msg">{t.contactSection.formSuccessMsg}</p>
                   <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center', marginTop: '1.25rem' }}>
                     <a
-                      href={mailtoUrl}
-                      className="btn btn-outline btn-sm"
+                      href={whatsappEnquiryUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="btn btn-sm"
+                      style={{ background: '#25D366', color: '#FFFFFF', borderColor: '#25D366', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
                     >
-                      <Mail size={14} />
-                      <span>{language === 'te' ? 'ఇమెయిల్ యాప్‌లో తెరవండి' : 'Open in Email App'}</span>
+                      <MessageSquare size={16} />
+                      <span>{language === 'te' ? 'వాట్సాప్‌లో పంపండి (8500264499)' : 'Send on WhatsApp (8500264499)'}</span>
                     </a>
                     <button
                       type="button"
-                      className="btn btn-primary btn-sm"
+                      className="btn btn-outline btn-sm"
                       onClick={() => {
                         setSubmitted(false);
                         setFormData({ name: '', phone: '', category: '', message: '' });

@@ -10,6 +10,7 @@ import {
   ShieldAlert,
   FileSpreadsheet,
   Send,
+  MessageSquare,
 } from 'lucide-react';
 
 interface ProductDetailModalProps {
@@ -292,6 +293,27 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             {language === 'te' ? 'మూసివేయి' : 'Close'}
           </button>
 
+          <a
+            href={`https://wa.me/918500264499?text=${encodeURIComponent(
+              `Hello Sri Bhagyalakshmi Fertilizers & Pesticides, I am inquiring about genuine ${product.company.name} ${product.name} (${selectedPack}). Please confirm availability and current price.`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn modal-btn-whatsapp"
+            style={{
+              background: '#25D366',
+              color: '#FFFFFF',
+              borderColor: '#25D366',
+              fontWeight: 700,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.45rem',
+            }}
+          >
+            <MessageSquare size={16} />
+            <span>{language === 'te' ? 'వాట్సాప్‌లో అడగండి' : 'WhatsApp'}</span>
+          </a>
+
           <button
             type="button"
             className="btn btn-primary modal-btn-primary"
@@ -300,8 +322,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             <Send size={16} />
             <span>
               {language === 'te'
-                ? `ఈ ఉత్పత్తి గురించి విచారించండి (${selectedPack})`
-                : `Enquire in Store (${selectedPack})`}
+                ? `స్టోర్ విచారణ (${selectedPack})`
+                : `Store Enquiry (${selectedPack})`}
             </span>
           </button>
         </div>
