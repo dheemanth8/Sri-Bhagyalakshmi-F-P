@@ -11,18 +11,12 @@ import founder1Img from '../assets/images/annem_balarama_subba_reddy.jpg';
 import founder1Webp from '../assets/images/annem_balarama_subba_reddy.webp';
 import founder2Img from '../assets/images/annem_chandra_sekhar_reddy.jpg';
 import founder2Webp from '../assets/images/annem_chandra_sekhar_reddy.webp';
-import realMiniPlants from '../assets/images/real-mini-plants-500.webp';
 
 export const AboutSection: React.FC = () => {
   const { language, t } = useLanguage();
 
   return (
     <section id="about" className="section-pad about-section">
-      <div
-        className="section-plants-backdrop"
-        aria-hidden="true"
-        style={{ backgroundImage: `url(${realMiniPlants})` }}
-      />
       <div className="container">
         {/* Section Header */}
         <div className="section-header">

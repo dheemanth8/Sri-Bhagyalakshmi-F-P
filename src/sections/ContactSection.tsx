@@ -12,7 +12,6 @@ import {
   MessageSquare,
   Loader2,
 } from 'lucide-react';
-import realMiniPlants from '../assets/images/real-mini-plants-500.webp';
 
 interface ContactSectionProps {
   selectedCategory?: string;
@@ -101,11 +100,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
   return (
     <section id="contact" className="section-pad contact-section">
-      <div
-        className="section-plants-backdrop"
-        aria-hidden="true"
-        style={{ backgroundImage: `url(${realMiniPlants})` }}
-      />
       <div className="container">
         {/* Section Header */}
         <div className="section-header">

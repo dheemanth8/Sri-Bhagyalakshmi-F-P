@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { businessData } from '../data/business';
 import { useLanguage } from '../hooks/useLanguage';
 import { MapPin, Navigation, ExternalLink, Clock, Store } from 'lucide-react';
-import realMiniPlants from '../assets/images/real-mini-plants-500.webp';
 
 export const LocationSection: React.FC = () => {
   const { language, t } = useLanguage();
@@ -18,11 +17,6 @@ export const LocationSection: React.FC = () => {
 
   return (
     <section id="location" className="section-pad location-section">
-      <div
-        className="section-plants-backdrop"
-        aria-hidden="true"
-        style={{ backgroundImage: `url(${realMiniPlants})` }}
-      />
       <div className="container">
         {/* Header */}
         <div className="section-header">

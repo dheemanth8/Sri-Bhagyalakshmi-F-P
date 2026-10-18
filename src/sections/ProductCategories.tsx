@@ -69,13 +69,14 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
       <style>{`
         .categories-section {
           position: relative;
-          background-color: #FFFDF7;
+          background-color: #FFFDF9;
           background-image: 
-            radial-gradient(ellipse at 50% 0%, rgba(254, 243, 199, 0.8) 0%, transparent 55%),
+            radial-gradient(ellipse at 50% 100%, rgba(254, 243, 199, 0.75) 0%, transparent 55%),
             radial-gradient(circle at 8% 85%, rgba(254, 215, 170, 0.5) 0%, transparent 40%),
             radial-gradient(circle at 92% 25%, rgba(253, 230, 138, 0.45) 0%, transparent 45%);
-          border-top: 1.5px solid var(--color-border-subtle);
+          border-top: none;
           border-bottom: 1.5px solid var(--color-border-subtle);
+          padding-top: 2rem;
           overflow: hidden;
         }
 

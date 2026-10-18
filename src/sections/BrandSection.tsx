@@ -123,7 +123,8 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
             radial-gradient(circle at 90% 85%, rgba(254, 215, 170, 0.55) 0%, transparent 45%),
             radial-gradient(circle at 50% 50%, rgba(255, 251, 235, 0.6) 0%, transparent 60%);
           border-top: 1.5px solid var(--color-border-subtle);
-          border-bottom: 1.5px solid var(--color-border-subtle);
+          border-bottom: none;
+          padding-bottom: 2.5rem;
           overflow: hidden;
         }
 
