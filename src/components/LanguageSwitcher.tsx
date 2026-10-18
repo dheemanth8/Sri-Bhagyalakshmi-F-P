@@ -47,6 +47,8 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className = 
           border-radius: var(--radius-full);
           box-shadow: var(--shadow-sm);
           transition: all var(--transition-fast);
+          white-space: nowrap;
+          flex-shrink: 0;
         }
         .language-switcher:hover {
           border-color: var(--color-golden-yellow);

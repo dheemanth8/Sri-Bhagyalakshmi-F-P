@@ -94,7 +94,12 @@ export const Header: React.FC = () => {
             </div>
             <div className="brand-text">
               <span className={`brand-name-main ${language === 'te' ? 'brand-name-te telugu-preserve' : 'brand-name-en'}`}>
-                {businessData.name[language]}
+                <span className="brand-name-primary">
+                  {language === 'te' ? 'శ్రీ భాగ్యలక్ష్మి' : 'Sri Bhagyalakshmi'}
+                </span>
+                <span className="brand-name-suffix">
+                  {language === 'te' ? ' ఫర్టిలైజర్స్ & పెస్టిసైడ్స్' : ' Fertilizers & Pesticides'}
+                </span>
               </span>
               <span className="brand-meta">
                 {language === 'te'
@@ -255,32 +260,40 @@ export const Header: React.FC = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          gap: 1rem;
           height: var(--header-height);
+        }
+        @media (min-width: 1280px) {
+          .main-nav__inner {
+            gap: 2rem;
+          }
         }
 
         /* Brand Identity */
         .brand-identity {
           display: flex;
           align-items: center;
-          gap: 0.85rem;
+          gap: 0.75rem;
           text-decoration: none;
-          max-width: 70%;
-        }
-        @media (min-width: 1024px) {
-          .brand-identity {
-            max-width: 50%;
-          }
+          flex-shrink: 0;
+          min-width: 0;
         }
         .logo-box {
           position: relative;
-          width: 58px;
-          height: 58px;
+          width: 50px;
+          height: 50px;
           border-radius: var(--radius-full);
           border: 2px solid var(--color-golden-yellow);
           overflow: hidden;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
           flex-shrink: 0;
           background: #fff;
+        }
+        @media (min-width: 1280px) {
+          .logo-box {
+            width: 56px;
+            height: 56px;
+          }
         }
         .logo-img {
           width: 100%;
@@ -290,106 +303,205 @@ export const Header: React.FC = () => {
         .brand-text {
           display: flex;
           flex-direction: column;
-          line-height: 1.25;
+          line-height: 1.2;
           overflow: hidden;
-        }
-        .brand-name-te {
-          font-size: 1.18rem;
-          font-weight: 800;
-          color: var(--color-forest-green);
           white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
         }
-        .brand-name-en {
-          font-size: 1.05rem;
+        .brand-name-main {
           font-weight: 800;
-          color: var(--color-forest-green-dark);
+          white-space: nowrap;
           letter-spacing: -0.01em;
+          display: flex;
+          align-items: baseline;
+        }
+        .brand-name-primary {
           white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
+        }
+        .brand-name-en .brand-name-primary {
+          font-size: 1.05rem;
+          color: var(--color-forest-green-dark);
+        }
+        .brand-name-te .brand-name-primary {
+          font-size: 1.15rem;
+          color: var(--color-forest-green);
+        }
+        .brand-name-suffix {
+          display: none;
+        }
+        @media (min-width: 1400px) {
+          .brand-name-suffix {
+            display: inline;
+            font-size: 0.95em;
+            color: var(--color-forest-green);
+            font-weight: 700;
+          }
         }
         @media (min-width: 1280px) {
-          .brand-name-en {
+          .brand-name-en .brand-name-primary {
             font-size: 1.15rem;
           }
-          .brand-name-te {
+          .brand-name-te .brand-name-primary {
             font-size: 1.25rem;
           }
         }
         .brand-meta {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           color: var(--color-charcoal-muted);
           font-weight: 600;
-          margin-top: 3px;
+          margin-top: 2px;
           white-space: nowrap;
+          letter-spacing: 0.01em;
+        }
+        @media (min-width: 1280px) {
+          .brand-meta {
+            font-size: 0.8rem;
+          }
         }
 
         /* Desktop Nav */
         .nav-desktop {
           display: none;
           align-items: center;
-          gap: 1.5rem;
+          justify-content: flex-end;
+          gap: 1rem;
+          flex: 1;
+          min-width: 0;
         }
         @media (min-width: 1024px) {
           .nav-desktop {
             display: flex;
           }
         }
-        @media (min-width: 1280px) {
+        @media (min-width: 1200px) {
           .nav-desktop {
-            gap: 2.25rem;
+            gap: 1.5rem;
           }
         }
+        @media (min-width: 1360px) {
+          .nav-desktop {
+            gap: 2rem;
+          }
+        }
+
         .nav-links {
           display: flex;
           align-items: center;
-          gap: 1.25rem;
+          gap: 0.65rem;
           list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        @media (min-width: 1140px) {
+          .nav-links {
+            gap: 1rem;
+          }
         }
         @media (min-width: 1280px) {
           .nav-links {
-            gap: 1.75rem;
+            gap: 1.4rem;
           }
         }
+        @media (min-width: 1400px) {
+          .nav-links {
+            gap: 1.85rem;
+          }
+        }
+
         .nav-link {
-          font-size: 1.02rem;
+          font-size: 0.88rem;
           font-weight: 600;
           color: var(--color-dark-charcoal);
           position: relative;
-          padding: 0.35rem 0.15rem;
+          padding: 0.35rem 0.4rem;
+          white-space: nowrap; /* Prevents text breaking into multiple lines */
+          display: inline-block;
+          border-radius: var(--radius-sm);
+          transition: color var(--transition-fast), background-color var(--transition-fast);
+        }
+        @media (min-width: 1140px) {
+          .nav-link {
+            font-size: 0.92rem;
+            padding: 0.35rem 0.5rem;
+          }
+        }
+        @media (min-width: 1280px) {
+          .nav-link {
+            font-size: 0.96rem;
+            padding: 0.4rem 0.65rem;
+          }
         }
         .nav-link:hover {
           color: var(--color-forest-green);
+          background-color: rgba(20, 83, 45, 0.04);
         }
         .nav-link::after {
           content: '';
           position: absolute;
           bottom: 0;
-          left: 0;
-          width: 0%;
+          left: 0.4rem;
+          right: 0.4rem;
           height: 2px;
           background-color: var(--color-golden-yellow-dark);
-          transition: width var(--transition-fast);
+          transform: scaleX(0);
+          transform-origin: center;
+          transition: transform var(--transition-fast);
           border-radius: var(--radius-full);
         }
         .nav-link:hover::after {
-          width: 100%;
+          transform: scaleX(1);
         }
+        html[lang="te"] .nav-link {
+          font-size: 0.85rem;
+        }
+        @media (min-width: 1280px) {
+          html[lang="te"] .nav-link {
+            font-size: 0.92rem;
+          }
+        }
+
         .nav-actions {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 0.65rem;
+          flex-shrink: 0;
+        }
+        @media (min-width: 1280px) {
+          .nav-actions {
+            gap: 0.85rem;
+          }
         }
         .nav-directions-btn {
           border-radius: var(--radius-full);
-          padding: 0.55rem 1.15rem;
+          padding: 0.45rem 0.85rem;
+          font-size: 0.84rem;
           font-weight: 600;
           background: var(--color-forest-green);
+          color: #fff;
+          white-space: nowrap;
+          flex-shrink: 0;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          box-shadow: 0 2px 6px rgba(20, 83, 45, 0.2);
+          transition: all var(--transition-fast);
+        }
+        @media (min-width: 1200px) {
+          .nav-directions-btn {
+            padding: 0.52rem 1.05rem;
+            font-size: 0.88rem;
+          }
+        }
+        @media (min-width: 1280px) {
+          .nav-directions-btn {
+            padding: 0.55rem 1.15rem;
+            font-size: 0.92rem;
+            gap: 0.5rem;
+          }
         }
         .nav-directions-btn:hover {
           background: var(--color-forest-green-dark);
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(20, 83, 45, 0.3);
         }
 
         /* Mobile Hamburger & Actions */
