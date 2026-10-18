@@ -6,6 +6,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import { BrandCard } from '../components/BrandCard';
 import { BrandProductsModal } from '../components/BrandProductsModal';
 import { ShieldCheck, Info, Sparkles } from 'lucide-react';
+import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
 
 interface BrandSectionProps {
   onSelectProductForEnquiry?: (productName: string) => void;
@@ -42,7 +43,11 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
   };
 
   return (
-    <section id="brands" className="section-pad brands-section">
+    <section
+      id="brands"
+      className="section-pad brands-section"
+      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
+    >
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
@@ -110,9 +115,40 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
 
       <style>{`
         .brands-section {
-          background: var(--color-canvas-base);
-          border-top: 1px solid var(--color-border-subtle);
-          border-bottom: 1px solid var(--color-border-subtle);
+          position: relative;
+          background-color: #FFFDF9;
+          background-image: 
+            radial-gradient(circle at 10% 15%, rgba(254, 243, 199, 0.75) 0%, transparent 42%),
+            radial-gradient(circle at 90% 85%, rgba(254, 215, 170, 0.55) 0%, transparent 45%),
+            radial-gradient(circle at 50% 50%, rgba(255, 251, 235, 0.6) 0%, transparent 60%),
+            var(--mini-plants-bg);
+          background-size: auto, auto, auto, 120px 120px;
+          border-top: 1.5px solid var(--color-border-subtle);
+          border-bottom: 1.5px solid var(--color-border-subtle);
+          overflow: hidden;
+        }
+
+        .brands-section::before {
+          content: '';
+          position: absolute;
+          top: -90px;
+          right: -90px;
+          width: 320px;
+          height: 320px;
+          background: radial-gradient(circle, rgba(245, 158, 11, 0.14) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+        .brands-section::after {
+          content: '';
+          position: absolute;
+          bottom: -70px;
+          left: -70px;
+          width: 280px;
+          height: 280px;
+          background: radial-gradient(circle, rgba(234, 88, 12, 0.12) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
         }
 
         /* Toolbar */

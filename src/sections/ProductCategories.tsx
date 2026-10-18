@@ -3,6 +3,7 @@ import { productCategories } from '../data/categories';
 import { useLanguage } from '../hooks/useLanguage';
 import { CategoryCard } from '../components/CategoryCard';
 import { Sprout, AlertCircle } from 'lucide-react';
+import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
 
 interface ProductCategoriesProps {
   onSelectCategoryForEnquiry?: (categoryName: string) => void;
@@ -24,7 +25,11 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
   }, [onSelectCategoryForEnquiry]);
 
   return (
-    <section id="categories" className="section-pad categories-section">
+    <section
+      id="categories"
+      className="section-pad categories-section"
+      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
+    >
       <div className="container">
         {/* Header */}
         <div className="section-header">
@@ -62,9 +67,40 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
 
       <style>{`
         .categories-section {
-          background: var(--color-canvas-base);
-          border-top: 1px solid var(--color-border-subtle);
-          border-bottom: 1px solid var(--color-border-subtle);
+          position: relative;
+          background-color: #FFFDF7;
+          background-image: 
+            radial-gradient(ellipse at 50% 0%, rgba(254, 243, 199, 0.8) 0%, transparent 55%),
+            radial-gradient(circle at 8% 85%, rgba(254, 215, 170, 0.5) 0%, transparent 40%),
+            radial-gradient(circle at 92% 25%, rgba(253, 230, 138, 0.45) 0%, transparent 45%),
+            var(--mini-plants-bg);
+          background-size: auto, auto, auto, 120px 120px;
+          border-top: 1.5px solid var(--color-border-subtle);
+          border-bottom: 1.5px solid var(--color-border-subtle);
+          overflow: hidden;
+        }
+
+        .categories-section::before {
+          content: '';
+          position: absolute;
+          top: -100px;
+          left: -80px;
+          width: 340px;
+          height: 340px;
+          background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+        .categories-section::after {
+          content: '';
+          position: absolute;
+          bottom: -80px;
+          right: -80px;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(234, 88, 12, 0.1) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
         }
 
         .categories-grid {

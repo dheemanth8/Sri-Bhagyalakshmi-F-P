@@ -11,7 +11,6 @@ import {
   Package,
   ShieldCheck,
   RotateCcw,
-  Phone,
   MessageCircle,
   Building2,
 } from 'lucide-react';
@@ -356,14 +355,6 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
             </div>
 
             <div className="modal-footer-actions">
-              <a
-                href={`tel:${(businessData.contact.phone || '+918500264499').replace(/[^0-9+]/g, '')}`}
-                className="modal-action-btn modal-action-btn--phone"
-              >
-                <Phone size={16} />
-                <span>{t.brandsSection.callForPricing}</span>
-              </a>
-
               <a
                 href={`https://wa.me/91${(businessData.contact.whatsapp || businessData.contact.phone || '8500264499').replace(/[^0-9]/g, '').slice(-10)}?text=${encodeURIComponent(
                   `Hello Sri Bhagyalakshmi Fertilizers, I am inquiring about genuine products from ${brand.name}.`

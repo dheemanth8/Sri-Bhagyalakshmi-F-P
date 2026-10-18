@@ -10,9 +10,9 @@ import {
   AlertCircle,
   Navigation,
   MessageSquare,
-  Phone,
   Loader2,
 } from 'lucide-react';
+import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
 
 interface ContactSectionProps {
   selectedCategory?: string;
@@ -41,7 +41,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   const [errorMsg, setErrorMsg] = useState('');
 
   const whatsappNumber = '918500264499';
-  const whatsappDisplay = '+91 85002 64499';
 
   const whatsappEnquiryUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     formData.name
@@ -101,7 +100,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   };
 
   return (
-    <section id="contact" className="section-pad contact-section">
+    <section
+      id="contact"
+      className="section-pad contact-section"
+      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
+    >
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
@@ -135,8 +138,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     {language === 'te' ? 'యాక్టివ్' : 'Active'}
                   </span>
                 </div>
-                <p className="channel-desc" style={{ fontSize: '1.05rem', fontWeight: 700, color: '#15803D', margin: '0.2rem 0' }}>
-                  {whatsappDisplay}
+                <p className="channel-desc" style={{ fontSize: '0.98rem', fontWeight: 800, color: '#B45309', margin: '0.25rem 0' }}>
+                  {language === 'te' ? 'అధికారిక శ్రీ భాగ్యలక్ష్మి వాట్సాప్ సహాయం' : 'Official Sri Bhagyalakshmi Direct Support'}
                 </p>
                 <p className="channel-desc" style={{ fontSize: '0.82rem', marginBottom: '0.85rem' }}>
                   {language === 'te'
@@ -153,13 +156,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   >
                     <MessageSquare size={14} />
                     <span>{language === 'te' ? 'వాట్సాప్‌లో చాట్ చేయండి' : 'Chat on WhatsApp'}</span>
-                  </a>
-                  <a
-                    href={`tel:+${whatsappNumber}`}
-                    className="btn btn-outline btn-sm channel-btn"
-                  >
-                    <Phone size={14} />
-                    <span>{language === 'te' ? 'కాల్ చేయండి' : 'Call'}</span>
                   </a>
                 </div>
               </div>
@@ -219,7 +215,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       style={{ background: '#25D366', color: '#FFFFFF', borderColor: '#25D366', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
                     >
                       <MessageSquare size={16} />
-                      <span>{language === 'te' ? 'వాట్సాప్‌లో పంపండి (8500264499)' : 'Send on WhatsApp (8500264499)'}</span>
+                      <span>{language === 'te' ? 'వాట్సాప్‌లో పంపండి' : 'Send via WhatsApp'}</span>
                     </a>
                     <button
                       type="button"
@@ -336,9 +332,39 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
       <style>{`
         .contact-section {
-          background: var(--color-canvas-base);
           position: relative;
-          border-top: 1px solid var(--color-border-subtle);
+          background-color: #FFFDF9;
+          background-image: 
+            radial-gradient(circle at 82% 18%, rgba(254, 243, 199, 0.85) 0%, transparent 48%),
+            radial-gradient(circle at 18% 85%, rgba(254, 215, 170, 0.6) 0%, transparent 50%),
+            radial-gradient(ellipse at 50% 100%, rgba(253, 230, 138, 0.45) 0%, transparent 55%),
+            var(--mini-plants-bg);
+          background-size: auto, auto, auto, 120px 120px;
+          border-top: 1.5px solid var(--color-border-subtle);
+          overflow: hidden;
+        }
+
+        .contact-section::before {
+          content: '';
+          position: absolute;
+          top: -100px;
+          right: -100px;
+          width: 320px;
+          height: 320px;
+          background: radial-gradient(circle, rgba(245, 158, 11, 0.14) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+        .contact-section::after {
+          content: '';
+          position: absolute;
+          bottom: -80px;
+          left: -80px;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(234, 88, 12, 0.12) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
         }
 
         .contact-grid {

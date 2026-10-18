@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { businessData } from '../data/business';
 import { useLanguage } from '../hooks/useLanguage';
 import { MapPin, Navigation, ExternalLink, Clock, Store } from 'lucide-react';
+import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
 
 export const LocationSection: React.FC = () => {
   const { language, t } = useLanguage();
@@ -16,7 +17,11 @@ export const LocationSection: React.FC = () => {
     : businessData.contact.openingHoursEnglish;
 
   return (
-    <section id="location" className="section-pad location-section">
+    <section
+      id="location"
+      className="section-pad location-section"
+      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
+    >
       <div className="container">
         {/* Header */}
         <div className="section-header">
@@ -129,10 +134,40 @@ export const LocationSection: React.FC = () => {
 
       <style>{`
         .location-section {
-          background: var(--color-canvas-base);
-          border-top: 1px solid var(--color-border-subtle);
-          border-bottom: 1px solid var(--color-border-subtle);
           position: relative;
+          background-color: #FFFDF8;
+          background-image: 
+            radial-gradient(circle at 50% 20%, rgba(254, 243, 199, 0.75) 0%, transparent 50%),
+            radial-gradient(circle at 90% 90%, rgba(254, 215, 170, 0.55) 0%, transparent 45%),
+            radial-gradient(circle at 10% 80%, rgba(253, 230, 138, 0.45) 0%, transparent 40%),
+            var(--mini-plants-bg);
+          background-size: auto, auto, auto, 120px 120px;
+          border-top: 1.5px solid var(--color-border-subtle);
+          border-bottom: 1.5px solid var(--color-border-subtle);
+          overflow: hidden;
+        }
+
+        .location-section::before {
+          content: '';
+          position: absolute;
+          top: -80px;
+          right: -80px;
+          width: 320px;
+          height: 320px;
+          background: radial-gradient(circle, rgba(245, 158, 11, 0.14) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+        .location-section::after {
+          content: '';
+          position: absolute;
+          bottom: -80px;
+          left: -80px;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(234, 88, 12, 0.1) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
         }
 
         .location-container {

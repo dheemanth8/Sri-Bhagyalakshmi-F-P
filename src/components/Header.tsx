@@ -4,6 +4,7 @@ import { businessData } from '../data/business';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import logoImg from '../assets/images/sri_bhagyalakshmi_logo.png';
 import logoImgWebp128 from '../assets/images/sri_bhagyalakshmi_logo-128.webp';
+import headerBgImg from '../assets/images/agricultural_hero-640.webp';
 import { Menu, X, MapPin } from 'lucide-react';
 
 export const Header: React.FC = () => {
@@ -61,7 +62,10 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className="header-wrapper">
+    <header
+      className="header-wrapper"
+      style={{ '--header-bg-img': `url(${headerBgImg})` } as React.CSSProperties}
+    >
       {/* Main Navigation Bar */}
       <nav
         className={`main-nav ${scrolled ? 'main-nav--scrolled' : ''}`}
@@ -233,19 +237,28 @@ export const Header: React.FC = () => {
           width: 100%;
         }
 
-        /* Main Nav - Cute & Professional Frosted Cream */
+        /* Main Nav - Cute & Professional Frosted Cream with Translucent Background Image */
         .main-nav {
-          background: rgba(255, 253, 249, 0.94);
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
-          border-bottom: 1.5px solid rgba(245, 158, 11, 0.22);
-          box-shadow: 0 4px 20px rgba(120, 53, 15, 0.05);
+          position: relative;
+          background-color: rgba(255, 253, 249, 0.88);
+          background-image: 
+            linear-gradient(135deg, rgba(255, 253, 249, 0.91) 0%, rgba(254, 243, 199, 0.85) 50%, rgba(255, 237, 213, 0.82) 100%),
+            var(--header-bg-img);
+          background-size: cover;
+          background-position: center 30%;
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-bottom: 2px solid rgba(245, 158, 11, 0.35);
+          box-shadow: 0 4px 20px rgba(180, 83, 9, 0.08);
           transition: all var(--transition-normal);
         }
         .main-nav--scrolled {
-          background: rgba(255, 253, 249, 0.98);
-          box-shadow: 0 8px 24px rgba(120, 53, 15, 0.08);
-          border-bottom-color: rgba(245, 158, 11, 0.35);
+          background-color: rgba(255, 253, 249, 0.95);
+          background-image: 
+            linear-gradient(135deg, rgba(255, 253, 249, 0.96) 0%, rgba(254, 243, 199, 0.92) 100%),
+            var(--header-bg-img);
+          box-shadow: 0 8px 30px rgba(180, 83, 9, 0.12);
+          border-bottom-color: rgba(245, 158, 11, 0.5);
         }
         .main-nav__inner {
           display: flex;
@@ -631,7 +644,11 @@ export const Header: React.FC = () => {
           justify-content: space-between;
           padding: 1.25rem 1.5rem;
           margin: -1.5rem -1.5rem 1.25rem -1.5rem;
-          background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+          background-image: 
+            linear-gradient(135deg, rgba(255, 251, 235, 0.94) 0%, rgba(254, 243, 199, 0.90) 100%),
+            var(--header-bg-img);
+          background-size: cover;
+          background-position: center;
           border-bottom: 2px solid var(--color-primary);
         }
         .mobile-brand {

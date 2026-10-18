@@ -11,12 +11,17 @@ import founder1Img from '../assets/images/annem_balarama_subba_reddy.jpg';
 import founder1Webp from '../assets/images/annem_balarama_subba_reddy.webp';
 import founder2Img from '../assets/images/annem_chandra_sekhar_reddy.jpg';
 import founder2Webp from '../assets/images/annem_chandra_sekhar_reddy.webp';
+import miniPlantsPattern from '../assets/images/mini-plants-pattern.svg';
 
 export const AboutSection: React.FC = () => {
   const { language, t } = useLanguage();
 
   return (
-    <section id="about" className="section-pad about-section">
+    <section
+      id="about"
+      className="section-pad about-section"
+      style={{ '--mini-plants-bg': `url(${miniPlantsPattern})` } as React.CSSProperties}
+    >
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
@@ -171,9 +176,40 @@ export const AboutSection: React.FC = () => {
 
       <style>{`
         .about-section {
-          background: var(--color-canvas-base);
-          border-top: 1px solid var(--color-border-subtle);
-          border-bottom: 1px solid var(--color-border-subtle);
+          position: relative;
+          background-color: #FFFDF9;
+          background-image: 
+            radial-gradient(circle at 85% 15%, rgba(254, 243, 199, 0.85) 0%, transparent 45%),
+            radial-gradient(circle at 15% 85%, rgba(254, 215, 170, 0.6) 0%, transparent 50%),
+            radial-gradient(circle at 50% 100%, rgba(255, 237, 213, 0.5) 0%, transparent 55%),
+            var(--mini-plants-bg);
+          background-size: auto, auto, auto, 120px 120px;
+          border-top: 1.5px solid var(--color-border-subtle);
+          border-bottom: 1.5px solid var(--color-border-subtle);
+          overflow: hidden;
+        }
+
+        .about-section::before {
+          content: '';
+          position: absolute;
+          top: -120px;
+          left: 30%;
+          width: 400px;
+          height: 400px;
+          background: radial-gradient(circle, rgba(254, 243, 199, 0.45) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+        .about-section::after {
+          content: '';
+          position: absolute;
+          bottom: -90px;
+          right: -80px;
+          width: 320px;
+          height: 320px;
+          background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
+          border-radius: 50%;
+          pointer-events: none;
         }
 
         /* Full container utilization with comfortable responsive padding */
