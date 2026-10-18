@@ -94,17 +94,17 @@ export const Header: React.FC = () => {
             </div>
             <div className="brand-text">
               <span className={`brand-name-main ${language === 'te' ? 'brand-name-te telugu-preserve' : 'brand-name-en'}`}>
-                <span className="brand-name-primary">
-                  {language === 'te' ? 'శ్రీ భాగ్యలక్ష్మి' : 'Sri Bhagyalakshmi'}
-                </span>
-                <span className="brand-name-suffix">
-                  {language === 'te' ? ' ఫర్టిలైజర్స్ & పెస్టిసైడ్స్' : ' Fertilizers & Pesticides'}
-                </span>
+                {language === 'te' ? 'శ్రీ భాగ్యలక్ష్మి' : 'Sri Bhagyalakshmi'}
               </span>
               <span className="brand-meta">
-                {language === 'te'
-                  ? 'వ్యవసాయ ఎరువులు & పురుగుమందులు • 1995 నుండి'
-                  : 'Fertilizers & Pesticides • Estd. 1995'}
+                <span className="brand-meta-desktop">
+                  {language === 'te'
+                    ? 'వ్యవసాయ ఎరువులు & పురుగుమందులు • 1995 నుండి'
+                    : 'Fertilizers & Pesticides • Estd. 1995'}
+                </span>
+                <span className="brand-meta-mobile">
+                  {language === 'te' ? 'స్థాపన 1995' : 'Estd. 1995'}
+                </span>
               </span>
             </div>
           </a>
@@ -128,23 +128,13 @@ export const Header: React.FC = () => {
               ))}
             </ul>
 
-            {/* Desktop Actions: Language switch & Directions */}
+            {/* Desktop Actions: Language switch only */}
             <div className="nav-actions">
               <LanguageSwitcher />
-              <a
-                href={businessData.location.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary btn-sm nav-directions-btn"
-                title={t.nav.getDirections}
-              >
-                <MapPin size={15} />
-                <span>{t.nav.getDirections}</span>
-              </a>
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button & Language Switch */}
           <div className="mobile-actions">
             <LanguageSwitcher className="mobile-lang-compact" />
             <button
@@ -154,7 +144,7 @@ export const Header: React.FC = () => {
               aria-expanded={mobileMenuOpen}
               aria-label={mobileMenuOpen ? t.nav.closeMenu : t.nav.menu}
             >
-              {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+              {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
@@ -260,28 +250,39 @@ export const Header: React.FC = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 1rem;
           height: var(--header-height);
-        }
-        @media (min-width: 1280px) {
-          .main-nav__inner {
-            gap: 2rem;
-          }
+          width: 100%;
         }
 
         /* Brand Identity */
         .brand-identity {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 0.6rem;
           text-decoration: none;
-          flex-shrink: 0;
           min-width: 0;
+          flex-shrink: 0;
         }
+        @media (min-width: 640px) {
+          .brand-identity {
+            gap: 0.75rem;
+          }
+        }
+        @media (min-width: 1024px) {
+          .brand-identity {
+            margin-right: 2rem;
+          }
+        }
+        @media (min-width: 1280px) {
+          .brand-identity {
+            margin-right: 3rem;
+          }
+        }
+
         .logo-box {
           position: relative;
-          width: 50px;
-          height: 50px;
+          width: 42px;
+          height: 42px;
           border-radius: var(--radius-full);
           border: 2px solid var(--color-golden-yellow);
           overflow: hidden;
@@ -289,10 +290,16 @@ export const Header: React.FC = () => {
           flex-shrink: 0;
           background: #fff;
         }
+        @media (min-width: 640px) {
+          .logo-box {
+            width: 48px;
+            height: 48px;
+          }
+        }
         @media (min-width: 1280px) {
           .logo-box {
-            width: 56px;
-            height: 56px;
+            width: 54px;
+            height: 54px;
           }
         }
         .logo-img {
@@ -300,61 +307,70 @@ export const Header: React.FC = () => {
           height: 100%;
           object-fit: cover;
         }
+
         .brand-text {
           display: flex;
           flex-direction: column;
           line-height: 1.2;
           overflow: hidden;
           white-space: nowrap;
+          min-width: 0;
         }
         .brand-name-main {
           font-weight: 800;
           white-space: nowrap;
           letter-spacing: -0.01em;
-          display: flex;
-          align-items: baseline;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
-        .brand-name-primary {
-          white-space: nowrap;
-        }
-        .brand-name-en .brand-name-primary {
-          font-size: 1.05rem;
+        .brand-name-en {
+          font-size: 1rem;
           color: var(--color-forest-green-dark);
         }
-        .brand-name-te .brand-name-primary {
-          font-size: 1.15rem;
+        .brand-name-te {
+          font-size: 1.08rem;
           color: var(--color-forest-green);
         }
-        .brand-name-suffix {
-          display: none;
-        }
-        @media (min-width: 1400px) {
-          .brand-name-suffix {
-            display: inline;
-            font-size: 0.95em;
-            color: var(--color-forest-green);
-            font-weight: 700;
+        @media (min-width: 640px) {
+          .brand-name-en {
+            font-size: 1.12rem;
+          }
+          .brand-name-te {
+            font-size: 1.22rem;
           }
         }
         @media (min-width: 1280px) {
-          .brand-name-en .brand-name-primary {
-            font-size: 1.15rem;
+          .brand-name-en {
+            font-size: 1.2rem;
           }
-          .brand-name-te .brand-name-primary {
-            font-size: 1.25rem;
+          .brand-name-te {
+            font-size: 1.3rem;
           }
         }
+
         .brand-meta {
-          font-size: 0.75rem;
           color: var(--color-charcoal-muted);
           font-weight: 600;
           margin-top: 2px;
           white-space: nowrap;
           letter-spacing: 0.01em;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
-        @media (min-width: 1280px) {
-          .brand-meta {
-            font-size: 0.8rem;
+        .brand-meta-desktop {
+          display: none;
+          font-size: 0.78rem;
+        }
+        .brand-meta-mobile {
+          display: inline;
+          font-size: 0.72rem;
+        }
+        @media (min-width: 640px) {
+          .brand-meta-desktop {
+            display: inline;
+          }
+          .brand-meta-mobile {
+            display: none;
           }
         }
 
@@ -363,7 +379,6 @@ export const Header: React.FC = () => {
           display: none;
           align-items: center;
           justify-content: flex-end;
-          gap: 1rem;
           flex: 1;
           min-width: 0;
         }
@@ -372,74 +387,60 @@ export const Header: React.FC = () => {
             display: flex;
           }
         }
-        @media (min-width: 1200px) {
-          .nav-desktop {
-            gap: 1.5rem;
-          }
-        }
-        @media (min-width: 1360px) {
-          .nav-desktop {
-            gap: 2rem;
-          }
-        }
 
         .nav-links {
           display: flex;
           align-items: center;
-          gap: 0.65rem;
+          justify-content: center;
+          gap: 1rem;
           list-style: none;
           margin: 0;
           padding: 0;
+          flex: 1;
         }
-        @media (min-width: 1140px) {
-          .nav-links {
-            gap: 1rem;
-          }
-        }
-        @media (min-width: 1280px) {
+        @media (min-width: 1180px) {
           .nav-links {
             gap: 1.4rem;
           }
         }
-        @media (min-width: 1400px) {
+        @media (min-width: 1280px) {
           .nav-links {
-            gap: 1.85rem;
+            gap: 1.75rem;
+          }
+        }
+        @media (min-width: 1440px) {
+          .nav-links {
+            gap: 2.25rem;
           }
         }
 
         .nav-link {
-          font-size: 0.88rem;
+          font-size: 0.94rem;
           font-weight: 600;
           color: var(--color-dark-charcoal);
           position: relative;
-          padding: 0.35rem 0.4rem;
-          white-space: nowrap; /* Prevents text breaking into multiple lines */
+          padding: 0.4rem 0.6rem;
+          white-space: nowrap; /* CRITICAL: Never break text into multiple lines */
           display: inline-block;
           border-radius: var(--radius-sm);
           transition: color var(--transition-fast), background-color var(--transition-fast);
         }
-        @media (min-width: 1140px) {
-          .nav-link {
-            font-size: 0.92rem;
-            padding: 0.35rem 0.5rem;
-          }
-        }
         @media (min-width: 1280px) {
           .nav-link {
-            font-size: 0.96rem;
-            padding: 0.4rem 0.65rem;
+            font-size: 0.98rem;
+            padding: 0.45rem 0.75rem;
           }
         }
         .nav-link:hover {
           color: var(--color-forest-green);
-          background-color: rgba(20, 83, 45, 0.04);
+          background-color: rgba(20, 83, 45, 0.05);
         }
         .nav-link::after {
           content: '';
           position: absolute;
           bottom: 0;
-          left: 0.4rem;
-          right: 0.4rem;
+          left: 0.6rem;
+          right: 0.6rem;
           height: 2px;
           background-color: var(--color-golden-yellow-dark);
           transform: scaleX(0);
@@ -451,82 +452,76 @@ export const Header: React.FC = () => {
           transform: scaleX(1);
         }
         html[lang="te"] .nav-link {
-          font-size: 0.85rem;
+          font-size: 0.88rem;
         }
         @media (min-width: 1280px) {
           html[lang="te"] .nav-link {
-            font-size: 0.92rem;
+            font-size: 0.94rem;
           }
         }
 
         .nav-actions {
           display: flex;
           align-items: center;
-          gap: 0.65rem;
           flex-shrink: 0;
+          margin-left: 1.25rem;
         }
         @media (min-width: 1280px) {
           .nav-actions {
-            gap: 0.85rem;
+            margin-left: 1.75rem;
           }
-        }
-        .nav-directions-btn {
-          border-radius: var(--radius-full);
-          padding: 0.45rem 0.85rem;
-          font-size: 0.84rem;
-          font-weight: 600;
-          background: var(--color-forest-green);
-          color: #fff;
-          white-space: nowrap;
-          flex-shrink: 0;
-          display: inline-flex;
-          align-items: center;
-          gap: 0.4rem;
-          box-shadow: 0 2px 6px rgba(20, 83, 45, 0.2);
-          transition: all var(--transition-fast);
-        }
-        @media (min-width: 1200px) {
-          .nav-directions-btn {
-            padding: 0.52rem 1.05rem;
-            font-size: 0.88rem;
-          }
-        }
-        @media (min-width: 1280px) {
-          .nav-directions-btn {
-            padding: 0.55rem 1.15rem;
-            font-size: 0.92rem;
-            gap: 0.5rem;
-          }
-        }
-        .nav-directions-btn:hover {
-          background: var(--color-forest-green-dark);
-          transform: translateY(-1px);
-          box-shadow: 0 4px 12px rgba(20, 83, 45, 0.3);
         }
 
         /* Mobile Hamburger & Actions */
         .mobile-actions {
           display: flex;
           align-items: center;
-          gap: 0.5rem;
+          gap: 0.45rem;
+          flex-shrink: 0;
+          margin-left: auto;
+          z-index: 10;
         }
         @media (min-width: 1024px) {
           .mobile-actions {
             display: none;
           }
         }
+
+        /* Compact language switcher on mobile topbar */
+        .mobile-lang-compact {
+          padding: 0.22rem 0.45rem;
+          border-radius: var(--radius-full);
+          gap: 0.2rem;
+          flex-shrink: 0;
+        }
+        .mobile-lang-compact .lang-icon {
+          display: none; /* Hide icon on mobile header to fit gracefully */
+        }
+        .mobile-lang-compact .lang-btn {
+          font-size: 0.76rem;
+          padding: 0.15rem 0.35rem;
+        }
+
+        /* Always-visible, touch-friendly hamburger button */
         .hamburger-btn {
           color: var(--color-forest-green);
-          padding: 0.4rem;
+          width: 42px;
+          height: 42px;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: var(--radius-md);
           background: var(--color-warm-cream);
-          border: 1px solid var(--color-golden-yellow-light);
+          border: 1.5px solid var(--color-golden-yellow);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+          flex-shrink: 0;
+          transition: all var(--transition-fast);
+          cursor: pointer;
         }
-        .hamburger-btn:hover {
+        .hamburger-btn:hover,
+        .hamburger-btn:active {
           background: #FFEFC4;
+          transform: scale(1.04);
         }
 
         /* Mobile Drawer */
@@ -536,7 +531,7 @@ export const Header: React.FC = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          z-index: 1000;
+          z-index: 10000;
           visibility: hidden;
           transition: visibility var(--transition-normal);
         }
@@ -549,8 +544,9 @@ export const Header: React.FC = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgba(15, 61, 33, 0.6);
-          backdrop-filter: blur(4px);
+          background: rgba(15, 61, 33, 0.65);
+          backdrop-filter: blur(6px);
+          -webkit-backdrop-filter: blur(6px);
           opacity: 0;
           transition: opacity var(--transition-normal);
         }
@@ -562,16 +558,17 @@ export const Header: React.FC = () => {
           top: 0;
           right: 0;
           bottom: 0;
-          width: 85%;
+          width: 86%;
           max-width: 360px;
           background: #FFFFFF;
-          box-shadow: -4px 0 25px rgba(0, 0, 0, 0.2);
+          box-shadow: -6px 0 30px rgba(0, 0, 0, 0.25);
           display: flex;
           flex-direction: column;
           transform: translateX(100%);
           transition: transform var(--transition-normal);
           overflow-y: auto;
           padding: 1.5rem;
+          z-index: 10001;
         }
         .mobile-drawer--open .mobile-drawer__content {
           transform: translateX(0);
