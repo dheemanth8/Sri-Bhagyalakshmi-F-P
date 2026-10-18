@@ -109,6 +109,6 @@ export const businessData: BusinessInfo = {
     addressTelugu: 'శ్రీ భాగ్యలక్ష్మి ఎఫ్&పి, ఆళ్లగడ్డ టి.బి రోడ్డు, కె.వి.బి బ్యాంక్ ఎదురుగా, 518543',
     openingHoursEnglish: 'Monday to Saturday: 8:00 AM – 8:00 PM (Sunday: Closed)',
     openingHoursTelugu: 'సోమవారం నుండి శనివారం: ఉదయం 8:00 – రాత్రి 8:00 (ఆదివారం: సెలవు)',
-    email: null,
+    email: 'dheemanthannem@gmail.com',
   },
 };

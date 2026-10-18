@@ -25,12 +25,10 @@ import iplLogo from '../assets/logos/ipl.jpg';
 import syngentaLogo from '../assets/logos/syngenta.svg';
 import uplLogo from '../assets/logos/upl.png';
 import dhanukaLogo from '../assets/logos/dhanuka.png';
-import sumitomoLogo from '../assets/logos/sumitomo.svg';
+import sumitomoLogo from '../assets/logos/sumitomo.png';
 import piIndustriesLogo from '../assets/logos/pi_industries.svg';
 import agrishineLogo from '../assets/logos/agrishine.jpg';
 import ariesAgroLogo from '../assets/logos/aries_agro.svg';
-import nakasaLogo from '../assets/logos/nakasa.svg';
-import xylonLogo from '../assets/logos/xylon.svg';
 
 export interface Brand {
   id: string;
@@ -681,47 +679,5 @@ export const featuredBrands: Brand[] = [
       te: 'భారతదేశంలో ప్రసిద్ధి చెందిన చిలేటెడ్ సూక్ష్మపోషకాలు మరియు మొక్కల పోషణ ఉత్పత్తుల సంస్థ.',
     },
     altText: 'Aries Agro Ltd official logo',
-  },
-
-  // 31. Nakasa
-  {
-    id: 'nakasa',
-    name: 'Nakasa',
-    fullName: {
-      en: 'Nakasa Crop Science',
-      te: 'నకాసా క్రాప్ సైన్స్',
-    },
-    logo: nakasaLogo,
-    category: {
-      en: 'Crop Protection & Pesticides',
-      te: 'పంట సంరక్షణ & పురుగుమందులు',
-    },
-    productType: 'pesticides',
-    description: {
-      en: 'Trusted agricultural crop protection formulations offering targeted pest control and yield defense.',
-      te: 'రైతులకు నమ్మకమైన పంట రక్షణ మందులు మరియు సమగ్ర పురుగు నియంత్రణ పరిష్కారాలు.',
-    },
-    altText: 'Nakasa Crop Science official logo',
-  },
-
-  // 32. Xylon
-  {
-    id: 'xylon',
-    name: 'Xylon',
-    fullName: {
-      en: 'Xylon Agri Science',
-      te: 'జైలాన్ అగ్రి సైన్స్',
-    },
-    logo: xylonLogo,
-    category: {
-      en: 'Crop Protection & Insecticides',
-      te: 'పంట రక్షణ & పురుగుమందులు',
-    },
-    productType: 'pesticides',
-    description: {
-      en: 'Specialized crop protection solutions focused on broad-spectrum pest management and plant health.',
-      te: 'విశేషమైన పంట సంరక్షణ మందులు మరియు సమగ్ర తెగుళ్ల నివారణ ఉత్పత్తులు.',
-    },
-    altText: 'Xylon Agri Science official logo',
   },
 ];

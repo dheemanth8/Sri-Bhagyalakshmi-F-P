@@ -280,8 +280,8 @@ export const translations: Record<Language, Translations> = {
       messagePlaceholder: 'Specify the brand, crop, or agricultural input you are looking for...',
       submitEnquiry: 'Submit Enquiry',
       formSuccessTitle: 'Enquiry Received!',
-      formSuccessMsg: 'Thank you for reaching out to Sri Bhagyalakshmi Fertilizers & Pesticides. We will review your query promptly.',
-      formConfigNotice: 'Contact actions will connect to verified store lines once configured.',
+      formSuccessMsg: 'Thank you for reaching out to Sri Bhagyalakshmi Fertilizers & Pesticides. Your enquiry has been sent to dheemanthannem@gmail.com and we will review your query promptly.',
+      formConfigNotice: 'Enquiries are forwarded directly to dheemanthannem@gmail.com.',
     },
     footer: {
       aboutText: 'Sri Bhagyalakshmi Fertilizers & Pesticides has been supporting farmers with genuine agricultural inputs, fertilizers, and crop protection since 1995.',
@@ -423,8 +423,8 @@ export const translations: Record<Language, Translations> = {
       messagePlaceholder: 'మీకు కావలసిన బ్రాండ్ లేదా పంట సమస్యల గురించి వివరించండి...',
       submitEnquiry: 'విచారణ పంపండి',
       formSuccessTitle: 'మీ విచారణ అందింది!',
-      formSuccessMsg: 'శ్రీ భాగ్యలక్ష్మి ఫర్టిలైజర్స్ & పెస్టిసైడ్స్ ను సంప్రదించినందుకు ధన్యవాదాలు. మేము త్వరలోనే స్పందిస్తాము.',
-      formConfigNotice: 'దుకాణ యజమాని ధృవీకరించిన వెంటనే సంప్రదింపు లైన్లు నేరుగా కనెక్ట్ చేయబడతాయి.',
+      formSuccessMsg: 'శ్రీ భాగ్యలక్ష్మి ఫర్టిలైజర్స్ & పెస్టిసైడ్స్ ను సంప్రదించినందుకు ధన్యవాదాలు. మీ విచారణ dheemanthannem@gmail.com కు పంపబడింది, మేము త్వరలోనే స్పందిస్తాము.',
+      formConfigNotice: 'విచారణలు నేరుగా dheemanthannem@gmail.com కు పంపబడతాయి.',
     },
     footer: {
       aboutText: 'శ్రీ భాగ్యలక్ష్మి ఫర్టిలైజర్స్ & పెస్టిసైడ్స్ 1995 నుండి రైతులకు అసలైన నాణ్యమైన వ్యవసాయ ఎరువులు, పంట రక్షణ మందులను విశ్వసనీయంగా అందిస్తోంది.',

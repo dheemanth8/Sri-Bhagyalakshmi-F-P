@@ -26,7 +26,7 @@ import nichinoLogo from '../assets/logos/nichino.png';
 import piIndustriesLogo from '../assets/logos/pi_industries.svg';
 import pplLogo from '../assets/logos/ppl.svg';
 import spicLogo from '../assets/logos/spic.svg';
-import sumitomoLogo from '../assets/logos/sumitomo.svg';
+import sumitomoLogo from '../assets/logos/sumitomo.png';
 import syngentaLogo from '../assets/logos/syngenta.svg';
 import tataLogo from '../assets/logos/tata.svg';
 import tropicalLogo from '../assets/logos/tropical.svg';

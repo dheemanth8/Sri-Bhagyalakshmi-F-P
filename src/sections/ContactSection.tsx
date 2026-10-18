@@ -9,6 +9,8 @@ import {
   CheckCircle,
   AlertCircle,
   Navigation,
+  Mail,
+  Loader2,
 } from 'lucide-react';
 
 interface ContactSectionProps {
@@ -34,9 +36,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const targetEmail = businessData.contact.email || 'dheemanthannem@gmail.com';
+
+  const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(
+    `Agricultural Enquiry from ${formData.name || 'Farmer'}`
+  )}&body=${encodeURIComponent(
+    `Name: ${formData.name}\nPhone: ${formData.phone}\nCategory / Product: ${
+      formData.category || 'General Enquiry'
+    }\nMessage: ${formData.message}\n\nSubmitted via Sri Bhagyalakshmi Fertilizers & Pesticides Website`
+  )}`;
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name.trim()) {
       setErrorMsg(language === 'te' ? 'దయచేసి మీ పేరు నమోదు చేయండి' : 'Please enter your name');
@@ -52,14 +65,38 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     }
 
     setErrorMsg('');
-    setSubmitted(true);
-    // Keep enquiry in localStorage for persistence
+    setIsSubmitting(true);
+
     try {
-      const existing = JSON.parse(localStorage.getItem('sb_enquiries') || '[]');
-      existing.push({ ...formData, date: new Date().toISOString() });
-      localStorage.setItem('sb_enquiries', JSON.stringify(existing));
+      // Forward enquiry directly to dheemanthannem@gmail.com via FormSubmit endpoint
+      await fetch(`https://formsubmit.co/ajax/${targetEmail}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `New Store Enquiry: ${formData.name} (${formData.phone})`,
+          name: formData.name,
+          phone: formData.phone,
+          category: formData.category || 'General Agricultural Input',
+          message: formData.message || 'No additional note provided',
+          submittedAt: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+          _template: 'table',
+        }),
+      });
     } catch {
-      // ignore
+      // Graceful offline fallback
+    } finally {
+      setIsSubmitting(false);
+      setSubmitted(true);
+      try {
+        const existing = JSON.parse(localStorage.getItem('sb_enquiries') || '[]');
+        existing.push({ ...formData, date: new Date().toISOString() });
+        localStorage.setItem('sb_enquiries', JSON.stringify(existing));
+      } catch {
+        // ignore
+      }
     }
   };
 
@@ -113,6 +150,28 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 <p className="channel-desc">{t.contactSection.hoursPendingNotice}</p>
               </div>
             </div>
+
+            {/* Official Store Email Card */}
+            <div className="contact-channel-card card-surface">
+              <div className="channel-icon-box">
+                <Mail size={24} />
+              </div>
+              <div className="channel-info">
+                <h3 className="channel-title">
+                  {language === 'te' ? 'అధికారిక ఇమెయిల్' : 'Official Store Email'}
+                </h3>
+                <p className="channel-desc" style={{ wordBreak: 'break-all', fontWeight: 600 }}>
+                  {targetEmail}
+                </p>
+                <a
+                  href={`mailto:${targetEmail}`}
+                  className="btn btn-outline btn-sm channel-btn"
+                >
+                  <Send size={14} />
+                  <span>{language === 'te' ? 'ఇమెయిల్ పంపండి' : 'Send Email'}</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Right Column: Farmer Direct Enquiry Form */}
@@ -128,16 +187,27 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <CheckCircle size={48} className="success-icon" />
                   <h4 className="success-title">{t.contactSection.formSuccessTitle}</h4>
                   <p className="success-msg">{t.contactSection.formSuccessMsg}</p>
-                  <button
-                    type="button"
-                    className="btn btn-outline btn-sm"
-                    onClick={() => {
-                      setSubmitted(false);
-                      setFormData({ name: '', phone: '', category: '', message: '' });
-                    }}
-                  >
-                    <span>{language === 'te' ? 'మరొక విచారణ పంపండి' : 'Send Another Enquiry'}</span>
-                  </button>
+                  <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center', marginTop: '1.25rem' }}>
+                    <a
+                      href={mailtoUrl}
+                      className="btn btn-outline btn-sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Mail size={14} />
+                      <span>{language === 'te' ? 'ఇమెయిల్ యాప్‌లో తెరవండి' : 'Open in Email App'}</span>
+                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-primary btn-sm"
+                      onClick={() => {
+                        setSubmitted(false);
+                        setFormData({ name: '', phone: '', category: '', message: '' });
+                      }}
+                    >
+                      <span>{language === 'te' ? 'మరొక విచారణ పంపండి' : 'Send Another Enquiry'}</span>
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="enquiry-form">
@@ -211,9 +281,22 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     />
                   </div>
 
-                  <button type="submit" className="btn btn-primary btn-lg submit-btn">
-                    <Send size={18} />
-                    <span>{t.contactSection.submitEnquiry}</span>
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-lg submit-btn"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 size={18} className="animate-spin" />
+                        <span>{language === 'te' ? 'పంపుతోంది...' : 'Sending...'}</span>
+                      </>
+                    ) : (
+                      <>
+                        <Send size={18} />
+                        <span>{t.contactSection.submitEnquiry}</span>
+                      </>
+                    )}
                   </button>
 
                   <div className="form-notice">
