@@ -687,8 +687,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: flex-start;
           gap: 0.75rem;
           padding: 0.85rem 1rem;
-          background: var(--color-warm-cream);
-          border: 1px solid rgba(244, 185, 66, 0.4);
+          background: var(--color-mint-light);
+          border: 1px solid rgba(16, 185, 129, 0.25);
           border-radius: var(--radius-md);
         }
 

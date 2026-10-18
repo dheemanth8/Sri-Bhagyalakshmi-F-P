@@ -69,9 +69,9 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className = 
           color: var(--color-forest-green);
         }
         .lang-btn--active {
-          color: var(--color-forest-green);
-          background-color: var(--color-warm-cream);
-          border: 1px solid var(--color-golden-yellow-light);
+          color: var(--color-emerald-deep);
+          background-color: var(--color-mint-light);
+          border: 1px solid var(--color-emerald-vivid);
           font-weight: 700;
         }
         .lang-divider {
@@ -83,8 +83,8 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className = 
           width: 100%;
           justify-content: center;
           padding: 0.6rem 1rem;
-          background: var(--color-warm-cream);
-          border-color: var(--color-golden-yellow-light);
+          background: var(--color-mint-light);
+          border-color: rgba(16, 185, 129, 0.3);
         }
         .language-switcher--mobile .lang-btn {
           font-size: 1rem;

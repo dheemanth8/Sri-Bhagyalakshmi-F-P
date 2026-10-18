@@ -413,17 +413,17 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
         }
 
         .brand-modal-dialog {
-          background: var(--color-cream-surface);
+          background: #FFFFFF;
           border-radius: var(--radius-xl);
           width: 100%;
           max-width: 1180px;
           max-height: 92vh;
           display: flex;
           flex-direction: column;
-          box-shadow: 0 25px 60px -12px rgba(7, 39, 20, 0.45);
+          box-shadow: 0 25px 60px -12px rgba(7, 37, 35, 0.4);
           overflow: hidden;
           animation: brandDialogSlide 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-          border: 2px solid var(--color-border-subtle);
+          border: 1.5px solid var(--color-border-subtle);
         }
 
         @keyframes brandDialogSlide {
@@ -443,7 +443,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           align-items: flex-start;
           justify-content: space-between;
           padding: 1.5rem 1.75rem 1.25rem;
-          background: linear-gradient(180deg, #FFFEFB 0%, #FAF6EE 100%);
+          background: #FFFFFF;
           border-bottom: 1.5px solid var(--color-border-subtle);
           gap: 1.25rem;
         }

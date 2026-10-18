@@ -9,9 +9,7 @@ interface CategoryCardProps {
   onEnquire: (categoryTitle: string) => void;
 }
 
-const ROMAN_NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI'];
-
-export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category, folioIndex, onEnquire }) => {
+export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category, onEnquire }) => {
   const { language, t } = useLanguage();
 
   const getIcon = (name: string) => {
@@ -25,8 +23,6 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
       default: return <Layers size={18} />;
     }
   };
-
-  const romanNumeral = folioIndex && folioIndex <= 6 ? ROMAN_NUMERALS[folioIndex - 1] : '';
 
   return (
     <article className="category-card card-surface" aria-labelledby={`cat-${category.id}`}>
@@ -48,11 +44,6 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           {getIcon(category.iconName)}
           <span>{category.subtitle[language]}</span>
         </div>
-        {romanNumeral && (
-          <div className="category-card__folio-tag" title={`Agronomic Folio ${romanNumeral}`}>
-            FOLIO {romanNumeral}
-          </div>
-        )}
       </div>
 
       {/* Content */}
@@ -93,25 +84,25 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
         .category-card {
           display: flex;
           flex-direction: column;
-          background: var(--color-cream-surface);
+          background: #FFFFFF;
           border: 1px solid var(--color-border-subtle);
           border-radius: var(--radius-lg);
           overflow: hidden;
           transition: all var(--transition-normal);
           height: 100%;
-          box-shadow: 0 4px 18px rgba(5, 27, 18, 0.05), 0 0 0 1px rgba(212, 175, 55, 0.1);
+          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.04);
         }
         .category-card:hover {
-          border-color: var(--color-gold-metallic);
-          transform: translateY(-6px);
-          box-shadow: 0 20px 40px -10px rgba(5, 27, 18, 0.2), 0 0 0 1.5px var(--color-gold-metallic);
+          border-color: var(--color-emerald-vivid);
+          transform: translateY(-4px);
+          box-shadow: 0 16px 36px -10px rgba(10, 46, 44, 0.12), 0 0 0 1px var(--color-emerald-vivid);
         }
 
         .category-card__image-box {
           position: relative;
           height: 205px;
           overflow: hidden;
-          background-color: var(--color-obsidian);
+          background-color: var(--color-primary-deep);
           border-bottom: 1px solid var(--color-border-subtle);
         }
         .category-card__picture {
@@ -126,7 +117,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           transition: transform var(--transition-slow);
         }
         .category-card:hover .category-card__img {
-          transform: scale(1.07);
+          transform: scale(1.06);
         }
 
         .category-card__badge-pill {
@@ -136,31 +127,16 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           display: inline-flex;
           align-items: center;
           gap: 0.45rem;
-          background: rgba(5, 27, 18, 0.92);
-          color: #FAF2D6;
+          background: rgba(7, 37, 35, 0.92);
+          color: #FFFFFF;
           padding: 0.35rem 0.85rem;
           border-radius: var(--radius-full);
           font-size: 0.76rem;
           font-weight: 800;
           letter-spacing: 0.03em;
           backdrop-filter: blur(12px);
-          border: 1px solid var(--color-gold-hairline);
-          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-        }
-
-        .category-card__folio-tag {
-          position: absolute;
-          top: 12px;
-          right: 12px;
-          background: rgba(5, 27, 18, 0.85);
-          color: var(--color-gold-metallic);
-          font-size: 0.68rem;
-          font-weight: 800;
-          letter-spacing: 0.1em;
-          padding: 0.25rem 0.65rem;
-          border-radius: var(--radius-sm);
-          border: 1px solid var(--color-gold-hairline);
-          backdrop-filter: blur(8px);
+          border: 1px solid rgba(16, 185, 129, 0.35);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .category-card__body {
@@ -168,17 +144,17 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           display: flex;
           flex-direction: column;
           flex-grow: 1;
-          background: #FFFEFC;
+          background: #FFFFFF;
         }
 
         .category-card__title {
-          font-family: var(--font-serif);
+          font-family: var(--font-sans);
           font-size: 1.35rem;
-          font-weight: 700;
-          color: var(--color-obsidian);
+          font-weight: 800;
+          color: var(--color-primary-deep);
           margin-bottom: 0.75rem;
           line-height: 1.3;
-          letter-spacing: 0.01em;
+          letter-spacing: -0.01em;
         }
         html[lang="te"] .category-card__title {
           font-family: var(--font-te);
@@ -194,9 +170,9 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
         }
 
         .category-card__benefits {
-          background: linear-gradient(180deg, #FDFBF7 0%, #F8F4EA 100%);
-          border: 1px solid var(--color-border-subtle);
-          border-left: 3px solid var(--color-gold-metallic);
+          background: var(--color-mint-light);
+          border: 1px solid rgba(16, 185, 129, 0.2);
+          border-left: 3px solid var(--color-emerald-vivid);
           border-radius: var(--radius-md);
           padding: 1rem 1.25rem;
           margin-bottom: 1.5rem;
@@ -207,7 +183,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           font-weight: 800;
           text-transform: uppercase;
           letter-spacing: 0.08em;
-          color: var(--color-forest-dark);
+          color: var(--color-emerald-deep);
           margin-bottom: 0.6rem;
         }
         .benefits-list {
@@ -225,7 +201,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           font-weight: 600;
         }
         .benefit-check {
-          color: var(--color-gold-metallic);
+          color: var(--color-emerald-vivid);
           flex-shrink: 0;
         }
 
@@ -238,19 +214,18 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           font-weight: 700;
           font-size: 0.9rem;
           padding: 0.72rem 1rem;
-          background: linear-gradient(135deg, #051B12 0%, #0A2E20 50%, #0E3D2B 100%);
-          color: #FAF7F0;
-          border: 1px solid var(--color-gold-hairline);
+          background: var(--color-primary-deep);
+          color: #FFFFFF;
+          border: 1px solid rgba(16, 185, 129, 0.25);
           border-radius: var(--radius-full);
           transition: all var(--transition-fast);
-          box-shadow: 0 2px 8px rgba(5, 27, 18, 0.25);
-          letter-spacing: 0.02em;
+          box-shadow: 0 2px 8px rgba(10, 46, 44, 0.15);
         }
         .category-card__btn:hover {
-          background: linear-gradient(135deg, #E5C578 0%, #D4AF37 50%, #B38738 100%);
-          color: #051B12;
-          border-color: var(--color-gold-metallic);
-          box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+          background: var(--gradient-emerald);
+          color: #FFFFFF;
+          border-color: var(--color-emerald-vivid);
+          box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
           transform: translateY(-2px);
         }
       `}</style>

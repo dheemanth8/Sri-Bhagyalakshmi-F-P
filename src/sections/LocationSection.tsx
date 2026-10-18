@@ -27,11 +27,7 @@ export const LocationSection: React.FC = () => {
           <h2 className="section-title">
             {t.locationSection.title}
           </h2>
-          <div className="heritage-divider">
-            <span className="heritage-divider__line" />
-            <span className="heritage-divider__diamond">◆</span>
-            <span className="heritage-divider__line" />
-          </div>
+          <div className="section-accent-bar" />
           <p className="section-subtitle">
             {t.locationSection.subtitle}
           </p>
@@ -95,7 +91,7 @@ export const LocationSection: React.FC = () => {
                 href={businessData.location.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-gold btn-lg location-cta"
+                className="btn btn-primary btn-lg location-cta"
               >
                 <Navigation size={20} />
                 <span>{t.locationSection.directionsBtn}</span>
@@ -133,11 +129,9 @@ export const LocationSection: React.FC = () => {
 
       <style>{`
         .location-section {
-          background: radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-                      radial-gradient(circle at 90% 80%, rgba(5, 27, 18, 0.06) 0%, transparent 50%),
-                      var(--color-cream-base);
-          border-top: 1px solid var(--color-gold-hairline);
-          border-bottom: 1px solid var(--color-gold-hairline);
+          background: var(--color-canvas-base);
+          border-top: 1px solid var(--color-border-subtle);
+          border-bottom: 1px solid var(--color-border-subtle);
           position: relative;
         }
 
@@ -145,12 +139,12 @@ export const LocationSection: React.FC = () => {
           display: grid;
           grid-template-columns: 1fr;
           gap: 2rem;
-          background: #FFFEFC;
+          background: #FFFFFF;
           border-radius: var(--radius-xl);
-          border: 1px solid var(--color-gold-hairline);
-          border-top: 3.5px solid var(--color-gold-metallic);
+          border: 1px solid var(--color-border-subtle);
+          border-top: 3.5px solid var(--color-emerald-vivid);
           overflow: hidden;
-          box-shadow: 0 20px 45px -10px rgba(5, 27, 18, 0.09), 0 0 0 1px rgba(212, 175, 55, 0.1);
+          box-shadow: 0 16px 40px -10px rgba(10, 46, 44, 0.05);
         }
 
         @media (min-width: 1024px) {
@@ -165,7 +159,7 @@ export const LocationSection: React.FC = () => {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          background: linear-gradient(180deg, #FFFFFF 0%, #FAF7F0 100%);
+          background: #FFFFFF;
         }
         @media (min-width: 768px) {
           .location-info-card {
@@ -181,24 +175,24 @@ export const LocationSection: React.FC = () => {
         }
 
         .location-pin-icon {
-          width: 56px;
-          height: 56px;
+          width: 54px;
+          height: 54px;
           border-radius: var(--radius-md);
-          background: linear-gradient(135deg, #051B12 0%, #0A2E20 100%);
-          border: 1.5px solid var(--color-gold-metallic);
+          background: var(--color-primary-deep);
+          border: 1.5px solid var(--color-emerald-vivid);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--color-gold-metallic);
-          box-shadow: 0 4px 14px rgba(5, 27, 18, 0.35);
+          color: var(--color-emerald-vivid);
+          box-shadow: 0 4px 14px rgba(10, 46, 44, 0.2);
           flex-shrink: 0;
         }
 
         .location-card-title {
-          font-family: var(--font-serif);
+          font-family: var(--font-sans);
           font-size: 1.35rem;
-          font-weight: 700;
-          color: var(--color-obsidian);
+          font-weight: 800;
+          color: var(--color-primary-deep);
           line-height: 1.3;
         }
         html[lang="te"] .location-card-title {
@@ -215,13 +209,13 @@ export const LocationSection: React.FC = () => {
 
         /* Location Details Blocks */
         .location-detail-block {
-          background: #FFFEFC;
+          background: #FFFFFF;
           border: 1px solid var(--color-border-subtle);
-          border-left: 3.5px solid var(--color-gold-metallic);
+          border-left: 3.5px solid var(--color-emerald-vivid);
           border-radius: var(--radius-md);
           padding: 1.15rem 1.35rem;
           margin-bottom: 1.15rem;
-          box-shadow: 0 2px 8px rgba(5, 27, 18, 0.04);
+          box-shadow: 0 2px 8px rgba(10, 46, 44, 0.03);
         }
 
         .detail-block-header {
@@ -232,7 +226,7 @@ export const LocationSection: React.FC = () => {
         }
 
         .detail-block-icon {
-          color: var(--color-gold-metallic);
+          color: var(--color-emerald-vivid);
           flex-shrink: 0;
         }
 
@@ -241,7 +235,7 @@ export const LocationSection: React.FC = () => {
           font-weight: 800;
           text-transform: uppercase;
           letter-spacing: 0.06em;
-          color: var(--color-forest-dark);
+          color: var(--color-emerald-deep);
         }
 
         .detail-block-value {
@@ -252,7 +246,7 @@ export const LocationSection: React.FC = () => {
         }
 
         .address-highlight {
-          color: var(--color-obsidian);
+          color: var(--color-primary-deep);
         }
 
         .landmark-badge {
@@ -261,12 +255,11 @@ export const LocationSection: React.FC = () => {
           font-size: 0.76rem;
           font-weight: 800;
           letter-spacing: 0.03em;
-          color: #8C6A18;
-          background: rgba(212, 175, 55, 0.14);
-          border: 1px solid var(--color-gold-hairline);
+          color: var(--color-emerald-deep);
+          background: var(--color-mint-light);
+          border: 1px solid rgba(16, 185, 129, 0.25);
           padding: 0.22rem 0.75rem;
           border-radius: var(--radius-full);
-          box-shadow: 0 1px 4px rgba(212, 175, 55, 0.15);
         }
 
         .hours-highlight {
@@ -281,13 +274,13 @@ export const LocationSection: React.FC = () => {
           width: 100%;
           font-weight: 800;
           font-size: 1.05rem;
-          background: linear-gradient(135deg, #E5C578 0%, #D4AF37 50%, #B38738 100%);
-          color: #051B12;
-          box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+          background: var(--gradient-emerald);
+          color: #FFFFFF;
+          box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
         }
         .location-cta:hover {
-          background: linear-gradient(135deg, #F3E5AB 0%, #DFBA73 50%, #C59B4E 100%);
-          box-shadow: 0 8px 26px rgba(212, 175, 55, 0.55);
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(16, 185, 129, 0.45);
         }
 
         .location-note {
@@ -300,7 +293,7 @@ export const LocationSection: React.FC = () => {
         .map-frame-wrapper {
           position: relative;
           min-height: 380px;
-          background: #E5E7EB;
+          background: #F1F5F9;
         }
         @media (min-width: 1024px) {
           .map-frame-wrapper {
@@ -322,15 +315,15 @@ export const LocationSection: React.FC = () => {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background: #F3F4F6;
+          background: #F1F5F9;
           color: var(--color-charcoal-light);
           font-size: 0.88rem;
           gap: 0.75rem;
         }
         .skeleton-pulse {
-          width: 48px;
-          height: 48px;
-          border: 3px solid var(--color-golden-yellow);
+          width: 44px;
+          height: 44px;
+          border: 3px solid var(--color-emerald-vivid);
           border-top-color: transparent;
           border-radius: 50%;
           animation: spin 1s linear infinite;

@@ -1,70 +1,53 @@
 :root {
-  /* Gilded Botanical Atelier - Unique Luxury Agronomy System */
+  /* Sovereign Teal & Botanical Sage - Clean, Neat & Elegant Modern Agronomy */
   
-  /* Deep Obsidian Pine & Forest Palette */
-  --color-obsidian: #051B12;
-  --color-forest-deep: #072217;
-  --color-forest-dark: #0A2E20;
-  --color-forest-green: #0E3D2B;
-  --color-forest-green-dark: #072419;
-  --color-forest-green-light: #16533A;
-  --color-agricultural-green: #127A52;
-  --color-agricultural-green-light: #10B981;
-  --color-agricultural-green-subtle: #E6F7ED;
+  /* Primary Deep Sovereign Teal (Sophisticated, Authoritative, Crisp) */
+  --color-primary-deep: #0A2E2C;
+  --color-primary-teal: #0E3D3B;
+  --color-primary-dark: #062322;
+  --color-teal-header: #072523;
+  
+  /* Vibrant Botanical Sage & Mint (Fresh, Living, Clean) */
   --color-emerald-vivid: #10B981;
+  --color-emerald-deep: #059669;
+  --color-mint-light: #E6F7F0;
+  --color-mint-surface: #F0FDF4;
   --color-lime-accent: #84CC16;
   
-  /* Antique Burnished Gold & Champagne Metals */
-  --color-gold-metallic: #D4AF37;
-  --color-gold-burnished: #C59B4E;
-  --color-gold-amber: #DFBA73;
-  --color-golden-yellow: #C59B4E;
-  --color-golden-yellow-dark: #B38738;
-  --color-golden-yellow-light: #F3E5AB;
-  --color-golden-yellow-subtle: #FAF2D6;
-  --color-gold-glow: #E5C578;
-  --color-gold-hairline: rgba(212, 175, 55, 0.38);
+  /* Clean Warm Amber Micro-Accent (Subtle, Crisp, not heavy gold) */
+  --color-amber-accent: #F59E0B;
+  --color-amber-dark: #D97706;
+  --color-amber-subtle: #FEF3C7;
 
-  /* Organic Linen, Champagne & Warm Parchment */
-  --color-cream-base: #FAF7F0;
-  --color-cream-surface: #FFFEFC;
-  --color-cream-alt: #F3ECE0;
-  --color-cream-dark: #EADDC9;
-  --color-warm-cream: #FAF7F0;
-  --color-warm-cream-alt: #F5EFE3;
+  /* Fresh, Neat Canvas & Card Surfaces */
+  --color-canvas-base: #FAFCFA;
+  --color-canvas-surface: #FFFFFF;
+  --color-canvas-alt: #F3F7F5;
   --color-white: #FFFFFF;
-  --color-bg-alt: #F3ECE0;
-  --color-bg-mesh: #FAF7F0;
   
-  /* Text & Border Neutrals with Warm Tone */
-  --color-dark-charcoal: #121E18;
-  --color-charcoal-muted: #384C42;
-  --color-charcoal-light: #5E7268;
-  --color-border-subtle: #E4D8BA;
-  --color-border-accent: rgba(212, 175, 55, 0.45);
-  --color-border-forest: rgba(14, 61, 43, 0.22);
-  --color-border-emerald: rgba(16, 185, 129, 0.25);
+  /* Text & Border Neutrals (High legibility, razor sharp) */
+  --color-text-main: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748B;
+  --color-border-subtle: #E2E8F0;
+  --color-border-clean: #CBD5E1;
+  --color-border-teal: rgba(10, 46, 44, 0.12);
+  --color-border-mint: rgba(16, 185, 129, 0.22);
 
   /* Semantic Feedback */
-  --color-success: #127A52;
-  --color-warning: #B38738;
-  --color-info: #2563EB;
+  --color-success: #059669;
+  --color-warning: #D97706;
+  --color-info: #0284C7;
 
-  /* Curated Multi-stop Gradients */
-  --gradient-obsidian-header: linear-gradient(135deg, #051B12 0%, #0A2E20 50%, #0E3D2B 100%);
-  --gradient-forest-header: linear-gradient(135deg, #051B12 0%, #0A2E20 50%, #0E3D2B 100%);
-  --gradient-forest-vibrant: linear-gradient(135deg, #0A2E20 0%, #0E3D2B 55%, #16533A 100%);
-  --gradient-emerald-vibrant: linear-gradient(135deg, #127A52 0%, #0E3D2B 100%);
-  --gradient-gold-vibrant: linear-gradient(135deg, #E5C578 0%, #D4AF37 50%, #B38738 100%);
-  --gradient-badge-glow: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(14, 61, 43, 0.12) 100%);
-  --gradient-card-cream: linear-gradient(180deg, #FFFEFC 0%, #FAF7F0 100%);
-  --gradient-cream-mesh: radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 45%),
-                         radial-gradient(circle at 90% 85%, rgba(14, 61, 43, 0.08) 0%, transparent 45%),
-                         #FAF7F0;
+  /* Curated Clean Gradients */
+  --gradient-teal-header: linear-gradient(180deg, #072523 0%, #0A2E2C 100%);
+  --gradient-emerald-cta: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  --gradient-emerald-hover: linear-gradient(135deg, #059669 0%, #047857 100%);
+  --gradient-hero-overlay: linear-gradient(135deg, rgba(6, 35, 34, 0.94) 0%, rgba(10, 46, 44, 0.88) 55%, rgba(14, 61, 59, 0.82) 100%);
+  --gradient-subtle-mint: linear-gradient(180deg, #FFFFFF 0%, #F4FAF7 100%);
 
-  /* Typography */
-  --font-serif: 'Cinzel', Georgia, 'Times New Roman', serif;
-  --font-en: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  /* Modern Typography - Clean, Crisp, High-Craft Sans */
+  --font-en: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-te: 'Noto Sans Telugu', 'Plus Jakarta Sans', sans-serif;
 
   /* Spacing Scale */
@@ -76,45 +59,27 @@
   --space-2xl: 3rem;
   --space-3xl: 4.5rem;
 
-  /* Border Radii */
+  /* Border Radii (Clean, Smooth Geometry) */
   --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 26px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
   --radius-full: 9999px;
 
-  /* Gilded Delicate Shadows */
-  --shadow-sm: 0 1px 3px 0 rgba(5, 27, 18, 0.06);
-  --shadow-md: 0 4px 10px -2px rgba(5, 27, 18, 0.08), 0 2px 4px -2px rgba(5, 27, 18, 0.04);
-  --shadow-lg: 0 12px 24px -4px rgba(5, 27, 18, 0.12), 0 4px 8px -4px rgba(5, 27, 18, 0.04);
-  --shadow-xl: 0 24px 36px -6px rgba(5, 27, 18, 0.16), 0 8px 12px -6px rgba(5, 27, 18, 0.06);
-  --shadow-card: 0 6px 24px -2px rgba(5, 27, 18, 0.07), 0 0 0 1px rgba(212, 175, 55, 0.16);
-  --shadow-card-hover: 0 22px 42px -10px rgba(5, 27, 18, 0.22), 0 0 0 1.5px rgba(212, 175, 55, 0.45);
-  --shadow-gold: 0 6px 20px rgba(212, 175, 55, 0.4);
-  --shadow-forest: 0 6px 20px rgba(10, 46, 32, 0.38);
+  /* Crisp Modern Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px -2px rgba(10, 46, 44, 0.06), 0 2px 4px -2px rgba(10, 46, 44, 0.03);
+  --shadow-lg: 0 12px 24px -4px rgba(10, 46, 44, 0.08), 0 4px 8px -4px rgba(10, 46, 44, 0.03);
+  --shadow-card: 0 2px 10px rgba(10, 46, 44, 0.04), 0 0 0 1px rgba(10, 46, 44, 0.05);
+  --shadow-card-hover: 0 16px 32px -6px rgba(10, 46, 44, 0.12), 0 0 0 1px rgba(16, 185, 129, 0.3);
+  --shadow-cta: 0 6px 20px rgba(16, 185, 129, 0.35);
 
   /* Transitions */
   --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-normal: 280ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 360ms cubic-bezier(0.16, 1, 0.3, 1);
 
   /* Container width */
-  --max-width: 1520px;
-  --header-height: 84px;
-}
-
-/* Keyframes for unique luxury micro-interactions */
-@keyframes goldShimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-@keyframes slowOrbit {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes pulseGlow {
-  0%, 100% { opacity: 0.7; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.04); }
+  --max-width: 1440px;
+  --header-height: 80px;
 }

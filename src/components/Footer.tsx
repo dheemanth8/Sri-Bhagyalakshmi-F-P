@@ -60,11 +60,11 @@ export const Footer: React.FC = () => {
 
       <style>{`
         .footer-wrapper {
-          background: linear-gradient(180deg, #051B12 0%, #03120C 100%);
-          color: #FAF7F0;
+          background: #072523;
+          color: #FFFFFF;
           padding: 2.5rem 0 1.5rem 0;
-          border-top: 2.5px solid var(--color-gold-metallic);
-          box-shadow: 0 -8px 30px rgba(5, 27, 18, 0.45);
+          border-top: 2px solid var(--color-emerald-vivid);
+          box-shadow: 0 -8px 30px rgba(7, 37, 35, 0.45);
         }
 
         .footer-container {
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
           justify-content: space-between;
           gap: 1.25rem;
           padding-bottom: 1.25rem;
-          border-bottom: 1px solid var(--color-gold-hairline);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         @media (min-width: 640px) {
@@ -98,19 +98,19 @@ export const Footer: React.FC = () => {
 
         .footer-logo {
           border-radius: 50%;
-          border: 1.5px solid var(--color-gold-metallic);
-          background: #FAF7F0;
+          border: 1.5px solid var(--color-emerald-vivid);
+          background: #FFFFFF;
           flex-shrink: 0;
           object-fit: cover;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         .footer-brand-title {
-          font-family: var(--font-serif);
-          font-size: 1.12rem;
-          font-weight: 700;
-          color: #FAF2D6;
-          letter-spacing: 0.04em;
+          font-family: var(--font-sans);
+          font-size: 1.15rem;
+          font-weight: 800;
+          color: #FFFFFF;
+          letter-spacing: 0.02em;
           text-transform: uppercase;
           line-height: 1.2;
         }
@@ -122,7 +122,7 @@ export const Footer: React.FC = () => {
 
         .footer-brand-sub {
           font-size: 0.78rem;
-          color: #C8BA9E;
+          color: #94A3B8;
           margin-top: 0.2rem;
         }
 
@@ -131,7 +131,7 @@ export const Footer: React.FC = () => {
           flex-direction: column;
           gap: 0.4rem;
           font-size: 0.82rem;
-          color: #EADDC9;
+          color: #CBD5E1;
         }
 
         @media (min-width: 640px) {
@@ -149,7 +149,7 @@ export const Footer: React.FC = () => {
         }
 
         .footer-meta-icon {
-          color: var(--color-gold-metallic);
+          color: var(--color-emerald-vivid);
           flex-shrink: 0;
         }
 
@@ -159,7 +159,7 @@ export const Footer: React.FC = () => {
           justify-content: space-between;
           gap: 1rem;
           font-size: 0.78rem;
-          color: #A3967C;
+          color: #94A3B8;
         }
 
         .footer-copyright {

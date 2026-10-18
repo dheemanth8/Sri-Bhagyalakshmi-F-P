@@ -51,7 +51,7 @@ export const AppContent: React.FC = () => {
           position: absolute;
           top: -100px;
           left: 1rem;
-          background: var(--color-forest-green);
+          background: var(--color-emerald-deep);
           color: #FFFFFF;
           padding: 0.5rem 1rem;
           z-index: 10000;

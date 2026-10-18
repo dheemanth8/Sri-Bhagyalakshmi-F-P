@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
             <span>
               {language === 'te'
                 ? 'స్థాపన 1995 • 30+ ఏళ్ల విశేష రైతు సేవ'
-                : 'ESTABLISHED 1995 • OVER 30 YEARS OF FARMER TRUST'}
+                : 'ESTD. 1995 • 30+ YEARS OF FARMER TRUST'}
             </span>
           </div>
 
@@ -76,7 +76,7 @@ export const HeroSection: React.FC = () => {
             <button
               type="button"
               id="cta-explore-brands"
-              className="btn btn-gold btn-lg hero-btn-primary"
+              className="btn btn-primary btn-lg hero-btn-primary"
               onClick={() => handleScrollTo('#brands')}
             >
               <Compass size={20} />
@@ -89,22 +89,20 @@ export const HeroSection: React.FC = () => {
               href={businessData.location.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline-white btn-lg hero-btn-secondary"
+              className="btn btn-outline hero-btn-secondary"
             >
               <MapPin size={20} />
               <span>{t.hero.getDirectionsCta}</span>
             </a>
           </div>
 
-          {/* Architectural Heritage Stat Pedestals */}
+          {/* Neat Stat Pedestals */}
           <div className="hero-stats-grid">
             <div className="hero-stat-card">
-              <div className="stat-roman">EST. MCMXCV</div>
               <div className="stat-number">{t.hero.experienceYears}</div>
               <div className="stat-label">{t.hero.experienceLabel}</div>
             </div>
             <div className="hero-stat-card">
-              <div className="stat-roman">VERIFIED AUTHENTIC</div>
               <div className="stat-number">
                 <ShieldCheck size={22} className="stat-icon" />
                 <span>{t.hero.localCommitment}</span>
@@ -114,35 +112,31 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Decorative Gilded Archival Medallion */}
+        {/* Elegant Trust Medallion */}
         <div className="hero-seal-badge-wrapper">
-          <div className="hero-seal-medallion">
-            <div className="hero-seal-ring-orbit" />
-            <div className="hero-seal-card">
-              <picture className="hero-seal-picture">
-                <source type="image/webp" srcSet={logoImgWebp320} />
-                <img
-                  src={logoImg}
-                  alt="Sri Bhagyalakshmi Seal"
-                  className="hero-seal-img"
-                  width={160}
-                  height={160}
-                  decoding="async"
-                />
-              </picture>
-              <div className="hero-seal-text">
-                <div className="hero-seal-flourish">✦ ✦ ✦</div>
-                <h3 className={`hero-seal-title ${language === 'te' ? 'telugu-preserve' : ''}`}>
-                  {language === 'te' ? 'శ్రీ భాగ్యలక్ష్మి' : 'SRI BHAGYALAKSHMI'}
-                </h3>
-                <p className="hero-seal-sub">
-                  {language === 'te' ? 'రైతు సేవలో విశేష నమ్మకం' : 'Agronomic Excellence & Trust'}
-                </p>
-                <div className="hero-seal-year-wrap">
-                  <span className="hero-seal-year">
-                    {language === 'te' ? 'స్థాపన 1995 • ఆళ్లగడ్డ' : 'ESTD. 1995 • ALLAGADDA'}
-                  </span>
-                </div>
+          <div className="hero-seal-card">
+            <picture className="hero-seal-picture">
+              <source type="image/webp" srcSet={logoImgWebp320} />
+              <img
+                src={logoImg}
+                alt="Sri Bhagyalakshmi Seal"
+                className="hero-seal-img"
+                width={150}
+                height={150}
+                decoding="async"
+              />
+            </picture>
+            <div className="hero-seal-text">
+              <h3 className={`hero-seal-title ${language === 'te' ? 'telugu-preserve' : ''}`}>
+                {language === 'te' ? 'శ్రీ భాగ్యలక్ష్మి' : 'SRI BHAGYALAKSHMI'}
+              </h3>
+              <p className="hero-seal-sub">
+                {language === 'te' ? 'రైతు సేవలో విశేష నమ్మకం' : 'Agricultural Inputs & Farmer Trust'}
+              </p>
+              <div className="hero-seal-year-wrap">
+                <span className="hero-seal-year">
+                  {language === 'te' ? 'స్థాపన 1995 • ఆళ్లగడ్డ' : 'ESTD. 1995 • ALLAGADDA'}
+                </span>
               </div>
             </div>
           </div>
@@ -155,7 +149,7 @@ export const HeroSection: React.FC = () => {
           min-height: calc(100vh - var(--header-height));
           display: flex;
           align-items: center;
-          color: #FAF7F0;
+          color: #FFFFFF;
           padding: 5rem 0 5.5rem 0;
           overflow: hidden;
         }
@@ -186,13 +180,12 @@ export const HeroSection: React.FC = () => {
           right: 0;
           bottom: 0;
           background: 
-            radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.22) 0%, transparent 55%),
-            radial-gradient(circle at 10% 85%, rgba(5, 27, 18, 0.7) 0%, transparent 60%),
+            radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 60%),
             linear-gradient(
               135deg,
-              rgba(4, 21, 13, 0.96) 0%,
-              rgba(7, 34, 23, 0.92) 50%,
-              rgba(10, 46, 32, 0.88) 100%
+              rgba(7, 37, 35, 0.95) 0%,
+              rgba(10, 46, 44, 0.90) 55%,
+              rgba(14, 61, 59, 0.85) 100%
             );
         }
 
@@ -225,21 +218,21 @@ export const HeroSection: React.FC = () => {
           display: inline-flex;
           align-items: center;
           gap: 0.65rem;
-          background: linear-gradient(135deg, rgba(212, 175, 55, 0.18) 0%, rgba(14, 61, 43, 0.3) 100%);
-          border: 1px solid var(--color-gold-metallic);
-          color: #FAF2D6;
+          background: rgba(16, 185, 129, 0.16);
+          border: 1px solid rgba(16, 185, 129, 0.35);
+          color: #A7F3D0;
           padding: 0.45rem 1.35rem;
           border-radius: var(--radius-full);
           font-size: 0.82rem;
           font-weight: 800;
-          letter-spacing: 0.08em;
+          letter-spacing: 0.06em;
           text-transform: uppercase;
           margin-bottom: 1.65rem;
           backdrop-filter: blur(14px);
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 16px rgba(212, 175, 55, 0.25);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
         .hero-badge-icon {
-          color: var(--color-gold-metallic);
+          color: #34D399;
           flex-shrink: 0;
         }
 
@@ -250,10 +243,9 @@ export const HeroSection: React.FC = () => {
         .hero-business-te {
           font-size: 1.65rem;
           font-weight: 800;
-          color: #F8E7BE;
+          color: #A7F3D0;
           margin-bottom: 0.25rem;
           line-height: 1.3;
-          text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
         }
         @media (min-width: 768px) {
           .hero-business-te {
@@ -261,30 +253,28 @@ export const HeroSection: React.FC = () => {
           }
         }
         .hero-business-en {
-          font-family: var(--font-serif);
-          font-size: 1.3rem;
+          font-family: var(--font-sans);
+          font-size: 1.35rem;
           font-weight: 800;
-          color: #FAF7F0;
-          letter-spacing: 0.08em;
+          color: #FFFFFF;
+          letter-spacing: 0.04em;
           text-transform: uppercase;
-          text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
         @media (min-width: 768px) {
           .hero-business-en {
-            font-size: 1.65rem;
+            font-size: 1.75rem;
           }
         }
 
-        /* Main Headline with dual-tone editorial gradient */
+        /* Main Headline */
         .hero-headline {
-          font-family: var(--font-serif);
+          font-family: var(--font-sans);
           font-size: 2.25rem;
-          font-weight: 700;
+          font-weight: 800;
           line-height: 1.25;
           margin-bottom: 1.35rem;
-          color: #FFFDF7;
-          letter-spacing: -0.01em;
-          text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
+          color: #FFFFFF;
+          letter-spacing: -0.02em;
         }
         html[lang="te"] .hero-headline {
           font-family: var(--font-te);
@@ -299,11 +289,10 @@ export const HeroSection: React.FC = () => {
 
         .hero-subheadline {
           font-size: 1.15rem;
-          color: #EADDC9;
+          color: #E2E8F0;
           line-height: 1.75;
           margin-bottom: 2.5rem;
           max-width: 660px;
-          text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
         }
         @media (min-width: 768px) {
           .hero-subheadline {
@@ -324,40 +313,37 @@ export const HeroSection: React.FC = () => {
           margin-bottom: 3.25rem;
         }
         .hero-btn-primary {
-          background: linear-gradient(135deg, #E5C578 0%, #D4AF37 50%, #B38738 100%);
-          color: #051B12;
+          background: var(--gradient-emerald);
+          color: #FFFFFF;
           font-weight: 800;
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          box-shadow: 0 6px 25px rgba(212, 175, 55, 0.45);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
         }
         .hero-btn-primary:hover {
-          background: linear-gradient(135deg, #F3E5AB 0%, #DFBA73 50%, #C59B4E 100%);
-          color: #051B12;
-          transform: translateY(-3px);
-          box-shadow: 0 10px 32px rgba(212, 175, 55, 0.6);
+          transform: translateY(-2px);
+          box-shadow: 0 10px 28px rgba(16, 185, 129, 0.5);
         }
         .hero-btn-secondary {
-          border: 1.5px solid var(--color-gold-metallic);
-          background: rgba(5, 27, 18, 0.45);
-          color: #FAF7F0;
+          border: 1.5px solid rgba(255, 255, 255, 0.3);
+          background: rgba(255, 255, 255, 0.08);
+          color: #FFFFFF;
           backdrop-filter: blur(12px);
         }
         .hero-btn-secondary:hover {
-          background: var(--color-gold-metallic);
-          color: #051B12;
-          border-color: var(--color-gold-metallic);
-          transform: translateY(-3px);
-          box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+          background: rgba(255, 255, 255, 0.18);
+          border-color: #FFFFFF;
+          color: #FFFFFF;
+          transform: translateY(-2px);
         }
 
-        /* Architectural Stat Pedestals */
+        /* Stat Pedestals */
         .hero-stats-grid {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 1.5rem;
           max-width: 580px;
-          padding-top: 2.25rem;
-          border-top: 1px solid var(--color-gold-hairline);
+          padding-top: 2rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
         }
         @media (max-width: 640px) {
           .hero-stats-grid {
@@ -368,30 +354,23 @@ export const HeroSection: React.FC = () => {
         .hero-stat-card {
           display: flex;
           flex-direction: column;
-          padding: 1rem 1.25rem;
-          background: rgba(5, 27, 18, 0.4);
-          border: 1px solid var(--color-gold-hairline);
-          border-radius: var(--radius-md);
+          padding: 1.1rem 1.35rem;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(16, 185, 129, 0.25);
+          border-radius: var(--radius-lg);
           backdrop-filter: blur(10px);
           transition: transform var(--transition-normal), border-color var(--transition-normal);
         }
         .hero-stat-card:hover {
-          transform: translateY(-3px);
-          border-color: var(--color-gold-metallic);
-        }
-        .stat-roman {
-          font-size: 0.68rem;
-          letter-spacing: 0.12em;
-          color: var(--color-gold-amber);
-          font-weight: 800;
-          margin-bottom: 0.25rem;
-          text-transform: uppercase;
+          transform: translateY(-2px);
+          border-color: var(--color-emerald-vivid);
+          background: rgba(255, 255, 255, 0.1);
         }
         .stat-number {
-          font-family: var(--font-serif);
-          font-size: 1.65rem;
-          font-weight: 700;
-          color: #FAF2D6;
+          font-family: var(--font-sans);
+          font-size: 1.75rem;
+          font-weight: 800;
+          color: #FFFFFF;
           display: flex;
           align-items: center;
           gap: 0.5rem;
@@ -400,14 +379,14 @@ export const HeroSection: React.FC = () => {
           color: var(--color-emerald-vivid);
         }
         .stat-label {
-          font-size: 0.84rem;
-          color: #D2C8B0;
+          font-size: 0.88rem;
+          color: #CBD5E1;
           margin-top: 0.35rem;
           line-height: 1.45;
           font-weight: 500;
         }
 
-        /* Decorative Gilded Archival Medallion */
+        /* Trust Medallion */
         .hero-seal-badge-wrapper {
           display: none;
           justify-content: center;
@@ -417,50 +396,39 @@ export const HeroSection: React.FC = () => {
             display: flex;
           }
         }
-        .hero-seal-medallion {
-          position: relative;
-          padding: 1.5rem;
-        }
-        .hero-seal-ring-orbit {
-          position: absolute;
-          inset: 0.25rem;
-          border-radius: 50%;
-          border: 1.5px dashed rgba(212, 175, 55, 0.45);
-          pointer-events: none;
-          animation: slowOrbit 60s linear infinite;
-        }
         .hero-seal-card {
-          background: linear-gradient(160deg, rgba(14, 61, 43, 0.75) 0%, rgba(5, 27, 18, 0.88) 100%);
-          backdrop-filter: blur(24px);
-          -webkit-backdrop-filter: blur(24px);
-          border: 1.5px solid var(--color-gold-metallic);
+          background: rgba(7, 37, 35, 0.85);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1.5px solid rgba(16, 185, 129, 0.3);
           border-radius: var(--radius-xl);
           padding: 2.5rem 2.25rem;
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
-          box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(212, 175, 55, 0.22);
-          max-width: 330px;
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(16, 185, 129, 0.15);
+          max-width: 320px;
           transition: transform var(--transition-normal), box-shadow var(--transition-normal);
         }
         .hero-seal-card:hover {
-          transform: translateY(-5px) scale(1.02);
-          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(212, 175, 55, 0.35);
+          transform: translateY(-4px);
+          box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 36px rgba(16, 185, 129, 0.25);
+          border-color: var(--color-emerald-vivid);
         }
         .hero-seal-picture {
           display: flex;
           justify-content: center;
         }
         .hero-seal-img {
-          width: 155px;
-          height: 155px;
+          width: 140px;
+          height: 140px;
           aspect-ratio: 1 / 1;
           border-radius: 50%;
-          border: 3px solid var(--color-gold-metallic);
-          box-shadow: 0 8px 26px rgba(0, 0, 0, 0.5), 0 0 24px rgba(212, 175, 55, 0.4);
+          border: 3px solid var(--color-emerald-vivid);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 20px rgba(16, 185, 129, 0.3);
           margin-bottom: 1.35rem;
-          background: #FAF7F0;
+          background: #FFFFFF;
         }
         .hero-seal-text {
           display: flex;
@@ -469,23 +437,15 @@ export const HeroSection: React.FC = () => {
           gap: 0.35rem;
           width: 100%;
         }
-        .hero-seal-flourish {
-          color: var(--color-gold-metallic);
-          font-size: 0.72rem;
-          letter-spacing: 0.3em;
-          margin-bottom: 0.2rem;
-          opacity: 0.85;
-        }
         .hero-seal-title {
-          font-family: var(--font-serif);
-          font-size: 1.25rem;
-          font-weight: 700;
-          color: #FFFDF7;
-          letter-spacing: 0.06em;
+          font-family: var(--font-sans);
+          font-size: 1.22rem;
+          font-weight: 800;
+          color: #FFFFFF;
+          letter-spacing: 0.04em;
           text-transform: uppercase;
           line-height: 1.25;
           margin: 0;
-          text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
         }
         html[lang="te"] .hero-seal-title {
           font-family: var(--font-te);
@@ -493,27 +453,25 @@ export const HeroSection: React.FC = () => {
           letter-spacing: 0;
         }
         .hero-seal-sub {
-          font-size: 0.85rem;
+          font-size: 0.86rem;
           font-weight: 500;
-          color: #D2C8B0;
-          letter-spacing: 0.02em;
+          color: #94A3B8;
           margin: 0;
-          line-height: 1.35;
+          line-height: 1.4;
         }
         .hero-seal-year-wrap {
           margin-top: 0.85rem;
         }
         .hero-seal-year {
           display: inline-block;
-          padding: 0.32rem 1.05rem;
-          background: linear-gradient(135deg, rgba(212, 175, 55, 0.25) 0%, rgba(14, 61, 43, 0.4) 100%);
-          border: 1px solid var(--color-gold-metallic);
-          color: #FAF2D6;
+          padding: 0.35rem 1.15rem;
+          background: rgba(16, 185, 129, 0.16);
+          border: 1px solid rgba(16, 185, 129, 0.35);
+          color: #A7F3D0;
           border-radius: var(--radius-full);
           font-size: 0.78rem;
           font-weight: 800;
-          letter-spacing: 0.06em;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+          letter-spacing: 0.04em;
         }
       `}</style>
     </section>

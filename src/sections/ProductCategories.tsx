@@ -35,11 +35,7 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
           <h2 className="section-title">
             {t.categoriesSection.title}
           </h2>
-          <div className="heritage-divider">
-            <span className="heritage-divider__line" />
-            <span className="heritage-divider__diamond">◆</span>
-            <span className="heritage-divider__line" />
-          </div>
+          <div className="section-accent-bar" />
           <p className="section-subtitle">
             {t.categoriesSection.subtitle}
           </p>
@@ -66,12 +62,9 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
 
       <style>{`
         .categories-section {
-          background: 
-            radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
-            radial-gradient(ellipse at 85% 80%, rgba(5, 27, 18, 0.06) 0%, transparent 60%),
-            var(--color-cream-base);
-          border-top: 1px solid var(--color-gold-hairline);
-          border-bottom: 1px solid var(--color-gold-hairline);
+          background: var(--color-canvas-base);
+          border-top: 1px solid var(--color-border-subtle);
+          border-bottom: 1px solid var(--color-border-subtle);
         }
 
         .categories-grid {
@@ -101,19 +94,19 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
           gap: 0.65rem;
           font-size: 0.88rem;
           font-weight: 600;
-          color: #785811;
+          color: var(--color-charcoal-muted);
           text-align: center;
           max-width: 820px;
           margin: 0 auto;
           padding: 1rem 1.6rem;
-          background: #FFFEFC;
+          background: #FFFFFF;
           border-radius: var(--radius-md);
-          border: 1px solid var(--color-gold-hairline);
-          border-left: 3.5px solid var(--color-gold-metallic);
-          box-shadow: 0 4px 16px rgba(5, 27, 18, 0.04);
+          border: 1px solid var(--color-border-subtle);
+          border-left: 3.5px solid var(--color-emerald-vivid);
+          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.04);
         }
         .disclaimer-icon {
-          color: var(--color-gold-metallic);
+          color: var(--color-emerald-vivid);
           flex-shrink: 0;
         }
       `}</style>

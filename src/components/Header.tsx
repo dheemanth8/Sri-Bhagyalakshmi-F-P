@@ -233,20 +233,19 @@ export const Header: React.FC = () => {
           width: 100%;
         }
 
-        /* Main Nav - Gilded Botanical Atelier */
+        /* Main Nav - Sovereign Deep Teal Glass */
         .main-nav {
-          background: linear-gradient(180deg, rgba(5, 27, 18, 0.98) 0%, rgba(8, 40, 27, 0.95) 100%);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          border-top: 2.5px solid var(--color-gold-metallic);
-          border-bottom: 1px solid var(--color-gold-hairline);
-          box-shadow: 0 8px 30px rgba(5, 27, 18, 0.35);
+          background: rgba(7, 37, 35, 0.94);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+          box-shadow: 0 4px 24px rgba(7, 37, 35, 0.35);
           transition: all var(--transition-normal);
         }
         .main-nav--scrolled {
-          background: rgba(5, 27, 18, 0.98);
-          box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.5), 0 1px 0 var(--color-gold-hairline);
-          border-bottom-color: var(--color-gold-metallic);
+          background: rgba(7, 37, 35, 0.98);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(16, 185, 129, 0.3);
+          border-bottom-color: rgba(16, 185, 129, 0.4);
         }
         .main-nav__inner {
           display: flex;
@@ -290,16 +289,16 @@ export const Header: React.FC = () => {
           width: 46px;
           height: 46px;
           border-radius: var(--radius-full);
-          border: 2px solid var(--color-gold-metallic);
+          border: 2px solid var(--color-emerald-vivid);
           overflow: hidden;
-          box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3), 0 4px 14px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2), 0 4px 12px rgba(0, 0, 0, 0.25);
           flex-shrink: 0;
-          background: #FAF7F0;
+          background: #FFFFFF;
           transition: transform var(--transition-fast), box-shadow var(--transition-fast);
         }
         .brand-identity:hover .logo-box {
-          transform: scale(1.08) rotate(3deg);
-          box-shadow: 0 0 0 3px var(--color-gold-metallic), 0 0 20px rgba(212, 175, 55, 0.5);
+          transform: scale(1.05);
+          box-shadow: 0 0 0 3px var(--color-emerald-vivid), 0 0 16px rgba(16, 185, 129, 0.4);
         }
         @media (min-width: 640px) {
           .logo-box {
@@ -309,8 +308,8 @@ export const Header: React.FC = () => {
         }
         @media (min-width: 1280px) {
           .logo-box {
-            width: 56px;
-            height: 56px;
+            width: 54px;
+            height: 54px;
           }
         }
         .logo-img {
@@ -335,31 +334,28 @@ export const Header: React.FC = () => {
           text-overflow: ellipsis;
         }
         .brand-name-en {
-          font-family: var(--font-serif);
-          font-size: 1.15rem;
-          font-weight: 800;
-          color: #FFFDF7;
-          letter-spacing: 0.05em;
-          text-transform: uppercase;
-          text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-        }
-        .brand-name-te {
+          font-family: var(--font-sans);
           font-size: 1.18rem;
           font-weight: 800;
-          color: #F3E5AB;
-          text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+          color: #FFFFFF;
+          letter-spacing: 0.02em;
+        }
+        .brand-name-te {
+          font-size: 1.22rem;
+          font-weight: 800;
+          color: #A7F3D0;
         }
         @media (min-width: 640px) {
           .brand-name-en {
-            font-size: 1.25rem;
+            font-size: 1.28rem;
           }
           .brand-name-te {
-            font-size: 1.28rem;
+            font-size: 1.32rem;
           }
         }
         @media (min-width: 1280px) {
           .brand-name-en {
-            font-size: 1.34rem;
+            font-size: 1.35rem;
           }
           .brand-name-te {
             font-size: 1.38rem;
@@ -367,21 +363,21 @@ export const Header: React.FC = () => {
         }
 
         .brand-meta {
-          color: #C8BA9E;
+          color: #94A3B8;
           font-weight: 600;
           margin-top: 2px;
           white-space: nowrap;
-          letter-spacing: 0.03em;
+          letter-spacing: 0.02em;
           overflow: hidden;
           text-overflow: ellipsis;
         }
         .brand-meta-desktop {
           display: none;
-          font-size: 0.76rem;
+          font-size: 0.78rem;
         }
         .brand-meta-mobile {
           display: inline;
-          font-size: 0.72rem;
+          font-size: 0.74rem;
         }
         @media (min-width: 640px) {
           .brand-meta-desktop {
@@ -432,11 +428,11 @@ export const Header: React.FC = () => {
           }
         }
 
-        /* Interactive Nav Link Pill Hover Effect */
+        /* Elegant Nav Link Pill */
         .nav-link {
-          font-size: 0.94rem;
+          font-size: 0.92rem;
           font-weight: 700;
-          color: #F4EEDF;
+          color: #E2E8F0;
           position: relative;
           padding: 0.45rem 0.85rem;
           white-space: nowrap;
@@ -446,29 +442,28 @@ export const Header: React.FC = () => {
         }
         @media (min-width: 1280px) {
           .nav-link {
-            font-size: 0.98rem;
+            font-size: 0.96rem;
             padding: 0.5rem 0.95rem;
           }
         }
         .nav-link:hover {
-          color: #FEF3C7;
-          background-color: rgba(250, 246, 238, 0.15);
-          transform: translateY(-2px);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+          color: #FFFFFF;
+          background-color: rgba(255, 255, 255, 0.08);
+          transform: translateY(-1px);
         }
         .nav-link::after {
           content: '';
           position: absolute;
-          bottom: 4px;
+          bottom: 3px;
           left: 0.85rem;
           right: 0.85rem;
-          height: 2.5px;
-          background: linear-gradient(90deg, #F59E0B 0%, #FEF08A 100%);
+          height: 2px;
+          background: linear-gradient(90deg, #10B981 0%, #34D399 100%);
           transform: scaleX(0);
           transform-origin: center;
           transition: transform var(--transition-fast);
           border-radius: var(--radius-full);
-          box-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
+          box-shadow: 0 0 8px rgba(16, 185, 129, 0.7);
         }
         .nav-link:hover::after {
           transform: scaleX(1);
@@ -494,36 +489,36 @@ export const Header: React.FC = () => {
           }
         }
 
-        /* Language Switcher Styling in Forest Green Header */
+        /* Language Switcher Styling */
         .header-wrapper .language-switcher {
-          background: rgba(250, 246, 238, 0.12);
-          border: 1.5px solid rgba(250, 246, 238, 0.25);
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.16);
           backdrop-filter: blur(8px);
-          color: #FAF6EE;
+          color: #F8FAFC;
         }
         .header-wrapper .language-switcher:hover {
-          border-color: var(--color-golden-yellow);
-          background: rgba(250, 246, 238, 0.2);
-          box-shadow: 0 0 12px rgba(245, 158, 11, 0.35);
+          border-color: var(--color-emerald-vivid);
+          background: rgba(255, 255, 255, 0.14);
+          box-shadow: 0 0 12px rgba(16, 185, 129, 0.25);
         }
         .header-wrapper .lang-icon {
-          color: var(--color-golden-yellow-light);
+          color: #34D399;
         }
         .header-wrapper .lang-btn {
-          color: #FAF6EE;
+          color: #E2E8F0;
         }
         .header-wrapper .lang-btn:hover {
-          color: #FEF3C7;
+          color: #FFFFFF;
         }
         .header-wrapper .lang-btn--active {
-          background: #FAF6EE;
-          color: #072714;
-          border-color: #FAF6EE;
+          background: var(--color-emerald-vivid);
+          color: #FFFFFF;
+          border-color: var(--color-emerald-vivid);
           font-weight: 800;
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 6px rgba(16, 185, 129, 0.35);
         }
         .header-wrapper .lang-divider {
-          color: rgba(250, 246, 238, 0.4);
+          color: rgba(255, 255, 255, 0.3);
         }
 
         /* Mobile Hamburger & Actions */
@@ -556,28 +551,28 @@ export const Header: React.FC = () => {
           padding: 0.15rem 0.35rem;
         }
 
-        /* Interactive Hamburger Button */
+        /* Clean Hamburger Button */
         .hamburger-btn {
-          color: #FAF6EE;
-          width: 42px;
-          height: 42px;
+          color: #FFFFFF;
+          width: 40px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: var(--radius-md);
-          background: rgba(250, 246, 238, 0.14);
-          border: 1.5px solid var(--color-golden-yellow);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(16, 185, 129, 0.3);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
           flex-shrink: 0;
           transition: all var(--transition-fast);
           cursor: pointer;
         }
         .hamburger-btn:hover,
         .hamburger-btn:active {
-          background: #FAF6EE;
-          color: #072714;
-          transform: scale(1.06);
-          box-shadow: 0 0 14px rgba(245, 158, 11, 0.5);
+          background: var(--color-emerald-vivid);
+          color: #FFFFFF;
+          transform: scale(1.04);
+          border-color: var(--color-emerald-vivid);
         }
 
         /* Mobile Drawer */
@@ -600,7 +595,7 @@ export const Header: React.FC = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgba(7, 39, 20, 0.75);
+          background: rgba(7, 37, 35, 0.75);
           backdrop-filter: blur(6px);
           -webkit-backdrop-filter: blur(6px);
           opacity: 0;
@@ -616,8 +611,8 @@ export const Header: React.FC = () => {
           bottom: 0;
           width: 86%;
           max-width: 360px;
-          background: #FAF6EE;
-          box-shadow: -8px 0 35px rgba(7, 39, 20, 0.45);
+          background: #FFFFFF;
+          box-shadow: -8px 0 35px rgba(7, 37, 35, 0.3);
           display: flex;
           flex-direction: column;
           transform: translateX(100%);
@@ -635,8 +630,8 @@ export const Header: React.FC = () => {
           justify-content: space-between;
           padding: 1.25rem 1.5rem;
           margin: -1.5rem -1.5rem 1.25rem -1.5rem;
-          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
-          border-bottom: 2px solid var(--color-golden-yellow);
+          background: linear-gradient(135deg, #072523 0%, #0A2E2C 100%);
+          border-bottom: 2px solid var(--color-emerald-vivid);
         }
         .mobile-brand {
           display: flex;
@@ -645,31 +640,31 @@ export const Header: React.FC = () => {
         }
         .mobile-logo {
           border-radius: 50%;
-          border: 2px solid var(--color-golden-yellow);
-          background: #FAF6EE;
+          border: 2px solid var(--color-emerald-vivid);
+          background: #FFFFFF;
         }
         .mobile-brand-title {
           font-size: 0.98rem;
           font-weight: 800;
-          color: #FFFEFB;
+          color: #FFFFFF;
         }
         .mobile-brand-sub {
           font-size: 0.75rem;
-          color: #D2C8B0;
+          color: #94A3B8;
         }
         .drawer-close-btn {
-          color: #FAF6EE;
+          color: #FFFFFF;
           padding: 0.4rem;
           border-radius: var(--radius-full);
-          background: rgba(250, 246, 238, 0.15);
+          background: rgba(255, 255, 255, 0.12);
           display: flex;
           align-items: center;
           justify-content: center;
           transition: all var(--transition-fast);
         }
         .drawer-close-btn:hover {
-          color: #072714;
-          background: #FAF6EE;
+          color: #FFFFFF;
+          background: var(--color-emerald-vivid);
           transform: rotate(90deg);
         }
         .mobile-drawer__lang {
@@ -685,29 +680,29 @@ export const Header: React.FC = () => {
         .mobile-nav-link {
           display: block;
           padding: 0.85rem 1rem;
-          font-size: 1.05rem;
+          font-size: 1.02rem;
           font-weight: 700;
-          color: #0D3B1F;
+          color: #0A2E2C;
           border-radius: var(--radius-md);
           transition: all var(--transition-fast);
           border: 1px solid transparent;
         }
         .mobile-nav-link:hover,
         .mobile-nav-link:active {
-          background-color: #EFE7D3;
-          color: #072714;
-          border-color: rgba(13, 59, 31, 0.15);
+          background-color: #E6F7F0;
+          color: #059669;
+          border-color: rgba(16, 185, 129, 0.2);
           transform: translateX(4px);
         }
         .mobile-drawer__footer {
           margin-top: auto;
           padding-top: 1.5rem;
-          border-top: 1.5px solid #E5DAC1;
+          border-top: 1.5px solid #E2E8F0;
         }
         .mobile-cta-btn {
           width: 100%;
-          background: var(--gradient-forest-vibrant);
-          color: #FAF6EE;
+          background: var(--gradient-emerald);
+          color: #FFFFFF;
         }
       `}</style>
     </header>

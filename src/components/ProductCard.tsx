@@ -402,8 +402,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         .technical-name-snippet {
           font-size: 0.82rem;
           line-height: 1.4;
-          background: var(--color-warm-cream);
-          border: 1px solid rgba(244, 185, 66, 0.3);
+          background: var(--color-mint-light);
+          border: 1px solid rgba(16, 185, 129, 0.25);
           border-radius: var(--radius-sm);
           padding: 0.4rem 0.6rem;
           display: -webkit-box;

@@ -53,17 +53,13 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           <h2 className="section-title">
             {t.brandsSection.title}
           </h2>
-          <div className="heritage-divider">
-            <span className="heritage-divider__line" />
-            <span className="heritage-divider__diamond">◆</span>
-            <span className="heritage-divider__line" />
-          </div>
+          <div className="section-accent-bar" />
           <p className="section-subtitle">
             {t.brandsSection.subtitle}
           </p>
         </div>
 
-        {/* Brand Filter Pill (All Brands - Gilded Atelier Pill) */}
+        {/* Brand Filter Pill (All Brands - Clean Mint & Teal Pill) */}
         <div className="brands-toolbar">
           <div className="brands-filter-pills" role="tablist">
             <button
@@ -114,12 +110,9 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
 
       <style>{`
         .brands-section {
-          background: 
-            radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
-            radial-gradient(circle at 10% 100%, rgba(5, 27, 18, 0.05) 0%, transparent 50%),
-            var(--color-cream-base);
-          border-top: 1px solid var(--color-gold-hairline);
-          border-bottom: 1px solid var(--color-gold-hairline);
+          background: var(--color-canvas-base);
+          border-top: 1px solid var(--color-border-subtle);
+          border-bottom: 1px solid var(--color-border-subtle);
         }
 
         /* Toolbar */
@@ -144,16 +137,16 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           border-radius: var(--radius-full);
           font-size: 0.88rem;
           font-weight: 800;
-          letter-spacing: 0.06em;
+          letter-spacing: 0.04em;
           text-transform: uppercase;
-          background: var(--color-obsidian);
-          color: #FAF2D6;
-          border: 1px solid var(--color-gold-metallic);
-          box-shadow: 0 4px 18px rgba(5, 27, 18, 0.25), 0 0 14px rgba(212, 175, 55, 0.2);
+          background: var(--color-primary-deep);
+          color: #FFFFFF;
+          border: 1px solid rgba(16, 185, 129, 0.3);
+          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.15);
           cursor: default;
         }
         .filter-pill-sparkle {
-          color: var(--color-gold-metallic);
+          color: #34D399;
         }
 
         /* 4 columns on desktop, 3 on tablet, 2 on mobile */
@@ -198,7 +191,7 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           margin-bottom: 1rem;
         }
         .brands-empty-reset {
-          background: var(--color-forest-green);
+          background: var(--color-emerald-deep);
           color: #FFFFFF;
           border: none;
           padding: 0.5rem 1.25rem;
@@ -214,20 +207,20 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           gap: 0.85rem;
           max-width: 880px;
           margin: 0 auto;
-          background: #FFFEFC;
-          border: 1px solid var(--color-gold-hairline);
-          border-left: 3.5px solid var(--color-gold-metallic);
+          background: #FFFFFF;
+          border: 1px solid var(--color-border-subtle);
+          border-left: 3.5px solid var(--color-emerald-vivid);
           border-radius: var(--radius-md);
           padding: 1.25rem 1.5rem;
-          box-shadow: 0 4px 18px rgba(5, 27, 18, 0.04);
+          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.04);
         }
         .notice-icon {
-          color: var(--color-gold-metallic);
+          color: var(--color-emerald-vivid);
           flex-shrink: 0;
           margin-top: 0.15rem;
         }
         .notice-text {
-          font-size: 0.86rem;
+          font-size: 0.88rem;
           color: var(--color-charcoal-muted);
           line-height: 1.6;
           font-weight: 500;
