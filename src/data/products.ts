@@ -6805,25 +6805,6 @@ export const ALL_SPREADSHEET_ITEMS: SpreadsheetProductItem[] = [
     "reviewStatus": "verified"
   },
   {
-    "spreadsheetRow": 354,
-    "rawName": "NANDAKA-250ML",
-    "displayName": "Nandaka",
-    "company": {
-      "id": "nakasa",
-      "name": "Nakasa",
-      "fullName": "Nakasa Crop Science",
-      "logoKey": "nakasaLogo"
-    },
-    "mainCategory": "pesticides",
-    "subCategory": "insecticide",
-    "rawProductType": "Insecticide",
-    "activeIngredient": "Emamectin Benzoate + Thiamethoxam",
-    "technicalName": "Emamectin Benzoate 1.5% + Thiamethoxam 7.5% SC",
-    "packSize": "250 ML",
-    "isTechnicalSpecVerified": true,
-    "reviewStatus": "verified"
-  },
-  {
     "spreadsheetRow": 355,
     "rawName": "AKIO 1LT",
     "displayName": "AKIO",
@@ -7373,63 +7354,6 @@ export const ALL_SPREADSHEET_ITEMS: SpreadsheetProductItem[] = [
     "packSize": "400 GM",
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified"
-  },
-  {
-    "spreadsheetRow": 384,
-    "rawName": "HITMAN-1000ML",
-    "displayName": "Hitman",
-    "company": {
-      "id": "xylon",
-      "name": "Xylon",
-      "fullName": "Xylon Agri Science",
-      "logoKey": "xylonLogo"
-    },
-    "mainCategory": "pesticides",
-    "subCategory": "insecticide",
-    "rawProductType": "Insecticide",
-    "activeIngredient": "Chlorpyriphos + Cypermethrin",
-    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC",
-    "packSize": "1000 ML",
-    "isTechnicalSpecVerified": true,
-    "reviewStatus": "verified"
-  },
-  {
-    "spreadsheetRow": 385,
-    "rawName": "HITMAN-250ML",
-    "displayName": "Hitman",
-    "company": {
-      "id": "xylon",
-      "name": "Xylon",
-      "fullName": "Xylon Agri Science",
-      "logoKey": "xylonLogo"
-    },
-    "mainCategory": "pesticides",
-    "subCategory": "insecticide",
-    "rawProductType": "Insecticide",
-    "activeIngredient": "Chlorpyriphos + Cypermethrin",
-    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC",
-    "packSize": "250 ML",
-    "isTechnicalSpecVerified": true,
-    "reviewStatus": "verified"
-  },
-  {
-    "spreadsheetRow": 386,
-    "rawName": "HITMAN-500ML",
-    "displayName": "Hitman",
-    "company": {
-      "id": "xylon",
-      "name": "Xylon",
-      "fullName": "Xylon Agri Science",
-      "logoKey": "xylonLogo"
-    },
-    "mainCategory": "pesticides",
-    "subCategory": "insecticide",
-    "rawProductType": "Insecticide",
-    "activeIngredient": "Chlorpyriphos + Cypermethrin",
-    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC",
-    "packSize": "500 ML",
-    "isTechnicalSpecVerified": true,
-    "reviewStatus": "verified"
   }
 ];
 
@@ -7506,7 +7430,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "basf-cabritop",
@@ -7539,7 +7463,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "basf-exponus",
@@ -7572,7 +7496,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/basf-exponus.webp"
   },
   {
     "id": "basf-polyram",
@@ -7605,7 +7529,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/basf-polyram.webp"
   },
   {
     "id": "basf-priaxor",
@@ -7646,7 +7570,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/basf-priaxor.webp"
   },
   {
     "id": "basf-pulsar",
@@ -7687,7 +7611,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "basf-regent-ultra",
@@ -7720,7 +7644,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "basf-stomp-xtra",
@@ -7753,7 +7677,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/basf-stomp-xtra.webp"
   },
   {
     "id": "basf-systiva",
@@ -7794,7 +7718,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "bayer-antracal",
@@ -7942,7 +7866,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/bayer-council-activ.webp"
   },
   {
     "id": "bayer-decis",
@@ -8098,7 +8022,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/bayer-movento-energy.webp"
   },
   {
     "id": "bayer-movento-od",
@@ -8139,7 +8063,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/bayer-movento-od.webp"
   },
   {
     "id": "bayer-nativo",
@@ -8409,7 +8333,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_mop.jpg"
+    "image": null
   },
   {
     "id": "coromandel-c-i-l-sulphate",
@@ -8442,7 +8366,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-ci-l-15-15-15-09",
@@ -8508,7 +8432,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-cil-16-20-0-13-50-kgms",
@@ -8541,7 +8465,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-cil-20-20-0-13",
@@ -8574,7 +8498,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-cil-28-28-0",
@@ -8607,7 +8531,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-cil-can",
@@ -8640,7 +8564,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-cil-dap",
@@ -8673,7 +8597,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_dap.jpg"
+    "image": null
   },
   {
     "id": "coromandel-cil-krich",
@@ -8706,7 +8630,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-cil-parry-super",
@@ -8739,7 +8663,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-cil-urea-l",
@@ -8772,7 +8696,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_urea.jpg"
+    "image": null
   },
   {
     "id": "coromandel-gromor-magnisium-sulphate",
@@ -8805,7 +8729,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "coromandel-gromor-nano-dap",
@@ -8961,7 +8885,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "corteva-pexalon",
@@ -9043,7 +8967,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-aaatank",
@@ -9084,7 +9008,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-caladon",
@@ -9117,7 +9041,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-caladon-sp",
@@ -9158,7 +9082,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-caldon-4g",
@@ -9191,7 +9115,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-em-1",
@@ -9232,7 +9156,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-konika",
@@ -9355,7 +9279,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-targa-super",
@@ -9437,7 +9361,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-weedmar-super",
@@ -9470,7 +9394,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-zanet",
@@ -9511,7 +9435,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "fact-fact-20-20-0-13",
@@ -9544,7 +9468,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "fact-fact-fom",
@@ -9577,7 +9501,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "fact-fact-organic",
@@ -9610,7 +9534,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "fact-fact-sulphate",
@@ -9643,7 +9567,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "fmc-benevia",
@@ -9709,7 +9633,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "fmc-marshal",
@@ -9849,7 +9773,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "gharda-kingdoxa",
@@ -9882,7 +9806,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "gharda-maheveer",
@@ -9915,7 +9839,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "iffco-iffco-10-26-26",
@@ -9948,7 +9872,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "iffco-nano-dap",
@@ -10088,7 +10012,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "indofil-z-78",
@@ -10162,7 +10086,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "ipl-ipl-dap",
@@ -10195,7 +10119,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_dap.jpg"
+    "image": null
   },
   {
     "id": "ipl-ipl-mop",
@@ -10228,7 +10152,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_mop.jpg"
+    "image": null
   },
   {
     "id": "ipl-ipl-urea",
@@ -10261,7 +10185,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_urea.jpg"
+    "image": null
   },
   {
     "id": "kribhco-kribcho-dap",
@@ -10294,7 +10218,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_dap.jpg"
+    "image": null
   },
   {
     "id": "kribhco-kribcho-urea",
@@ -10327,7 +10251,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_urea.jpg"
+    "image": null
   },
   {
     "id": "mahadhan-mahadhan-24-24-0",
@@ -10360,7 +10284,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": "/products/mahadhan-24-24-0.webp"
   },
   {
     "id": "mahadhan-mahadhan-total-fg",
@@ -10393,7 +10317,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": "/products/mahadhan-total-fg.webp"
   },
   {
     "id": "nacl-index",
@@ -10434,7 +10358,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/nacl-index.webp"
   },
   {
     "id": "nacl-mida",
@@ -10483,7 +10407,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nacl-oscar",
@@ -10524,7 +10448,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-combo-chilli-cotton",
@@ -10557,7 +10481,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-defender",
@@ -10590,7 +10514,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-dhruva",
@@ -10623,7 +10547,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-fert-0-52",
@@ -10656,7 +10580,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-judo",
@@ -10697,7 +10621,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-lufenor",
@@ -10738,7 +10662,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-mida-super",
@@ -10787,7 +10711,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-n-clean",
@@ -10820,7 +10744,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-nutri-boost",
@@ -10861,7 +10785,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-panther",
@@ -10910,7 +10834,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-polstar",
@@ -10951,7 +10875,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-pryme",
@@ -10984,7 +10908,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-super-sweeper",
@@ -11025,7 +10949,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-supersweeper",
@@ -11058,7 +10982,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-treebo",
@@ -11099,7 +11023,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nova-nova-tricx",
@@ -11148,7 +11072,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "pi_industries-keefun",
@@ -11189,7 +11113,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "pi_industries-nominee-gold",
@@ -11230,7 +11154,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/pi_industries-nominee-gold.webp"
   },
   {
     "id": "ppl-p-p-l-tsp",
@@ -11263,7 +11187,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "ppl-p-p-l-urea",
@@ -11296,7 +11220,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_urea.jpg"
+    "image": null
   },
   {
     "id": "ppl-ppl-20-20-0-13",
@@ -11329,7 +11253,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "ppl-ppl-amm-sulpahte",
@@ -11362,7 +11286,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "spic-spic-prom",
@@ -11395,7 +11319,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": null
   },
   {
     "id": "sumitomo-progibb-easy",
@@ -11428,7 +11352,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/sumitomo-progibb-easy.webp"
   },
   {
     "id": "sumitomo-sumimax",
@@ -11469,7 +11393,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "sumitomo-sumitaz-gr",
@@ -11502,7 +11426,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/sumitomo-sumitaz-gr.webp"
   },
   {
     "id": "syngenta-actara",
@@ -11543,7 +11467,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/syngenta-actara.webp"
   },
   {
     "id": "syngenta-allika",
@@ -11839,7 +11763,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "syngenta-isabion",
@@ -11913,7 +11837,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/syngenta-kawach.webp"
   },
   {
     "id": "syngenta-kawach-flo",
@@ -11946,7 +11870,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/syngenta-kawach-flo.webp"
   },
   {
     "id": "syngenta-miravis-duo",
@@ -11987,7 +11911,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/syngenta-miravis-duo.webp"
   },
   {
     "id": "syngenta-redomil-gold",
@@ -12061,7 +11985,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/syngenta-simodis.webp"
   },
   {
     "id": "tata-atrataf",
@@ -12094,7 +12018,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "tata-blitox",
@@ -12127,7 +12051,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/tata-blitox.webp"
   },
   {
     "id": "tata-contaf",
@@ -12242,7 +12166,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "tata-ralwet",
@@ -12275,7 +12199,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "tata-sonik-flo",
@@ -12316,7 +12240,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "tata-tafgor-30-ec",
@@ -12357,7 +12281,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/tata-tafgor-30-ec.webp"
   },
   {
     "id": "tata-tata-bahar",
@@ -12390,7 +12314,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/tata-tata-bahar.webp"
   },
   {
     "id": "tata-tata-uphaar-rds",
@@ -12423,7 +12347,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "tropical-tag-exocent",
@@ -12456,7 +12380,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "tropical-tag-stem-lee",
@@ -12497,7 +12421,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "upl-attack",
@@ -12546,7 +12470,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "upl-lancer-gold",
@@ -12587,7 +12511,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/upl-lancer-gold.webp"
   },
   {
     "id": "upl-police",
@@ -12628,7 +12552,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "upl-saff",
@@ -12784,7 +12708,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": "/products/mahadhan-croptek-8-21-21.jpg"
   },
   {
     "id": "mahadhan-croptek-9-24-24",
@@ -12825,7 +12749,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": "/products/mahadhan-croptek-9-24-24.jpg"
   },
   {
     "id": "mahadhan-croptek11-30-14",
@@ -12866,7 +12790,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": "/products/mahadhan-croptek11-30-14.jpg"
   },
   {
     "id": "nichino-akio",
@@ -12923,7 +12847,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/nichino-akio.webp"
   },
   {
     "id": "agrishine-akiran",
@@ -12996,7 +12920,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "indofil-alecto",
@@ -13045,7 +12969,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "indofil-allento",
@@ -13078,7 +13002,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "upl-amicus",
@@ -13119,7 +13043,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "upl-argyle",
@@ -13168,7 +13092,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "nacl-atonik",
@@ -13209,7 +13133,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/nacl-atonik.webp"
   },
   {
     "id": "adama-barazide",
@@ -13250,7 +13174,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/adama-barazide.webp"
   },
   {
     "id": "adama-barroz",
@@ -13291,7 +13215,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "fmc-corozen",
@@ -13389,7 +13313,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-decide",
@@ -13446,7 +13370,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/dhanuka-decide.webp"
   },
   {
     "id": "fmc-ferterra",
@@ -13487,7 +13411,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/fmc-ferterra.webp"
   },
   {
     "id": "bayer-foost",
@@ -13520,7 +13444,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "adama-galigan",
@@ -13577,7 +13501,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/adama-galigan.webp"
   },
   {
     "id": "corteva-galileo-sensa",
@@ -13618,7 +13542,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-godiwa-super",
@@ -13667,7 +13591,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/dhanuka-godiwa-super.webp"
   },
   {
     "id": "corteva-hibifen",
@@ -13708,7 +13632,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "syngenta-incipio",
@@ -13765,7 +13689,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "bayer-jump",
@@ -13806,7 +13730,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/bayer-jump.webp"
   },
   {
     "id": "dhanuka-lanevo",
@@ -13863,7 +13787,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "upl-larviron",
@@ -13920,7 +13844,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "bayer-lesenta",
@@ -13961,7 +13885,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/bayer-lesenta.webp"
   },
   {
     "id": "dhanuka-luster",
@@ -14026,7 +13950,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/dhanuka-luster.webp"
   },
   {
     "id": "corteva-magister",
@@ -14083,7 +14007,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "dhanuka-mycore-super",
@@ -14124,7 +14048,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "tata-nagata",
@@ -14173,7 +14097,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/tata-nagata.webp"
   },
   {
     "id": "adama-pedestal",
@@ -14222,7 +14146,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "coromandel-phendal",
@@ -14255,7 +14179,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/coromandel-phendal.webp"
   },
   {
     "id": "basf-pirate",
@@ -14296,7 +14220,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "adama-shamir",
@@ -14329,7 +14253,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/adama-shamir.webp"
   },
   {
     "id": "gsp-slr-525",
@@ -14386,7 +14310,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "adama-tapuz",
@@ -14419,7 +14343,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/adama-tapuz.webp"
   },
   {
     "id": "tata-taqat",
@@ -14468,7 +14392,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/tata-taqat.webp"
   },
   {
     "id": "coromandel-karbon-plus",
@@ -14501,7 +14425,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_npk.jpg"
+    "image": "/products/coromandel-karbon-plus.png"
   },
   {
     "id": "spic-keerthi",
@@ -14534,7 +14458,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/fertilizer_bag_urea.jpg"
+    "image": "/products/spic-keerthi.png"
   },
   {
     "id": "adama-agil",
@@ -14583,7 +14507,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/adama-agil.webp"
   },
   {
     "id": "adama-custodia-prime",
@@ -14624,7 +14548,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/adama-custodia.webp"
+    "image": null
   },
   {
     "id": "adama-forabaz",
@@ -14657,7 +14581,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "adama-forpido",
@@ -14690,7 +14614,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "adama-plethora",
@@ -14731,7 +14655,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/adama-plethora.webp"
   },
   {
     "id": "adama-trassid",
@@ -14764,7 +14688,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "adama-upturn",
@@ -14805,7 +14729,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "aries_agro-agromin-max",
@@ -14846,7 +14770,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "basf-frivon",
@@ -14879,7 +14803,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "bayer-allitte",
@@ -14928,7 +14852,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bayer-antracal.webp"
+    "image": null
   },
   {
     "id": "bayer-camalus",
@@ -14977,7 +14901,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "bayer-trance",
@@ -15018,7 +14942,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bayer-solomon.webp"
+    "image": null
   },
   {
     "id": "corteva-beam",
@@ -15051,7 +14975,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/corteva-curzate.webp"
+    "image": null
   },
   {
     "id": "corteva-miraculan",
@@ -15084,7 +15008,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/corteva-miraculan.webp"
   },
   {
     "id": "fmc-etre",
@@ -15117,7 +15041,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "fmc-furagro-legend",
@@ -15150,7 +15074,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "coromandel-phendal-plus",
@@ -15191,7 +15115,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "gsp-dronex",
@@ -15232,7 +15156,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "gsp-element",
@@ -15273,7 +15197,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "gsp-esteem",
@@ -15314,7 +15238,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "indofil-avatar",
@@ -15355,7 +15279,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nacl-fury-3g",
@@ -15388,7 +15312,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": "/products/nacl-fury-3g.webp"
   },
   {
     "id": "nacl-pest-lock",
@@ -15421,7 +15345,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nacl-temboguard",
@@ -15462,40 +15386,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
-  },
-  {
-    "id": "nakasa-nandaka",
-    "name": "Nandaka",
-    "company": {
-      "id": "nakasa",
-      "name": "Nakasa",
-      "fullName": "Nakasa Crop Science",
-      "logoKey": "nakasaLogo"
-    },
-    "mainCategory": "pesticides",
-    "subCategory": "insecticide",
-    "rawProductType": "Insecticide",
-    "activeIngredient": "Emamectin Benzoate + Thiamethoxam",
-    "technicalName": "Emamectin Benzoate 1.5% + Thiamethoxam 7.5% SC",
-    "packSizes": [
-      "250 ML"
-    ],
-    "variants": [
-      {
-        "packSize": "250 ML",
-        "spreadsheetRow": 354,
-        "rawName": "NANDAKA-250ML",
-        "isInStock": true
-      }
-    ],
-    "spreadsheetRows": [
-      354
-    ],
-    "isSpreadsheetVerified": true,
-    "isTechnicalSpecVerified": true,
-    "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "nichino-katana",
@@ -15528,7 +15419,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/nichino-katana.webp"
   },
   {
     "id": "nova-hintara",
@@ -15577,7 +15468,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
+    "image": null
   },
   {
     "id": "nova-terminator-gold-3d-action",
@@ -15626,7 +15517,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "pi_industries-biovita-x",
@@ -15667,7 +15558,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": "/products/pi_industries-biovita-x.webp"
   },
   {
     "id": "syngenta-clavengo",
@@ -15700,7 +15591,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "syngenta-elestal-neo",
@@ -15733,7 +15624,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "syngenta-fusiflex",
@@ -15766,7 +15657,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "syngenta-rifit",
@@ -15799,7 +15690,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "syngenta-vestoria-pro",
@@ -15832,7 +15723,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "tata-fuzione",
@@ -15873,7 +15764,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "upl-atabron",
@@ -15906,7 +15797,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "upl-brucia",
@@ -15939,7 +15830,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "upl-gunther",
@@ -15972,7 +15863,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   },
   {
     "id": "upl-tridium",
@@ -16005,56 +15896,7 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": true,
     "reviewStatus": "verified",
-    "image": "/products/pouch_fungicide.jpg"
-  },
-  {
-    "id": "xylon-hitman",
-    "name": "Hitman",
-    "company": {
-      "id": "xylon",
-      "name": "Xylon",
-      "fullName": "Xylon Agri Science",
-      "logoKey": "xylonLogo"
-    },
-    "mainCategory": "pesticides",
-    "subCategory": "insecticide",
-    "rawProductType": "Insecticide",
-    "activeIngredient": "Chlorpyriphos + Cypermethrin",
-    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC",
-    "packSizes": [
-      "1000 ML",
-      "250 ML",
-      "500 ML"
-    ],
-    "variants": [
-      {
-        "packSize": "1000 ML",
-        "spreadsheetRow": 384,
-        "rawName": "HITMAN-1000ML",
-        "isInStock": true
-      },
-      {
-        "packSize": "250 ML",
-        "spreadsheetRow": 385,
-        "rawName": "HITMAN-250ML",
-        "isInStock": true
-      },
-      {
-        "packSize": "500 ML",
-        "spreadsheetRow": 386,
-        "rawName": "HITMAN-500ML",
-        "isInStock": true
-      }
-    ],
-    "spreadsheetRows": [
-      384,
-      385,
-      386
-    ],
-    "isSpreadsheetVerified": true,
-    "isTechnicalSpecVerified": true,
-    "reviewStatus": "verified",
-    "image": "/products/bottle_insecticide.jpg"
+    "image": null
   }
 ];
 
