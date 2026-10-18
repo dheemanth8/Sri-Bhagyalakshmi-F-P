@@ -45,15 +45,16 @@ export const Header: React.FC = () => {
   const navLinks = [
     { href: '#home', label: t.nav.home },
     { href: '#about', label: t.nav.about },
-    { href: '#products', label: t.nav.products },
-    { href: '#brands', label: t.nav.brands },
+    { href: '#brands', label: language === 'te' ? 'బ్రాండ్లు & ఉత్పత్తులు' : 'Brands & Products' },
+    { href: '#categories', label: language === 'te' ? 'విభాగాలు' : 'Categories' },
     { href: '#location', label: t.nav.location },
     { href: '#contact', label: t.nav.contact },
   ];
 
   const handleLinkClick = (href: string) => {
     setMobileMenuOpen(false);
-    const element = document.querySelector(href);
+    const targetHref = href === '#products' ? '#brands' : href;
+    const element = document.querySelector(targetHref);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }

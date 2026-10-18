@@ -42,6 +42,19 @@ export interface Translations {
     subtitle: string;
     note: string;
     viewAll: string;
+    viewProducts: string;
+    productsAvailable: string;
+    searchBrands: string;
+    allBrands: string;
+    pesticidesFilter: string;
+    fertilizersFilter: string;
+    searchInsideBrand: string;
+    filterByCategory: string;
+    noProductsFound: string;
+    resetFilters: string;
+    authorizedDealerNotice: string;
+    callForPricing: string;
+    whatsappInquiry: string;
   };
   // Product Categories
   categoriesSection: {
@@ -175,11 +188,24 @@ export const translations: Record<Language, Translations> = {
       localCommitmentLabel: 'Agricultural Inputs & Advice',
     },
     brandsSection: {
-      badge: 'Authorized Brand Range',
-      title: 'Leading Agricultural Brands Available at Our Store',
-      subtitle: 'We supply 100% genuine fertilizers and crop protection pesticides from India’s most trusted manufacturers.',
-      note: 'Sri Bhagyalakshmi Fertilizers & Pesticides provides authentic products directly from these recognized manufacturers. All brand logos and trademarks belong to their respective corporations.',
+      badge: 'Authorized Brand Partners & Products',
+      title: 'Explore Products by Leading Agricultural Brands',
+      subtitle: 'Click any brand below to view all genuine products, pack sizes, and technical specifications available in our Duggirala store.',
+      note: 'All brand logos and trademarks belong to their respective corporations. Sri Bhagyalakshmi Fertilizers & Pesticides is an authorized dealer offering 100% genuine sealed stock.',
       viewAll: 'Explore All Brands',
+      viewProducts: 'View Products',
+      productsAvailable: 'Products in Store',
+      searchBrands: 'Search brands (e.g. Bayer, Syngenta, Coromandel, FMC, IFFCO)...',
+      allBrands: 'All Brands',
+      pesticidesFilter: 'Pesticides & Crop Protection',
+      fertilizersFilter: 'Fertilizers & Nutrition',
+      searchInsideBrand: 'Search inside this brand...',
+      filterByCategory: 'Filter by category',
+      noProductsFound: 'No products found matching your search.',
+      resetFilters: 'Reset Search',
+      authorizedDealerNotice: 'Authorized Dealership • 100% Genuine Certified Stock',
+      callForPricing: 'Call for Pricing & Advice',
+      whatsappInquiry: 'WhatsApp Enquiry',
     },
     categoriesSection: {
       badge: 'Comprehensive Range',
@@ -305,11 +331,24 @@ export const translations: Record<Language, Translations> = {
       localCommitmentLabel: 'అసలైన ఉత్పత్తులు & సలహాలు',
     },
     brandsSection: {
-      badge: '100% అసలైన ఉత్పత్తులు',
-      title: 'మా వద్ద లభించే ప్రముఖ వ్యవసాయ బ్రాండ్లు',
-      subtitle: 'రైతులకు నమ్మకమైన అసలైన నాణ్యమైన ఎరువులు మరియు పురుగుమందులు అందించే ప్రముఖ సంస్థల ఉత్పత్తులు.',
+      badge: 'అధికారిక బ్రాండ్లు & ఉత్పత్తులు',
+      title: 'ప్రముఖ వ్యవసాయ బ్రాండ్లు & ఉత్పత్తులు',
+      subtitle: 'దుకాణంలో లభించే అసలైన ఉత్పత్తులు, ప్యాకింగ్ సైజులు మరియు పూర్తి వివరాలను చూడటానికి క్రింది ఏదైనా బ్రాండ్‌పై క్లిక్ చేయండి.',
       note: 'శ్రీ భాగ్యలక్ష్మి ఫర్టిలైజర్స్ & పెస్టిసైడ్స్ ద్వారా ఈ ప్రముఖ బ్రాండ్ల నాణ్యమైన ఉత్పత్తులు లభించును. బ్రాండ్ చిహ్నాలు ఆయా సంస్థలకు చెందినవి.',
       viewAll: 'అన్ని బ్రాండ్లను చూడండి',
+      viewProducts: 'ఉత్పత్తులు చూడండి',
+      productsAvailable: 'ఉత్పత్తులు అందుబాటులో ఉన్నాయి',
+      searchBrands: 'బ్రాండ్లను వెతకండి (ఉదా: బేయర్, సింజెంటా, కోరమాండల్, FMC)...',
+      allBrands: 'అన్ని బ్రాండ్లు',
+      pesticidesFilter: 'పురుగుమందులు & పంట రక్షణ',
+      fertilizersFilter: 'ఎరువులు & పంట పోషణ',
+      searchInsideBrand: 'ఈ బ్రాండ్ ఉత్పత్తులలో వెతకండి...',
+      filterByCategory: 'విభాగం వారీగా ఫిల్టర్ చేయండి',
+      noProductsFound: 'మీరు వెతికిన ఉత్పత్తులు ఏవీ కనుగొనబడలేదు.',
+      resetFilters: 'మళ్లీ చూడండి',
+      authorizedDealerNotice: 'అధికారిక డీలర్‌షిప్ • 100% అసలైన ధృవీకరించిన స్టాక్',
+      callForPricing: 'ధరలు & సలహాల కోసం కాల్ చేయండి',
+      whatsappInquiry: 'వాట్సాప్ విచారణ',
     },
     categoriesSection: {
       badge: 'సమగ్ర ఉత్పత్తులు',

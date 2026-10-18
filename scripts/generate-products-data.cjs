@@ -190,7 +190,7 @@ rawRows.slice(1).forEach((row, i) => {
       isSpreadsheetVerified: true,
       isTechnicalSpecVerified,
       reviewStatus,
-      image: null, // neutral placeholder until verified packaging is confirmed
+      image: null,
     });
   } else {
     const existing = groupedProducts.get(groupKey);
@@ -214,6 +214,70 @@ rawRows.slice(1).forEach((row, i) => {
     }
   }
 });
+
+const pubProductsDir = path.join(__dirname, '..', 'public', 'products');
+const existingProductFiles = fs.existsSync(pubProductsDir) ? new Set(fs.readdirSync(pubProductsDir)) : new Set();
+
+function resolveProductImage(productId, productName, technicalName, mainCategory, subCategory, packSizes) {
+  const exactFile = `${productId}.webp`;
+  if (existingProductFiles.has(exactFile)) {
+    return `/products/${exactFile}`;
+  }
+
+  const nameUpper = (productName || '').toUpperCase();
+  const techUpper = (technicalName || '').toUpperCase();
+
+  if (nameUpper.includes('UREA')) {
+    return '/products/fertilizer_bag_urea.jpg';
+  }
+  if (nameUpper.includes('DAP') && !nameUpper.includes('NANO')) {
+    return '/products/fertilizer_bag_dap.jpg';
+  }
+  if (nameUpper.includes('MOP') || nameUpper.includes('POTASH')) {
+    return '/products/fertilizer_bag_mop.jpg';
+  }
+  if (
+    nameUpper.includes('10 26 26') ||
+    nameUpper.includes('20 20') ||
+    nameUpper.includes('28 28') ||
+    nameUpper.includes('15 15 15') ||
+    nameUpper.includes('16 20') ||
+    nameUpper.includes('16 16 16') ||
+    nameUpper.includes('SULPHATE') ||
+    nameUpper.includes('CAN') ||
+    nameUpper.includes('TSP') ||
+    (nameUpper.includes('SUPER') && mainCategory === 'fertilizers') ||
+    mainCategory === 'fertilizers'
+  ) {
+    return '/products/fertilizer_bag_npk.jpg';
+  }
+
+  const hasLiquidPack = (packSizes || []).some(s => /ML|LT|LIT|L/i.test(s));
+  const hasPowderPack = (packSizes || []).some(s => /GM|KG|GMS/i.test(s));
+  const isFormulationLiquid = /EC|SL|SC|OD|FS|CS/i.test(techUpper) || /EC|SL|SC|OD|FS|CS/i.test(nameUpper);
+  const isFormulationPowder = /WP|SP|WG|GR|DF|SG|CG/i.test(techUpper) || /WP|SP|WG|GR|DF|SG|CG/i.test(nameUpper);
+
+  if (isFormulationPowder && !isFormulationLiquid) {
+    return '/products/pouch_fungicide.jpg';
+  }
+  if (hasPowderPack && !hasLiquidPack) {
+    return '/products/pouch_fungicide.jpg';
+  }
+
+  return '/products/bottle_insecticide.jpg';
+}
+
+// Assign resolved image to all products
+for (const p of groupedProducts.values()) {
+  p.image = resolveProductImage(
+    p.id,
+    p.name,
+    p.technicalName,
+    p.mainCategory,
+    p.subCategory,
+    p.packSizes
+  );
+}
 
 const productsArray = Array.from(groupedProducts.values());
 

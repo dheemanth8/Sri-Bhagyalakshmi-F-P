@@ -24,7 +24,7 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
   }, [onSelectCategoryForEnquiry]);
 
   return (
-    <section id="products" className="section-pad categories-section">
+    <section id="categories" className="section-pad categories-section">
       <div className="container">
         {/* Header */}
         <div className="section-header">
