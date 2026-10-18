@@ -461,12 +461,12 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #FFFFFF;
-          border: 1.5px solid rgba(16, 185, 129, 0.2);
+          background: #FFFDF9;
+          border: 1.5px solid rgba(245, 158, 11, 0.35);
           border-radius: var(--radius-lg);
           padding: 0.6rem 1rem;
           flex-shrink: 0;
-          box-shadow: 0 2px 8px rgba(6, 78, 59, 0.06);
+          box-shadow: 0 2px 8px rgba(180, 83, 9, 0.08);
         }
         .brand-modal__logo-img {
           max-width: 100%;
@@ -488,7 +488,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
         .brand-modal__title {
           font-size: 1.6rem;
           font-weight: 800;
-          color: var(--color-forest-green-dark);
+          color: var(--color-text-main);
           line-height: 1.2;
           margin: 0;
         }
@@ -496,16 +496,16 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           display: inline-flex;
           align-items: center;
           gap: 0.35rem;
-          background: #ECFDF5;
-          color: #065F46;
+          background: #FEF3C7;
+          color: #B45309;
           font-size: 0.76rem;
           font-weight: 800;
           padding: 0.25rem 0.65rem;
           border-radius: var(--radius-full);
-          border: 1px solid #10B981;
+          border: 1px solid rgba(245, 158, 11, 0.4);
         }
         .badge-shield {
-          color: var(--color-agricultural-green);
+          color: #D97706;
           flex-shrink: 0;
         }
 
@@ -546,8 +546,8 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
         /* Toolbar */
         .brand-modal-toolbar {
           padding: 0.9rem 1.75rem;
-          background: #F8FAF7;
-          border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+          background: #FFFDF9;
+          border-bottom: 1.5px solid var(--color-border-subtle);
           display: flex;
           flex-direction: column;
           gap: 0.75rem;
@@ -570,15 +570,15 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           padding: 0.65rem 2.5rem 0.65rem 2.6rem;
           font-size: 0.92rem;
           background: #FFFFFF;
-          border: 1.5px solid #CBD5E1;
+          border: 1.5px solid var(--color-border-subtle);
           border-radius: var(--radius-md);
           color: var(--color-charcoal-dark);
           transition: all var(--transition-fast);
           outline: none;
         }
         .brand-modal__search-input:focus {
-          border-color: var(--color-agricultural-green);
-          box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+          border-color: #F59E0B;
+          box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
         }
         .search-clear-btn {
           position: absolute;
@@ -604,26 +604,26 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           display: inline-flex;
           align-items: center;
           gap: 0.35rem;
-          padding: 0.35rem 0.8rem;
+          padding: 0.35rem 0.85rem;
           border-radius: var(--radius-full);
           font-size: 0.8rem;
           font-weight: 700;
           background: #FFFFFF;
-          border: 1px solid #CBD5E1;
-          color: var(--color-charcoal-dark);
+          border: 1.5px solid var(--color-border-subtle);
+          color: var(--color-text-main);
           cursor: pointer;
           white-space: nowrap;
           transition: all var(--transition-fast);
         }
         .brand-modal__tab-btn:hover {
-          border-color: var(--color-agricultural-green);
-          background: rgba(16, 185, 129, 0.08);
+          border-color: #F59E0B;
+          background: #FEF3C7;
         }
         .brand-modal__tab-btn--active {
-          background: var(--gradient-forest-vibrant);
-          color: #FAF6EE;
-          border-color: var(--color-golden-yellow);
-          box-shadow: 0 2px 8px rgba(13, 59, 31, 0.35);
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+          color: #FFFFFF;
+          border-color: #EA580C;
+          box-shadow: 0 2px 8px rgba(234, 88, 12, 0.25);
         }
         .tab-count {
           opacity: 0.85;
@@ -644,7 +644,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           color: var(--color-charcoal-muted);
         }
         .count-text strong {
-          color: var(--color-forest-green);
+          color: #B45309;
         }
         .reset-btn {
           display: inline-flex;
@@ -652,7 +652,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           gap: 0.35rem;
           background: none;
           border: none;
-          color: var(--color-agricultural-green);
+          color: #D97706;
           font-weight: 700;
           font-size: 0.8rem;
           cursor: pointer;
@@ -666,7 +666,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           flex: 1 1 auto;
           overflow-y: auto;
           padding: 1.5rem 1.75rem;
-          background: #FAFCF9;
+          background: #FFFDF9;
         }
 
         .brand-modal__products-grid {
@@ -705,7 +705,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
         .empty-title {
           font-size: 1.2rem;
           font-weight: 700;
-          color: var(--color-forest-green);
+          color: var(--color-text-main);
           margin-bottom: 0.4rem;
         }
         .empty-sub {
@@ -720,10 +720,10 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           align-items: center;
           gap: 0.4rem;
           padding: 0.55rem 1.2rem;
-          background: var(--color-forest-green);
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
           color: #FFFFFF;
           border: none;
-          border-radius: var(--radius-md);
+          border-radius: var(--radius-full);
           font-size: 0.88rem;
           font-weight: 700;
           cursor: pointer;
@@ -747,7 +747,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           gap: 0.65rem;
         }
         .store-icon {
-          color: var(--color-agricultural-green);
+          color: #D97706;
           flex-shrink: 0;
         }
         .store-text {
@@ -756,7 +756,7 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           font-size: 0.82rem;
         }
         .store-text strong {
-          color: var(--color-forest-green);
+          color: var(--color-text-main);
         }
         .store-text span {
           color: var(--color-charcoal-muted);
@@ -772,19 +772,19 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           align-items: center;
           gap: 0.45rem;
           padding: 0.55rem 1.1rem;
-          border-radius: var(--radius-md);
+          border-radius: var(--radius-full);
           font-size: 0.86rem;
           font-weight: 700;
           text-decoration: none;
           transition: all var(--transition-fast);
         }
         .modal-action-btn--phone {
-          background: #F3F4F6;
-          color: var(--color-charcoal-dark);
-          border: 1px solid var(--color-border-subtle);
+          background: #FEF3C7;
+          color: #B45309;
+          border: 1.5px solid rgba(245, 158, 11, 0.4);
         }
         .modal-action-btn--phone:hover {
-          background: #E5E7EB;
+          background: #FDE68A;
         }
         .modal-action-btn--whatsapp {
           background: #25D366;

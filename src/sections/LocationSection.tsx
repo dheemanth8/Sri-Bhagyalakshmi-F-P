@@ -141,10 +141,10 @@ export const LocationSection: React.FC = () => {
           gap: 2rem;
           background: #FFFFFF;
           border-radius: var(--radius-xl);
-          border: 1px solid var(--color-border-subtle);
-          border-top: 3.5px solid var(--color-emerald-vivid);
+          border: 1.5px solid var(--color-border-subtle);
+          border-top: 4px solid #F59E0B;
           overflow: hidden;
-          box-shadow: 0 16px 40px -10px rgba(10, 46, 44, 0.05);
+          box-shadow: 0 16px 40px -10px rgba(41, 37, 36, 0.05);
         }
 
         @media (min-width: 1024px) {
@@ -177,14 +177,14 @@ export const LocationSection: React.FC = () => {
         .location-pin-icon {
           width: 54px;
           height: 54px;
-          border-radius: var(--radius-md);
-          background: var(--color-primary-deep);
-          border: 1.5px solid var(--color-emerald-vivid);
+          border-radius: 18px;
+          background: #FEF3C7;
+          border: 2px solid #F59E0B;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--color-emerald-vivid);
-          box-shadow: 0 4px 14px rgba(10, 46, 44, 0.2);
+          color: #D97706;
+          box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
           flex-shrink: 0;
         }
 
@@ -192,7 +192,7 @@ export const LocationSection: React.FC = () => {
           font-family: var(--font-sans);
           font-size: 1.35rem;
           font-weight: 800;
-          color: var(--color-primary-deep);
+          color: var(--color-text-main);
           line-height: 1.3;
         }
         html[lang="te"] .location-card-title {
@@ -209,13 +209,13 @@ export const LocationSection: React.FC = () => {
 
         /* Location Details Blocks */
         .location-detail-block {
-          background: #FFFFFF;
-          border: 1px solid var(--color-border-subtle);
-          border-left: 3.5px solid var(--color-emerald-vivid);
-          border-radius: var(--radius-md);
+          background: #FFFDF9;
+          border: 1.5px solid var(--color-border-subtle);
+          border-left: 4.5px solid #F59E0B;
+          border-radius: var(--radius-lg);
           padding: 1.15rem 1.35rem;
           margin-bottom: 1.15rem;
-          box-shadow: 0 2px 8px rgba(10, 46, 44, 0.03);
+          box-shadow: 0 2px 8px rgba(41, 37, 36, 0.03);
         }
 
         .detail-block-header {
@@ -226,7 +226,7 @@ export const LocationSection: React.FC = () => {
         }
 
         .detail-block-icon {
-          color: var(--color-emerald-vivid);
+          color: #D97706;
           flex-shrink: 0;
         }
 
@@ -235,18 +235,18 @@ export const LocationSection: React.FC = () => {
           font-weight: 800;
           text-transform: uppercase;
           letter-spacing: 0.06em;
-          color: var(--color-emerald-deep);
+          color: #B45309;
         }
 
         .detail-block-value {
           font-size: 0.98rem;
-          color: var(--color-dark-charcoal);
+          color: var(--color-text-main);
           font-weight: 700;
           line-height: 1.55;
         }
 
         .address-highlight {
-          color: var(--color-primary-deep);
+          color: var(--color-text-main);
         }
 
         .landmark-badge {
@@ -255,15 +255,15 @@ export const LocationSection: React.FC = () => {
           font-size: 0.76rem;
           font-weight: 800;
           letter-spacing: 0.03em;
-          color: var(--color-emerald-deep);
-          background: var(--color-mint-light);
-          border: 1px solid rgba(16, 185, 129, 0.25);
-          padding: 0.22rem 0.75rem;
+          color: #B45309;
+          background: #FEF3C7;
+          border: 1px solid rgba(245, 158, 11, 0.35);
+          padding: 0.25rem 0.85rem;
           border-radius: var(--radius-full);
         }
 
         .hours-highlight {
-          color: var(--color-dark-charcoal);
+          color: var(--color-text-main);
         }
 
         .location-actions {
@@ -274,13 +274,16 @@ export const LocationSection: React.FC = () => {
           width: 100%;
           font-weight: 800;
           font-size: 1.05rem;
-          background: var(--gradient-emerald);
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
           color: #FFFFFF;
-          box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+          border-radius: var(--radius-full);
+          border: none;
+          box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
+          transition: transform var(--transition-bouncy), box-shadow var(--transition-normal);
         }
         .location-cta:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 24px rgba(16, 185, 129, 0.45);
+          box-shadow: 0 10px 28px rgba(234, 88, 12, 0.45);
         }
 
         .location-note {
@@ -323,7 +326,7 @@ export const LocationSection: React.FC = () => {
         .skeleton-pulse {
           width: 44px;
           height: 44px;
-          border: 3px solid var(--color-emerald-vivid);
+          border: 3px solid #F59E0B;
           border-top-color: transparent;
           border-radius: 50%;
           animation: spin 1s linear infinite;

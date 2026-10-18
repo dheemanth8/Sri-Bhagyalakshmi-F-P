@@ -21,7 +21,7 @@ export const HeroSection: React.FC = () => {
 
   return (
     <section id="home" className="hero-section">
-      {/* Background with Dark Forest Green gradient overlay for text legibility */}
+      {/* Background with warm Sunlit Farm overlay for text legibility */}
       <div className="hero-bg-wrapper">
         <picture className="hero-bg-picture">
           <source
@@ -180,12 +180,13 @@ export const HeroSection: React.FC = () => {
           right: 0;
           bottom: 0;
           background: 
-            radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 60%),
+            radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.24) 0%, transparent 60%),
+            radial-gradient(circle at 20% 80%, rgba(234, 88, 12, 0.18) 0%, transparent 50%),
             linear-gradient(
               135deg,
-              rgba(7, 37, 35, 0.95) 0%,
-              rgba(10, 46, 44, 0.90) 55%,
-              rgba(14, 61, 59, 0.85) 100%
+              rgba(38, 28, 20, 0.94) 0%,
+              rgba(48, 34, 24, 0.89) 55%,
+              rgba(64, 45, 32, 0.84) 100%
             );
         }
 
@@ -213,14 +214,14 @@ export const HeroSection: React.FC = () => {
           }
         }
 
-        /* Top Heritage Ribbon */
+        /* Top Heritage Ribbon - Cute sunlit pill */
         .hero-badge {
           display: inline-flex;
           align-items: center;
           gap: 0.65rem;
-          background: rgba(16, 185, 129, 0.16);
-          border: 1px solid rgba(16, 185, 129, 0.35);
-          color: #A7F3D0;
+          background: rgba(254, 243, 199, 0.22);
+          border: 1.5px solid rgba(245, 158, 11, 0.5);
+          color: #FEF3C7;
           padding: 0.45rem 1.35rem;
           border-radius: var(--radius-full);
           font-size: 0.82rem;
@@ -232,7 +233,7 @@ export const HeroSection: React.FC = () => {
           box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
         .hero-badge-icon {
-          color: #34D399;
+          color: #FBBF24;
           flex-shrink: 0;
         }
 
@@ -243,7 +244,7 @@ export const HeroSection: React.FC = () => {
         .hero-business-te {
           font-size: 1.65rem;
           font-weight: 800;
-          color: #A7F3D0;
+          color: #FDE68A;
           margin-bottom: 0.25rem;
           line-height: 1.3;
         }
@@ -289,7 +290,7 @@ export const HeroSection: React.FC = () => {
 
         .hero-subheadline {
           font-size: 1.15rem;
-          color: #E2E8F0;
+          color: #F5EBE1;
           line-height: 1.75;
           margin-bottom: 2.5rem;
           max-width: 660px;
@@ -313,27 +314,31 @@ export const HeroSection: React.FC = () => {
           margin-bottom: 3.25rem;
         }
         .hero-btn-primary {
-          background: var(--gradient-emerald);
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
           color: #FFFFFF;
           font-weight: 800;
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+          border-radius: var(--radius-full);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          box-shadow: 0 8px 24px rgba(234, 88, 12, 0.4);
+          transition: transform var(--transition-bouncy), box-shadow var(--transition-normal);
         }
         .hero-btn-primary:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 10px 28px rgba(16, 185, 129, 0.5);
+          transform: translateY(-3px) scale(1.02);
+          box-shadow: 0 12px 32px rgba(234, 88, 12, 0.55);
         }
         .hero-btn-secondary {
-          border: 1.5px solid rgba(255, 255, 255, 0.3);
-          background: rgba(255, 255, 255, 0.08);
+          border: 1.5px solid rgba(254, 243, 199, 0.4);
+          background: rgba(255, 255, 255, 0.12);
           color: #FFFFFF;
+          border-radius: var(--radius-full);
           backdrop-filter: blur(12px);
+          transition: transform var(--transition-bouncy), background-color var(--transition-fast);
         }
         .hero-btn-secondary:hover {
-          background: rgba(255, 255, 255, 0.18);
-          border-color: #FFFFFF;
+          background: rgba(255, 255, 255, 0.24);
+          border-color: #FEF3C7;
           color: #FFFFFF;
-          transform: translateY(-2px);
+          transform: translateY(-3px);
         }
 
         /* Stat Pedestals */
@@ -343,7 +348,7 @@ export const HeroSection: React.FC = () => {
           gap: 1.5rem;
           max-width: 580px;
           padding-top: 2rem;
-          border-top: 1px solid rgba(255, 255, 255, 0.12);
+          border-top: 1px solid rgba(254, 243, 199, 0.2);
         }
         @media (max-width: 640px) {
           .hero-stats-grid {
@@ -354,33 +359,33 @@ export const HeroSection: React.FC = () => {
         .hero-stat-card {
           display: flex;
           flex-direction: column;
-          padding: 1.1rem 1.35rem;
-          background: rgba(255, 255, 255, 0.06);
-          border: 1px solid rgba(16, 185, 129, 0.25);
-          border-radius: var(--radius-lg);
-          backdrop-filter: blur(10px);
-          transition: transform var(--transition-normal), border-color var(--transition-normal);
+          padding: 1.15rem 1.4rem;
+          background: rgba(255, 255, 255, 0.09);
+          border: 1.5px solid rgba(245, 158, 11, 0.35);
+          border-radius: 20px;
+          backdrop-filter: blur(12px);
+          transition: transform var(--transition-bouncy), border-color var(--transition-normal);
         }
         .hero-stat-card:hover {
-          transform: translateY(-2px);
-          border-color: var(--color-emerald-vivid);
-          background: rgba(255, 255, 255, 0.1);
+          transform: translateY(-3px);
+          border-color: #F59E0B;
+          background: rgba(255, 255, 255, 0.15);
         }
         .stat-number {
           font-family: var(--font-sans);
           font-size: 1.75rem;
           font-weight: 800;
-          color: #FFFFFF;
+          color: #FEF3C7;
           display: flex;
           align-items: center;
           gap: 0.5rem;
         }
         .stat-icon {
-          color: var(--color-emerald-vivid);
+          color: #FBBF24;
         }
         .stat-label {
           font-size: 0.88rem;
-          color: #CBD5E1;
+          color: #E6D8CA;
           margin-top: 0.35rem;
           line-height: 1.45;
           font-weight: 500;
@@ -397,24 +402,24 @@ export const HeroSection: React.FC = () => {
           }
         }
         .hero-seal-card {
-          background: rgba(7, 37, 35, 0.85);
+          background: rgba(38, 28, 20, 0.90);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
-          border: 1.5px solid rgba(16, 185, 129, 0.3);
-          border-radius: var(--radius-xl);
+          border: 2px solid rgba(245, 158, 11, 0.45);
+          border-radius: 28px;
           padding: 2.5rem 2.25rem;
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(16, 185, 129, 0.15);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 35px rgba(245, 158, 11, 0.2);
           max-width: 320px;
-          transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+          transition: transform var(--transition-bouncy), box-shadow var(--transition-normal);
         }
         .hero-seal-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 36px rgba(16, 185, 129, 0.25);
-          border-color: var(--color-emerald-vivid);
+          transform: translateY(-6px);
+          box-shadow: 0 26px 65px rgba(0, 0, 0, 0.5), 0 0 45px rgba(245, 158, 11, 0.35);
+          border-color: #F59E0B;
         }
         .hero-seal-picture {
           display: flex;
@@ -425,8 +430,8 @@ export const HeroSection: React.FC = () => {
           height: 140px;
           aspect-ratio: 1 / 1;
           border-radius: 50%;
-          border: 3px solid var(--color-emerald-vivid);
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 20px rgba(16, 185, 129, 0.3);
+          border: 3.5px solid #F59E0B;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 25px rgba(245, 158, 11, 0.4);
           margin-bottom: 1.35rem;
           background: #FFFFFF;
         }
@@ -439,7 +444,7 @@ export const HeroSection: React.FC = () => {
         }
         .hero-seal-title {
           font-family: var(--font-sans);
-          font-size: 1.22rem;
+          font-size: 1.25rem;
           font-weight: 800;
           color: #FFFFFF;
           letter-spacing: 0.04em;
@@ -455,7 +460,7 @@ export const HeroSection: React.FC = () => {
         .hero-seal-sub {
           font-size: 0.86rem;
           font-weight: 500;
-          color: #94A3B8;
+          color: #D6C7B7;
           margin: 0;
           line-height: 1.4;
         }
@@ -464,10 +469,10 @@ export const HeroSection: React.FC = () => {
         }
         .hero-seal-year {
           display: inline-block;
-          padding: 0.35rem 1.15rem;
-          background: rgba(16, 185, 129, 0.16);
-          border: 1px solid rgba(16, 185, 129, 0.35);
-          color: #A7F3D0;
+          padding: 0.4rem 1.2rem;
+          background: rgba(254, 243, 199, 0.18);
+          border: 1.5px solid rgba(245, 158, 11, 0.4);
+          color: #FEF3C7;
           border-radius: var(--radius-full);
           font-size: 0.78rem;
           font-weight: 800;

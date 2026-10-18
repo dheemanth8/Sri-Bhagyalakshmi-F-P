@@ -366,17 +366,17 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           display: flex;
           align-items: flex-start;
           gap: 1.25rem;
-          border-radius: var(--radius-lg);
-          border: 1px solid var(--color-border-subtle);
+          border-radius: var(--radius-xl);
+          border: 1.5px solid var(--color-border-subtle);
           background: #FFFFFF;
-          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.04);
-          transition: all var(--transition-normal);
+          box-shadow: 0 4px 16px rgba(41, 37, 36, 0.04);
+          transition: all var(--transition-bouncy);
         }
 
         .contact-channel-card:hover {
-          border-color: var(--color-emerald-vivid);
-          box-shadow: 0 12px 28px rgba(10, 46, 44, 0.1);
-          transform: translateY(-2px);
+          border-color: #F59E0B;
+          box-shadow: 0 12px 28px rgba(245, 158, 11, 0.16);
+          transform: translateY(-3px);
         }
 
         .contact-channel-card--whatsapp {
@@ -392,15 +392,15 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         .channel-icon-box {
           width: 50px;
           height: 50px;
-          border-radius: var(--radius-md);
-          background: var(--color-primary-deep);
-          border: 1.5px solid var(--color-emerald-vivid);
-          color: var(--color-emerald-vivid);
+          border-radius: 16px;
+          background: #FEF3C7;
+          border: 1.5px solid rgba(245, 158, 11, 0.4);
+          color: #D97706;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
-          box-shadow: 0 2px 10px rgba(10, 46, 44, 0.15);
+          box-shadow: 0 2px 10px rgba(245, 158, 11, 0.12);
         }
 
         .channel-icon-box--whatsapp {
@@ -420,7 +420,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           font-family: var(--font-sans);
           font-size: 1.15rem;
           font-weight: 800;
-          color: var(--color-primary-deep);
+          color: var(--color-text-main);
           margin-bottom: 0.25rem;
         }
         html[lang="te"] .channel-title {
@@ -437,30 +437,17 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
         .channel-btn {
           width: fit-content;
-        }
-
-        .pending-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.4rem;
-          background: #F1F5F9;
-          color: var(--color-charcoal-light);
-          padding: 0.35rem 0.75rem;
           border-radius: var(--radius-full);
-          font-size: 0.76rem;
-          font-weight: 600;
-          width: fit-content;
-          border: 1px solid #E2E8F0;
         }
 
-        /* Form Right Column */
+        /* Form Right Column - Cute 24px Card */
         .enquiry-card {
           padding: 2.25rem 2rem;
           border-radius: var(--radius-xl);
-          border: 1px solid var(--color-border-subtle);
-          border-top: 3.5px solid var(--color-emerald-vivid);
+          border: 1.5px solid var(--color-border-subtle);
+          border-top: 4px solid #F59E0B;
           background: #FFFFFF;
-          box-shadow: 0 16px 40px -10px rgba(10, 46, 44, 0.05);
+          box-shadow: 0 16px 40px -10px rgba(41, 37, 36, 0.05);
           height: 100%;
         }
         @media (min-width: 768px) {
@@ -476,7 +463,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           font-family: var(--font-sans);
           font-size: 1.35rem;
           font-weight: 800;
-          color: var(--color-primary-deep);
+          color: var(--color-text-main);
           margin-bottom: 0.35rem;
         }
         html[lang="te"] .enquiry-title {
@@ -515,8 +502,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
         .form-label {
           font-size: 0.85rem;
-          font-weight: 600;
-          color: var(--color-dark-charcoal);
+          font-weight: 700;
+          color: var(--color-text-main);
         }
 
         .form-input,
@@ -526,18 +513,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           padding: 0.82rem 1.15rem;
           font-size: 0.94rem;
           font-family: inherit;
-          border: 1px solid #CBD5E1;
-          border-radius: var(--radius-md);
-          background-color: #FFFFFF;
-          color: var(--color-dark-charcoal);
+          border: 1.5px solid var(--color-border-subtle);
+          border-radius: 14px;
+          background-color: #FFFDF9;
+          color: var(--color-text-main);
           transition: all var(--transition-fast);
         }
         .form-input:focus,
         .form-select:focus,
         .form-textarea:focus {
           outline: none;
-          border-color: var(--color-emerald-vivid);
-          box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+          border-color: #F59E0B;
+          box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.22);
           background-color: #FFFFFF;
         }
 
@@ -546,15 +533,17 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           margin-top: 0.5rem;
           font-weight: 800;
           font-size: 1.05rem;
-          background: var(--gradient-emerald);
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
           color: #FFFFFF;
+          border-radius: var(--radius-full);
           border: none;
-          box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+          box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
           letter-spacing: 0.02em;
+          transition: transform var(--transition-bouncy), box-shadow var(--transition-normal);
         }
         .submit-btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 10px 28px rgba(16, 185, 129, 0.45);
+          box-shadow: 0 10px 28px rgba(234, 88, 12, 0.48);
         }
 
         .form-notice {
@@ -577,13 +566,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           gap: 1rem;
         }
         .success-icon {
-          color: var(--color-emerald-vivid);
+          color: #D97706;
         }
         .success-title {
           font-family: var(--font-sans);
           font-size: 1.4rem;
           font-weight: 800;
-          color: var(--color-primary-deep);
+          color: var(--color-text-main);
         }
         html[lang="te"] .success-title {
           font-family: var(--font-te);

@@ -195,7 +195,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   {product.rawProductType && (
                     <div className="spec-row">
                       <div className="spec-key">{language === 'te' ? 'ఉత్పత్తి రకం' : 'Product Type'}</div>
-                      <div className="spec-val font-semibold text-forest-green">
+                      <div className="spec-val font-semibold" style={{ color: '#B45309' }}>
                         {product.rawProductType}
                       </div>
                     </div>
@@ -333,8 +333,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         .product-modal-backdrop {
           position: fixed;
           inset: 0;
-          background: rgba(15, 23, 42, 0.65);
-          backdrop-filter: blur(4px);
+          background: rgba(41, 37, 36, 0.7);
+          backdrop-filter: blur(6px);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -349,11 +349,11 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .product-modal-dialog {
-          background: #FFFEFC;
+          background: #FFFFFF;
           border-radius: var(--radius-xl);
-          border: 1px solid var(--color-gold-hairline);
-          border-top: 3.5px solid var(--color-gold-metallic);
-          box-shadow: 0 25px 60px -12px rgba(5, 27, 18, 0.45), 0 0 0 1px rgba(212, 175, 55, 0.15);
+          border: 1.5px solid var(--color-border-subtle);
+          border-top: 4px solid #F59E0B;
+          box-shadow: 0 25px 60px -12px rgba(41, 37, 36, 0.45);
           width: 100%;
           max-width: 820px;
           max-height: 90vh;
@@ -374,8 +374,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: center;
           justify-content: space-between;
           padding: 1.25rem 1.5rem;
-          background: linear-gradient(180deg, #FFFFFF 0%, #FAF7F0 100%);
-          border-bottom: 1px solid var(--color-border-subtle);
+          background: #FFFDF9;
+          border-bottom: 1.5px solid var(--color-border-subtle);
           gap: 1rem;
         }
 
@@ -394,8 +394,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           background: #FFFFFF;
           padding: 4px;
           border-radius: var(--radius-sm);
-          border: 1px solid var(--color-gold-hairline);
-          box-shadow: 0 2px 6px rgba(5, 27, 18, 0.05);
+          border: 1.5px solid var(--color-border-subtle);
+          box-shadow: 0 2px 6px rgba(41, 37, 36, 0.05);
         }
 
         .modal-header-titles {
@@ -405,17 +405,17 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         .modal-company-name {
           font-size: 0.78rem;
           font-weight: 800;
-          color: #8C6A18;
+          color: #B45309;
           display: block;
           text-transform: uppercase;
           letter-spacing: 0.06em;
         }
 
         .modal-product-name {
-          font-family: var(--font-serif);
+          font-family: var(--font-sans);
           font-size: 1.35rem;
-          font-weight: 700;
-          color: var(--color-obsidian);
+          font-weight: 800;
+          color: var(--color-text-main);
           line-height: 1.2;
           margin: 0.15rem 0 0 0;
         }
@@ -429,7 +429,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           height: 36px;
           border-radius: 50%;
           border: 1px solid var(--color-border-subtle);
-          background: #FFFFFF;
+          background: #FFFDF9;
           color: var(--color-charcoal-muted);
           display: flex;
           align-items: center;
@@ -452,6 +452,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           display: flex;
           flex-direction: column;
           gap: 1.25rem;
+          background: #FFFDF9;
         }
 
         /* Verification Banner */
@@ -464,15 +465,15 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .verification-banner--verified {
-          background: #F0FDF4;
-          border: 1px solid #BBF7D0;
-          color: #166534;
-        }
-
-        .verification-banner--pending {
           background: #FEF3C7;
           border: 1px solid #FDE68A;
           color: #92400E;
+        }
+
+        .verification-banner--pending {
+          background: #F1F5F9;
+          border: 1px solid #E2E8F0;
+          color: #475569;
         }
 
         .banner-icon {
@@ -509,7 +510,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .modal-image-container {
-          background: #F8FAF7;
+          background: #FFFFFF;
           border: 1.5px solid var(--color-border-subtle);
           border-radius: var(--radius-lg);
           padding: 1rem;
@@ -536,14 +537,14 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .placeholder-big-icon {
-          color: var(--color-agricultural-green);
-          opacity: 0.75;
+          color: #D97706;
+          opacity: 0.85;
         }
 
         .placeholder-main-title {
           font-size: 0.95rem;
           font-weight: 700;
-          color: var(--color-forest-green);
+          color: var(--color-text-main);
         }
 
         .placeholder-main-sub {
@@ -558,13 +559,14 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: center;
           gap: 0.5rem;
           padding: 0.65rem 0.85rem;
-          background: #F1F5F9;
+          background: #FFFFFF;
+          border: 1px solid var(--color-border-subtle);
           border-radius: var(--radius-md);
           font-size: 0.76rem;
         }
 
         .ref-icon {
-          color: var(--color-agricultural-green);
+          color: #D97706;
           flex-shrink: 0;
         }
 
@@ -601,9 +603,9 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         .specs-section-title {
           font-size: 0.95rem;
           font-weight: 800;
-          color: var(--color-forest-green);
+          color: var(--color-text-main);
           padding: 0.75rem 1rem;
-          background: #FAFBF9;
+          background: #FFFDF9;
           border-bottom: 1px solid var(--color-border-subtle);
           margin: 0;
         }
@@ -632,12 +634,12 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .spec-val {
-          color: var(--color-dark-charcoal);
+          color: var(--color-text-main);
         }
 
         .spec-val-highlight {
           font-weight: 700;
-          color: var(--color-forest-green-dark);
+          color: #B45309;
         }
 
         .spec-val-tech {
@@ -659,25 +661,26 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .modal-pack-btn {
-          background: #F1F5F9;
-          border: 1px solid #CBD5E1;
-          color: #334155;
+          background: #FFFDF9;
+          border: 1.5px solid var(--color-border-subtle);
+          color: #57534E;
           font-size: 0.78rem;
           font-weight: 700;
-          padding: 0.25rem 0.6rem;
-          border-radius: var(--radius-sm);
+          padding: 0.25rem 0.65rem;
+          border-radius: var(--radius-full);
           cursor: pointer;
           transition: all var(--transition-fast);
         }
 
         .modal-pack-btn:hover {
-          border-color: var(--color-golden-yellow);
-          background: #FEF9C3;
+          border-color: #F59E0B;
+          background: #FEF3C7;
+          color: #B45309;
         }
 
         .modal-pack-btn--active {
-          background: var(--color-agricultural-green);
-          border-color: var(--color-forest-green);
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+          border-color: #EA580C;
           color: #FFFFFF;
         }
 
@@ -687,13 +690,13 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: flex-start;
           gap: 0.75rem;
           padding: 0.85rem 1rem;
-          background: var(--color-mint-light);
-          border: 1px solid rgba(16, 185, 129, 0.25);
+          background: #FEF3C7;
+          border: 1.5px solid rgba(245, 158, 11, 0.4);
           border-radius: var(--radius-md);
         }
 
         .guidance-icon {
-          color: var(--color-forest-green);
+          color: #D97706;
           flex-shrink: 0;
           margin-top: 0.15rem;
         }
@@ -705,14 +708,14 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
         .guidance-heading {
           font-weight: 800;
-          color: var(--color-forest-green-dark);
+          color: #92400E;
           display: block;
           margin-bottom: 0.15rem;
         }
 
         .guidance-desc {
           margin: 0;
-          color: var(--color-charcoal-muted);
+          color: #78350F;
         }
 
         /* Footer */
@@ -722,12 +725,13 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           justify-content: flex-end;
           gap: 0.75rem;
           padding: 1.1rem 1.5rem;
-          background: #F8FAF7;
-          border-top: 1.5px solid rgba(16, 185, 129, 0.15);
+          background: #FFFFFF;
+          border-top: 1.5px solid var(--color-border-subtle);
         }
 
         .modal-btn-secondary {
           padding: 0.65rem 1.25rem;
+          border-radius: var(--radius-full);
           font-weight: 700;
         }
 
@@ -737,14 +741,16 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: center;
           gap: 0.45rem;
           font-weight: 800;
-          background: var(--gradient-forest-vibrant);
-          color: #FAF6EE;
-          box-shadow: 0 4px 14px rgba(13, 59, 31, 0.35);
+          border-radius: var(--radius-full);
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+          color: #FFFFFF;
+          border: none;
+          box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
         }
         .modal-btn-primary:hover {
-          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
+          background: linear-gradient(135deg, #D97706 0%, #C2410C 100%);
           transform: translateY(-2px);
-          box-shadow: 0 8px 20px rgba(13, 59, 31, 0.45);
+          box-shadow: 0 8px 20px rgba(234, 88, 12, 0.45);
         }
       `}</style>
     </div>

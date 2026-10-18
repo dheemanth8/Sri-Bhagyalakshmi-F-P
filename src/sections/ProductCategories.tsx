@@ -98,15 +98,15 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
           text-align: center;
           max-width: 820px;
           margin: 0 auto;
-          padding: 1rem 1.6rem;
+          padding: 1.1rem 1.6rem;
           background: #FFFFFF;
-          border-radius: var(--radius-md);
-          border: 1px solid var(--color-border-subtle);
-          border-left: 3.5px solid var(--color-emerald-vivid);
-          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.04);
+          border-radius: var(--radius-lg);
+          border: 1.5px solid var(--color-border-subtle);
+          border-left: 4.5px solid #F59E0B;
+          box-shadow: 0 4px 16px rgba(41, 37, 36, 0.04);
         }
         .disclaimer-icon {
-          color: var(--color-emerald-vivid);
+          color: #D97706;
           flex-shrink: 0;
         }
       `}</style>

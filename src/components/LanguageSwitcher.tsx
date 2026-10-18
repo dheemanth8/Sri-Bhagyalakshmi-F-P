@@ -41,7 +41,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className = 
           display: inline-flex;
           align-items: center;
           gap: 0.35rem;
-          background: rgba(255, 255, 255, 0.95);
+          background: #FFFFFF;
           border: 1.5px solid var(--color-border-subtle);
           padding: 0.35rem 0.65rem;
           border-radius: var(--radius-full);
@@ -51,31 +51,32 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className = 
           flex-shrink: 0;
         }
         .language-switcher:hover {
-          border-color: var(--color-golden-yellow);
+          border-color: #F59E0B;
         }
         .lang-icon {
-          color: var(--color-forest-green);
+          color: #D97706;
           margin-right: 0.15rem;
         }
         .lang-btn {
           font-size: 0.85rem;
           font-weight: 600;
           color: var(--color-charcoal-muted);
-          padding: 0.15rem 0.45rem;
-          border-radius: var(--radius-sm);
+          padding: 0.2rem 0.6rem;
+          border-radius: var(--radius-full);
           transition: all var(--transition-fast);
         }
         .lang-btn:hover {
-          color: var(--color-forest-green);
+          color: #B45309;
         }
         .lang-btn--active {
-          color: var(--color-emerald-deep);
-          background-color: var(--color-mint-light);
-          border: 1px solid var(--color-emerald-vivid);
-          font-weight: 700;
+          color: #FFFFFF;
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+          border: 1px solid #EA580C;
+          font-weight: 800;
+          box-shadow: 0 2px 6px rgba(234, 88, 12, 0.25);
         }
         .lang-divider {
-          color: #D1D5DB;
+          color: #E7E5E4;
           font-size: 0.8rem;
           user-select: none;
         }
@@ -83,8 +84,8 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className = 
           width: 100%;
           justify-content: center;
           padding: 0.6rem 1rem;
-          background: var(--color-mint-light);
-          border-color: rgba(16, 185, 129, 0.3);
+          background: #FEF3C7;
+          border-color: rgba(245, 158, 11, 0.4);
         }
         .language-switcher--mobile .lang-btn {
           font-size: 1rem;

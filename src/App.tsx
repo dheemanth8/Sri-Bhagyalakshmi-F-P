@@ -51,12 +51,12 @@ export const AppContent: React.FC = () => {
           position: absolute;
           top: -100px;
           left: 1rem;
-          background: var(--color-emerald-deep);
+          background: #F59E0B;
           color: #FFFFFF;
           padding: 0.5rem 1rem;
           z-index: 10000;
-          font-weight: 700;
-          border-radius: var(--radius-md);
+          font-weight: 800;
+          border-radius: var(--radius-full);
           transition: top var(--transition-fast);
         }
         .skip-to-content:focus {

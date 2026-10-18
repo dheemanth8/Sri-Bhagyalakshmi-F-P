@@ -180,11 +180,11 @@ export const AboutSection: React.FC = () => {
         .about-content-card {
           width: 100%;
           background: #FFFFFF;
-          border: 1px solid var(--color-border-subtle);
-          border-top: 3.5px solid var(--color-emerald-vivid);
+          border: 1.5px solid var(--color-border-subtle);
+          border-top: 4px solid #F59E0B;
           border-radius: var(--radius-xl);
           padding: 2.25rem 1.5rem;
-          box-shadow: 0 16px 40px -10px rgba(10, 46, 44, 0.05);
+          box-shadow: 0 16px 40px -10px rgba(41, 37, 36, 0.05);
         }
 
         @media (min-width: 768px) {
@@ -224,10 +224,10 @@ export const AboutSection: React.FC = () => {
           display: inline-flex;
           align-items: center;
           gap: 0.55rem;
-          background: var(--color-mint-light);
-          border: 1px solid rgba(16, 185, 129, 0.3);
-          color: var(--color-emerald-deep);
-          padding: 0.4rem 1.25rem;
+          background: #FEF3C7;
+          border: 1.5px solid rgba(245, 158, 11, 0.4);
+          color: #B45309;
+          padding: 0.4rem 1.35rem;
           border-radius: var(--radius-full);
           font-size: 0.78rem;
           font-weight: 800;
@@ -249,7 +249,7 @@ export const AboutSection: React.FC = () => {
           font-family: var(--font-sans);
           font-size: 1.15rem;
           font-weight: 700;
-          color: var(--color-primary-deep);
+          color: var(--color-text-main);
           line-height: 1.7;
           margin-bottom: 1.35rem;
           text-align: justify;
@@ -260,16 +260,16 @@ export const AboutSection: React.FC = () => {
           font-weight: 700;
         }
 
-        /* Stats Container */
+        /* Stats Container - Cute Butter Box */
         .about-stats-container {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 1rem;
           margin: 1.85rem 0;
           padding: 1.35rem 1.15rem;
-          background: var(--color-mint-light);
-          border-radius: var(--radius-lg);
-          border: 1px solid rgba(16, 185, 129, 0.25);
+          background: #FEF3C7;
+          border-radius: var(--radius-xl);
+          border: 1.5px solid rgba(245, 158, 11, 0.35);
         }
         @media (max-width: 640px) {
           .about-stats-container {
@@ -285,12 +285,12 @@ export const AboutSection: React.FC = () => {
           font-family: var(--font-sans);
           font-size: 1.95rem;
           font-weight: 800;
-          color: var(--color-primary-deep);
+          color: #B45309;
           line-height: 1.2;
         }
         .about-stat-lbl {
           font-size: 0.82rem;
-          color: var(--color-charcoal-muted);
+          color: #78350F;
           font-weight: 600;
           margin-top: 0.35rem;
           line-height: 1.35;
@@ -303,7 +303,7 @@ export const AboutSection: React.FC = () => {
           gap: 0.85rem;
           margin-top: 1.5rem;
           padding-top: 1.35rem;
-          border-top: 1px solid var(--color-border-subtle);
+          border-top: 1.5px solid var(--color-border-subtle);
         }
         .commitment-item {
           display: flex;
@@ -311,18 +311,18 @@ export const AboutSection: React.FC = () => {
           gap: 0.75rem;
           font-size: 0.95rem;
           font-weight: 600;
-          color: var(--color-dark-charcoal);
+          color: var(--color-text-main);
         }
         .commit-icon {
-          color: var(--color-emerald-vivid);
+          color: #D97706;
           flex-shrink: 0;
         }
 
         /* Right Column: Founders & Owners Panel */
         .leadership-panel {
-          background: #F8FAFC;
-          border: 1px solid var(--color-border-subtle);
-          border-radius: var(--radius-lg);
+          background: #FFFDF9;
+          border: 1.5px solid var(--color-border-subtle);
+          border-radius: var(--radius-xl);
           padding: 1.85rem 1.6rem;
           display: flex;
           flex-direction: column;
@@ -345,22 +345,22 @@ export const AboutSection: React.FC = () => {
           display: inline-flex;
           align-items: center;
           gap: 0.45rem;
-          background: var(--color-mint-light);
-          color: var(--color-emerald-deep);
-          padding: 0.25rem 0.85rem;
+          background: #FEF3C7;
+          color: #B45309;
+          padding: 0.28rem 0.95rem;
           border-radius: var(--radius-full);
           font-size: 0.74rem;
           font-weight: 800;
           letter-spacing: 0.05em;
           text-transform: uppercase;
           margin-bottom: 0.5rem;
-          border: 1px solid rgba(16, 185, 129, 0.25);
+          border: 1px solid rgba(245, 158, 11, 0.35);
         }
         .leadership-panel-title {
           font-family: var(--font-sans);
           font-size: 1.35rem;
           font-weight: 800;
-          color: var(--color-primary-deep);
+          color: var(--color-text-main);
           line-height: 1.25;
           text-align: center;
         }
@@ -376,17 +376,17 @@ export const AboutSection: React.FC = () => {
           text-align: center;
         }
 
-        /* Leader Cards */
+        /* Leader Cards - Cute 24px Card */
         .leader-card {
           background: #FFFFFF;
-          border: 1px solid var(--color-border-subtle);
-          border-radius: var(--radius-lg);
+          border: 1.5px solid var(--color-border-subtle);
+          border-radius: var(--radius-xl);
           padding: 1.35rem;
           display: flex;
           align-items: center;
           gap: 1.35rem;
-          transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
-          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.04);
+          transition: transform var(--transition-bouncy), border-color var(--transition-normal), box-shadow var(--transition-normal);
+          box-shadow: 0 4px 16px rgba(41, 37, 36, 0.04);
         }
         @media (min-width: 768px) {
           .leader-card {
@@ -395,9 +395,9 @@ export const AboutSection: React.FC = () => {
           }
         }
         .leader-card:hover {
-          transform: translateY(-2px);
-          border-color: var(--color-emerald-vivid);
-          box-shadow: 0 8px 24px rgba(10, 46, 44, 0.1);
+          transform: translateY(-4px);
+          border-color: #F59E0B;
+          box-shadow: 0 10px 28px rgba(245, 158, 11, 0.16);
         }
 
         .leader-card__avatar {
@@ -406,8 +406,8 @@ export const AboutSection: React.FC = () => {
           min-width: 100px;
           border-radius: 50%;
           background: #FFFFFF;
-          border: 3px solid var(--color-emerald-vivid);
-          box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1);
+          border: 3.5px solid #F59E0B;
+          box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25), 0 4px 12px rgba(41, 37, 36, 0.12);
           overflow: hidden;
           flex-shrink: 0;
           display: flex;
@@ -480,24 +480,24 @@ export const AboutSection: React.FC = () => {
         .leader-role {
           font-size: 0.74rem;
           font-weight: 800;
-          color: var(--color-emerald-deep);
+          color: #B45309;
           text-transform: uppercase;
           letter-spacing: 0.04em;
         }
         .leader-relation {
           font-size: 0.72rem;
           font-weight: 700;
-          color: var(--color-primary-teal);
-          background: var(--color-mint-light);
-          border: 1px solid rgba(16, 185, 129, 0.25);
-          padding: 0.12rem 0.5rem;
+          color: #B45309;
+          background: #FEF3C7;
+          border: 1px solid rgba(245, 158, 11, 0.3);
+          padding: 0.12rem 0.55rem;
           border-radius: var(--radius-full);
         }
         .leader-name {
           font-family: var(--font-sans);
           font-size: 1.22rem;
           font-weight: 800;
-          color: var(--color-primary-deep);
+          color: var(--color-text-main);
           line-height: 1.3;
           margin-bottom: 0.35rem;
         }
@@ -515,9 +515,9 @@ export const AboutSection: React.FC = () => {
 
         /* Grounded Family Note */
         .family-note-box {
-          background: var(--color-mint-light);
-          border: 1px solid rgba(16, 185, 129, 0.25);
-          border-radius: var(--radius-md);
+          background: #FEF3C7;
+          border: 1.5px solid rgba(245, 158, 11, 0.35);
+          border-radius: var(--radius-lg);
           padding: 0.95rem 1.15rem;
           display: flex;
           align-items: center;
@@ -526,13 +526,13 @@ export const AboutSection: React.FC = () => {
           gap: 0.65rem;
         }
         .note-icon {
-          color: var(--color-emerald-vivid);
+          color: #D97706;
           flex-shrink: 0;
         }
         .note-text {
           font-size: 0.86rem;
           font-weight: 600;
-          color: var(--color-primary-teal);
+          color: #92400E;
           line-height: 1.45;
         }
       `}</style>

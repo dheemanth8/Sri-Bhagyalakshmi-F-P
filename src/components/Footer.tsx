@@ -60,11 +60,11 @@ export const Footer: React.FC = () => {
 
       <style>{`
         .footer-wrapper {
-          background: #072523;
+          background: #1C1917;
           color: #FFFFFF;
-          padding: 2.5rem 0 1.5rem 0;
-          border-top: 2px solid var(--color-emerald-vivid);
-          box-shadow: 0 -8px 30px rgba(7, 37, 35, 0.45);
+          padding: 2.75rem 0 1.75rem 0;
+          border-top: 3.5px solid #F59E0B;
+          box-shadow: 0 -8px 30px rgba(28, 25, 23, 0.45);
         }
 
         .footer-container {
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
           justify-content: space-between;
           gap: 1.25rem;
           padding-bottom: 1.25rem;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
         }
 
         @media (min-width: 640px) {
@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
 
         .footer-logo {
           border-radius: 50%;
-          border: 1.5px solid var(--color-emerald-vivid);
+          border: 2px solid #F59E0B;
           background: #FFFFFF;
           flex-shrink: 0;
           object-fit: cover;
@@ -122,7 +122,7 @@ export const Footer: React.FC = () => {
 
         .footer-brand-sub {
           font-size: 0.78rem;
-          color: #94A3B8;
+          color: #D6C7B7;
           margin-top: 0.2rem;
         }
 
@@ -131,7 +131,7 @@ export const Footer: React.FC = () => {
           flex-direction: column;
           gap: 0.4rem;
           font-size: 0.82rem;
-          color: #CBD5E1;
+          color: #E7E5E4;
         }
 
         @media (min-width: 640px) {
@@ -149,7 +149,7 @@ export const Footer: React.FC = () => {
         }
 
         .footer-meta-icon {
-          color: var(--color-emerald-vivid);
+          color: #FBBF24;
           flex-shrink: 0;
         }
 
@@ -159,7 +159,7 @@ export const Footer: React.FC = () => {
           justify-content: space-between;
           gap: 1rem;
           font-size: 0.78rem;
-          color: #94A3B8;
+          color: #A8A29E;
         }
 
         .footer-copyright {

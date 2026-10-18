@@ -133,20 +133,20 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           display: inline-flex;
           align-items: center;
           gap: 0.65rem;
-          padding: 0.55rem 1.65rem;
+          padding: 0.6rem 1.85rem;
           border-radius: var(--radius-full);
           font-size: 0.88rem;
           font-weight: 800;
           letter-spacing: 0.04em;
           text-transform: uppercase;
-          background: var(--color-primary-deep);
+          background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
           color: #FFFFFF;
-          border: 1px solid rgba(16, 185, 129, 0.3);
-          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.15);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          box-shadow: 0 6px 18px rgba(245, 158, 11, 0.32);
           cursor: default;
         }
         .filter-pill-sparkle {
-          color: #34D399;
+          color: #FEF3C7;
         }
 
         /* 4 columns on desktop, 3 on tablet, 2 on mobile */
@@ -177,30 +177,6 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           }
         }
 
-        .brands-empty-state {
-          text-align: center;
-          padding: 3rem 1rem;
-          background: #FFFFFF;
-          border-radius: var(--radius-lg);
-          border: 1px dashed var(--color-border-subtle);
-          margin-bottom: 2.5rem;
-        }
-        .brands-empty-text {
-          font-size: 1rem;
-          color: var(--color-charcoal-light);
-          margin-bottom: 1rem;
-        }
-        .brands-empty-reset {
-          background: var(--color-emerald-deep);
-          color: #FFFFFF;
-          border: none;
-          padding: 0.5rem 1.25rem;
-          border-radius: var(--radius-md);
-          font-weight: 700;
-          font-size: 0.88rem;
-          cursor: pointer;
-        }
-
         .brands-footer-notice {
           display: flex;
           align-items: flex-start;
@@ -208,14 +184,14 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           max-width: 880px;
           margin: 0 auto;
           background: #FFFFFF;
-          border: 1px solid var(--color-border-subtle);
-          border-left: 3.5px solid var(--color-emerald-vivid);
-          border-radius: var(--radius-md);
+          border: 1.5px solid var(--color-border-subtle);
+          border-left: 4.5px solid #F59E0B;
+          border-radius: var(--radius-lg);
           padding: 1.25rem 1.5rem;
-          box-shadow: 0 4px 16px rgba(10, 46, 44, 0.04);
+          box-shadow: 0 4px 16px rgba(41, 37, 36, 0.04);
         }
         .notice-icon {
-          color: var(--color-emerald-vivid);
+          color: #D97706;
           flex-shrink: 0;
           margin-top: 0.15rem;
         }
