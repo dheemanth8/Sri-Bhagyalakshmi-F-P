@@ -351,8 +351,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         .product-modal-dialog {
           background: #FFFFFF;
           border-radius: var(--radius-xl);
-          border: 1.5px solid var(--color-border-subtle);
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          border: 2px solid rgba(16, 185, 129, 0.25);
+          box-shadow: 0 25px 60px -12px rgba(6, 78, 59, 0.35);
           width: 100%;
           max-width: 820px;
           max-height: 90vh;
@@ -373,8 +373,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: center;
           justify-content: space-between;
           padding: 1.25rem 1.5rem;
-          background: #FAFBF9;
-          border-bottom: 1.5px solid var(--color-border-subtle);
+          background: linear-gradient(180deg, #FFFFFF 0%, #F8FAF7 100%);
+          border-bottom: 1.5px solid rgba(16, 185, 129, 0.18);
           gap: 1rem;
         }
 
@@ -393,7 +393,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           background: #FFFFFF;
           padding: 4px;
           border-radius: var(--radius-sm);
-          border: 1px solid var(--color-border-subtle);
+          border: 1.5px solid rgba(16, 185, 129, 0.2);
+          box-shadow: 0 2px 6px rgba(6, 78, 59, 0.05);
         }
 
         .modal-header-titles {
@@ -402,11 +403,11 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
         .modal-company-name {
           font-size: 0.8rem;
-          font-weight: 700;
-          color: var(--color-forest-green);
+          font-weight: 800;
+          color: var(--color-agricultural-green);
           display: block;
           text-transform: uppercase;
-          letter-spacing: 0.04em;
+          letter-spacing: 0.05em;
         }
 
         .modal-product-name {
@@ -714,20 +715,29 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: center;
           justify-content: flex-end;
           gap: 0.75rem;
-          padding: 1rem 1.5rem;
-          background: #FAFBF9;
-          border-top: 1.5px solid var(--color-border-subtle);
+          padding: 1.1rem 1.5rem;
+          background: #F8FAF7;
+          border-top: 1.5px solid rgba(16, 185, 129, 0.15);
         }
 
         .modal-btn-secondary {
-          padding: 0.6rem 1.25rem;
+          padding: 0.65rem 1.25rem;
+          font-weight: 700;
         }
 
         .modal-btn-primary {
-          padding: 0.6rem 1.25rem;
+          padding: 0.65rem 1.4rem;
           display: inline-flex;
           align-items: center;
-          gap: 0.4rem;
+          gap: 0.45rem;
+          font-weight: 800;
+          background: var(--gradient-emerald-vibrant);
+          color: #FFFFFF;
+          box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+        }
+        .modal-btn-primary:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(5, 150, 105, 0.45);
         }
       `}</style>
     </div>

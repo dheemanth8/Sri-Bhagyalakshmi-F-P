@@ -235,16 +235,17 @@ export const Header: React.FC = () => {
 
         /* Main Nav */
         .main-nav {
-          background: rgba(255, 255, 255, 0.94);
-          backdrop-filter: blur(14px);
-          -webkit-backdrop-filter: blur(14px);
-          border-bottom: 1px solid rgba(229, 231, 235, 0.85);
+          background: rgba(255, 255, 255, 0.96);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border-top: 3px solid var(--color-golden-yellow);
+          border-bottom: 1px solid rgba(16, 185, 129, 0.18);
           transition: all var(--transition-normal);
         }
         .main-nav--scrolled {
           background: rgba(255, 255, 255, 0.98);
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-          border-bottom-color: rgba(244, 185, 66, 0.4);
+          box-shadow: 0 4px 24px rgba(6, 78, 59, 0.1), 0 1px 0 rgba(245, 158, 11, 0.3);
+          border-bottom-color: rgba(245, 158, 11, 0.4);
         }
         .main-nav__inner {
           display: flex;
@@ -281,12 +282,12 @@ export const Header: React.FC = () => {
 
         .logo-box {
           position: relative;
-          width: 42px;
-          height: 42px;
+          width: 44px;
+          height: 44px;
           border-radius: var(--radius-full);
           border: 2px solid var(--color-golden-yellow);
           overflow: hidden;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25), 0 4px 12px rgba(6, 78, 59, 0.15);
           flex-shrink: 0;
           background: #fff;
         }
@@ -432,8 +433,8 @@ export const Header: React.FC = () => {
           }
         }
         .nav-link:hover {
-          color: var(--color-forest-green);
-          background-color: rgba(20, 83, 45, 0.05);
+          color: var(--color-forest-green-dark);
+          background-color: rgba(16, 185, 129, 0.1);
         }
         .nav-link::after {
           content: '';
@@ -441,12 +442,13 @@ export const Header: React.FC = () => {
           bottom: 0;
           left: 0.6rem;
           right: 0.6rem;
-          height: 2px;
-          background-color: var(--color-golden-yellow-dark);
+          height: 3px;
+          background: linear-gradient(90deg, #F59E0B 0%, #10B981 100%);
           transform: scaleX(0);
           transform-origin: center;
           transition: transform var(--transition-fast);
           border-radius: var(--radius-full);
+          box-shadow: 0 1px 4px rgba(245, 158, 11, 0.4);
         }
         .nav-link:hover::after {
           transform: scaleX(1);

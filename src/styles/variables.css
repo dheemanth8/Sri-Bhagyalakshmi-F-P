@@ -1,33 +1,44 @@
 :root {
-  /* Brand Primary Colors */
-  --color-forest-green: #14532D;
-  --color-forest-green-dark: #0F3D21;
-  --color-forest-green-light: #1A6337;
-  --color-agricultural-green: #2E7D32;
-  --color-agricultural-green-light: #388E3C;
-  --color-agricultural-green-subtle: #E8F5E9;
+  /* Brand Primary Colors - Deep Royal Emeralds & Fresh Living Greens */
+  --color-forest-green: #065F46;
+  --color-forest-green-dark: #064E3B;
+  --color-forest-green-light: #047857;
+  --color-agricultural-green: #059669;
+  --color-agricultural-green-light: #10B981;
+  --color-agricultural-green-subtle: #ECFDF5;
+  --color-emerald-vivid: #10B981;
+  --color-lime-accent: #84CC16;
   
-  /* Brand Accent Colors */
-  --color-golden-yellow: #F4B942;
-  --color-golden-yellow-dark: #D49B24;
-  --color-golden-yellow-light: #FBE6B3;
-  --color-golden-yellow-subtle: #FFF8E7;
+  /* Brand Accent Colors - Sunlit Golden Amber & Harvest Warmth */
+  --color-golden-yellow: #F59E0B;
+  --color-golden-yellow-dark: #D97706;
+  --color-golden-yellow-light: #FDE68A;
+  --color-golden-yellow-subtle: #FFFBEB;
+  --color-gold-glow: #FBBF24;
 
-  /* Neutrals & Backgrounds */
-  --color-warm-cream: #FFF9E8;
-  --color-warm-cream-alt: #FBF6E9;
+  /* Neutrals & Backgrounds with Warmth & Depth */
+  --color-warm-cream: #FFFDF5;
+  --color-warm-cream-alt: #FEFCE8;
   --color-white: #FFFFFF;
-  --color-bg-alt: #F8FAF6;
-  --color-dark-charcoal: #1F2937;
-  --color-charcoal-muted: #4B5563;
-  --color-charcoal-light: #6B7280;
-  --color-border-subtle: #E5E7EB;
-  --color-border-accent: rgba(244, 185, 66, 0.35);
+  --color-bg-alt: #F0FDF4;
+  --color-bg-mesh: #F7FDF9;
+  --color-dark-charcoal: #0F172A;
+  --color-charcoal-muted: #334155;
+  --color-charcoal-light: #64748B;
+  --color-border-subtle: #E2E8F0;
+  --color-border-accent: rgba(245, 158, 11, 0.4);
+  --color-border-emerald: rgba(16, 185, 129, 0.25);
 
   /* Semantic Feedback */
-  --color-success: #15803D;
-  --color-warning: #B45309;
-  --color-info: #1D4ED8;
+  --color-success: #10B981;
+  --color-warning: #D97706;
+  --color-info: #2563EB;
+
+  /* Vibrant Multi-stop Gradients */
+  --gradient-emerald-vibrant: linear-gradient(135deg, #10B981 0%, #059669 50%, #047857 100%);
+  --gradient-gold-vibrant: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
+  --gradient-badge-glow: linear-gradient(135deg, rgba(16, 185, 129, 0.14) 0%, rgba(245, 158, 11, 0.16) 100%);
+  --gradient-card-light: linear-gradient(135deg, #FFFFFF 0%, #F8FAF7 100%);
 
   /* Typography */
   --font-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -49,20 +60,22 @@
   --radius-xl: 24px;
   --radius-full: 9999px;
 
-  /* Shadows */
+  /* Dynamic Glowing Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.09), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
-  --shadow-card: 0 4px 20px rgba(20, 83, 45, 0.06);
-  --shadow-gold: 0 4px 14px rgba(244, 185, 66, 0.25);
+  --shadow-card: 0 4px 20px -2px rgba(6, 78, 59, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 20px 35px -8px rgba(6, 78, 59, 0.16), 0 8px 16px -4px rgba(245, 158, 11, 0.12);
+  --shadow-gold: 0 6px 20px rgba(245, 158, 11, 0.38);
+  --shadow-emerald: 0 6px 20px rgba(16, 185, 129, 0.35);
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Container width - expanded to make full use of widescreen displays */
+  /* Container width */
   --max-width: 1520px;
   --header-height: 80px;
 }

@@ -335,7 +335,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
       <style>{`
         .contact-section {
-          background-color: #FFFFFF;
+          background: radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
+                      radial-gradient(circle at 15% 85%, rgba(245, 158, 11, 0.08) 0%, transparent 45%),
+                      #FFFFFF;
+          position: relative;
         }
 
         .contact-grid {
@@ -359,26 +362,52 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         }
 
         .contact-channel-card {
-          padding: 1.5rem;
+          padding: 1.6rem;
           display: flex;
           align-items: flex-start;
           gap: 1.25rem;
           border-radius: var(--radius-lg);
-          border: 1.5px solid var(--color-border-subtle);
+          border: 1.5px solid rgba(16, 185, 129, 0.2);
           background: #FFFFFF;
+          box-shadow: 0 4px 16px rgba(6, 78, 59, 0.05);
+          transition: all var(--transition-normal);
+        }
+
+        .contact-channel-card:hover {
+          border-color: var(--color-golden-yellow);
+          box-shadow: 0 12px 28px rgba(6, 78, 59, 0.12);
+          transform: translateY(-3px);
+        }
+
+        .contact-channel-card--whatsapp {
+          border: 2px solid #22C55E;
+          background: linear-gradient(135deg, #FFFFFF 0%, #F0FDF4 100%);
+          box-shadow: 0 6px 22px rgba(34, 197, 94, 0.18);
+        }
+        .contact-channel-card--whatsapp:hover {
+          border-color: #16A34A;
+          box-shadow: 0 12px 30px rgba(34, 197, 94, 0.28);
         }
 
         .channel-icon-box {
-          width: 50px;
-          height: 50px;
+          width: 52px;
+          height: 52px;
           border-radius: var(--radius-md);
-          background: var(--color-warm-cream);
-          border: 1px solid var(--color-golden-yellow-light);
-          color: var(--color-forest-green);
+          background: linear-gradient(135deg, #ECFDF5 0%, #FEF3C7 100%);
+          border: 1.5px solid var(--color-golden-yellow);
+          color: var(--color-forest-green-dark);
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
+          box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+        }
+
+        .channel-icon-box--whatsapp {
+          background: linear-gradient(135deg, #25D366 0%, #16A34A 100%);
+          border: none;
+          color: #FFFFFF;
+          box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
         }
 
         .channel-info {
@@ -388,16 +417,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         }
 
         .channel-title {
-          font-size: 1.1rem;
-          font-weight: 700;
-          color: var(--color-forest-green);
+          font-size: 1.15rem;
+          font-weight: 800;
+          color: var(--color-forest-green-dark);
           margin-bottom: 0.25rem;
         }
 
         .channel-desc {
-          font-size: 0.86rem;
+          font-size: 0.88rem;
           color: var(--color-charcoal-muted);
-          line-height: 1.5;
+          line-height: 1.55;
           margin-bottom: 0.75rem;
         }
 
@@ -423,8 +452,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         .enquiry-card {
           padding: 2.25rem 2rem;
           border-radius: var(--radius-xl);
-          border: 1.5px solid var(--color-border-subtle);
+          border: 2px solid rgba(16, 185, 129, 0.25);
+          border-top: 5px solid var(--color-golden-yellow);
           background: #FFFFFF;
+          box-shadow: 0 20px 40px -10px rgba(6, 78, 59, 0.12), 0 0 0 1px rgba(245, 158, 11, 0.12);
           height: 100%;
         }
         @media (min-width: 768px) {
@@ -482,27 +513,35 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         .form-select,
         .form-textarea {
           width: 100%;
-          padding: 0.75rem 1rem;
-          font-size: 0.92rem;
+          padding: 0.8rem 1.1rem;
+          font-size: 0.94rem;
           font-family: inherit;
-          border: 1.5px solid var(--color-border-subtle);
+          border: 1.5px solid #CBD5E1;
           border-radius: var(--radius-md);
           background-color: #FFFFFF;
           color: var(--color-dark-charcoal);
-          transition: border-color var(--transition-fast);
+          transition: all var(--transition-fast);
         }
         .form-input:focus,
         .form-select:focus,
         .form-textarea:focus {
           outline: none;
-          border-color: var(--color-forest-green);
-          box-shadow: 0 0 0 3px rgba(20, 83, 45, 0.1);
+          border-color: var(--color-agricultural-green);
+          box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+          background-color: #F0FDF4;
         }
 
         .submit-btn {
           width: 100%;
           margin-top: 0.5rem;
-          font-weight: 700;
+          font-weight: 800;
+          font-size: 1.05rem;
+          background: var(--gradient-emerald-vibrant);
+          box-shadow: 0 6px 20px rgba(5, 150, 105, 0.35);
+        }
+        .submit-btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 10px 28px rgba(5, 150, 105, 0.45);
         }
 
         .form-notice {

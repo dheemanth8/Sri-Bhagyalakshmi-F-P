@@ -84,23 +84,24 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           display: flex;
           flex-direction: column;
           background: #FFFFFF;
-          border: 1px solid var(--color-border-subtle);
+          border: 1.5px solid rgba(16, 185, 129, 0.18);
           border-radius: var(--radius-lg);
           overflow: hidden;
           transition: all var(--transition-normal);
           height: 100%;
+          box-shadow: 0 4px 20px -2px rgba(6, 78, 59, 0.06);
         }
         .category-card:hover {
-          border-color: var(--color-golden-yellow-light);
-          transform: translateY(-5px);
-          box-shadow: 0 16px 30px -6px rgba(20, 83, 45, 0.12);
+          border-color: var(--color-golden-yellow);
+          transform: translateY(-6px);
+          box-shadow: 0 20px 35px -8px rgba(6, 78, 59, 0.18), 0 8px 18px -4px rgba(245, 158, 11, 0.14);
         }
 
         .category-card__image-box {
           position: relative;
           height: 200px;
           overflow: hidden;
-          background-color: var(--color-forest-green);
+          background-color: #064E3B;
         }
         .category-card__picture {
           display: block;
@@ -114,7 +115,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           transition: transform var(--transition-slow);
         }
         .category-card:hover .category-card__img {
-          transform: scale(1.06);
+          transform: scale(1.08);
         }
 
         .category-card__badge-pill {
@@ -123,15 +124,16 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           left: 12px;
           display: inline-flex;
           align-items: center;
-          gap: 0.4rem;
-          background: rgba(15, 61, 33, 0.88);
-          color: #FFFFFF;
-          padding: 0.35rem 0.75rem;
+          gap: 0.45rem;
+          background: rgba(6, 78, 59, 0.92);
+          color: #FDE68A;
+          padding: 0.4rem 0.85rem;
           border-radius: var(--radius-full);
-          font-size: 0.75rem;
-          font-weight: 600;
-          backdrop-filter: blur(8px);
-          border: 1px solid rgba(244, 185, 66, 0.4);
+          font-size: 0.78rem;
+          font-weight: 800;
+          backdrop-filter: blur(10px);
+          border: 1.5px solid rgba(245, 158, 11, 0.55);
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
         }
 
         .category-card__body {
@@ -142,61 +144,74 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
         }
 
         .category-card__title {
-          font-size: 1.35rem;
-          font-weight: 700;
-          color: var(--color-forest-green);
+          font-size: 1.4rem;
+          font-weight: 800;
+          color: #064E3B;
           margin-bottom: 0.75rem;
           line-height: 1.3;
+          letter-spacing: -0.01em;
         }
 
         .category-card__desc {
-          font-size: 0.9rem;
+          font-size: 0.92rem;
           color: var(--color-charcoal-muted);
           line-height: 1.6;
           margin-bottom: 1.25rem;
         }
 
         .category-card__benefits {
-          background-color: var(--color-warm-cream);
-          border: 1px solid rgba(244, 185, 66, 0.25);
+          background: linear-gradient(135deg, #ECFDF5 0%, #FFFBEB 100%);
+          border: 1.5px solid rgba(16, 185, 129, 0.22);
           border-radius: var(--radius-md);
-          padding: 0.85rem 1rem;
+          padding: 0.95rem 1.15rem;
           margin-bottom: 1.5rem;
           margin-top: auto;
         }
         .benefits-label {
-          font-size: 0.72rem;
-          font-weight: 700;
+          font-size: 0.74rem;
+          font-weight: 800;
           text-transform: uppercase;
-          letter-spacing: 0.05em;
-          color: var(--color-forest-green);
-          margin-bottom: 0.45rem;
+          letter-spacing: 0.06em;
+          color: #065F46;
+          margin-bottom: 0.5rem;
         }
         .benefits-list {
           list-style: none;
           display: flex;
           flex-direction: column;
-          gap: 0.35rem;
+          gap: 0.4rem;
         }
         .benefit-item {
           display: flex;
           align-items: center;
-          gap: 0.45rem;
-          font-size: 0.82rem;
-          color: var(--color-dark-charcoal);
-          font-weight: 500;
+          gap: 0.5rem;
+          font-size: 0.84rem;
+          color: #1E293B;
+          font-weight: 600;
         }
         .benefit-check {
-          color: var(--color-agricultural-green);
+          color: #10B981;
           flex-shrink: 0;
         }
 
         .category-card__btn {
           width: 100%;
           justify-content: center;
-          font-weight: 600;
-          font-size: 0.88rem;
+          font-weight: 800;
+          font-size: 0.92rem;
           padding: 0.75rem 1rem;
+          background: linear-gradient(135deg, #ECFDF5 0%, #F0FDF4 100%);
+          color: #065F46;
+          border: 1.5px solid rgba(16, 185, 129, 0.35);
+          border-radius: var(--radius-md);
+          transition: all var(--transition-fast);
+        }
+        .category-card__btn:hover {
+          background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+          color: #FFFFFF;
+          border-color: #059669;
+          box-shadow: 0 6px 18px rgba(5, 150, 105, 0.35);
+          transform: translateY(-2px);
         }
       `}</style>
     </article>

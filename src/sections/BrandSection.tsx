@@ -109,9 +109,12 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
 
       <style>{`
         .brands-section {
-          background-color: var(--color-bg-alt);
-          border-top: 1px solid var(--color-border-subtle);
-          border-bottom: 1px solid var(--color-border-subtle);
+          background: 
+            radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.12) 0%, transparent 60%),
+            radial-gradient(circle at 10% 100%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+            linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 50%, #FFFFFF 100%);
+          border-top: 1px solid rgba(16, 185, 129, 0.2);
+          border-bottom: 1px solid rgba(16, 185, 129, 0.2);
         }
 
         /* Toolbar */
@@ -131,15 +134,15 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
         .filter-pill-btn {
           display: inline-flex;
           align-items: center;
-          gap: 0.45rem;
-          padding: 0.45rem 1.1rem;
+          gap: 0.5rem;
+          padding: 0.5rem 1.35rem;
           border-radius: var(--radius-full);
-          font-size: 0.88rem;
-          font-weight: 700;
-          background: var(--color-forest-green);
+          font-size: 0.92rem;
+          font-weight: 800;
+          background: linear-gradient(135deg, #059669 0%, #047857 100%);
           color: #FFFFFF;
-          border: 1.5px solid var(--color-forest-green);
-          box-shadow: 0 4px 10px rgba(20, 83, 45, 0.2);
+          border: 1.5px solid #10B981;
+          box-shadow: 0 4px 16px rgba(5, 150, 105, 0.28);
           cursor: default;
         }
 
@@ -201,10 +204,11 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           gap: 0.75rem;
           max-width: 860px;
           margin: 0 auto;
-          background: #FFFFFF;
-          border: 1px dashed var(--color-border-subtle);
-          border-radius: var(--radius-md);
-          padding: 1rem 1.25rem;
+          background: linear-gradient(135deg, #FFFFFF 0%, #F0FDF4 100%);
+          border: 1.5px solid rgba(16, 185, 129, 0.25);
+          border-radius: var(--radius-lg);
+          padding: 1.15rem 1.35rem;
+          box-shadow: 0 4px 16px rgba(6, 78, 59, 0.04);
         }
         .notice-icon {
           color: var(--color-agricultural-green);
@@ -212,9 +216,10 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           margin-top: 0.15rem;
         }
         .notice-text {
-          font-size: 0.85rem;
-          color: var(--color-charcoal-light);
-          line-height: 1.5;
+          font-size: 0.86rem;
+          color: var(--color-charcoal-muted);
+          line-height: 1.55;
+          font-weight: 500;
         }
       `}</style>
     </section>

@@ -128,9 +128,12 @@ export const LocationSection: React.FC = () => {
 
       <style>{`
         .location-section {
-          background-color: var(--color-bg-alt);
-          border-top: 1px solid var(--color-border-subtle);
-          border-bottom: 1px solid var(--color-border-subtle);
+          background: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.09) 0%, transparent 50%),
+                      radial-gradient(circle at 90% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                      linear-gradient(180deg, #F0FDF4 0%, #FFFFFF 50%, #FFFBEB 100%);
+          border-top: 1px solid rgba(16, 185, 129, 0.2);
+          border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+          position: relative;
         }
 
         .location-container {
@@ -139,9 +142,9 @@ export const LocationSection: React.FC = () => {
           gap: 2rem;
           background: #FFFFFF;
           border-radius: var(--radius-xl);
-          border: 1.5px solid var(--color-border-subtle);
+          border: 2px solid rgba(16, 185, 129, 0.25);
           overflow: hidden;
-          box-shadow: var(--shadow-lg);
+          box-shadow: 0 20px 45px -10px rgba(6, 78, 59, 0.14), 0 0 0 1px rgba(245, 158, 11, 0.18);
         }
 
         @media (min-width: 1024px) {
@@ -156,6 +159,7 @@ export const LocationSection: React.FC = () => {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          background: linear-gradient(180deg, #FFFFFF 0%, #F8FAF7 100%);
         }
         @media (min-width: 768px) {
           .location-info-card {
@@ -166,51 +170,54 @@ export const LocationSection: React.FC = () => {
         .location-header-row {
           display: flex;
           align-items: flex-start;
-          gap: 1rem;
-          margin-bottom: 1.5rem;
+          gap: 1.15rem;
+          margin-bottom: 1.75rem;
         }
 
         .location-pin-icon {
-          width: 52px;
-          height: 52px;
+          width: 56px;
+          height: 56px;
           border-radius: var(--radius-md);
-          background: var(--color-warm-cream);
-          border: 1px solid var(--color-golden-yellow-light);
+          background: linear-gradient(135deg, #ECFDF5 0%, #FEF3C7 100%);
+          border: 2px solid var(--color-golden-yellow);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--color-forest-green);
+          color: var(--color-forest-green-dark);
+          box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
           flex-shrink: 0;
         }
 
         .location-card-title {
-          font-size: 1.35rem;
+          font-size: 1.4rem;
           font-weight: 800;
-          color: var(--color-forest-green);
+          color: var(--color-forest-green-dark);
           line-height: 1.3;
         }
 
         .location-card-sub {
-          font-size: 0.9rem;
+          font-size: 0.92rem;
           color: var(--color-charcoal-muted);
-          margin-top: 0.2rem;
-          font-weight: 500;
+          margin-top: 0.25rem;
+          font-weight: 600;
         }
 
         /* Location Details Blocks */
         .location-detail-block {
-          background: #FAFBF9;
-          border: 1px solid rgba(20, 83, 45, 0.12);
+          background: #FFFFFF;
+          border: 1.5px solid rgba(16, 185, 129, 0.2);
+          border-left: 4px solid var(--color-agricultural-green);
           border-radius: var(--radius-md);
-          padding: 1rem 1.15rem;
-          margin-bottom: 1rem;
+          padding: 1.1rem 1.25rem;
+          margin-bottom: 1.15rem;
+          box-shadow: 0 2px 8px rgba(6, 78, 59, 0.04);
         }
 
         .detail-block-header {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          margin-bottom: 0.4rem;
+          margin-bottom: 0.45rem;
         }
 
         .detail-block-icon {
@@ -220,17 +227,17 @@ export const LocationSection: React.FC = () => {
 
         .detail-block-label {
           font-size: 0.78rem;
-          font-weight: 700;
+          font-weight: 800;
           text-transform: uppercase;
-          letter-spacing: 0.04em;
+          letter-spacing: 0.05em;
           color: var(--color-forest-green);
         }
 
         .detail-block-value {
-          font-size: 0.95rem;
+          font-size: 0.98rem;
           color: var(--color-dark-charcoal);
-          font-weight: 600;
-          line-height: 1.5;
+          font-weight: 700;
+          line-height: 1.55;
         }
 
         .address-highlight {
@@ -239,14 +246,15 @@ export const LocationSection: React.FC = () => {
 
         .landmark-badge {
           display: inline-block;
-          margin-top: 0.4rem;
-          font-size: 0.76rem;
-          font-weight: 700;
-          color: var(--color-forest-green);
-          background: var(--color-warm-cream);
-          border: 1px solid var(--color-golden-yellow-light);
-          padding: 0.15rem 0.55rem;
+          margin-top: 0.5rem;
+          font-size: 0.78rem;
+          font-weight: 800;
+          color: #92400E;
+          background: #FEF3C7;
+          border: 1px solid #F59E0B;
+          padding: 0.2rem 0.65rem;
           border-radius: var(--radius-full);
+          box-shadow: 0 1px 4px rgba(245, 158, 11, 0.15);
         }
 
         .hours-highlight {
@@ -254,11 +262,14 @@ export const LocationSection: React.FC = () => {
         }
 
         .location-actions {
+          margin-top: 0.5rem;
           margin-bottom: 1.25rem;
         }
         .location-cta {
           width: 100%;
-          font-weight: 700;
+          font-weight: 800;
+          font-size: 1.05rem;
+          box-shadow: var(--shadow-gold);
         }
 
         .location-note {

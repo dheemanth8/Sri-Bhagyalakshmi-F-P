@@ -135,9 +135,10 @@ export const BrandCard: React.FC<BrandCardProps> = React.memo(({ brand, productC
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #FFFFFF;
+          background: linear-gradient(180deg, #FAFDF9 0%, #F1F8EE 100%);
           padding: 1.25rem 1.5rem;
-          border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+          border-top: 3.5px solid var(--color-golden-yellow);
+          border-bottom: 1.5px solid rgba(16, 185, 129, 0.15);
           position: relative;
         }
         .brand-card__logo-img {
@@ -149,7 +150,7 @@ export const BrandCard: React.FC<BrandCardProps> = React.memo(({ brand, productC
           transition: transform var(--transition-normal);
         }
         .brand-card:hover .brand-card__logo-img {
-          transform: scale(1.05);
+          transform: scale(1.06);
         }
 
         .brand-card__count-pill {
@@ -158,18 +159,18 @@ export const BrandCard: React.FC<BrandCardProps> = React.memo(({ brand, productC
           right: 0.75rem;
           display: inline-flex;
           align-items: center;
-          gap: 0.3rem;
-          background: rgba(20, 83, 45, 0.08);
-          color: var(--color-forest-green);
-          font-size: 0.72rem;
-          font-weight: 700;
-          padding: 0.2rem 0.55rem;
+          gap: 0.35rem;
+          background: #059669;
+          color: #FFFFFF;
+          font-size: 0.74rem;
+          font-weight: 800;
+          padding: 0.22rem 0.6rem;
           border-radius: var(--radius-full);
-          border: 1px solid rgba(20, 83, 45, 0.15);
-          backdrop-filter: blur(4px);
+          border: 1px solid #10B981;
+          box-shadow: 0 2px 8px rgba(5, 150, 105, 0.35);
         }
         .count-pill-icon {
-          color: var(--color-agricultural-green);
+          color: #D1FAE5;
         }
 
         .brand-card__fallback {
@@ -207,8 +208,8 @@ export const BrandCard: React.FC<BrandCardProps> = React.memo(({ brand, productC
         .brand-card__title {
           font-size: 1.35rem;
           font-weight: 800;
-          color: var(--color-forest-green);
-          letter-spacing: 0.01em;
+          color: #064E3B;
+          letter-spacing: -0.01em;
           line-height: 1.2;
         }
         .brand-card__fullname {
@@ -226,24 +227,25 @@ export const BrandCard: React.FC<BrandCardProps> = React.memo(({ brand, productC
           display: inline-flex;
           align-items: center;
           gap: 0.35rem;
-          background: var(--color-agricultural-green-subtle);
-          color: var(--color-agricultural-green);
+          background: #DCFCE7;
+          color: #15803D;
+          border: 1px solid #86EFAC;
           font-size: 0.74rem;
-          font-weight: 700;
+          font-weight: 800;
           padding: 0.22rem 0.6rem;
           border-radius: var(--radius-full);
           line-height: 1.35;
           max-width: 100%;
         }
         .badge-icon {
-          color: var(--color-agricultural-green);
+          color: #16A34A;
           flex-shrink: 0;
         }
 
         .brand-card__desc {
-          font-size: 0.84rem;
-          color: var(--color-charcoal-light);
-          line-height: 1.5;
+          font-size: 0.85rem;
+          color: var(--color-charcoal-muted);
+          line-height: 1.55;
           margin-bottom: 1.25rem;
           flex-grow: 1;
         }
@@ -252,7 +254,7 @@ export const BrandCard: React.FC<BrandCardProps> = React.memo(({ brand, productC
         .brand-card__footer {
           margin-top: auto;
           padding-top: 0.85rem;
-          border-top: 1px solid var(--color-border-subtle);
+          border-top: 1px solid rgba(16, 185, 129, 0.15);
         }
         .brand-card__cta-btn {
           width: 100%;
@@ -260,22 +262,23 @@ export const BrandCard: React.FC<BrandCardProps> = React.memo(({ brand, productC
           align-items: center;
           justify-content: center;
           gap: 0.5rem;
-          background: #F4F7F2;
-          color: var(--color-forest-green);
-          font-size: 0.88rem;
-          font-weight: 700;
-          padding: 0.65rem 1rem;
+          background: linear-gradient(135deg, #ECFDF5 0%, #F0FDF4 100%);
+          color: #065F46;
+          font-size: 0.9rem;
+          font-weight: 800;
+          padding: 0.7rem 1rem;
           border-radius: var(--radius-md);
-          border: 1px solid rgba(20, 83, 45, 0.15);
+          border: 1.5px solid rgba(16, 185, 129, 0.35);
           cursor: pointer;
           transition: all var(--transition-fast);
         }
         .brand-card:hover .brand-card__cta-btn,
         .brand-card__cta-btn:hover {
-          background: var(--color-forest-green);
+          background: linear-gradient(135deg, #10B981 0%, #059669 100%);
           color: #FFFFFF;
-          border-color: var(--color-forest-green);
-          box-shadow: 0 4px 12px rgba(20, 83, 45, 0.2);
+          border-color: #059669;
+          box-shadow: 0 6px 18px rgba(5, 150, 105, 0.35);
+          transform: translateY(-1px);
         }
         .cta-btn__arrow {
           transition: transform var(--transition-fast);

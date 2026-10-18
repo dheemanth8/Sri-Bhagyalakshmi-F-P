@@ -60,10 +60,11 @@ export const Footer: React.FC = () => {
 
       <style>{`
         .footer-wrapper {
-          background-color: var(--color-forest-green-dark);
+          background: linear-gradient(135deg, #064E3B 0%, #065F46 50%, #022C22 100%);
           color: #E2E8F0;
-          padding: 1.5rem 0 1rem 0;
-          border-top: 3px solid var(--color-golden-yellow);
+          padding: 2rem 0 1.25rem 0;
+          border-top: 4px solid var(--color-golden-yellow);
+          box-shadow: 0 -6px 25px rgba(6, 78, 59, 0.25);
         }
 
         .footer-container {

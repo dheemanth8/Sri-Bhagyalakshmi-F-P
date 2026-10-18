@@ -192,7 +192,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       <style>{`
         .product-card {
           background: #FFFFFF;
-          border: 1.5px solid var(--color-border-subtle);
+          border: 1.5px solid rgba(16, 185, 129, 0.2);
           border-radius: var(--radius-lg);
           display: flex;
           flex-direction: column;
@@ -200,12 +200,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
           cursor: pointer;
           position: relative;
+          box-shadow: 0 4px 16px rgba(6, 78, 59, 0.05);
         }
 
         .product-card:hover {
-          transform: translateY(-4px);
+          transform: translateY(-5px);
           border-color: var(--color-golden-yellow);
-          box-shadow: 0 12px 28px rgba(20, 83, 45, 0.1);
+          box-shadow: 0 16px 32px -4px rgba(6, 78, 59, 0.16), 0 0 0 1px rgba(245, 158, 11, 0.25);
         }
 
         .product-card:focus-visible {
@@ -219,8 +220,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           align-items: center;
           justify-content: space-between;
           padding: 0.85rem 1rem;
-          background: #FAFBF9;
-          border-bottom: 1px solid var(--color-border-subtle);
+          background: linear-gradient(180deg, #FFFFFF 0%, #F8FAF7 100%);
+          border-bottom: 1px solid rgba(16, 185, 129, 0.15);
           gap: 0.5rem;
         }
 
@@ -232,21 +233,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         }
 
         .company-logo-img {
-          height: 22px;
-          max-width: 65px;
+          height: 24px;
+          max-width: 70px;
           object-fit: contain;
           flex-shrink: 0;
         }
 
         .company-fallback-text {
-          font-weight: 700;
-          font-size: 0.8rem;
-          color: var(--color-forest-green);
+          font-weight: 800;
+          font-size: 0.82rem;
+          color: var(--color-forest-green-dark);
         }
 
         .company-name-text {
-          font-size: 0.82rem;
-          font-weight: 700;
+          font-size: 0.84rem;
+          font-weight: 800;
           color: var(--color-dark-charcoal);
           white-space: nowrap;
           overflow: hidden;
@@ -254,11 +255,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         }
 
         .category-tag {
-          font-size: 0.7rem;
-          font-weight: 700;
+          font-size: 0.72rem;
+          font-weight: 800;
           text-transform: uppercase;
-          letter-spacing: 0.04em;
-          padding: 0.2rem 0.55rem;
+          letter-spacing: 0.05em;
+          padding: 0.22rem 0.65rem;
           border-radius: var(--radius-full);
           white-space: nowrap;
           flex-shrink: 0;
@@ -267,13 +268,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         .category-tag--fertilizers {
           background: #FEF3C7;
           color: #92400E;
-          border: 1px solid #FDE68A;
+          border: 1.5px solid #F59E0B;
+          box-shadow: 0 1px 4px rgba(245, 158, 11, 0.15);
         }
 
         .category-tag--pesticides {
-          background: #DCFCE7;
-          color: #166534;
-          border: 1px solid #BBF7D0;
+          background: #ECFDF5;
+          color: #065F46;
+          border: 1.5px solid #10B981;
+          box-shadow: 0 1px 4px rgba(16, 185, 129, 0.15);
         }
 
         /* Image Box */
@@ -471,16 +474,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         }
 
         .pack-pill--active {
-          background: var(--color-agricultural-green);
-          border-color: var(--color-forest-green);
+          background: linear-gradient(135deg, #059669 0%, #047857 100%);
+          border-color: #064E3B;
           color: #FFFFFF;
+          box-shadow: 0 2px 6px rgba(5, 150, 105, 0.35);
         }
 
         /* Footer */
         .product-card__footer {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          border-top: 1px solid var(--color-border-subtle);
+          border-top: 1px solid rgba(16, 185, 129, 0.15);
           background: #FAFBF9;
         }
 
@@ -490,31 +494,35 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           justify-content: center;
           gap: 0.35rem;
           padding: 0.75rem 0.5rem;
-          font-size: 0.82rem;
+          font-size: 0.84rem;
           font-weight: 700;
           border: none;
           background: transparent;
           cursor: pointer;
-          transition: background-color var(--transition-fast), color var(--transition-fast);
+          transition: all var(--transition-fast);
         }
 
         .btn-card-details {
-          color: var(--color-forest-green);
-          border-right: 1px solid var(--color-border-subtle);
+          color: var(--color-forest-green-dark);
+          border-right: 1px solid rgba(16, 185, 129, 0.15);
+          font-weight: 800;
         }
 
         .btn-card-details:hover {
-          background: var(--color-warm-cream);
+          background: #ECFDF5;
           color: var(--color-forest-green-dark);
         }
 
         .btn-card-enquire {
-          color: var(--color-agricultural-green);
+          background: linear-gradient(135deg, #059669 0%, #047857 100%);
+          color: #FFFFFF;
+          font-weight: 800;
         }
 
         .btn-card-enquire:hover {
-          background: var(--color-agricultural-green-subtle);
-          color: var(--color-forest-green);
+          background: linear-gradient(135deg, #047857 0%, #064E3B 100%);
+          color: #FFFFFF;
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
         }
       `}</style>
     </div>
