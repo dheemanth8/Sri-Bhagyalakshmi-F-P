@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+  <rect width="320" height="100" rx="16" fill="#FFFFFF"/>
+  <circle cx="55" cy="50" r="32" fill="#0F3D21"/>
+  <path d="M40 38 L70 62 M70 38 L40 62" stroke="#22C55E" stroke-width="7" stroke-linecap="round"/>
+  <text x="105" y="54" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="#0F3D21">XYLON</text>
+  <text x="105" y="76" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#16A34A" letter-spacing="1">AGRI SCIENCE</text>
+</svg>

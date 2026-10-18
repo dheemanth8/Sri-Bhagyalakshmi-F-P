@@ -24,20 +24,11 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
     const counts: Record<string, number> = {};
 
     PRODUCTS_CATALOGUE.forEach((p) => {
-      const cId = p.company.id.toLowerCase();
+      let cId = p.company.id.toLowerCase();
+      if (cId === 'coramandal') cId = 'coromandel';
+      if (cId === 'garudha') cId = 'gharda';
+      if (cId === 'indofill') cId = 'indofil';
       counts[cId] = (counts[cId] || 0) + 1;
-      // Handle aliases
-      if (cId === 'coramandal' || cId === 'coromandel') {
-        counts['coromandel'] = (counts['coromandel'] || 0) + 1;
-        counts['coramandal'] = (counts['coramandal'] || 0) + 1;
-      }
-      if (cId === 'garudha' || cId === 'gharda') {
-        counts['gharda'] = (counts['gharda'] || 0) + 1;
-        counts['garudha'] = (counts['garudha'] || 0) + 1;
-      }
-      if (cId === 'indofil' || cId === 'indofill') {
-        counts['indofil'] = (counts['indofil'] || 0) + 1;
-      }
     });
 
     return counts;

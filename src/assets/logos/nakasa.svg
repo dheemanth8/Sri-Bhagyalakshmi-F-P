@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+  <rect width="320" height="100" rx="16" fill="#FFFFFF"/>
+  <circle cx="55" cy="50" r="32" fill="#15803D"/>
+  <path d="M43 62 C43 38 67 38 67 62 C67 48 53 45 43 62 Z" fill="#86EFAC"/>
+  <text x="105" y="52" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#15803D">NAKASA</text>
+  <text x="105" y="74" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#4B5563" letter-spacing="1">CROP SCIENCE</text>
+</svg>

@@ -2,6 +2,9 @@
 
 // Import company logos
 import adamaLogo from '../assets/logos/adama.svg';
+import ariesAgroLogo from '../assets/logos/aries_agro.svg';
+import nakasaLogo from '../assets/logos/nakasa.svg';
+import xylonLogo from '../assets/logos/xylon.svg';
 import agrishineLogo from '../assets/logos/agrishine.jpg';
 import basfLogo from '../assets/logos/basf.svg';
 import bayerLogo from '../assets/logos/bayer.svg';
@@ -31,6 +34,9 @@ import uplLogo from '../assets/logos/upl.png';
 
 export const COMPANY_LOGOS: Record<string, string> = {
   adamaLogo,
+  ariesAgroLogo,
+  nakasaLogo,
+  xylonLogo,
   agrishineLogo,
   basfLogo,
   bayerLogo,
@@ -5543,6 +5549,1887 @@ export const ALL_SPREADSHEET_ITEMS: SpreadsheetProductItem[] = [
     "packSize": "500 GM",
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review"
+  },
+  {
+    "spreadsheetRow": 288,
+    "rawName": "Karbon Plus 50 Kg",
+    "displayName": "Karbon Plus",
+    "company": {
+      "id": "coromandel",
+      "name": "Coromandel",
+      "fullName": "Coromandel International Limited (Gromor)",
+      "logoKey": "coramandalLogo"
+    },
+    "mainCategory": "fertilizers",
+    "subCategory": "fertilizer",
+    "rawProductType": "Fertilizer",
+    "activeIngredient": "Carbon Enriched Complex Fertilizer",
+    "technicalName": "Carbon Enriched NPK Fertilizer",
+    "packSize": "50 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 289,
+    "rawName": "CROPTEK 8:21:21 -40KG",
+    "displayName": "Croptek 8:21:21",
+    "company": {
+      "id": "mahadhan",
+      "name": "Mahadhan",
+      "fullName": "Smartchem Technologies (Mahadhan)",
+      "logoKey": "mahadhanLogo"
+    },
+    "mainCategory": "fertilizers",
+    "subCategory": "fertilizer",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "40 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 290,
+    "rawName": "CROPTEK 9:24:24 -40KG",
+    "displayName": "Croptek 9:24:24",
+    "company": {
+      "id": "mahadhan",
+      "name": "Mahadhan",
+      "fullName": "Smartchem Technologies (Mahadhan)",
+      "logoKey": "mahadhanLogo"
+    },
+    "mainCategory": "fertilizers",
+    "subCategory": "fertilizer",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "40 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 291,
+    "rawName": "CROPTEK11:30:14 -40KG",
+    "displayName": "Croptek11:30:14",
+    "company": {
+      "id": "mahadhan",
+      "name": "Mahadhan",
+      "fullName": "Smartchem Technologies (Mahadhan)",
+      "logoKey": "mahadhanLogo"
+    },
+    "mainCategory": "fertilizers",
+    "subCategory": "fertilizer",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "40 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 292,
+    "rawName": "KEERTHI -50 KG",
+    "displayName": "Keerthi",
+    "company": {
+      "id": "spic",
+      "name": "SPIC",
+      "fullName": "Southern Petrochemical Industries (SPIC)",
+      "logoKey": "spicLogo"
+    },
+    "mainCategory": "fertilizers",
+    "subCategory": "fertilizer",
+    "rawProductType": "Fertilizer",
+    "activeIngredient": "Complex Fertilizer",
+    "technicalName": "SPIC Keerthi High Yield Fertilizer",
+    "packSize": "50 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 293,
+    "rawName": "AGIL 1LT",
+    "displayName": "Agil",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Propaquizafop",
+    "technicalName": "Propaquizafop 10% EC",
+    "packSize": "1 LT",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 294,
+    "rawName": "AGIL 250 ML",
+    "displayName": "Agil",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Propaquizafop",
+    "technicalName": "Propaquizafop 10% EC",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 295,
+    "rawName": "AGIL 500 ML",
+    "displayName": "Agil",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Propaquizafop",
+    "technicalName": "Propaquizafop 10% EC",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 296,
+    "rawName": "BARROZ 3KG",
+    "displayName": "Barroz",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "3 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 297,
+    "rawName": "CUSTODIA PRIME-1LTR",
+    "displayName": "Custodia Prime",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Azoxystrobin + Tebuconazole",
+    "technicalName": "Azoxystrobin 11% + Tebuconazole 18.3% w/w SC",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 298,
+    "rawName": "CUSTODIA PRIME-500ML",
+    "displayName": "Custodia Prime",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Azoxystrobin + Tebuconazole",
+    "technicalName": "Azoxystrobin 11% + Tebuconazole 18.3% w/w SC",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 299,
+    "rawName": "FORABAZ-250ML",
+    "displayName": "Forabaz",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorantraniliprole + Novaluron",
+    "technicalName": "Advanced Lepidopteran Broad Spectrum Insecticide",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 300,
+    "rawName": "FORPIDO-3KG",
+    "displayName": "Forpido",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorantraniliprole 0.4% GR",
+    "technicalName": "Chlorantraniliprole 0.4% GR Soil Granules",
+    "packSize": "3 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 301,
+    "rawName": "GALIGAN-500ML",
+    "displayName": "Galigan",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 302,
+    "rawName": "PEDESTAL 500ML",
+    "displayName": "Pedestal",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 303,
+    "rawName": "PLETHORA 1000 ML",
+    "displayName": "Plethora",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Novaluron + Emamectin Benzoate",
+    "technicalName": "Novaluron 5.25% + Emamectin Benzoate 0.9% SC",
+    "packSize": "1000 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 304,
+    "rawName": "PLETHORA 500 ML",
+    "displayName": "Plethora",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Novaluron + Emamectin Benzoate",
+    "technicalName": "Novaluron 5.25% + Emamectin Benzoate 0.9% SC",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 305,
+    "rawName": "TRASSID-250ML",
+    "displayName": "Trassid",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Pyrazosulfuron Ethyl",
+    "technicalName": "Pyrazosulfuron Ethyl 10% WP",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 306,
+    "rawName": "UPTURN-1LTR",
+    "displayName": "Upturn",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Thiophanate Methyl + Kresoxim Methyl",
+    "technicalName": "Broad-Spectrum Protective & Curative Fungicide",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 307,
+    "rawName": "UPTURN-500ML",
+    "displayName": "Upturn",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Thiophanate Methyl + Kresoxim Methyl",
+    "technicalName": "Broad-Spectrum Protective & Curative Fungicide",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 308,
+    "rawName": "AKIRAN-1000ML",
+    "displayName": "Akiran",
+    "company": {
+      "id": "agrishine",
+      "name": "Agrishine",
+      "fullName": "Agrishine Crop Care",
+      "logoKey": "agrishineLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "1000 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 309,
+    "rawName": "AKIRAN-250ML",
+    "displayName": "Akiran",
+    "company": {
+      "id": "agrishine",
+      "name": "Agrishine",
+      "fullName": "Agrishine Crop Care",
+      "logoKey": "agrishineLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 310,
+    "rawName": "AKIRAN-500ML",
+    "displayName": "Akiran",
+    "company": {
+      "id": "agrishine",
+      "name": "Agrishine",
+      "fullName": "Agrishine Crop Care",
+      "logoKey": "agrishineLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 311,
+    "rawName": "Agromin Max 1kg",
+    "displayName": "Agromin Max",
+    "company": {
+      "id": "aries_agro",
+      "name": "Aries Agro",
+      "fullName": "Aries Agro Ltd",
+      "logoKey": "ariesAgroLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "crop_protection_nutrition",
+    "rawProductType": "Micronutrients",
+    "activeIngredient": "Chelated Micronutrient Fertilizer",
+    "technicalName": "Multi-micronutrient Mineral Formulation",
+    "packSize": "1 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 312,
+    "rawName": "AGROMIN MAX 500 GM",
+    "displayName": "Agromin Max",
+    "company": {
+      "id": "aries_agro",
+      "name": "Aries Agro",
+      "fullName": "Aries Agro Ltd",
+      "logoKey": "ariesAgroLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "crop_protection_nutrition",
+    "rawProductType": "Micronutrients",
+    "activeIngredient": "Chelated Micronutrient Fertilizer",
+    "technicalName": "Multi-micronutrient Mineral Formulation",
+    "packSize": "500 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 313,
+    "rawName": "FRIVON-1LTR",
+    "displayName": "Frivon",
+    "company": {
+      "id": "basf",
+      "name": "BASF",
+      "fullName": "BASF Agricultural Solutions",
+      "logoKey": "basfLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Afidopyropen",
+    "technicalName": "Afidopyropen 50 G/L DC",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 314,
+    "rawName": "PIRATE-170ML",
+    "displayName": "Pirate",
+    "company": {
+      "id": "basf",
+      "name": "BASF",
+      "fullName": "BASF Agricultural Solutions",
+      "logoKey": "basfLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "170 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 315,
+    "rawName": "ALLITTE 100 GM",
+    "displayName": "Allitte",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Fosetyl-Al",
+    "technicalName": "Fosetyl-Al 80% WP (Aliette)",
+    "packSize": "100 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 316,
+    "rawName": "ALLITTE 250 GM",
+    "displayName": "Allitte",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Fosetyl-Al",
+    "technicalName": "Fosetyl-Al 80% WP (Aliette)",
+    "packSize": "250 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 317,
+    "rawName": "ALLITTE 500 GM",
+    "displayName": "Allitte",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Fosetyl-Al",
+    "technicalName": "Fosetyl-Al 80% WP (Aliette)",
+    "packSize": "500 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 318,
+    "rawName": "CAMALUS SURFACTANT-400ML",
+    "displayName": "Camalus",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "adjuvant",
+    "rawProductType": "Surfactant / Adjuvant",
+    "activeIngredient": "Non-ionic Organosilicone Surfactant",
+    "technicalName": "Super Spreader & Penetrant Agricultural Adjuvant",
+    "packSize": "400 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 319,
+    "rawName": "CAMALUS-150ML",
+    "displayName": "Camalus",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "adjuvant",
+    "rawProductType": "Surfactant / Adjuvant",
+    "activeIngredient": "Non-ionic Organosilicone Surfactant",
+    "technicalName": "Super Spreader & Penetrant Agricultural Adjuvant",
+    "packSize": "150 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 320,
+    "rawName": "CAMALUS-300ML",
+    "displayName": "Camalus",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "adjuvant",
+    "rawProductType": "Surfactant / Adjuvant",
+    "activeIngredient": "Non-ionic Organosilicone Surfactant",
+    "technicalName": "Super Spreader & Penetrant Agricultural Adjuvant",
+    "packSize": "300 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 321,
+    "rawName": "TRANCE-220ML",
+    "displayName": "Trance",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "bio_stimulant",
+    "rawProductType": "Plant Bio-stimulant",
+    "activeIngredient": "Natural Plant Extracts & Amino Acids",
+    "technicalName": "Bio-efficacy Enhancer & Yield Stimulant",
+    "packSize": "220 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 322,
+    "rawName": "TRANCE-500ML",
+    "displayName": "Trance",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "bio_stimulant",
+    "rawProductType": "Plant Bio-stimulant",
+    "activeIngredient": "Natural Plant Extracts & Amino Acids",
+    "technicalName": "Bio-efficacy Enhancer & Yield Stimulant",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 323,
+    "rawName": "Beam 100GM",
+    "displayName": "Beam",
+    "company": {
+      "id": "corteva",
+      "name": "Corteva",
+      "fullName": "Corteva Agriscience",
+      "logoKey": "cortevaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Tricyclazole",
+    "technicalName": "Tricyclazole 75% WP Blast Specialist",
+    "packSize": "100 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 324,
+    "rawName": "HIBIFEN-100GM",
+    "displayName": "Hibifen",
+    "company": {
+      "id": "corteva",
+      "name": "Corteva",
+      "fullName": "Corteva Agriscience",
+      "logoKey": "cortevaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "100 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 325,
+    "rawName": "Magister-1LTR",
+    "displayName": "Magister",
+    "company": {
+      "id": "corteva",
+      "name": "Corteva",
+      "fullName": "Corteva Agriscience",
+      "logoKey": "cortevaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 326,
+    "rawName": "MIRACULAN -500ML",
+    "displayName": "Miraculan",
+    "company": {
+      "id": "corteva",
+      "name": "Corteva",
+      "fullName": "Corteva Agriscience",
+      "logoKey": "cortevaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "plant_growth_regulator",
+    "rawProductType": "PGR",
+    "activeIngredient": "Triacontanol",
+    "technicalName": "Triacontanol 0.05% EC Plant Growth Regulator",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 327,
+    "rawName": "CROP MAX 500ML",
+    "displayName": "CROP MAX",
+    "company": {
+      "id": "corteva",
+      "name": "Corteva",
+      "fullName": "Corteva Agriscience",
+      "logoKey": "cortevaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 328,
+    "rawName": "DECIDE-250GM",
+    "displayName": "Decide",
+    "company": {
+      "id": "dhanuka",
+      "name": "Dhanuka",
+      "fullName": "Dhanuka Agritech",
+      "logoKey": "dhanukaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "250 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 329,
+    "rawName": "DECIDE-500GM",
+    "displayName": "Decide",
+    "company": {
+      "id": "dhanuka",
+      "name": "Dhanuka",
+      "fullName": "Dhanuka Agritech",
+      "logoKey": "dhanukaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 330,
+    "rawName": "LANEVO-250ML",
+    "displayName": "Lanevo",
+    "company": {
+      "id": "dhanuka",
+      "name": "Dhanuka",
+      "fullName": "Dhanuka Agritech",
+      "logoKey": "dhanukaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 331,
+    "rawName": "LANEVO-500ML",
+    "displayName": "Lanevo",
+    "company": {
+      "id": "dhanuka",
+      "name": "Dhanuka",
+      "fullName": "Dhanuka Agritech",
+      "logoKey": "dhanukaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 332,
+    "rawName": "LUSTER-200ML",
+    "displayName": "Luster",
+    "company": {
+      "id": "dhanuka",
+      "name": "Dhanuka",
+      "fullName": "Dhanuka Agritech",
+      "logoKey": "dhanukaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "200 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 333,
+    "rawName": "MYCORE SUPER-4KG",
+    "displayName": "Mycore Super",
+    "company": {
+      "id": "dhanuka",
+      "name": "Dhanuka",
+      "fullName": "Dhanuka Agritech",
+      "logoKey": "dhanukaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "4 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 334,
+    "rawName": "ETRE 500GM",
+    "displayName": "Etre",
+    "company": {
+      "id": "fmc",
+      "name": "FMC",
+      "fullName": "FMC India",
+      "logoKey": "fmcLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Clothianidin",
+    "technicalName": "Clothianidin 50% WDG",
+    "packSize": "500 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 335,
+    "rawName": "FERTERRA-6KG",
+    "displayName": "Ferterra",
+    "company": {
+      "id": "fmc",
+      "name": "FMC",
+      "fullName": "FMC India",
+      "logoKey": "fmcLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "6 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 336,
+    "rawName": "FURAGRO LEGEND -48 GM",
+    "displayName": "Furagro Legend",
+    "company": {
+      "id": "fmc",
+      "name": "FMC",
+      "fullName": "FMC India",
+      "logoKey": "fmcLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "bio_stimulant",
+    "rawProductType": "Plant Activator",
+    "activeIngredient": "Humic & Fulvic Derivatives",
+    "technicalName": "FMC Legend Bio-nutrition Soil Activator",
+    "packSize": "48 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 337,
+    "rawName": "PHENDAL PLUS 1LTR",
+    "displayName": "Phendal Plus",
+    "company": {
+      "id": "coromandel",
+      "name": "Coromandel",
+      "fullName": "Coromandel International Limited (Gromor)",
+      "logoKey": "coramandalLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Phenthoate + Cypermethrin",
+    "technicalName": "Phenthoate 50% + Cypermethrin 5% EC",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 338,
+    "rawName": "PHENDAL PLUS-500ML",
+    "displayName": "Phendal Plus",
+    "company": {
+      "id": "coromandel",
+      "name": "Coromandel",
+      "fullName": "Coromandel International Limited (Gromor)",
+      "logoKey": "coramandalLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Phenthoate + Cypermethrin",
+    "technicalName": "Phenthoate 50% + Cypermethrin 5% EC",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 339,
+    "rawName": "DRONEX-1LTR",
+    "displayName": "Dronex",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Profenofos + Cypermethrin",
+    "technicalName": "Profenofos 40% + Cypermethrin 4% EC",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 340,
+    "rawName": "DRONEX-500ML",
+    "displayName": "Dronex",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Profenofos + Cypermethrin",
+    "technicalName": "Profenofos 40% + Cypermethrin 4% EC",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 341,
+    "rawName": "ELEMENT-250ML",
+    "displayName": "Element",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Pendimethalin",
+    "technicalName": "Pendimethalin 38.7% CS",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 342,
+    "rawName": "ELEMENT-500ML",
+    "displayName": "Element",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Pendimethalin",
+    "technicalName": "Pendimethalin 38.7% CS",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 343,
+    "rawName": "ESTEEM-1LTR",
+    "displayName": "Esteem",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Pyriproxyfen",
+    "technicalName": "Pyriproxyfen 10% EC",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 344,
+    "rawName": "ESTEEM-500ML",
+    "displayName": "Esteem",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Pyriproxyfen",
+    "technicalName": "Pyriproxyfen 10% EC",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 345,
+    "rawName": "SLR 525 -1LTR",
+    "displayName": "SLR 525",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 346,
+    "rawName": "SLR-525 -500ML",
+    "displayName": "SLR 525",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 347,
+    "rawName": "ALECTO-100ML",
+    "displayName": "Alecto",
+    "company": {
+      "id": "indofil",
+      "name": "Indofil",
+      "fullName": "Indofil Industries",
+      "logoKey": "indofilLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "100 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 348,
+    "rawName": "AVATAR 1 KG",
+    "displayName": "Avatar",
+    "company": {
+      "id": "indofil",
+      "name": "Indofil",
+      "fullName": "Indofil Industries",
+      "logoKey": "indofilLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Indoxacarb",
+    "technicalName": "Indoxacarb 14.5% SC",
+    "packSize": "1 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 349,
+    "rawName": "AVATAR 500 GM",
+    "displayName": "Avatar",
+    "company": {
+      "id": "indofil",
+      "name": "Indofil",
+      "fullName": "Indofil Industries",
+      "logoKey": "indofilLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Indoxacarb",
+    "technicalName": "Indoxacarb 14.5% SC",
+    "packSize": "500 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 350,
+    "rawName": "FURY 3G 5 KG",
+    "displayName": "Fury 3g",
+    "company": {
+      "id": "nacl",
+      "name": "NACL",
+      "fullName": "NACL Industries",
+      "logoKey": "naclLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Lambda-cyhalothrin",
+    "technicalName": "Lambda-cyhalothrin 4.9% Capsule Suspension",
+    "packSize": "5 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 351,
+    "rawName": "PEST LOCK -250ML",
+    "displayName": "Pest Lock",
+    "company": {
+      "id": "nacl",
+      "name": "NACL",
+      "fullName": "NACL Industries",
+      "logoKey": "naclLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorantraniliprole",
+    "technicalName": "Broad Spectrum Sucking & Borer Control",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 352,
+    "rawName": "TEMBOGUARD-115ML",
+    "displayName": "Temboguard",
+    "company": {
+      "id": "nacl",
+      "name": "NACL",
+      "fullName": "NACL Industries",
+      "logoKey": "naclLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Tembotrione",
+    "technicalName": "Tembotrione 34.4% SC Post-emergence Corn Herbicide",
+    "packSize": "115 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 353,
+    "rawName": "TEMBOGUARD-230ML",
+    "displayName": "Temboguard",
+    "company": {
+      "id": "nacl",
+      "name": "NACL",
+      "fullName": "NACL Industries",
+      "logoKey": "naclLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Tembotrione",
+    "technicalName": "Tembotrione 34.4% SC Post-emergence Corn Herbicide",
+    "packSize": "230 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 354,
+    "rawName": "NANDAKA-250ML",
+    "displayName": "Nandaka",
+    "company": {
+      "id": "nakasa",
+      "name": "Nakasa",
+      "fullName": "Nakasa Crop Science",
+      "logoKey": "nakasaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Emamectin Benzoate + Thiamethoxam",
+    "technicalName": "Emamectin Benzoate 1.5% + Thiamethoxam 7.5% SC",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 355,
+    "rawName": "AKIO 1LT",
+    "displayName": "AKIO",
+    "company": {
+      "id": "nichino",
+      "name": "Nichino",
+      "fullName": "Nichino India",
+      "logoKey": "nichinoLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "1 LT",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 356,
+    "rawName": "AKIO 500ML",
+    "displayName": "AKIO",
+    "company": {
+      "id": "nichino",
+      "name": "Nichino",
+      "fullName": "Nichino India",
+      "logoKey": "nichinoLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 357,
+    "rawName": "KATANA 100 GM",
+    "displayName": "Katana",
+    "company": {
+      "id": "nichino",
+      "name": "Nichino",
+      "fullName": "Nichino India",
+      "logoKey": "nichinoLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Tolfenpyrad",
+    "technicalName": "Tolfenpyrad 15% EC",
+    "packSize": "100 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 358,
+    "rawName": "HINTARA-1LTR",
+    "displayName": "Hintara",
+    "company": {
+      "id": "nova",
+      "name": "Nova",
+      "fullName": "Nova AgriTech",
+      "logoKey": "novaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Thiamethoxam",
+    "technicalName": "Thiamethoxam 25% WG",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 359,
+    "rawName": "HINTARA-250ML",
+    "displayName": "Hintara",
+    "company": {
+      "id": "nova",
+      "name": "Nova",
+      "fullName": "Nova AgriTech",
+      "logoKey": "novaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Thiamethoxam",
+    "technicalName": "Thiamethoxam 25% WG",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 360,
+    "rawName": "HINTARA-500ML",
+    "displayName": "Hintara",
+    "company": {
+      "id": "nova",
+      "name": "Nova",
+      "fullName": "Nova AgriTech",
+      "logoKey": "novaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Thiamethoxam",
+    "technicalName": "Thiamethoxam 25% WG",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 361,
+    "rawName": "TERMINATOR GOLD 3D ACTION 250 ML",
+    "displayName": "Terminator Gold 3d Action",
+    "company": {
+      "id": "nova",
+      "name": "Nova",
+      "fullName": "Nova AgriTech",
+      "logoKey": "novaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorpyriphos + Cypermethrin",
+    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC Triple Action",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 362,
+    "rawName": "TERMINATOR GOLD 3D ACTION 500ML",
+    "displayName": "Terminator Gold 3d Action",
+    "company": {
+      "id": "nova",
+      "name": "Nova",
+      "fullName": "Nova AgriTech",
+      "logoKey": "novaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorpyriphos + Cypermethrin",
+    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC Triple Action",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 363,
+    "rawName": "Terminatorgold 3D ACTION 1LR",
+    "displayName": "Terminator Gold 3d Action",
+    "company": {
+      "id": "nova",
+      "name": "Nova",
+      "fullName": "Nova AgriTech",
+      "logoKey": "novaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorpyriphos + Cypermethrin",
+    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC Triple Action",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 364,
+    "rawName": "BIOVITA X 1000 ML",
+    "displayName": "Biovita X",
+    "company": {
+      "id": "pi_industries",
+      "name": "PI Industries",
+      "fullName": "PI Industries",
+      "logoKey": "piIndustriesLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "bio_stimulant",
+    "rawProductType": "Bio-stimulant",
+    "activeIngredient": "Ascophyllum Nodosum Marine Algae Extract",
+    "technicalName": "Seaweed Extract Bio-stimulant with 60+ Natural Micronutrients",
+    "packSize": "1000 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 365,
+    "rawName": "BIOVITA X 4KG",
+    "displayName": "Biovita X",
+    "company": {
+      "id": "pi_industries",
+      "name": "PI Industries",
+      "fullName": "PI Industries",
+      "logoKey": "piIndustriesLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "bio_stimulant",
+    "rawProductType": "Bio-stimulant",
+    "activeIngredient": "Ascophyllum Nodosum Marine Algae Extract",
+    "technicalName": "Seaweed Extract Bio-stimulant with 60+ Natural Micronutrients",
+    "packSize": "4 KG",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 366,
+    "rawName": "CLAVENGO-1LTR",
+    "displayName": "Clavengo",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Plinazolin Technology",
+    "technicalName": "Isocycloseram 10% DC Advanced Lepidoptera Protection",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 367,
+    "rawName": "ELESTAL NEO-100ML",
+    "displayName": "Elestal Neo",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Spiropidion",
+    "technicalName": "Spiropidion 300 g/L SC Sucking Pest Solution",
+    "packSize": "100 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 368,
+    "rawName": "FUSIFLEX 400 ML",
+    "displayName": "Fusiflex",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Fluazifop-p-butyl + Fomesafen",
+    "technicalName": "Fluazifop-p-butyl 11.1% + Fomesafen 11.1% SL",
+    "packSize": "400 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 369,
+    "rawName": "INCIPIO-120ML",
+    "displayName": "Incipio",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "120 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 370,
+    "rawName": "INCIPIO-600ML",
+    "displayName": "Incipio",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "600 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 371,
+    "rawName": "RIFIT 1000 ML",
+    "displayName": "Rifit",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Pretilachlor",
+    "technicalName": "Pretilachlor 50% EC Paddy Weed Specialist",
+    "packSize": "1000 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 372,
+    "rawName": "VESTORIA PRO-400ML",
+    "displayName": "Vestoria Pro",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Triflumuron",
+    "technicalName": "Triflumuron 39.35% SC Brown Planthopper Specialist",
+    "packSize": "400 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 373,
+    "rawName": "FUZIONE 1000 ML",
+    "displayName": "Fuzione",
+    "company": {
+      "id": "tata",
+      "name": "Tata",
+      "fullName": "Tata Rallis India",
+      "logoKey": "tataLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Picoxystrobin + Tricyclazole",
+    "technicalName": "Picoxystrobin 7.05% + Tricyclazole 21.16% SC",
+    "packSize": "1000 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 374,
+    "rawName": "FUZIONE 500 ML",
+    "displayName": "Fuzione",
+    "company": {
+      "id": "tata",
+      "name": "Tata",
+      "fullName": "Tata Rallis India",
+      "logoKey": "tataLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Picoxystrobin + Tricyclazole",
+    "technicalName": "Picoxystrobin 7.05% + Tricyclazole 21.16% SC",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 375,
+    "rawName": "NAGATA 500ML",
+    "displayName": "Nagata",
+    "company": {
+      "id": "tata",
+      "name": "Tata",
+      "fullName": "Tata Rallis India",
+      "logoKey": "tataLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 376,
+    "rawName": "Amicus 1ltr",
+    "displayName": "Amicus",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 377,
+    "rawName": "ARGYLE-100GM",
+    "displayName": "Argyle",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "100 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 378,
+    "rawName": "ATABRON 1LT",
+    "displayName": "Atabron",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorfluazuron",
+    "technicalName": "Chlorfluazuron 5.4% EC IGR Insecticide",
+    "packSize": "1 LT",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 379,
+    "rawName": "BRUCIA-400ML",
+    "displayName": "Brucia",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Bispyribac Sodium + Penoxsulam",
+    "technicalName": "Broad Spectrum Rice Herbicide",
+    "packSize": "400 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 380,
+    "rawName": "GUNTHER 1LTR",
+    "displayName": "Gunther",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Novaluron + Indoxacarb",
+    "technicalName": "Novaluron 5.25% + Indoxacarb 4.5% SC",
+    "packSize": "1 LTR",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 381,
+    "rawName": "LARVIRON-300ML",
+    "displayName": "Larviron",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "300 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 382,
+    "rawName": "LARVIRON-600ML",
+    "displayName": "Larviron",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": null,
+    "activeIngredient": null,
+    "technicalName": null,
+    "packSize": "600 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 383,
+    "rawName": "TRIDIUM-400GM",
+    "displayName": "Tridium",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Mancozeb + Azoxystrobin + Tebuconazole",
+    "technicalName": "Mancozeb 60% + Azoxystrobin 3.5% + Tebuconazole 7% WG",
+    "packSize": "400 GM",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 384,
+    "rawName": "HITMAN-1000ML",
+    "displayName": "Hitman",
+    "company": {
+      "id": "xylon",
+      "name": "Xylon",
+      "fullName": "Xylon Agri Science",
+      "logoKey": "xylonLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorpyriphos + Cypermethrin",
+    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC",
+    "packSize": "1000 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 385,
+    "rawName": "HITMAN-250ML",
+    "displayName": "Hitman",
+    "company": {
+      "id": "xylon",
+      "name": "Xylon",
+      "fullName": "Xylon Agri Science",
+      "logoKey": "xylonLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorpyriphos + Cypermethrin",
+    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC",
+    "packSize": "250 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
+  },
+  {
+    "spreadsheetRow": 386,
+    "rawName": "HITMAN-500ML",
+    "displayName": "Hitman",
+    "company": {
+      "id": "xylon",
+      "name": "Xylon",
+      "fullName": "Xylon Agri Science",
+      "logoKey": "xylonLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorpyriphos + Cypermethrin",
+    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC",
+    "packSize": "500 ML",
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified"
   }
 ];
 
@@ -10873,7 +12760,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "40KG"
+      "40KG",
+      "40 KG"
     ],
     "variants": [
       {
@@ -10881,10 +12769,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 220,
         "rawName": "CROPTEK 8:21:21 -40KG",
         "isInStock": true
+      },
+      {
+        "packSize": "40 KG",
+        "spreadsheetRow": 289,
+        "rawName": "CROPTEK 8:21:21 -40KG",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      220
+      220,
+      289
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -10906,7 +12801,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "40KG"
+      "40KG",
+      "40 KG"
     ],
     "variants": [
       {
@@ -10914,10 +12810,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 221,
         "rawName": "CROPTEK 9:24:24 -40KG",
         "isInStock": true
+      },
+      {
+        "packSize": "40 KG",
+        "spreadsheetRow": 290,
+        "rawName": "CROPTEK 9:24:24 -40KG",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      221
+      221,
+      290
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -10939,7 +12842,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "40KG"
+      "40KG",
+      "40 KG"
     ],
     "variants": [
       {
@@ -10947,10 +12851,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 222,
         "rawName": "CROPTEK11:30:14 -40KG",
         "isInStock": true
+      },
+      {
+        "packSize": "40 KG",
+        "spreadsheetRow": 291,
+        "rawName": "CROPTEK11:30:14 -40KG",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      222
+      222,
+      291
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -10973,7 +12884,9 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "1LT",
-      "500ML"
+      "500ML",
+      "1 LT",
+      "500 ML"
     ],
     "variants": [
       {
@@ -10987,11 +12900,25 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 224,
         "rawName": "AKIO 500ML",
         "isInStock": true
+      },
+      {
+        "packSize": "1 LT",
+        "spreadsheetRow": 355,
+        "rawName": "AKIO 1LT",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 356,
+        "rawName": "AKIO 500ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       223,
-      224
+      224,
+      355,
+      356
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11015,7 +12942,10 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "packSizes": [
       "1000ML",
       "250ML",
-      "500ML"
+      "500ML",
+      "1000 ML",
+      "250 ML",
+      "500 ML"
     ],
     "variants": [
       {
@@ -11035,12 +12965,33 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 227,
         "rawName": "AKIRAN-500ML",
         "isInStock": true
+      },
+      {
+        "packSize": "1000 ML",
+        "spreadsheetRow": 308,
+        "rawName": "AKIRAN-1000ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 309,
+        "rawName": "AKIRAN-250ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 310,
+        "rawName": "AKIRAN-500ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       225,
       226,
-      227
+      227,
+      308,
+      309,
+      310
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11063,7 +13014,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "100ML",
-      "50 ML"
+      "50 ML",
+      "100 ML"
     ],
     "variants": [
       {
@@ -11077,11 +13029,18 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 229,
         "rawName": "ALECTO-50 ML",
         "isInStock": true
+      },
+      {
+        "packSize": "100 ML",
+        "spreadsheetRow": 347,
+        "rawName": "ALECTO-100ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       228,
-      229
+      229,
+      347
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11136,7 +13095,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "1LTR"
+      "1LTR",
+      "1 LTR"
     ],
     "variants": [
       {
@@ -11144,10 +13104,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 231,
         "rawName": "Amicus 1ltr",
         "isInStock": true
+      },
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 376,
+        "rawName": "Amicus 1ltr",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      231
+      231,
+      376
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11170,7 +13137,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "100GM",
-      "250 GM"
+      "250 GM",
+      "100 GM"
     ],
     "variants": [
       {
@@ -11184,11 +13152,18 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 233,
         "rawName": "ARGYLE-250 GM",
         "isInStock": true
+      },
+      {
+        "packSize": "100 GM",
+        "spreadsheetRow": 377,
+        "rawName": "ARGYLE-100GM",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       232,
-      233
+      233,
+      377
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11292,7 +13267,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "3KG"
+      "3KG",
+      "3 KG"
     ],
     "variants": [
       {
@@ -11300,10 +13276,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 238,
         "rawName": "BARROZ 3KG",
         "isInStock": true
+      },
+      {
+        "packSize": "3 KG",
+        "spreadsheetRow": 296,
+        "rawName": "BARROZ 3KG",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      238
+      238,
+      296
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11368,7 +13351,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "packSizes": [
       "1000 ML",
       "250 ML",
-      "500ML"
+      "500ML",
+      "500 ML"
     ],
     "variants": [
       {
@@ -11388,12 +13372,19 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 243,
         "rawName": "CROP MAX 500ML",
         "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 327,
+        "rawName": "CROP MAX 500ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       241,
       242,
-      243
+      243,
+      327
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11416,7 +13407,9 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "250GM",
-      "500GM"
+      "500GM",
+      "250 GM",
+      "500 GM"
     ],
     "variants": [
       {
@@ -11430,11 +13423,25 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 245,
         "rawName": "DECIDE-500GM",
         "isInStock": true
+      },
+      {
+        "packSize": "250 GM",
+        "spreadsheetRow": 328,
+        "rawName": "DECIDE-250GM",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 GM",
+        "spreadsheetRow": 329,
+        "rawName": "DECIDE-500GM",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       244,
-      245
+      245,
+      328,
+      329
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11456,7 +13463,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "6KG"
+      "6KG",
+      "6 KG"
     ],
     "variants": [
       {
@@ -11464,10 +13472,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 246,
         "rawName": "FERTERRA-6KG",
         "isInStock": true
+      },
+      {
+        "packSize": "6 KG",
+        "spreadsheetRow": 335,
+        "rawName": "FERTERRA-6KG",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      246
+      246,
+      335
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11524,7 +13539,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "packSizes": [
       "100 ML",
       "250 ML",
-      "500ML"
+      "500ML",
+      "500 ML"
     ],
     "variants": [
       {
@@ -11544,12 +13560,19 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 250,
         "rawName": "GALIGAN-500ML",
         "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 301,
+        "rawName": "GALIGAN-500ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       248,
       249,
-      250
+      250,
+      301
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11661,7 +13684,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "100GM"
+      "100GM",
+      "100 GM"
     ],
     "variants": [
       {
@@ -11669,10 +13693,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 256,
         "rawName": "HIBIFEN-100GM",
         "isInStock": true
+      },
+      {
+        "packSize": "100 GM",
+        "spreadsheetRow": 324,
+        "rawName": "HIBIFEN-100GM",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      256
+      256,
+      324
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11695,7 +13726,9 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "120ML",
-      "600ML"
+      "600ML",
+      "120 ML",
+      "600 ML"
     ],
     "variants": [
       {
@@ -11709,11 +13742,25 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 258,
         "rawName": "INCIPIO-600ML",
         "isInStock": true
+      },
+      {
+        "packSize": "120 ML",
+        "spreadsheetRow": 369,
+        "rawName": "INCIPIO-120ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "600 ML",
+        "spreadsheetRow": 370,
+        "rawName": "INCIPIO-600ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       257,
-      258
+      258,
+      369,
+      370
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11777,7 +13824,9 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "250ML",
-      "500ML"
+      "500ML",
+      "250 ML",
+      "500 ML"
     ],
     "variants": [
       {
@@ -11791,11 +13840,25 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 262,
         "rawName": "LANEVO-500ML",
         "isInStock": true
+      },
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 330,
+        "rawName": "LANEVO-250ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 331,
+        "rawName": "LANEVO-500ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       261,
-      262
+      262,
+      330,
+      331
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11818,7 +13881,9 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "300ML",
-      "600ML"
+      "600ML",
+      "300 ML",
+      "600 ML"
     ],
     "variants": [
       {
@@ -11832,11 +13897,25 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 264,
         "rawName": "LARVIRON-600ML",
         "isInStock": true
+      },
+      {
+        "packSize": "300 ML",
+        "spreadsheetRow": 381,
+        "rawName": "LARVIRON-300ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "600 ML",
+        "spreadsheetRow": 382,
+        "rawName": "LARVIRON-600ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       263,
-      264
+      264,
+      381,
+      382
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11902,7 +13981,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
       "100 ML",
       "1000 ML",
       "384 ML",
-      "200ML"
+      "200ML",
+      "200 ML"
     ],
     "variants": [
       {
@@ -11928,13 +14008,20 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 270,
         "rawName": "LUSTER-200ML",
         "isInStock": true
+      },
+      {
+        "packSize": "200 ML",
+        "spreadsheetRow": 332,
+        "rawName": "LUSTER-200ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       267,
       268,
       269,
-      270
+      270,
+      332
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -11958,7 +14045,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "packSizes": [
       "250 ML",
       "500 ML",
-      "1LTR"
+      "1LTR",
+      "1 LTR"
     ],
     "variants": [
       {
@@ -11978,12 +14066,19 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 273,
         "rawName": "Magister-1LTR",
         "isInStock": true
+      },
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 325,
+        "rawName": "Magister-1LTR",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       271,
       272,
-      273
+      273,
+      325
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -12005,7 +14100,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "4KG"
+      "4KG",
+      "4 KG"
     ],
     "variants": [
       {
@@ -12013,10 +14109,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 274,
         "rawName": "MYCORE SUPER-4KG",
         "isInStock": true
+      },
+      {
+        "packSize": "4 KG",
+        "spreadsheetRow": 333,
+        "rawName": "MYCORE SUPER-4KG",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      274
+      274,
+      333
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -12039,7 +14142,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "1000 ML",
-      "500ML"
+      "500ML",
+      "500 ML"
     ],
     "variants": [
       {
@@ -12053,11 +14157,18 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 276,
         "rawName": "NAGATA 500ML",
         "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 375,
+        "rawName": "NAGATA 500ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       275,
-      276
+      276,
+      375
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -12080,7 +14191,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "1000 ML",
-      "500ML"
+      "500ML",
+      "500 ML"
     ],
     "variants": [
       {
@@ -12094,11 +14206,18 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 278,
         "rawName": "PEDESTAL 500ML",
         "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 302,
+        "rawName": "PEDESTAL 500ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       277,
-      278
+      278,
+      302
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -12153,7 +14272,8 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "activeIngredient": null,
     "technicalName": null,
     "packSizes": [
-      "170ML"
+      "170ML",
+      "170 ML"
     ],
     "variants": [
       {
@@ -12161,10 +14281,17 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 280,
         "rawName": "PIRATE-170ML",
         "isInStock": true
+      },
+      {
+        "packSize": "170 ML",
+        "spreadsheetRow": 314,
+        "rawName": "PIRATE-170ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
-      280
+      280,
+      314
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -12220,7 +14347,9 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "technicalName": null,
     "packSizes": [
       "1LTR",
-      "500ML"
+      "500ML",
+      "1 LTR",
+      "500 ML"
     ],
     "variants": [
       {
@@ -12234,11 +14363,25 @@ export const PRODUCTS_CATALOGUE: Product[] = [
         "spreadsheetRow": 283,
         "rawName": "SLR-525 -500ML",
         "isInStock": true
+      },
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 345,
+        "rawName": "SLR 525 -1LTR",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 346,
+        "rawName": "SLR-525 -500ML",
+        "isInStock": true
       }
     ],
     "spreadsheetRows": [
       282,
-      283
+      283,
+      345,
+      346
     ],
     "isSpreadsheetVerified": true,
     "isTechnicalSpecVerified": false,
@@ -12326,37 +14469,1728 @@ export const PRODUCTS_CATALOGUE: Product[] = [
     "isTechnicalSpecVerified": false,
     "reviewStatus": "pending_technical_review",
     "image": "/products/pouch_fungicide.jpg"
+  },
+  {
+    "id": "coromandel-karbon-plus",
+    "name": "Karbon Plus",
+    "company": {
+      "id": "coromandel",
+      "name": "Coromandel",
+      "fullName": "Coromandel International Limited (Gromor)",
+      "logoKey": "coramandalLogo"
+    },
+    "mainCategory": "fertilizers",
+    "subCategory": "fertilizer",
+    "rawProductType": "Fertilizer",
+    "activeIngredient": "Carbon Enriched Complex Fertilizer",
+    "technicalName": "Carbon Enriched NPK Fertilizer",
+    "packSizes": [
+      "50 KG"
+    ],
+    "variants": [
+      {
+        "packSize": "50 KG",
+        "spreadsheetRow": 288,
+        "rawName": "Karbon Plus 50 Kg",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      288
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/fertilizer_bag_npk.jpg"
+  },
+  {
+    "id": "spic-keerthi",
+    "name": "Keerthi",
+    "company": {
+      "id": "spic",
+      "name": "SPIC",
+      "fullName": "Southern Petrochemical Industries (SPIC)",
+      "logoKey": "spicLogo"
+    },
+    "mainCategory": "fertilizers",
+    "subCategory": "fertilizer",
+    "rawProductType": "Fertilizer",
+    "activeIngredient": "Complex Fertilizer",
+    "technicalName": "SPIC Keerthi High Yield Fertilizer",
+    "packSizes": [
+      "50 KG"
+    ],
+    "variants": [
+      {
+        "packSize": "50 KG",
+        "spreadsheetRow": 292,
+        "rawName": "KEERTHI -50 KG",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      292
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/fertilizer_bag_urea.jpg"
+  },
+  {
+    "id": "adama-agil",
+    "name": "Agil",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Propaquizafop",
+    "technicalName": "Propaquizafop 10% EC",
+    "packSizes": [
+      "1 LT",
+      "250 ML",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LT",
+        "spreadsheetRow": 293,
+        "rawName": "AGIL 1LT",
+        "isInStock": true
+      },
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 294,
+        "rawName": "AGIL 250 ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 295,
+        "rawName": "AGIL 500 ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      293,
+      294,
+      295
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "adama-custodia-prime",
+    "name": "Custodia Prime",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Azoxystrobin + Tebuconazole",
+    "technicalName": "Azoxystrobin 11% + Tebuconazole 18.3% w/w SC",
+    "packSizes": [
+      "1 LTR",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 297,
+        "rawName": "CUSTODIA PRIME-1LTR",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 298,
+        "rawName": "CUSTODIA PRIME-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      297,
+      298
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/adama-custodia.webp"
+  },
+  {
+    "id": "adama-forabaz",
+    "name": "Forabaz",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorantraniliprole + Novaluron",
+    "technicalName": "Advanced Lepidopteran Broad Spectrum Insecticide",
+    "packSizes": [
+      "250 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 299,
+        "rawName": "FORABAZ-250ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      299
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "adama-forpido",
+    "name": "Forpido",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorantraniliprole 0.4% GR",
+    "technicalName": "Chlorantraniliprole 0.4% GR Soil Granules",
+    "packSizes": [
+      "3 KG"
+    ],
+    "variants": [
+      {
+        "packSize": "3 KG",
+        "spreadsheetRow": 300,
+        "rawName": "FORPIDO-3KG",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      300
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/pouch_fungicide.jpg"
+  },
+  {
+    "id": "adama-plethora",
+    "name": "Plethora",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Novaluron + Emamectin Benzoate",
+    "technicalName": "Novaluron 5.25% + Emamectin Benzoate 0.9% SC",
+    "packSizes": [
+      "1000 ML",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1000 ML",
+        "spreadsheetRow": 303,
+        "rawName": "PLETHORA 1000 ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 304,
+        "rawName": "PLETHORA 500 ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      303,
+      304
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "adama-trassid",
+    "name": "Trassid",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Pyrazosulfuron Ethyl",
+    "technicalName": "Pyrazosulfuron Ethyl 10% WP",
+    "packSizes": [
+      "250 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 305,
+        "rawName": "TRASSID-250ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      305
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "adama-upturn",
+    "name": "Upturn",
+    "company": {
+      "id": "adama",
+      "name": "ADAMA",
+      "fullName": "ADAMA India",
+      "logoKey": "adamaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Thiophanate Methyl + Kresoxim Methyl",
+    "technicalName": "Broad-Spectrum Protective & Curative Fungicide",
+    "packSizes": [
+      "1 LTR",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 306,
+        "rawName": "UPTURN-1LTR",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 307,
+        "rawName": "UPTURN-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      306,
+      307
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "aries_agro-agromin-max",
+    "name": "Agromin Max",
+    "company": {
+      "id": "aries_agro",
+      "name": "Aries Agro",
+      "fullName": "Aries Agro Ltd",
+      "logoKey": "ariesAgroLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "crop_protection_nutrition",
+    "rawProductType": "Micronutrients",
+    "activeIngredient": "Chelated Micronutrient Fertilizer",
+    "technicalName": "Multi-micronutrient Mineral Formulation",
+    "packSizes": [
+      "1 KG",
+      "500 GM"
+    ],
+    "variants": [
+      {
+        "packSize": "1 KG",
+        "spreadsheetRow": 311,
+        "rawName": "Agromin Max 1kg",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 GM",
+        "spreadsheetRow": 312,
+        "rawName": "AGROMIN MAX 500 GM",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      311,
+      312
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/pouch_fungicide.jpg"
+  },
+  {
+    "id": "basf-frivon",
+    "name": "Frivon",
+    "company": {
+      "id": "basf",
+      "name": "BASF",
+      "fullName": "BASF Agricultural Solutions",
+      "logoKey": "basfLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Afidopyropen",
+    "technicalName": "Afidopyropen 50 G/L DC",
+    "packSizes": [
+      "1 LTR"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 313,
+        "rawName": "FRIVON-1LTR",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      313
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "bayer-allitte",
+    "name": "Allitte",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Fosetyl-Al",
+    "technicalName": "Fosetyl-Al 80% WP (Aliette)",
+    "packSizes": [
+      "100 GM",
+      "250 GM",
+      "500 GM"
+    ],
+    "variants": [
+      {
+        "packSize": "100 GM",
+        "spreadsheetRow": 315,
+        "rawName": "ALLITTE 100 GM",
+        "isInStock": true
+      },
+      {
+        "packSize": "250 GM",
+        "spreadsheetRow": 316,
+        "rawName": "ALLITTE 250 GM",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 GM",
+        "spreadsheetRow": 317,
+        "rawName": "ALLITTE 500 GM",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      315,
+      316,
+      317
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bayer-antracal.webp"
+  },
+  {
+    "id": "bayer-camalus",
+    "name": "Camalus",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "adjuvant",
+    "rawProductType": "Surfactant / Adjuvant",
+    "activeIngredient": "Non-ionic Organosilicone Surfactant",
+    "technicalName": "Super Spreader & Penetrant Agricultural Adjuvant",
+    "packSizes": [
+      "400 ML",
+      "150 ML",
+      "300 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "400 ML",
+        "spreadsheetRow": 318,
+        "rawName": "CAMALUS SURFACTANT-400ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "150 ML",
+        "spreadsheetRow": 319,
+        "rawName": "CAMALUS-150ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "300 ML",
+        "spreadsheetRow": 320,
+        "rawName": "CAMALUS-300ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      318,
+      319,
+      320
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "bayer-trance",
+    "name": "Trance",
+    "company": {
+      "id": "bayer",
+      "name": "Bayer",
+      "fullName": "Bayer Crop Science",
+      "logoKey": "bayerLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "bio_stimulant",
+    "rawProductType": "Plant Bio-stimulant",
+    "activeIngredient": "Natural Plant Extracts & Amino Acids",
+    "technicalName": "Bio-efficacy Enhancer & Yield Stimulant",
+    "packSizes": [
+      "220 ML",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "220 ML",
+        "spreadsheetRow": 321,
+        "rawName": "TRANCE-220ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 322,
+        "rawName": "TRANCE-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      321,
+      322
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bayer-solomon.webp"
+  },
+  {
+    "id": "corteva-beam",
+    "name": "Beam",
+    "company": {
+      "id": "corteva",
+      "name": "Corteva",
+      "fullName": "Corteva Agriscience",
+      "logoKey": "cortevaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Tricyclazole",
+    "technicalName": "Tricyclazole 75% WP Blast Specialist",
+    "packSizes": [
+      "100 GM"
+    ],
+    "variants": [
+      {
+        "packSize": "100 GM",
+        "spreadsheetRow": 323,
+        "rawName": "Beam 100GM",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      323
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/corteva-curzate.webp"
+  },
+  {
+    "id": "corteva-miraculan",
+    "name": "Miraculan",
+    "company": {
+      "id": "corteva",
+      "name": "Corteva",
+      "fullName": "Corteva Agriscience",
+      "logoKey": "cortevaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "plant_growth_regulator",
+    "rawProductType": "PGR",
+    "activeIngredient": "Triacontanol",
+    "technicalName": "Triacontanol 0.05% EC Plant Growth Regulator",
+    "packSizes": [
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 326,
+        "rawName": "MIRACULAN -500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      326
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "fmc-etre",
+    "name": "Etre",
+    "company": {
+      "id": "fmc",
+      "name": "FMC",
+      "fullName": "FMC India",
+      "logoKey": "fmcLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Clothianidin",
+    "technicalName": "Clothianidin 50% WDG",
+    "packSizes": [
+      "500 GM"
+    ],
+    "variants": [
+      {
+        "packSize": "500 GM",
+        "spreadsheetRow": 334,
+        "rawName": "ETRE 500GM",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      334
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/pouch_fungicide.jpg"
+  },
+  {
+    "id": "fmc-furagro-legend",
+    "name": "Furagro Legend",
+    "company": {
+      "id": "fmc",
+      "name": "FMC",
+      "fullName": "FMC India",
+      "logoKey": "fmcLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "bio_stimulant",
+    "rawProductType": "Plant Activator",
+    "activeIngredient": "Humic & Fulvic Derivatives",
+    "technicalName": "FMC Legend Bio-nutrition Soil Activator",
+    "packSizes": [
+      "48 GM"
+    ],
+    "variants": [
+      {
+        "packSize": "48 GM",
+        "spreadsheetRow": 336,
+        "rawName": "FURAGRO LEGEND -48 GM",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      336
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/pouch_fungicide.jpg"
+  },
+  {
+    "id": "coromandel-phendal-plus",
+    "name": "Phendal Plus",
+    "company": {
+      "id": "coromandel",
+      "name": "Coromandel",
+      "fullName": "Coromandel International Limited (Gromor)",
+      "logoKey": "coramandalLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Phenthoate + Cypermethrin",
+    "technicalName": "Phenthoate 50% + Cypermethrin 5% EC",
+    "packSizes": [
+      "1 LTR",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 337,
+        "rawName": "PHENDAL PLUS 1LTR",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 338,
+        "rawName": "PHENDAL PLUS-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      337,
+      338
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "gsp-dronex",
+    "name": "Dronex",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Profenofos + Cypermethrin",
+    "technicalName": "Profenofos 40% + Cypermethrin 4% EC",
+    "packSizes": [
+      "1 LTR",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 339,
+        "rawName": "DRONEX-1LTR",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 340,
+        "rawName": "DRONEX-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      339,
+      340
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "gsp-element",
+    "name": "Element",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Pendimethalin",
+    "technicalName": "Pendimethalin 38.7% CS",
+    "packSizes": [
+      "250 ML",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 341,
+        "rawName": "ELEMENT-250ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 342,
+        "rawName": "ELEMENT-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      341,
+      342
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "gsp-esteem",
+    "name": "Esteem",
+    "company": {
+      "id": "gsp",
+      "name": "GSP",
+      "fullName": "GSP Crop Science",
+      "logoKey": "gspLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Pyriproxyfen",
+    "technicalName": "Pyriproxyfen 10% EC",
+    "packSizes": [
+      "1 LTR",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 343,
+        "rawName": "ESTEEM-1LTR",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 344,
+        "rawName": "ESTEEM-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      343,
+      344
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "indofil-avatar",
+    "name": "Avatar",
+    "company": {
+      "id": "indofil",
+      "name": "Indofil",
+      "fullName": "Indofil Industries",
+      "logoKey": "indofilLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Indoxacarb",
+    "technicalName": "Indoxacarb 14.5% SC",
+    "packSizes": [
+      "1 KG",
+      "500 GM"
+    ],
+    "variants": [
+      {
+        "packSize": "1 KG",
+        "spreadsheetRow": 348,
+        "rawName": "AVATAR 1 KG",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 GM",
+        "spreadsheetRow": 349,
+        "rawName": "AVATAR 500 GM",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      348,
+      349
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "nacl-fury-3g",
+    "name": "Fury 3g",
+    "company": {
+      "id": "nacl",
+      "name": "NACL",
+      "fullName": "NACL Industries",
+      "logoKey": "naclLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Lambda-cyhalothrin",
+    "technicalName": "Lambda-cyhalothrin 4.9% Capsule Suspension",
+    "packSizes": [
+      "5 KG"
+    ],
+    "variants": [
+      {
+        "packSize": "5 KG",
+        "spreadsheetRow": 350,
+        "rawName": "FURY 3G 5 KG",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      350
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/pouch_fungicide.jpg"
+  },
+  {
+    "id": "nacl-pest-lock",
+    "name": "Pest Lock",
+    "company": {
+      "id": "nacl",
+      "name": "NACL",
+      "fullName": "NACL Industries",
+      "logoKey": "naclLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorantraniliprole",
+    "technicalName": "Broad Spectrum Sucking & Borer Control",
+    "packSizes": [
+      "250 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 351,
+        "rawName": "PEST LOCK -250ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      351
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "nacl-temboguard",
+    "name": "Temboguard",
+    "company": {
+      "id": "nacl",
+      "name": "NACL",
+      "fullName": "NACL Industries",
+      "logoKey": "naclLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Tembotrione",
+    "technicalName": "Tembotrione 34.4% SC Post-emergence Corn Herbicide",
+    "packSizes": [
+      "115 ML",
+      "230 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "115 ML",
+        "spreadsheetRow": 352,
+        "rawName": "TEMBOGUARD-115ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "230 ML",
+        "spreadsheetRow": 353,
+        "rawName": "TEMBOGUARD-230ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      352,
+      353
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "nakasa-nandaka",
+    "name": "Nandaka",
+    "company": {
+      "id": "nakasa",
+      "name": "Nakasa",
+      "fullName": "Nakasa Crop Science",
+      "logoKey": "nakasaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Emamectin Benzoate + Thiamethoxam",
+    "technicalName": "Emamectin Benzoate 1.5% + Thiamethoxam 7.5% SC",
+    "packSizes": [
+      "250 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 354,
+        "rawName": "NANDAKA-250ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      354
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "nichino-katana",
+    "name": "Katana",
+    "company": {
+      "id": "nichino",
+      "name": "Nichino",
+      "fullName": "Nichino India",
+      "logoKey": "nichinoLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Tolfenpyrad",
+    "technicalName": "Tolfenpyrad 15% EC",
+    "packSizes": [
+      "100 GM"
+    ],
+    "variants": [
+      {
+        "packSize": "100 GM",
+        "spreadsheetRow": 357,
+        "rawName": "KATANA 100 GM",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      357
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "nova-hintara",
+    "name": "Hintara",
+    "company": {
+      "id": "nova",
+      "name": "Nova",
+      "fullName": "Nova AgriTech",
+      "logoKey": "novaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Thiamethoxam",
+    "technicalName": "Thiamethoxam 25% WG",
+    "packSizes": [
+      "1 LTR",
+      "250 ML",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 358,
+        "rawName": "HINTARA-1LTR",
+        "isInStock": true
+      },
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 359,
+        "rawName": "HINTARA-250ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 360,
+        "rawName": "HINTARA-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      358,
+      359,
+      360
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/pouch_fungicide.jpg"
+  },
+  {
+    "id": "nova-terminator-gold-3d-action",
+    "name": "Terminator Gold 3d Action",
+    "company": {
+      "id": "nova",
+      "name": "Nova",
+      "fullName": "Nova AgriTech",
+      "logoKey": "novaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorpyriphos + Cypermethrin",
+    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC Triple Action",
+    "packSizes": [
+      "250 ML",
+      "500 ML",
+      "1 LTR"
+    ],
+    "variants": [
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 361,
+        "rawName": "TERMINATOR GOLD 3D ACTION 250 ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 362,
+        "rawName": "TERMINATOR GOLD 3D ACTION 500ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 363,
+        "rawName": "Terminatorgold 3D ACTION 1LR",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      361,
+      362,
+      363
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "pi_industries-biovita-x",
+    "name": "Biovita X",
+    "company": {
+      "id": "pi_industries",
+      "name": "PI Industries",
+      "fullName": "PI Industries",
+      "logoKey": "piIndustriesLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "bio_stimulant",
+    "rawProductType": "Bio-stimulant",
+    "activeIngredient": "Ascophyllum Nodosum Marine Algae Extract",
+    "technicalName": "Seaweed Extract Bio-stimulant with 60+ Natural Micronutrients",
+    "packSizes": [
+      "1000 ML",
+      "4 KG"
+    ],
+    "variants": [
+      {
+        "packSize": "1000 ML",
+        "spreadsheetRow": 364,
+        "rawName": "BIOVITA X 1000 ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "4 KG",
+        "spreadsheetRow": 365,
+        "rawName": "BIOVITA X 4KG",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      364,
+      365
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "syngenta-clavengo",
+    "name": "Clavengo",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Plinazolin Technology",
+    "technicalName": "Isocycloseram 10% DC Advanced Lepidoptera Protection",
+    "packSizes": [
+      "1 LTR"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 366,
+        "rawName": "CLAVENGO-1LTR",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      366
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "syngenta-elestal-neo",
+    "name": "Elestal Neo",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Spiropidion",
+    "technicalName": "Spiropidion 300 g/L SC Sucking Pest Solution",
+    "packSizes": [
+      "100 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "100 ML",
+        "spreadsheetRow": 367,
+        "rawName": "ELESTAL NEO-100ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      367
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "syngenta-fusiflex",
+    "name": "Fusiflex",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Fluazifop-p-butyl + Fomesafen",
+    "technicalName": "Fluazifop-p-butyl 11.1% + Fomesafen 11.1% SL",
+    "packSizes": [
+      "400 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "400 ML",
+        "spreadsheetRow": 368,
+        "rawName": "FUSIFLEX 400 ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      368
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "syngenta-rifit",
+    "name": "Rifit",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Pretilachlor",
+    "technicalName": "Pretilachlor 50% EC Paddy Weed Specialist",
+    "packSizes": [
+      "1000 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1000 ML",
+        "spreadsheetRow": 371,
+        "rawName": "RIFIT 1000 ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      371
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "syngenta-vestoria-pro",
+    "name": "Vestoria Pro",
+    "company": {
+      "id": "syngenta",
+      "name": "Syngenta",
+      "fullName": "Syngenta India",
+      "logoKey": "syngentaLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Triflumuron",
+    "technicalName": "Triflumuron 39.35% SC Brown Planthopper Specialist",
+    "packSizes": [
+      "400 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "400 ML",
+        "spreadsheetRow": 372,
+        "rawName": "VESTORIA PRO-400ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      372
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "tata-fuzione",
+    "name": "Fuzione",
+    "company": {
+      "id": "tata",
+      "name": "Tata",
+      "fullName": "Tata Rallis India",
+      "logoKey": "tataLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Picoxystrobin + Tricyclazole",
+    "technicalName": "Picoxystrobin 7.05% + Tricyclazole 21.16% SC",
+    "packSizes": [
+      "1000 ML",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1000 ML",
+        "spreadsheetRow": 373,
+        "rawName": "FUZIONE 1000 ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 374,
+        "rawName": "FUZIONE 500 ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      373,
+      374
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "upl-atabron",
+    "name": "Atabron",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorfluazuron",
+    "technicalName": "Chlorfluazuron 5.4% EC IGR Insecticide",
+    "packSizes": [
+      "1 LT"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LT",
+        "spreadsheetRow": 378,
+        "rawName": "ATABRON 1LT",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      378
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "upl-brucia",
+    "name": "Brucia",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "herbicide",
+    "rawProductType": "Herbicide",
+    "activeIngredient": "Bispyribac Sodium + Penoxsulam",
+    "technicalName": "Broad Spectrum Rice Herbicide",
+    "packSizes": [
+      "400 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "400 ML",
+        "spreadsheetRow": 379,
+        "rawName": "BRUCIA-400ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      379
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "upl-gunther",
+    "name": "Gunther",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Novaluron + Indoxacarb",
+    "technicalName": "Novaluron 5.25% + Indoxacarb 4.5% SC",
+    "packSizes": [
+      "1 LTR"
+    ],
+    "variants": [
+      {
+        "packSize": "1 LTR",
+        "spreadsheetRow": 380,
+        "rawName": "GUNTHER 1LTR",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      380
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
+  },
+  {
+    "id": "upl-tridium",
+    "name": "Tridium",
+    "company": {
+      "id": "upl",
+      "name": "UPL",
+      "fullName": "UPL Limited",
+      "logoKey": "uplLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "fungicide",
+    "rawProductType": "Fungicide",
+    "activeIngredient": "Mancozeb + Azoxystrobin + Tebuconazole",
+    "technicalName": "Mancozeb 60% + Azoxystrobin 3.5% + Tebuconazole 7% WG",
+    "packSizes": [
+      "400 GM"
+    ],
+    "variants": [
+      {
+        "packSize": "400 GM",
+        "spreadsheetRow": 383,
+        "rawName": "TRIDIUM-400GM",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      383
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/pouch_fungicide.jpg"
+  },
+  {
+    "id": "xylon-hitman",
+    "name": "Hitman",
+    "company": {
+      "id": "xylon",
+      "name": "Xylon",
+      "fullName": "Xylon Agri Science",
+      "logoKey": "xylonLogo"
+    },
+    "mainCategory": "pesticides",
+    "subCategory": "insecticide",
+    "rawProductType": "Insecticide",
+    "activeIngredient": "Chlorpyriphos + Cypermethrin",
+    "technicalName": "Chlorpyriphos 50% + Cypermethrin 5% EC",
+    "packSizes": [
+      "1000 ML",
+      "250 ML",
+      "500 ML"
+    ],
+    "variants": [
+      {
+        "packSize": "1000 ML",
+        "spreadsheetRow": 384,
+        "rawName": "HITMAN-1000ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "250 ML",
+        "spreadsheetRow": 385,
+        "rawName": "HITMAN-250ML",
+        "isInStock": true
+      },
+      {
+        "packSize": "500 ML",
+        "spreadsheetRow": 386,
+        "rawName": "HITMAN-500ML",
+        "isInStock": true
+      }
+    ],
+    "spreadsheetRows": [
+      384,
+      385,
+      386
+    ],
+    "isSpreadsheetVerified": true,
+    "isTechnicalSpecVerified": true,
+    "reviewStatus": "verified",
+    "image": "/products/bottle_insecticide.jpg"
   }
 ];
 
 export const ALL_COMPANIES: CompanyInfo[] = [
-  { id: 'adama', name: 'ADAMA', fullName: 'ADAMA India', logoKey: 'adamaLogo' },
-  { id: 'agrishine', name: 'Agrishine', fullName: 'Agrishine Crop Sciences', logoKey: 'agrishineLogo' },
-  { id: 'basf', name: 'BASF', fullName: 'BASF Agricultural Solutions', logoKey: 'basfLogo' },
-  { id: 'bayer', name: 'Bayer', fullName: 'Bayer Crop Science', logoKey: 'bayerLogo' },
-  { id: 'coromandel', name: 'Coromandel', fullName: 'Coromandel International Limited (Gromor)', logoKey: 'coramandalLogo' },
-  { id: 'corteva', name: 'Corteva', fullName: 'Corteva Agriscience', logoKey: 'cortevaLogo' },
-  { id: 'dhanuka', name: 'Dhanuka', fullName: 'Dhanuka Agritech Limited', logoKey: 'dhanukaLogo' },
-  { id: 'fact', name: 'FACT', fullName: 'The Fertilisers and Chemicals Travancore (FACT)', logoKey: 'factLogo' },
-  { id: 'fmc', name: 'FMC', fullName: 'FMC India', logoKey: 'fmcLogo' },
-  { id: 'gharda', name: 'Gharda Chemicals', fullName: 'Gharda Chemicals Limited', logoKey: 'garudhaLogo' },
-  { id: 'gsp', name: 'GSP Crop Science', fullName: 'GSP Crop Science Pvt Ltd', logoKey: 'gspLogo' },
-  { id: 'iffco', name: 'IFFCO', fullName: 'Indian Farmers Fertiliser Cooperative (IFFCO)', logoKey: 'iffcoLogo' },
-  { id: 'indofil', name: 'Indofil', fullName: 'Indofil Industries Limited', logoKey: 'indofilLogo' },
-  { id: 'ipl', name: 'IPL', fullName: 'Indian Potash Limited (IPL)', logoKey: 'iplLogo' },
-  { id: 'kribhco', name: 'KRIBHCO', fullName: 'Krishak Bharati Cooperative Limited (KRIBHCO)', logoKey: 'kribhcoLogo' },
-  { id: 'mahadhan', name: 'Mahadhan', fullName: 'Mahadhan (Smartchem Technologies)', logoKey: 'mahadhanLogo' },
-  { id: 'nacl', name: 'NACL', fullName: 'NACL Industries Limited', logoKey: 'naclLogo' },
-  { id: 'nova', name: 'Nova', fullName: 'Nova Agri Tech Limited', logoKey: 'novaLogo' },
-  { id: 'nichino', name: 'Nichino', fullName: 'Nichino India Pvt Ltd', logoKey: 'nichinoLogo' },
-  { id: 'pi_industries', name: 'PI Industries', fullName: 'PI Industries Limited', logoKey: 'piIndustriesLogo' },
-  { id: 'ppl', name: 'PPL', fullName: 'Paradeep Phosphates Limited (PPL)', logoKey: 'pplLogo' },
-  { id: 'spic', name: 'SPIC', fullName: 'Southern Petrochemical Industries Corporation (SPIC)', logoKey: 'spicLogo' },
-  { id: 'sumitomo', name: 'Sumitomo', fullName: 'Sumitomo Chemical India Limited', logoKey: 'sumitomoLogo' },
-  { id: 'syngenta', name: 'Syngenta', fullName: 'Syngenta India Limited', logoKey: 'syngentaLogo' },
-  { id: 'tata', name: 'Tata Rallis', fullName: 'Tata Chemicals / Rallis India', logoKey: 'tataLogo' },
-  { id: 'tropical', name: 'Tropical Agro', fullName: 'Tropical Agrosystem India', logoKey: 'tropicalLogo' },
-  { id: 'upl', name: 'UPL', fullName: 'UPL Limited', logoKey: 'uplLogo' },
+  {
+    "id": "adama",
+    "name": "ADAMA",
+    "fullName": "ADAMA India",
+    "logoKey": "adamaLogo"
+  },
+  {
+    "id": "agrishine",
+    "name": "Agrishine",
+    "fullName": "Agrishine Crop Care",
+    "logoKey": "agrishineLogo"
+  },
+  {
+    "id": "aries_agro",
+    "name": "Aries Agro",
+    "fullName": "Aries Agro Ltd",
+    "logoKey": "ariesAgroLogo"
+  },
+  {
+    "id": "basf",
+    "name": "BASF",
+    "fullName": "BASF Agricultural Solutions",
+    "logoKey": "basfLogo"
+  },
+  {
+    "id": "bayer",
+    "name": "Bayer",
+    "fullName": "Bayer Crop Science",
+    "logoKey": "bayerLogo"
+  },
+  {
+    "id": "coromandel",
+    "name": "Coromandel",
+    "fullName": "Coromandel International Limited (Gromor)",
+    "logoKey": "coramandalLogo"
+  },
+  {
+    "id": "corteva",
+    "name": "Corteva",
+    "fullName": "Corteva Agriscience",
+    "logoKey": "cortevaLogo"
+  },
+  {
+    "id": "dhanuka",
+    "name": "Dhanuka",
+    "fullName": "Dhanuka Agritech",
+    "logoKey": "dhanukaLogo"
+  },
+  {
+    "id": "fmc",
+    "name": "FMC",
+    "fullName": "FMC India",
+    "logoKey": "fmcLogo"
+  },
+  {
+    "id": "gsp",
+    "name": "GSP",
+    "fullName": "GSP Crop Science",
+    "logoKey": "gspLogo"
+  },
+  {
+    "id": "indofil",
+    "name": "Indofil",
+    "fullName": "Indofil Industries",
+    "logoKey": "indofilLogo"
+  },
+  {
+    "id": "mahadhan",
+    "name": "Mahadhan",
+    "fullName": "Smartchem Technologies (Mahadhan)",
+    "logoKey": "mahadhanLogo"
+  },
+  {
+    "id": "nacl",
+    "name": "NACL",
+    "fullName": "NACL Industries",
+    "logoKey": "naclLogo"
+  },
+  {
+    "id": "nakasa",
+    "name": "Nakasa",
+    "fullName": "Nakasa Crop Science",
+    "logoKey": "nakasaLogo"
+  },
+  {
+    "id": "nichino",
+    "name": "Nichino",
+    "fullName": "Nichino India",
+    "logoKey": "nichinoLogo"
+  },
+  {
+    "id": "nova",
+    "name": "Nova",
+    "fullName": "Nova AgriTech",
+    "logoKey": "novaLogo"
+  },
+  {
+    "id": "pi_industries",
+    "name": "PI Industries",
+    "fullName": "PI Industries",
+    "logoKey": "piIndustriesLogo"
+  },
+  {
+    "id": "spic",
+    "name": "SPIC",
+    "fullName": "Southern Petrochemical Industries (SPIC)",
+    "logoKey": "spicLogo"
+  },
+  {
+    "id": "syngenta",
+    "name": "Syngenta",
+    "fullName": "Syngenta India",
+    "logoKey": "syngentaLogo"
+  },
+  {
+    "id": "tata",
+    "name": "Tata",
+    "fullName": "Tata Rallis India",
+    "logoKey": "tataLogo"
+  },
+  {
+    "id": "upl",
+    "name": "UPL",
+    "fullName": "UPL Limited",
+    "logoKey": "uplLogo"
+  },
+  {
+    "id": "xylon",
+    "name": "Xylon",
+    "fullName": "Xylon Agri Science",
+    "logoKey": "xylonLogo"
+  }
 ];
 
 export const CATEGORY_DEFINITIONS = [

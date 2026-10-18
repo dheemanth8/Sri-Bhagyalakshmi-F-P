@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+  <rect width="320" height="100" rx="16" fill="#FFFFFF"/>
+  <circle cx="55" cy="50" r="32" fill="#0B723B"/>
+  <path d="M42 58 C42 42, 68 42, 68 58 M47 50 C47 36, 63 36, 63 50" stroke="#F4B942" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="105" y="52" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="#0B723B">ARIES</text>
+  <text x="105" y="76" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#D49B24" letter-spacing="2">AGRO LTD</text>
+</svg>
