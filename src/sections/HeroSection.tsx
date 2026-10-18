@@ -180,13 +180,13 @@ export const HeroSection: React.FC = () => {
           right: 0;
           bottom: 0;
           background: 
-            radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.24) 0%, transparent 60%),
-            radial-gradient(circle at 20% 80%, rgba(234, 88, 12, 0.18) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.32) 0%, transparent 60%),
+            radial-gradient(circle at 20% 80%, rgba(234, 88, 12, 0.25) 0%, transparent 50%),
             linear-gradient(
               135deg,
-              rgba(38, 28, 20, 0.94) 0%,
-              rgba(48, 34, 24, 0.89) 55%,
-              rgba(64, 45, 32, 0.84) 100%
+              rgba(15, 23, 42, 0.93) 0%,
+              rgba(30, 41, 59, 0.88) 50%,
+              rgba(15, 23, 42, 0.94) 100%
             );
         }
 
@@ -290,7 +290,7 @@ export const HeroSection: React.FC = () => {
 
         .hero-subheadline {
           font-size: 1.15rem;
-          color: #F5EBE1;
+          color: #F1F5F9;
           line-height: 1.75;
           margin-bottom: 2.5rem;
           max-width: 660px;
@@ -385,7 +385,7 @@ export const HeroSection: React.FC = () => {
         }
         .stat-label {
           font-size: 0.88rem;
-          color: #E6D8CA;
+          color: #E2E8F0;
           margin-top: 0.35rem;
           line-height: 1.45;
           font-weight: 500;
@@ -402,7 +402,7 @@ export const HeroSection: React.FC = () => {
           }
         }
         .hero-seal-card {
-          background: rgba(38, 28, 20, 0.90);
+          background: rgba(15, 23, 42, 0.88);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
           border: 2px solid rgba(245, 158, 11, 0.45);
@@ -460,7 +460,7 @@ export const HeroSection: React.FC = () => {
         .hero-seal-sub {
           font-size: 0.86rem;
           font-weight: 500;
-          color: #D6C7B7;
+          color: #E2E8F0;
           margin: 0;
           line-height: 1.4;
         }
