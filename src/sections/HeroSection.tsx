@@ -180,13 +180,13 @@ export const HeroSection: React.FC = () => {
           right: 0;
           bottom: 0;
           background: 
-            radial-gradient(circle at 75% 20%, rgba(245, 158, 11, 0.32) 0%, transparent 55%),
-            radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.25) 0%, transparent 60%),
+            radial-gradient(circle at 75% 20%, rgba(245, 158, 11, 0.28) 0%, transparent 55%),
+            radial-gradient(circle at 15% 85%, rgba(13, 59, 31, 0.55) 0%, transparent 60%),
             linear-gradient(
               135deg,
-              rgba(6, 78, 59, 0.94) 0%,
-              rgba(5, 150, 105, 0.86) 45%,
-              rgba(4, 120, 87, 0.90) 100%
+              rgba(7, 39, 20, 0.95) 0%,
+              rgba(13, 59, 31, 0.91) 45%,
+              rgba(20, 83, 45, 0.88) 100%
             );
         }
 
@@ -369,23 +369,23 @@ export const HeroSection: React.FC = () => {
           }
         }
         .hero-seal-card {
-          background: linear-gradient(145deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.06) 100%);
+          background: linear-gradient(145deg, rgba(250, 246, 238, 0.22) 0%, rgba(250, 246, 238, 0.08) 100%);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
-          border: 2px solid rgba(245, 158, 11, 0.65);
+          border: 2px solid rgba(245, 158, 11, 0.7);
           border-radius: var(--radius-xl);
           padding: 2.25rem 2rem;
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
-          box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28), 0 0 35px rgba(245, 158, 11, 0.22);
+          box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), 0 0 35px rgba(245, 158, 11, 0.25);
           max-width: 320px;
           transition: transform var(--transition-normal), box-shadow var(--transition-normal);
         }
         .hero-seal-card:hover {
           transform: translateY(-4px) scale(1.02);
-          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35), 0 0 45px rgba(245, 158, 11, 0.35);
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 45px rgba(245, 158, 11, 0.4);
         }
         .hero-seal-picture {
           display: flex;
@@ -397,9 +397,9 @@ export const HeroSection: React.FC = () => {
           aspect-ratio: 1 / 1;
           border-radius: 50%;
           border: 3.5px solid #F59E0B;
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 25px rgba(245, 158, 11, 0.4);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 25px rgba(245, 158, 11, 0.45);
           margin-bottom: 1.25rem;
-          background: #fff;
+          background: #FAF6EE;
         }
         .hero-seal-text {
           display: flex;

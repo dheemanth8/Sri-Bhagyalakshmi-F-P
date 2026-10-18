@@ -16,7 +16,7 @@ html {
 body {
   font-family: var(--font-en);
   color: var(--color-dark-charcoal);
-  background-color: var(--color-white);
+  background-color: var(--color-cream-base);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -175,21 +175,21 @@ button {
 }
 
 .btn-primary {
-  background: var(--gradient-emerald-vibrant);
-  color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.35);
+  background: var(--gradient-forest-vibrant);
+  color: var(--color-cream-surface);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 18px rgba(13, 59, 31, 0.35);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #059669 0%, #047857 50%, #064E3B 100%);
+  background: linear-gradient(135deg, #072714 0%, #0D3B1F 50%, #14532D 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.45);
+  box-shadow: 0 8px 24px rgba(13, 59, 31, 0.45);
 }
 
 .btn-gold {
   background: var(--gradient-gold-vibrant);
-  color: #064E3B;
+  color: #072714;
   font-weight: 800;
   border: 1px solid rgba(245, 158, 11, 0.4);
   box-shadow: var(--shadow-gold);
@@ -203,31 +203,31 @@ button {
 }
 
 .btn-outline {
-  border: 1.5px solid var(--color-agricultural-green);
-  color: var(--color-forest-green);
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 8px rgba(6, 78, 59, 0.06);
+  border: 1.5px solid var(--color-forest-green);
+  color: var(--color-forest-dark);
+  background-color: var(--color-cream-surface);
+  box-shadow: 0 2px 8px rgba(13, 59, 31, 0.06);
 }
 
 .btn-outline:hover {
-  background-color: var(--color-agricultural-green-subtle);
-  border-color: var(--color-forest-green);
-  color: var(--color-forest-green-dark);
+  background-color: var(--color-forest-dark);
+  border-color: var(--color-forest-deep);
+  color: var(--color-cream-surface);
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.18);
+  box-shadow: 0 4px 14px rgba(13, 59, 31, 0.25);
 }
 
 .btn-outline-white {
-  border: 1.5px solid rgba(255, 255, 255, 0.85);
-  color: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(250, 246, 238, 0.85);
+  color: #FAF6EE;
+  background-color: rgba(250, 246, 238, 0.12);
   backdrop-filter: blur(10px);
 }
 
 .btn-outline-white:hover {
-  background-color: #FFFFFF;
-  color: var(--color-forest-green-dark);
-  border-color: #FFFFFF;
+  background-color: #FAF6EE;
+  color: var(--color-forest-dark);
+  border-color: #FAF6EE;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
@@ -243,10 +243,10 @@ button {
   border-radius: var(--radius-lg);
 }
 
-/* Card Surface Utility with Vibrant Glow & Elevation */
+/* Card Surface Utility with Warm Cream & Forest Hover Elevation */
 .card-surface {
-  background-color: #FFFFFF;
-  border: 1.5px solid rgba(16, 185, 129, 0.18);
+  background-color: var(--color-cream-surface);
+  border: 1.5px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
   transition: all var(--transition-normal);

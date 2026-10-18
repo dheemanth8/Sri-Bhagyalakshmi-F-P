@@ -413,17 +413,17 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
         }
 
         .brand-modal-dialog {
-          background: #FFFFFF;
+          background: var(--color-cream-surface);
           border-radius: var(--radius-xl);
           width: 100%;
           max-width: 1180px;
           max-height: 92vh;
           display: flex;
           flex-direction: column;
-          box-shadow: 0 25px 60px -12px rgba(6, 78, 59, 0.35);
+          box-shadow: 0 25px 60px -12px rgba(7, 39, 20, 0.45);
           overflow: hidden;
           animation: brandDialogSlide 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-          border: 2px solid rgba(16, 185, 129, 0.3);
+          border: 2px solid var(--color-border-subtle);
         }
 
         @keyframes brandDialogSlide {
@@ -443,8 +443,8 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           align-items: flex-start;
           justify-content: space-between;
           padding: 1.5rem 1.75rem 1.25rem;
-          background: linear-gradient(180deg, #FFFFFF 0%, #F8FAF7 100%);
-          border-bottom: 1.5px solid rgba(16, 185, 129, 0.18);
+          background: linear-gradient(180deg, #FFFEFB 0%, #FAF6EE 100%);
+          border-bottom: 1.5px solid var(--color-border-subtle);
           gap: 1.25rem;
         }
 
@@ -620,10 +620,10 @@ export const BrandProductsModal: React.FC<BrandProductsModalProps> = ({
           background: rgba(16, 185, 129, 0.08);
         }
         .brand-modal__tab-btn--active {
-          background: linear-gradient(135deg, #059669 0%, #064E3B 100%);
-          color: #FFFFFF;
-          border-color: #064E3B;
-          box-shadow: 0 2px 8px rgba(5, 150, 105, 0.35);
+          background: var(--gradient-forest-vibrant);
+          color: #FAF6EE;
+          border-color: var(--color-golden-yellow);
+          box-shadow: 0 2px 8px rgba(13, 59, 31, 0.35);
         }
         .tab-count {
           opacity: 0.85;

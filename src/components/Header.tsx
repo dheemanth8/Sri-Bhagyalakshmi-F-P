@@ -233,19 +233,20 @@ export const Header: React.FC = () => {
           width: 100%;
         }
 
-        /* Main Nav */
+        /* Main Nav - Regal Forest Green & Warm Cream */
         .main-nav {
-          background: rgba(255, 255, 255, 0.96);
+          background: linear-gradient(135deg, #072714 0%, #0D3B1F 55%, #14532D 100%);
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
-          border-top: 3px solid var(--color-golden-yellow);
-          border-bottom: 1px solid rgba(16, 185, 129, 0.18);
+          border-top: 3.5px solid var(--color-golden-yellow);
+          border-bottom: 1.5px solid rgba(245, 158, 11, 0.35);
+          box-shadow: 0 4px 20px rgba(7, 39, 20, 0.35);
           transition: all var(--transition-normal);
         }
         .main-nav--scrolled {
-          background: rgba(255, 255, 255, 0.98);
-          box-shadow: 0 4px 24px rgba(6, 78, 59, 0.1), 0 1px 0 rgba(245, 158, 11, 0.3);
-          border-bottom-color: rgba(245, 158, 11, 0.4);
+          background: rgba(7, 39, 20, 0.96);
+          box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.45), 0 1px 0 rgba(245, 158, 11, 0.45);
+          border-bottom-color: var(--color-golden-yellow);
         }
         .main-nav__inner {
           display: flex;
@@ -259,14 +260,18 @@ export const Header: React.FC = () => {
         .brand-identity {
           display: flex;
           align-items: center;
-          gap: 0.6rem;
+          gap: 0.65rem;
           text-decoration: none;
           min-width: 0;
           flex-shrink: 0;
+          transition: transform var(--transition-fast);
+        }
+        .brand-identity:hover {
+          transform: translateY(-1px);
         }
         @media (min-width: 640px) {
           .brand-identity {
-            gap: 0.75rem;
+            gap: 0.85rem;
           }
         }
         @media (min-width: 1024px) {
@@ -287,9 +292,14 @@ export const Header: React.FC = () => {
           border-radius: var(--radius-full);
           border: 2px solid var(--color-golden-yellow);
           overflow: hidden;
-          box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25), 0 4px 12px rgba(6, 78, 59, 0.15);
+          box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.35), 0 4px 14px rgba(0, 0, 0, 0.35);
           flex-shrink: 0;
-          background: #fff;
+          background: #FAF6EE;
+          transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+        .brand-identity:hover .logo-box {
+          transform: scale(1.06);
+          box-shadow: 0 0 0 3px var(--color-golden-yellow), 0 6px 18px rgba(245, 158, 11, 0.5);
         }
         @media (min-width: 640px) {
           .logo-box {
@@ -325,36 +335,38 @@ export const Header: React.FC = () => {
           text-overflow: ellipsis;
         }
         .brand-name-en {
-          font-size: 1rem;
-          color: var(--color-forest-green-dark);
+          font-size: 1.05rem;
+          color: #FFFEFB;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
         .brand-name-te {
-          font-size: 1.08rem;
-          color: var(--color-forest-green);
+          font-size: 1.15rem;
+          color: #FEF3C7;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
         @media (min-width: 640px) {
           .brand-name-en {
-            font-size: 1.12rem;
+            font-size: 1.15rem;
           }
           .brand-name-te {
-            font-size: 1.22rem;
+            font-size: 1.25rem;
           }
         }
         @media (min-width: 1280px) {
           .brand-name-en {
-            font-size: 1.2rem;
+            font-size: 1.22rem;
           }
           .brand-name-te {
-            font-size: 1.3rem;
+            font-size: 1.34rem;
           }
         }
 
         .brand-meta {
-          color: var(--color-charcoal-muted);
+          color: #D2C8B0;
           font-weight: 600;
           margin-top: 2px;
           white-space: nowrap;
-          letter-spacing: 0.01em;
+          letter-spacing: 0.02em;
           overflow: hidden;
           text-overflow: ellipsis;
         }
@@ -393,7 +405,7 @@ export const Header: React.FC = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 1rem;
+          gap: 0.75rem;
           list-style: none;
           margin: 0;
           padding: 0;
@@ -401,54 +413,57 @@ export const Header: React.FC = () => {
         }
         @media (min-width: 1180px) {
           .nav-links {
-            gap: 1.4rem;
+            gap: 1.15rem;
           }
         }
         @media (min-width: 1280px) {
           .nav-links {
-            gap: 1.75rem;
+            gap: 1.5rem;
           }
         }
         @media (min-width: 1440px) {
           .nav-links {
-            gap: 2.25rem;
+            gap: 2rem;
           }
         }
 
+        /* Interactive Nav Link Pill Hover Effect */
         .nav-link {
           font-size: 0.94rem;
-          font-weight: 600;
-          color: var(--color-dark-charcoal);
+          font-weight: 700;
+          color: #F4EEDF;
           position: relative;
-          padding: 0.4rem 0.6rem;
-          white-space: nowrap; /* CRITICAL: Never break text into multiple lines */
+          padding: 0.45rem 0.85rem;
+          white-space: nowrap;
           display: inline-block;
-          border-radius: var(--radius-sm);
-          transition: color var(--transition-fast), background-color var(--transition-fast);
+          border-radius: var(--radius-full);
+          transition: all var(--transition-fast);
         }
         @media (min-width: 1280px) {
           .nav-link {
             font-size: 0.98rem;
-            padding: 0.45rem 0.75rem;
+            padding: 0.5rem 0.95rem;
           }
         }
         .nav-link:hover {
-          color: var(--color-forest-green-dark);
-          background-color: rgba(16, 185, 129, 0.1);
+          color: #FEF3C7;
+          background-color: rgba(250, 246, 238, 0.15);
+          transform: translateY(-2px);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
         .nav-link::after {
           content: '';
           position: absolute;
-          bottom: 0;
-          left: 0.6rem;
-          right: 0.6rem;
-          height: 3px;
-          background: linear-gradient(90deg, #F59E0B 0%, #10B981 100%);
+          bottom: 4px;
+          left: 0.85rem;
+          right: 0.85rem;
+          height: 2.5px;
+          background: linear-gradient(90deg, #F59E0B 0%, #FEF08A 100%);
           transform: scaleX(0);
           transform-origin: center;
           transition: transform var(--transition-fast);
           border-radius: var(--radius-full);
-          box-shadow: 0 1px 4px rgba(245, 158, 11, 0.4);
+          box-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
         }
         .nav-link:hover::after {
           transform: scaleX(1);
@@ -474,6 +489,38 @@ export const Header: React.FC = () => {
           }
         }
 
+        /* Language Switcher Styling in Forest Green Header */
+        .header-wrapper .language-switcher {
+          background: rgba(250, 246, 238, 0.12);
+          border: 1.5px solid rgba(250, 246, 238, 0.25);
+          backdrop-filter: blur(8px);
+          color: #FAF6EE;
+        }
+        .header-wrapper .language-switcher:hover {
+          border-color: var(--color-golden-yellow);
+          background: rgba(250, 246, 238, 0.2);
+          box-shadow: 0 0 12px rgba(245, 158, 11, 0.35);
+        }
+        .header-wrapper .lang-icon {
+          color: var(--color-golden-yellow-light);
+        }
+        .header-wrapper .lang-btn {
+          color: #FAF6EE;
+        }
+        .header-wrapper .lang-btn:hover {
+          color: #FEF3C7;
+        }
+        .header-wrapper .lang-btn--active {
+          background: #FAF6EE;
+          color: #072714;
+          border-color: #FAF6EE;
+          font-weight: 800;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+        }
+        .header-wrapper .lang-divider {
+          color: rgba(250, 246, 238, 0.4);
+        }
+
         /* Mobile Hamburger & Actions */
         .mobile-actions {
           display: flex;
@@ -497,33 +544,35 @@ export const Header: React.FC = () => {
           flex-shrink: 0;
         }
         .mobile-lang-compact .lang-icon {
-          display: none; /* Hide icon on mobile header to fit gracefully */
+          display: none;
         }
         .mobile-lang-compact .lang-btn {
           font-size: 0.76rem;
           padding: 0.15rem 0.35rem;
         }
 
-        /* Always-visible, touch-friendly hamburger button */
+        /* Interactive Hamburger Button */
         .hamburger-btn {
-          color: var(--color-forest-green);
+          color: #FAF6EE;
           width: 42px;
           height: 42px;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: var(--radius-md);
-          background: var(--color-warm-cream);
+          background: rgba(250, 246, 238, 0.14);
           border: 1.5px solid var(--color-golden-yellow);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
           flex-shrink: 0;
           transition: all var(--transition-fast);
           cursor: pointer;
         }
         .hamburger-btn:hover,
         .hamburger-btn:active {
-          background: #FFEFC4;
-          transform: scale(1.04);
+          background: #FAF6EE;
+          color: #072714;
+          transform: scale(1.06);
+          box-shadow: 0 0 14px rgba(245, 158, 11, 0.5);
         }
 
         /* Mobile Drawer */
@@ -546,7 +595,7 @@ export const Header: React.FC = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgba(15, 61, 33, 0.65);
+          background: rgba(7, 39, 20, 0.75);
           backdrop-filter: blur(6px);
           -webkit-backdrop-filter: blur(6px);
           opacity: 0;
@@ -562,8 +611,8 @@ export const Header: React.FC = () => {
           bottom: 0;
           width: 86%;
           max-width: 360px;
-          background: #FFFFFF;
-          box-shadow: -6px 0 30px rgba(0, 0, 0, 0.25);
+          background: #FAF6EE;
+          box-shadow: -8px 0 35px rgba(7, 39, 20, 0.45);
           display: flex;
           flex-direction: column;
           transform: translateX(100%);
@@ -579,67 +628,81 @@ export const Header: React.FC = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding-bottom: 1.25rem;
-          border-bottom: 1px solid var(--color-border-subtle);
+          padding: 1.25rem 1.5rem;
+          margin: -1.5rem -1.5rem 1.25rem -1.5rem;
+          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
+          border-bottom: 2px solid var(--color-golden-yellow);
         }
         .mobile-brand {
           display: flex;
           align-items: center;
-          gap: 0.6rem;
+          gap: 0.65rem;
         }
         .mobile-logo {
           border-radius: 50%;
           border: 2px solid var(--color-golden-yellow);
+          background: #FAF6EE;
         }
         .mobile-brand-title {
-          font-size: 0.95rem;
-          font-weight: 700;
-          color: var(--color-forest-green);
+          font-size: 0.98rem;
+          font-weight: 800;
+          color: #FFFEFB;
         }
         .mobile-brand-sub {
           font-size: 0.75rem;
-          color: var(--color-charcoal-light);
+          color: #D2C8B0;
         }
         .drawer-close-btn {
-          color: var(--color-charcoal-muted);
-          padding: 0.35rem;
-          border-radius: var(--radius-sm);
+          color: #FAF6EE;
+          padding: 0.4rem;
+          border-radius: var(--radius-full);
+          background: rgba(250, 246, 238, 0.15);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all var(--transition-fast);
         }
         .drawer-close-btn:hover {
-          color: var(--color-dark-charcoal);
-          background: var(--color-warm-cream);
+          color: #072714;
+          background: #FAF6EE;
+          transform: rotate(90deg);
         }
         .mobile-drawer__lang {
-          margin: 1.25rem 0;
+          margin: 1rem 0;
         }
         .mobile-nav-links {
           list-style: none;
           display: flex;
           flex-direction: column;
-          gap: 0.35rem;
+          gap: 0.4rem;
           flex-grow: 1;
         }
         .mobile-nav-link {
           display: block;
           padding: 0.85rem 1rem;
           font-size: 1.05rem;
-          font-weight: 600;
-          color: var(--color-dark-charcoal);
+          font-weight: 700;
+          color: #0D3B1F;
           border-radius: var(--radius-md);
-          transition: background-color var(--transition-fast);
+          transition: all var(--transition-fast);
+          border: 1px solid transparent;
         }
         .mobile-nav-link:hover,
         .mobile-nav-link:active {
-          background-color: var(--color-warm-cream);
-          color: var(--color-forest-green);
+          background-color: #EFE7D3;
+          color: #072714;
+          border-color: rgba(13, 59, 31, 0.15);
+          transform: translateX(4px);
         }
         .mobile-drawer__footer {
           margin-top: auto;
           padding-top: 1.5rem;
-          border-top: 1px solid var(--color-border-subtle);
+          border-top: 1.5px solid #E5DAC1;
         }
         .mobile-cta-btn {
           width: 100%;
+          background: var(--gradient-forest-vibrant);
+          color: #FAF6EE;
         }
       `}</style>
     </header>

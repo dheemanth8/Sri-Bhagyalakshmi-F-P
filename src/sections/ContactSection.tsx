@@ -335,10 +335,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
       <style>{`
         .contact-section {
-          background: radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
+          background: radial-gradient(circle at 85% 15%, rgba(20, 83, 45, 0.08) 0%, transparent 45%),
                       radial-gradient(circle at 15% 85%, rgba(245, 158, 11, 0.08) 0%, transparent 45%),
-                      #FFFFFF;
+                      var(--color-cream-base);
           position: relative;
+          border-top: 1.5px solid var(--color-border-subtle);
         }
 
         .contact-grid {
@@ -367,21 +368,21 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           align-items: flex-start;
           gap: 1.25rem;
           border-radius: var(--radius-lg);
-          border: 1.5px solid rgba(16, 185, 129, 0.2);
-          background: #FFFFFF;
-          box-shadow: 0 4px 16px rgba(6, 78, 59, 0.05);
+          border: 1.5px solid var(--color-border-subtle);
+          background: var(--color-cream-surface);
+          box-shadow: 0 4px 16px rgba(13, 59, 31, 0.05);
           transition: all var(--transition-normal);
         }
 
         .contact-channel-card:hover {
           border-color: var(--color-golden-yellow);
-          box-shadow: 0 12px 28px rgba(6, 78, 59, 0.12);
+          box-shadow: 0 12px 28px rgba(13, 59, 31, 0.14);
           transform: translateY(-3px);
         }
 
         .contact-channel-card--whatsapp {
           border: 2px solid #22C55E;
-          background: linear-gradient(135deg, #FFFFFF 0%, #F0FDF4 100%);
+          background: linear-gradient(135deg, #FFFEFB 0%, #F0FDF4 100%);
           box-shadow: 0 6px 22px rgba(34, 197, 94, 0.18);
         }
         .contact-channel-card--whatsapp:hover {
@@ -393,14 +394,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           width: 52px;
           height: 52px;
           border-radius: var(--radius-md);
-          background: linear-gradient(135deg, #ECFDF5 0%, #FEF3C7 100%);
+          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
           border: 1.5px solid var(--color-golden-yellow);
-          color: var(--color-forest-green-dark);
+          color: #FAF6EE;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
-          box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+          box-shadow: 0 2px 8px rgba(13, 59, 31, 0.3);
         }
 
         .channel-icon-box--whatsapp {
@@ -419,7 +420,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         .channel-title {
           font-size: 1.15rem;
           font-weight: 800;
-          color: var(--color-forest-green-dark);
+          color: var(--color-forest-dark);
           margin-bottom: 0.25rem;
         }
 
@@ -452,10 +453,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         .enquiry-card {
           padding: 2.25rem 2rem;
           border-radius: var(--radius-xl);
-          border: 2px solid rgba(16, 185, 129, 0.25);
+          border: 2px solid var(--color-border-subtle);
           border-top: 5px solid var(--color-golden-yellow);
-          background: #FFFFFF;
-          box-shadow: 0 20px 40px -10px rgba(6, 78, 59, 0.12), 0 0 0 1px rgba(245, 158, 11, 0.12);
+          background: var(--color-cream-surface);
+          box-shadow: 0 20px 40px -10px rgba(13, 59, 31, 0.12), 0 0 0 1px rgba(245, 158, 11, 0.12);
           height: 100%;
         }
         @media (min-width: 768px) {

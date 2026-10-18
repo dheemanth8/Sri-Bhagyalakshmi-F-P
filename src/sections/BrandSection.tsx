@@ -110,11 +110,11 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
       <style>{`
         .brands-section {
           background: 
-            radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.12) 0%, transparent 60%),
-            radial-gradient(circle at 10% 100%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
-            linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 50%, #FFFFFF 100%);
-          border-top: 1px solid rgba(16, 185, 129, 0.2);
-          border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+            radial-gradient(circle at 50% 0%, rgba(20, 83, 45, 0.08) 0%, transparent 60%),
+            radial-gradient(circle at 10% 100%, rgba(245, 158, 11, 0.09) 0%, transparent 50%),
+            var(--color-cream-base);
+          border-top: 1.5px solid var(--color-border-subtle);
+          border-bottom: 1.5px solid var(--color-border-subtle);
         }
 
         /* Toolbar */
@@ -139,10 +139,10 @@ export const BrandSection: React.FC<BrandSectionProps> = ({
           border-radius: var(--radius-full);
           font-size: 0.92rem;
           font-weight: 800;
-          background: linear-gradient(135deg, #059669 0%, #047857 100%);
-          color: #FFFFFF;
-          border: 1.5px solid #10B981;
-          box-shadow: 0 4px 16px rgba(5, 150, 105, 0.28);
+          background: var(--gradient-forest-vibrant);
+          color: #FAF6EE;
+          border: 1.5px solid #F59E0B;
+          box-shadow: 0 4px 16px rgba(13, 59, 31, 0.3);
           cursor: default;
         }
 

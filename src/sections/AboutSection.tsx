@@ -171,21 +171,21 @@ export const AboutSection: React.FC = () => {
       <style>{`
         .about-section {
           background: 
-            radial-gradient(ellipse at 85% 15%, rgba(16, 185, 129, 0.09) 0%, transparent 60%),
-            radial-gradient(ellipse at 15% 85%, rgba(245, 158, 11, 0.09) 0%, transparent 60%),
-            linear-gradient(180deg, #F0FDF4 0%, #FFFFFF 50%, #F8FAF7 100%);
-          border-top: 1px solid rgba(16, 185, 129, 0.2);
-          border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+            radial-gradient(ellipse at 85% 15%, rgba(20, 83, 45, 0.07) 0%, transparent 60%),
+            radial-gradient(ellipse at 15% 85%, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
+            var(--color-cream-base);
+          border-top: 1.5px solid var(--color-border-subtle);
+          border-bottom: 1.5px solid var(--color-border-subtle);
         }
 
         /* Full container utilization with comfortable responsive padding */
         .about-content-card {
           width: 100%;
-          background: #FFFFFF;
-          border: 1.5px solid rgba(16, 185, 129, 0.22);
+          background: var(--color-cream-surface);
+          border: 1.5px solid var(--color-border-subtle);
           border-radius: var(--radius-xl);
           padding: 2.25rem 1.5rem;
-          box-shadow: 0 16px 36px -6px rgba(6, 78, 59, 0.09), 0 4px 14px rgba(245, 158, 11, 0.06);
+          box-shadow: 0 16px 36px -6px rgba(13, 59, 31, 0.09), 0 4px 14px rgba(245, 158, 11, 0.06);
         }
 
         @media (min-width: 768px) {
@@ -263,10 +263,10 @@ export const AboutSection: React.FC = () => {
           gap: 1rem;
           margin: 1.75rem 0;
           padding: 1.35rem 1.15rem;
-          background: linear-gradient(135deg, #ECFDF5 0%, #FFFBEB 100%);
+          background: linear-gradient(135deg, #F4EEDF 0%, #FEF3C7 100%);
           border-radius: var(--radius-lg);
-          border: 1.5px solid rgba(16, 185, 129, 0.28);
-          box-shadow: 0 4px 14px rgba(6, 78, 59, 0.05);
+          border: 1.5px solid #E5DAC1;
+          box-shadow: 0 4px 14px rgba(13, 59, 31, 0.06);
         }
         @media (max-width: 640px) {
           .about-stats-container {
@@ -281,12 +281,12 @@ export const AboutSection: React.FC = () => {
         .about-stat-val {
           font-size: 1.85rem;
           font-weight: 800;
-          color: #065F46;
+          color: var(--color-forest-dark);
           line-height: 1.2;
         }
         .about-stat-lbl {
           font-size: 0.84rem;
-          color: #475569;
+          color: var(--color-charcoal-muted);
           font-weight: 700;
           margin-top: 0.3rem;
           line-height: 1.35;
@@ -299,7 +299,7 @@ export const AboutSection: React.FC = () => {
           gap: 0.75rem;
           margin-top: 1.5rem;
           padding-top: 1.25rem;
-          border-top: 1px solid var(--color-border-subtle);
+          border-top: 1.5px solid var(--color-border-subtle);
         }
         .commitment-item {
           display: flex;
@@ -310,14 +310,14 @@ export const AboutSection: React.FC = () => {
           color: var(--color-dark-charcoal);
         }
         .commit-icon {
-          color: var(--color-agricultural-green);
+          color: var(--color-forest-green);
           flex-shrink: 0;
         }
 
         /* Right Column: Founders & Owners Panel */
         .leadership-panel {
-          background: #FAFBF9;
-          border: 1.5px solid rgba(20, 83, 45, 0.12);
+          background: var(--color-cream-alt);
+          border: 1.5px solid var(--color-border-subtle);
           border-radius: var(--radius-lg);
           padding: 1.75rem 1.5rem;
           display: flex;

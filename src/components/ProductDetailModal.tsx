@@ -349,10 +349,10 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         }
 
         .product-modal-dialog {
-          background: #FFFFFF;
+          background: var(--color-cream-surface);
           border-radius: var(--radius-xl);
-          border: 2px solid rgba(16, 185, 129, 0.25);
-          box-shadow: 0 25px 60px -12px rgba(6, 78, 59, 0.35);
+          border: 2px solid var(--color-border-subtle);
+          box-shadow: 0 25px 60px -12px rgba(7, 39, 20, 0.45);
           width: 100%;
           max-width: 820px;
           max-height: 90vh;
@@ -373,8 +373,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: center;
           justify-content: space-between;
           padding: 1.25rem 1.5rem;
-          background: linear-gradient(180deg, #FFFFFF 0%, #F8FAF7 100%);
-          border-bottom: 1.5px solid rgba(16, 185, 129, 0.18);
+          background: linear-gradient(180deg, #FFFEFB 0%, #FAF6EE 100%);
+          border-bottom: 1.5px solid var(--color-border-subtle);
           gap: 1rem;
         }
 
@@ -731,13 +731,14 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           align-items: center;
           gap: 0.45rem;
           font-weight: 800;
-          background: var(--gradient-emerald-vibrant);
-          color: #FFFFFF;
-          box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+          background: var(--gradient-forest-vibrant);
+          color: #FAF6EE;
+          box-shadow: 0 4px 14px rgba(13, 59, 31, 0.35);
         }
         .modal-btn-primary:hover {
+          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
           transform: translateY(-2px);
-          box-shadow: 0 8px 20px rgba(5, 150, 105, 0.45);
+          box-shadow: 0 8px 20px rgba(13, 59, 31, 0.45);
         }
       `}</style>
     </div>

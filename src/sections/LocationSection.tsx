@@ -128,11 +128,11 @@ export const LocationSection: React.FC = () => {
 
       <style>{`
         .location-section {
-          background: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.09) 0%, transparent 50%),
-                      radial-gradient(circle at 90% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
-                      linear-gradient(180deg, #F0FDF4 0%, #FFFFFF 50%, #FFFBEB 100%);
-          border-top: 1px solid rgba(16, 185, 129, 0.2);
-          border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+          background: radial-gradient(circle at 10% 20%, rgba(20, 83, 45, 0.08) 0%, transparent 50%),
+                      radial-gradient(circle at 90% 80%, rgba(245, 158, 11, 0.09) 0%, transparent 50%),
+                      var(--color-cream-base);
+          border-top: 1.5px solid var(--color-border-subtle);
+          border-bottom: 1.5px solid var(--color-border-subtle);
           position: relative;
         }
 
@@ -140,11 +140,11 @@ export const LocationSection: React.FC = () => {
           display: grid;
           grid-template-columns: 1fr;
           gap: 2rem;
-          background: #FFFFFF;
+          background: var(--color-cream-surface);
           border-radius: var(--radius-xl);
-          border: 2px solid rgba(16, 185, 129, 0.25);
+          border: 2px solid var(--color-border-subtle);
           overflow: hidden;
-          box-shadow: 0 20px 45px -10px rgba(6, 78, 59, 0.14), 0 0 0 1px rgba(245, 158, 11, 0.18);
+          box-shadow: 0 20px 45px -10px rgba(13, 59, 31, 0.12), 0 0 0 1px rgba(245, 158, 11, 0.15);
         }
 
         @media (min-width: 1024px) {
@@ -159,7 +159,7 @@ export const LocationSection: React.FC = () => {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          background: linear-gradient(180deg, #FFFFFF 0%, #F8FAF7 100%);
+          background: linear-gradient(180deg, #FFFEFB 0%, #FAF6EE 100%);
         }
         @media (min-width: 768px) {
           .location-info-card {
@@ -178,20 +178,20 @@ export const LocationSection: React.FC = () => {
           width: 56px;
           height: 56px;
           border-radius: var(--radius-md);
-          background: linear-gradient(135deg, #ECFDF5 0%, #FEF3C7 100%);
+          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
           border: 2px solid var(--color-golden-yellow);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--color-forest-green-dark);
-          box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+          color: #FAF6EE;
+          box-shadow: 0 4px 12px rgba(13, 59, 31, 0.35);
           flex-shrink: 0;
         }
 
         .location-card-title {
           font-size: 1.4rem;
           font-weight: 800;
-          color: var(--color-forest-green-dark);
+          color: var(--color-forest-dark);
           line-height: 1.3;
         }
 
@@ -204,13 +204,13 @@ export const LocationSection: React.FC = () => {
 
         /* Location Details Blocks */
         .location-detail-block {
-          background: #FFFFFF;
-          border: 1.5px solid rgba(16, 185, 129, 0.2);
-          border-left: 4px solid var(--color-agricultural-green);
+          background: var(--color-cream-surface);
+          border: 1.5px solid var(--color-border-subtle);
+          border-left: 4px solid var(--color-forest-green);
           border-radius: var(--radius-md);
           padding: 1.1rem 1.25rem;
           margin-bottom: 1.15rem;
-          box-shadow: 0 2px 8px rgba(6, 78, 59, 0.04);
+          box-shadow: 0 2px 8px rgba(13, 59, 31, 0.04);
         }
 
         .detail-block-header {

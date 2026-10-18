@@ -191,8 +191,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
       <style>{`
         .product-card {
-          background: #FFFFFF;
-          border: 1.5px solid rgba(16, 185, 129, 0.2);
+          background: var(--color-cream-surface);
+          border: 1.5px solid var(--color-border-subtle);
           border-radius: var(--radius-lg);
           display: flex;
           flex-direction: column;
@@ -200,13 +200,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
           cursor: pointer;
           position: relative;
-          box-shadow: 0 4px 16px rgba(6, 78, 59, 0.05);
+          box-shadow: 0 4px 16px rgba(13, 59, 31, 0.05);
         }
 
         .product-card:hover {
           transform: translateY(-5px);
           border-color: var(--color-golden-yellow);
-          box-shadow: 0 16px 32px -4px rgba(6, 78, 59, 0.16), 0 0 0 1px rgba(245, 158, 11, 0.25);
+          box-shadow: 0 16px 32px -4px rgba(13, 59, 31, 0.18), 0 0 0 1px rgba(245, 158, 11, 0.25);
         }
 
         .product-card:focus-visible {
@@ -220,8 +220,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           align-items: center;
           justify-content: space-between;
           padding: 0.85rem 1rem;
-          background: linear-gradient(180deg, #FFFFFF 0%, #F8FAF7 100%);
-          border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+          background: linear-gradient(180deg, #FFFEFB 0%, #FAF6EE 100%);
+          border-bottom: 1.5px solid var(--color-border-subtle);
           gap: 0.5rem;
         }
 
@@ -484,8 +484,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         .product-card__footer {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          border-top: 1px solid rgba(16, 185, 129, 0.15);
-          background: #FAFBF9;
+          border-top: 1.5px solid var(--color-border-subtle);
+          background: #FAF6EE;
         }
 
         .btn-card-action {
@@ -503,26 +503,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         }
 
         .btn-card-details {
-          color: var(--color-forest-green-dark);
-          border-right: 1px solid rgba(16, 185, 129, 0.15);
+          color: var(--color-forest-dark);
+          border-right: 1.5px solid var(--color-border-subtle);
           font-weight: 800;
         }
 
         .btn-card-details:hover {
-          background: #ECFDF5;
-          color: var(--color-forest-green-dark);
+          background: #EFE7D3;
+          color: var(--color-forest-deep);
         }
 
         .btn-card-enquire {
-          background: linear-gradient(135deg, #059669 0%, #047857 100%);
-          color: #FFFFFF;
+          background: var(--gradient-forest-vibrant);
+          color: #FAF6EE;
           font-weight: 800;
         }
 
         .btn-card-enquire:hover {
-          background: linear-gradient(135deg, #047857 0%, #064E3B 100%);
-          color: #FFFFFF;
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
+          color: #FAF6EE;
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
         }
       `}</style>
     </div>

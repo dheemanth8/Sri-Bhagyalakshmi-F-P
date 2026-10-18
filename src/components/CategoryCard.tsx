@@ -83,25 +83,25 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
         .category-card {
           display: flex;
           flex-direction: column;
-          background: #FFFFFF;
-          border: 1.5px solid rgba(16, 185, 129, 0.18);
+          background: var(--color-cream-surface);
+          border: 1.5px solid var(--color-border-subtle);
           border-radius: var(--radius-lg);
           overflow: hidden;
           transition: all var(--transition-normal);
           height: 100%;
-          box-shadow: 0 4px 20px -2px rgba(6, 78, 59, 0.06);
+          box-shadow: 0 4px 20px -2px rgba(13, 59, 31, 0.06);
         }
         .category-card:hover {
           border-color: var(--color-golden-yellow);
           transform: translateY(-6px);
-          box-shadow: 0 20px 35px -8px rgba(6, 78, 59, 0.18), 0 8px 18px -4px rgba(245, 158, 11, 0.14);
+          box-shadow: 0 20px 35px -8px rgba(13, 59, 31, 0.2), 0 8px 18px -4px rgba(245, 158, 11, 0.16);
         }
 
         .category-card__image-box {
           position: relative;
           height: 200px;
           overflow: hidden;
-          background-color: #064E3B;
+          background-color: #072714;
         }
         .category-card__picture {
           display: block;
@@ -125,14 +125,14 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           display: inline-flex;
           align-items: center;
           gap: 0.45rem;
-          background: rgba(6, 78, 59, 0.92);
+          background: rgba(7, 39, 20, 0.94);
           color: #FDE68A;
           padding: 0.4rem 0.85rem;
           border-radius: var(--radius-full);
           font-size: 0.78rem;
           font-weight: 800;
           backdrop-filter: blur(10px);
-          border: 1.5px solid rgba(245, 158, 11, 0.55);
+          border: 1.5px solid rgba(245, 158, 11, 0.65);
           box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
         }
 
@@ -146,7 +146,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
         .category-card__title {
           font-size: 1.4rem;
           font-weight: 800;
-          color: #064E3B;
+          color: var(--color-forest-dark);
           margin-bottom: 0.75rem;
           line-height: 1.3;
           letter-spacing: -0.01em;
@@ -160,8 +160,8 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
         }
 
         .category-card__benefits {
-          background: linear-gradient(135deg, #ECFDF5 0%, #FFFBEB 100%);
-          border: 1.5px solid rgba(16, 185, 129, 0.22);
+          background: linear-gradient(135deg, #F4EEDF 0%, #FEF3C7 100%);
+          border: 1.5px solid #E5DAC1;
           border-radius: var(--radius-md);
           padding: 0.95rem 1.15rem;
           margin-bottom: 1.5rem;
@@ -172,7 +172,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           font-weight: 800;
           text-transform: uppercase;
           letter-spacing: 0.06em;
-          color: #065F46;
+          color: var(--color-forest-dark);
           margin-bottom: 0.5rem;
         }
         .benefits-list {
@@ -186,11 +186,11 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           align-items: center;
           gap: 0.5rem;
           font-size: 0.84rem;
-          color: #1E293B;
+          color: var(--color-dark-charcoal);
           font-weight: 600;
         }
         .benefit-check {
-          color: #10B981;
+          color: var(--color-forest-green);
           flex-shrink: 0;
         }
 
@@ -200,17 +200,18 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(({ category,
           font-weight: 800;
           font-size: 0.92rem;
           padding: 0.75rem 1rem;
-          background: linear-gradient(135deg, #ECFDF5 0%, #F0FDF4 100%);
-          color: #065F46;
-          border: 1.5px solid rgba(16, 185, 129, 0.35);
+          background: var(--gradient-forest-vibrant);
+          color: #FAF6EE;
+          border: 1px solid rgba(245, 158, 11, 0.35);
           border-radius: var(--radius-md);
           transition: all var(--transition-fast);
+          box-shadow: 0 2px 8px rgba(13, 59, 31, 0.25);
         }
         .category-card__btn:hover {
-          background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-          color: #FFFFFF;
-          border-color: #059669;
-          box-shadow: 0 6px 18px rgba(5, 150, 105, 0.35);
+          background: linear-gradient(135deg, #072714 0%, #0D3B1F 100%);
+          color: #FAF6EE;
+          border-color: var(--color-golden-yellow);
+          box-shadow: 0 6px 18px rgba(13, 59, 31, 0.4);
           transform: translateY(-2px);
         }
       `}</style>

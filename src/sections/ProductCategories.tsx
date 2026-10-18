@@ -61,11 +61,11 @@ export const ProductCategories: React.FC<ProductCategoriesProps> = ({
       <style>{`
         .categories-section {
           background: 
-            radial-gradient(ellipse at 15% 20%, rgba(245, 158, 11, 0.12) 0%, transparent 60%),
-            radial-gradient(ellipse at 85% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 60%),
-            linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 50%, #F0FDF4 100%);
-          border-top: 1px solid rgba(245, 158, 11, 0.2);
-          border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+            radial-gradient(ellipse at 15% 20%, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
+            radial-gradient(ellipse at 85% 80%, rgba(20, 83, 45, 0.07) 0%, transparent 60%),
+            var(--color-cream-base);
+          border-top: 1.5px solid var(--color-border-subtle);
+          border-bottom: 1.5px solid var(--color-border-subtle);
         }
 
         .categories-grid {
