@@ -8,6 +8,7 @@ import { ProductCategories } from './sections/ProductCategories';
 import { LocationSection } from './sections/LocationSection';
 import { ContactSection } from './sections/ContactSection';
 import { Footer } from './components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 export const AppContent: React.FC = () => {
   const [selectedCategoryForEnquiry, setSelectedCategoryForEnquiry] = useState<string>('');
@@ -71,6 +72,7 @@ export const App: React.FC = () => {
   return (
     <LanguageProvider>
       <AppContent />
+      <Analytics />
     </LanguageProvider>
   );
 };
